@@ -1,0 +1,39 @@
+name: bridge
+on:
+  push:
+    branches: [bridge]
+    paths: ['bridge/manifest.json', 'bridge/run.js', '.github/workflows/bridge.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: bridge
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: bridge
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install playwright
+        run: |
+          cd bridge
+          npm init -y >/dev/null
+          npm i playwright@1.49.1 >/dev/null
+          npx playwright install --with-deps chromium
+      - name: Run
+        run: node bridge/run.js
+      - name: Commit results
+        run: |
+          git config user.name "bridge-bot"
+          git config user.email "bridge-bot@users.noreply.github.com"
+          rm -rf bridge/node_modules bridge/package.json bridge/package-lock.json
+          git add -A bridge/out
+          git commit -m "bridge: results [skip ci]" || echo "nothing to commit"
+          git push origin HEAD:bridge
