@@ -1,0 +1,111 @@
+/* French Atelier — final house-style layer. Loaded last on every page. */
+html:root:root:root body#fa *,html:root:root:root body#fa *::before,html:root:root:root body#fa *::after{text-transform:none!important}
+html:root:root:root body#fa .eyebrow,html:root:root:root body#fa [class*="eyebrow"],html:root:root:root body#fa .btn,html:root:root:root body#fa [class*="badge"],html:root:root:root body#fa [class*="tag"],html:root:root:root body#fa [class*="label"],html:root:root:root body#fa .sound-toggle,html:root:root:root body#fa .fa-sound-btn,html:root:root:root body#fa .jul-say-btn,html:root:root:root body#fa .drawer-group-label,html:root:root:root body#fa .footer-col h4{letter-spacing:.04em!important}
+@media (max-width:760px){
+html:root:root:root body#fa p,html:root:root:root body#fa li,html:root:root:root body#fa dd,html:root:root:root body#fa blockquote,html:root:root:root body#fa td,html:root:root:root body#fa th{font-size:max(1rem,16px)!important;line-height:1.6!important}
+html:root:root:root body#fa .lede{font-size:1.08rem!important}
+html:root:root:root body#fa small,html:root:root:root body#fa .small,html:root:root:root body#fa figcaption,html:root:root:root body#fa .img-caption,html:root:root:root body#fa .eyebrow,html:root:root:root body#fa [class*="eyebrow"],html:root:root:root body#fa [class*="badge"],html:root:root:root body#fa [class*="tag"],html:root:root:root body#fa [class*="label"],html:root:root:root body#fa [class*="meta"] span,html:root:root:root body#fa [class*="pill"],html:root:root:root body#fa .breadcrumb,html:root:root:root body#fa .breadcrumb *{font-size:14px!important;line-height:1.4!important}
+html:root:root:root body#fa summary,html:root:root:root body#fa summary *,html:root:root:root body#fa .faq-q,html:root:root:root body#fa [class*="faq-q"]{font-size:16px!important}
+html:root:root:root body#fa footer a,html:root:root:root body#fa footer li,html:root:root:root body#fa .footer-col a,html:root:root:root body#fa .footer-col h4{font-size:15px!important}
+html:root:root:root body#fa .btn,html:root:root:root body#fa button:not(.mapstr-marker):not(.sound-toggle):not(.nav-toggle):not([class*="dot"]),html:root:root:root body#fa .lg-submit{font-size:15px!important}
+html:root:root:root body#fa .sound-toggle,html:root:root:root body#fa .fa-sound-btn,html:root:root:root body#fa .fa-sound-txt{font-size:14px!important}
+html:root:root:root body#fa h1,html:root:root:root body#fa .display-xl{font-size:clamp(2.5rem,11vw,3.3rem)!important;line-height:1.06!important}
+html:root:root:root body#fa h2,html:root:root:root body#fa .display-md,html:root:root:root body#fa .display-lg{font-size:clamp(2rem,8.6vw,2.6rem)!important;line-height:1.12!important}
+html:root:root:root body#fa h3{font-size:max(1.3rem,21px)!important;line-height:1.25!important}
+html:root:root:root body#fa h4{font-size:max(1.1rem,18px)!important}
+html:root:root:root body#fa span.drawer-group-label{font-size:14px!important}
+html:root:root:root body#fa span.cs-tag{font-size:14px!important}
+html:root:root:root body#fa a.btn.btn-gold.btn-lg{font-size:15px!important}
+html:root:root:root body#fa span.tp-rating{font-size:14px!important}
+html:root:root:root body#fa p.eyebrow.eyebrow-line{font-size:15px!important}
+html:root:root:root body#fa span.cls-bestseller{font-size:14px!important}
+html:root:root:root body#fa span.cls-card-eyebrow{font-size:14px!important}
+html:root:root:root body#fa span.cls-card-sub{font-size:14px!important}
+html:root:root:root body#fa span.cls-meta-key{font-size:14px!important}
+html:root:root:root body#fa span.cls-card-action-text{font-size:14px!important}
+html:root:root:root body#fa span.han-lvl{font-size:14px!important}
+html:root:root:root body#fa span.han-cap{font-size:14px!important}
+html:root:root:root body#fa span.hiw3-kick{font-size:14px!important}
+html:root:root:root body#fa span.hiw3-tag{font-size:14px!important}
+html:root:root:root body#fa span.hiw3-kick.hiw3-kick-final{font-size:14px!important}
+html:root:root:root body#fa span.hiw3-tag.hiw3-tag-final{font-size:14px!important}
+html:root:root:root body#fa p.s5-eyebrow{font-size:15px!important}
+html:root:root:root body#fa span.s5-cite-yr{font-size:14px!important}
+html:root:root:root body#fa span.pillar-num{font-size:14px!important}
+html:root:root:root body#fa p.ac-power-eyebrow{font-size:15px!important}
+html:root:root:root body#fa div.apf-lab{font-size:14px!important}
+html:root:root:root body#fa span.tctr-badge{font-size:14px!important}
+html:root:root:root body#fa span.fac-region{font-size:14px!important}
+html:root:root:root body#fa span.si-muted{font-size:14px!important}
+html:root:root:root body#fa span.ms-eyebrow{font-size:14px!important}
+html:root:root:root body#fa span.ms-tab-level{font-size:14px!important}
+html:root:root:root body#fa span.ms-tab-region{font-size:14px!important}
+html:root:root:root body#fa span.ms-legend-txt{font-size:14px!important}
+html:root:root:root body#fa span.ms-legend-txt.ms-legend-sub{font-size:14px!important}
+html:root:root:root body#fa span.jul-cutout-badge{font-size:14px!important}
+html:root:root:root body#fa span.jhs-label{font-size:14px!important}
+html:root:root:root body#fa span.tst-trust{font-size:14px!important}
+html:root:root:root body#fa span.stars{font-size:14px!important}
+html:root:root:root body#fa span.etg2-tf-lab{font-size:14px!important}
+html:root:root:root body#fa span.etg3-no{font-size:14px!important}
+html:root:root:root body#fa span.etg3-pill{font-size:14px!important}
+html:root:root:root body#fa a.link-arrow{font-size:15px!important}
+html:root:root:root body#fa span.lm-cover-badge{font-size:14px!important}
+html:root:root:root body#fa p.eyebrow.eyebrow-line.lm-eyebrow{font-size:15px!important}
+html:root:root:root body#fa button.btn.btn-3d.btn-3d-primary{font-size:15px!important}
+html:root:root:root body#fa p.lg-eyebrow{font-size:15px!important}
+html:root:root:root body#fa div.lg-trust-item{font-size:14px!important}
+html:root:root:root body#fa p.lg-form-sub{font-size:15px!important}
+html:root:root:root body#fa label{font-size:15px!important}
+html:root:root:root body#fa button.lg-submit{font-size:15px!important}
+html:root:root:root body#fa p.lg-fineprint{font-size:15px!important}
+html:root:root:root body#fa span.ec-eyebrow{font-size:14px!important}
+html:root:root:root body#fa span.ec-title{font-size:14px!important}
+html:root:root:root body#fa a.ec-cta{font-size:15px!important}
+html:root:root:root body#fa span.jul-live-badge{font-size:14px!important}
+html:root:root:root body#fa div.jul-drill-tag{font-size:14px!important}
+html:root:root:root body#fa span.jul-drill-tag{font-size:14px!important}
+html:root:root:root body#fa span.jul-chip{font-size:14px!important}
+html:root:root:root body#fa span.fa-sound-txt{font-size:14px!important}
+html:root:root:root body#fa span.msg-label{font-size:14px!important}
+html:root:root:root body#fa span.eyebrow.eyebrow-line{font-size:14px!important}
+html:root:root:root body#fa div.sc-label{font-size:14px!important}
+html:root:root:root body#fa div.an-course{font-size:14px!important}
+html:root:root:root body#fa span.cc-badge{font-size:14px!important}
+html:root:root:root body#fa div.cc-track{font-size:14px!important}
+html:root:root:root body#fa div.cc-meta-item{font-size:14px!important}
+html:root:root:root body#fa p.plan-eyebrow.dark{font-size:15px!important}
+html:root:root:root body#fa p.plan-includes-label{font-size:15px!important}
+html:root:root:root body#fa span.plan-badge{font-size:14px!important}
+html:root:root:root body#fa p.plan-eyebrow.light{font-size:15px!important}
+html:root:root:root body#fa span.bd-plan{font-size:14px!important}
+html:root:root:root body#fa span.bd-save{font-size:14px!important}
+html:root:root:root body#fa span.trust-label{font-size:14px!important}
+html:root:root:root body#fa span.tr-pill{font-size:14px!important}
+html:root:root:root body#fa div.ts-label{font-size:14px!important}
+html:root:root:root body#fa span.fc-region-tag{font-size:14px!important}
+html:root:root:root body#fa div.fc-location{font-size:14px!important}
+html:root:root:root body#fa span.fc-qual{font-size:14px!important}
+html:root:root:root body#fa span.tpb-name{font-size:14px!important}
+html:root:root:root body#fa span.tpb-region{font-size:14px!important}
+html:root:root:root body#fa div.ss-label{font-size:14px!important}
+html:root:root:root body#fa span.m-lbl{font-size:14px!important}
+html:root:root:root body#fa span.tl-tag{font-size:14px!important}
+html:root:root:root body#fa span.step-chip{font-size:14px!important}
+html:root:root:root body#fa span.lr-course{font-size:14px!important}
+html:root:root:root body#fa span.lr-arc{font-size:14px!important}
+html:root:root:root body#fa span.lr-region{font-size:14px!important}
+html:root:root:root body#fa div.wc-day{font-size:14px!important}
+html:root:root:root body#fa span.wc-tag{font-size:14px!important}
+html:root:root:root body#fa span.tn-region{font-size:14px!important}
+html:root:root:root body#fa span.cefr-tag{font-size:14px!important}
+html:root:root:root body#fa span.pf-label{font-size:14px!important}
+html:root:root:root body#fa h1 *,html:root:root:root body#fa h2 *,html:root:root:root body#fa h3 *,html:root:root:root body#fa .display-xl *,html:root:root:root body#fa .display-md *,html:root:root:root body#fa .display-lg *{font-size:inherit!important;line-height:inherit!important}
+html:root:root:root body#fa span.fac-region,html:root:root:root body#fa .fac-region{font-size:14px!important}
+html:root:root:root body#fa .faq-btn,html:root:root:root body#fa .faq-btn *,html:root:root:root body#fa .faq-q,html:root:root:root body#fa .faq-q *,html:root:root:root body#fa .faq-question,html:root:root:root body#fa .faq-question *{font-size:16px!important;line-height:1.35!important}
+html:root:root:root body#fa .hm-k,html:root:root:root body#fa .hero-meta-strip .hm-k,html:root:root:root body#fa .hero-info-strip .k{font-size:14px!important}
+html:root:root:root body#fa .fac-card .fac-region,html:root:root:root body#fa #teachers .fac-region{font-size:14px!important}
+html:root:root:root body#fa #lead-form label,html:root:root:root body#fa .lead-form label,html:root:root:root body#fa .lg-form label,html:root:root:root body#fa form label,html:root:root:root body#fa .lg-eyebrow{font-size:15px!important}
+html:root:root:root body#fa .jul-transcript-head span,html:root:root:root body#fa .diff-image-overlay span,html:root:root:root body#fa .diff-image-overlay,html:root:root:root body#fa .sib-dir,html:root:root:root body#fa .bc-meta,html:root:root:root body#fa .bc-meta *,html:root:root:root body#fa .article-meta,html:root:root:root body#fa .article-meta *,html:root:root:root body#fa .bc-read,html:root:root:root body#fa .post-meta *,html:root:root:root body#fa [class*="meta"] *{font-size:14px!important}
+html:root:root:root body#fa .article-byline,html:root:root:root body#fa .article-byline *,html:root:root:root body#fa [class*="byline"],html:root:root:root body#fa [class*="byline"] *{font-size:14px!important}
+}

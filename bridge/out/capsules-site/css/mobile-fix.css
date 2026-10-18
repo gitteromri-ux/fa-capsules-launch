@@ -1,0 +1,2725 @@
+/* ==========================================================================
+   MOBILE FIX — June 7, 2026
+   CEO mobile review feedback — applied as a final override stylesheet.
+   Loaded LAST after fa.css / mapstr.css / course.css.
+   Scope: viewports <= 760px (and a few selectors <= 430px).
+   ========================================================================== */
+
+/* ─────────────────────────────────────────────────────────────────
+   1) RESEARCH CITATION CARDS  (Piccardo · Council of Europe · …)
+      Were ghosted: tiny pulsing gold text on cream → unreadable.
+      Fix: strong navy text, no pulse on mobile, full-width tappable,
+      proper card visual + arrow chevron.
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  .sorb-v4 .sorb-cred{
+    padding: 1.6rem 0 .5rem;
+  }
+  .sorb-v4 .sorb-cred-lab{
+    
+    color: #C8A96B !important;
+    margin-bottom: 1rem !important;
+  }
+  .sorb-v4 .sorb-cred-links{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: .8rem !important;
+    max-width: 100% !important;
+    padding: 0 4px;
+  }
+  .sorb-v4 .sorb-cite{
+    /* kill the pulsing washed-out glow on mobile */
+    animation: none !important;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 1.2rem !important;
+    font-size: .92rem !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
+    color: #0A1128 !important;             /* deep navy = readable */
+    background: #FFFCF4 !important;        /* solid bright cream */
+    border: 1.5px solid #C8A96B !important;
+    border-radius: 14px !important;
+    text-align: left !important;
+    box-shadow:
+      0 2px 8px rgba(10,17,40,.10),
+      0 1px 0 rgba(255,255,255,.6) inset !important;
+    letter-spacing: .005em !important;
+    text-transform: none !important;
+  }
+  /* The explicit .sorb-cite-arrow span already provides an arrow.
+     Hide any leftover ::after pseudo arrow + style the inline one. */
+  .sorb-v4 .sorb-cite::after{ content: none !important; }
+  .sorb-v4 .sorb-cite .sorb-cite-arrow{
+    margin-left: auto !important;
+    color: #C8A96B !important;
+    font-size: 1.1em !important;
+    font-weight: 700 !important;
+    flex-shrink: 0;
+  }
+  /* disclaimer pull-up */
+  .sorb-v4 .sorb-disclaimer{
+    
+    line-height: 1.55 !important;
+    padding: 0 .4rem;
+    margin-top: 1rem !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   2) CULTURE PILLARS  — horizontal scroll-snap rail on mobile
+      Was a 6-tall vertical stack (massive scroll). Now a swipe rail.
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  #culture .pillars-grid{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 4px 16px 16px !important;
+    margin: 0 -16px !important;       /* bleed edge-to-edge */
+  }
+  #culture .pillars-grid::-webkit-scrollbar{ display:none; }
+  #culture .pillar{
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 0 0 90vw !important;
+    width: 90vw !important;
+    scroll-snap-align: center !important;
+    scroll-snap-stop: always !important;
+    min-height: 560px !important;
+    height: 560px !important;
+    aspect-ratio: auto !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    background-size: cover !important;
+    background-position: center !important;
+    align-self: stretch !important;
+  }
+  #culture .pillars-grid{ align-items: stretch !important; }
+  /* Pillar VIDEO/IMAGE area: large hero portion */
+  #culture .pillar .pillar-media,
+  #culture .pillar > video:first-child,
+  #culture .pillar > .pillar-vid{
+    width: 100% !important;
+    height: 360px !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+  /* swipe hint REMOVED — dots are sufficient affordance */
+  #culture .culture-head::after{ content: none !important; display: none !important; }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   3) CARD COLOR VARIATION
+      User: "too many cards same colors". Tint each pillar differently,
+      tint research links subtly different per index, and give culture
+      pillar bodies distinguishable accent borders/gradients.
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  /* Pillar body: solid dark band below video — fixed height, doesn't push video */
+  /* CRITICAL: desktop has .pillar-body{position:absolute;bottom:0} which removes it from flex flow.
+     Override to position:static so flex-column order works (video on top, body on bottom). */
+  #culture .pillar .pillar-body{
+    position: static !important;
+    border-top: 0 !important;
+    flex: 0 0 auto !important;
+    padding: 1.1rem 1.3rem 1.4rem !important;
+    background: #0a1128 !important;
+    color: #f3eee3 !important;
+    margin-top: 0 !important;
+    z-index: 2 !important;
+    order: 99 !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+  }
+  /* Kill desktop gradient overlay that darkens the bottom of the pillar (designed for absolute body overlay) */
+  #culture .pillar::after,
+  #culture .pillar::before{ display: none !important; content: none !important; }
+  #culture .pillar video, #culture .pillar > video:first-child{
+    position: static !important;
+    left: auto !important; right: auto !important; top: auto !important; bottom: auto !important;
+    order: 0 !important;
+    flex: 0 0 360px !important;
+    height: 360px !important;
+    width: 100% !important;
+  }
+  #culture .pillar-num{ color: #d8bc85 !important; font-size: .9rem !important; opacity: .9 !important; }
+  #culture .pillar-title{ color: #f3eee3 !important; font-size: 1.5rem !important; line-height: 1.15 !important; margin: .3rem 0 .5rem !important; }
+  #culture .pillar-desc{ color: rgba(243,238,227,.85) !important; font-size: .95rem !important; line-height: 1.45 !important; }
+  /* Disable autoplaying video in pillars on mobile — it caused scroll jank and the poster→frame transition created a visual stripe */
+  /* Pillar videos: visible, large, performant */
+  #culture .pillar video{
+    display: block !important;
+    width: 100% !important;
+    height: 360px !important;
+    object-fit: cover !important;
+    border-radius: 20px 20px 0 0 !important;
+  }
+  /* Poster fallback bg for slow load */
+  #culture .pillar{ position: relative; background-color: #0a1128; }
+  #culture .pillar:nth-child(1){ background-image: url('../assets/video/pillar-art-poster.jpg'); }
+  #culture .pillar:nth-child(2){ background-image: url('../assets/video/wine-tasting-poster.jpg'); }
+  #culture .pillar:nth-child(3){ background-image: url('../assets/video/pillar-travel-poster.jpg'); }
+  #culture .pillar:nth-child(4){ background-image: url('../assets/video/pillar-fashion-poster.jpg'); }
+  #culture .pillar:nth-child(5){ background-image: url('../assets/video/pillar-music-poster.jpg'); }
+  #culture .pillar:nth-child(6){ background-image: url('../assets/video/pillar-tradition-poster.jpg'); }
+
+  /* Research citations alternate cream/ivory/pale-rose */
+  .sorb-v4 .sorb-cite:nth-child(1){ background: #FFFCF4 !important; border-color:#C8A96B !important; }
+  .sorb-v4 .sorb-cite:nth-child(2){ background: #FFF3E8 !important; border-color:#BEA37B !important; }
+  .sorb-v4 .sorb-cite:nth-child(3){ background: #FAF1FF !important; border-color:#A07BB8 !important; }
+  .sorb-v4 .sorb-cite:nth-child(4){ background: #F0F6FF !important; border-color:#5C8FCF !important; }
+
+  /* Principle cards (01/02/03) get distinct left rules */
+  .sorb-pr:nth-child(1){ border-left: 3px solid #C8A96B !important; }
+  .sorb-pr:nth-child(2){ border-left: 3px solid #E498A6 !important; }
+  .sorb-pr:nth-child(3){ border-left: 3px solid #2FA4FF !important; }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   4) COURSE CLUSTER CARDS (FA / LSF) — hover-to-expand fix on mobile
+      User: when you tap a cluster card, the OTHER card blocks the
+      revealed slider. Fix: when a cluster is active, collapse the
+      other cluster card visually and auto-scroll the slider into view.
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  /* COURSE CLUSTER CARDS become a horizontal swipe rail */
+  .cls-cards{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    grid-template-columns: none !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 4px 16px 18px !important;
+    margin: 0 -16px !important;
+  }
+  .cls-cards::-webkit-scrollbar{ display:none; }
+  .cls-card{
+    flex: 0 0 86vw !important;
+    width: 86vw !important;
+    scroll-snap-align: center !important;
+    min-height: 140px !important;
+    padding: 1.4rem 1.3rem 1.2rem !important;
+  }
+  .cls-card-title{ font-size: 1.6rem !important; }
+  .cls-card-sub{ font-size: .92rem !important; }
+  /* Best Seller badge: compact pill, never overlap the eyebrow text */
+  .cls-card .cls-bestseller{
+    position: absolute !important;
+    top: 12px !important;
+    right: 12px !important;
+    
+    padding: .25rem .55rem !important;
+    letter-spacing: .08em !important;
+    z-index: 4 !important;
+    max-width: 92px !important;
+    white-space: nowrap !important;
+    box-shadow: 0 4px 12px rgba(0,0,16,.35);
+  }
+  /* Reserve space for the badge; allow eyebrow to wrap cleanly */
+  .cls-card-eyebrow{
+    padding-right: 112px !important;
+    
+    letter-spacing: .14em !important;
+    line-height: 1.4 !important;
+    word-spacing: 0 !important;
+  }
+  /* Hide the giant 01 / 02 watermark numeral on mobile (it overlapped the badge) */
+  .cls-card::after,
+  .cls-card .cls-card-num,
+  .cls-card::before{ display: none !important; }
+  /* Meta items: 2x2 grid instead of inline-wrap so 85 min / Live Class never breaks */
+  .cls-card-meta{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: .9rem .6rem !important;
+    margin-top: 1rem !important;
+    padding-top: 1rem !important;
+    border-top: 1px solid rgba(255,255,255,.12);
+  }
+  .cls-card-lsf .cls-card-meta{ border-top-color: rgba(0,0,30,.1); }
+  .cls-meta-item{
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: .15rem;
+  }
+  /* Remove dividers between meta items (they break in a grid) */
+  .cls-meta-item+.cls-meta-item::before{ display: none !important; }
+  .cls-meta-val{ font-size: 1.05rem !important; line-height: 1.1 !important; }
+  .cls-meta-key{  letter-spacing: .14em !important; opacity: .8; }
+
+  /* When ANY cluster is active, shrink the non-active card so it
+     doesn't visually block the revealed slider directly underneath. */
+  .cls-cards:has(.cls-card.is-active) .cls-card:not(.is-active){
+    min-height: 0 !important;
+    padding: .85rem 1.1rem !important;
+    opacity: .55;
+  }
+  .cls-cards:has(.cls-card.is-active) .cls-card:not(.is-active) .cls-card-sub,
+  .cls-cards:has(.cls-card.is-active) .cls-card:not(.is-active) .cls-card-meta{
+    display: none !important;
+  }
+  .cls-cards:has(.cls-card.is-active) .cls-card:not(.is-active) .cls-card-title{
+    font-size: 1.05rem !important;
+  }
+
+  /* Reveal panel: tighten and ensure full course card visible */
+  .cls-reveal{ margin-top: 1rem !important; }
+  .cls-rail{ padding: 0 4px !important; }
+  .cls-course{
+    flex: 0 0 86vw !important;
+    width: 86vw !important;
+    border-radius: 14px !important;
+  }
+  .cls-course-body{ padding: 1rem 1.1rem 1.2rem !important; }
+  .cls-course-name{ font-size: 1.45rem !important; }
+  .cls-course-hook{ font-size: .92rem !important; line-height: 1.5 !important; }
+
+  /* Arrows: floating over the rail */
+  .cls-slider{ position: relative; }
+  .cls-arrow{
+    position: absolute !important;
+    top: 38% !important;
+    width: 38px !important; height: 38px !important;
+    z-index: 6;
+    background: rgba(10,17,40,.92) !important;
+    color: #C8A96B !important;
+    border: 1px solid #C8A96B !important;
+    border-radius: 50% !important;
+  }
+  .cls-arrow-prev{ left: 4px !important; }
+  .cls-arrow-next{ right: 4px !important; }
+  .cls-arrow svg{ width: 16px; height: 16px; }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   5) MAPSTR  — fix tiny map + bug "Montmartre" panel overlap on mobile
+      User: "mapstr map tiny, bug card tiny image appear. map not visible"
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  /* Mapstr full-width on mobile — no horizontal padding to crop France */
+  #mapstr{ padding-left: 8px !important; padding-right: 8px !important; }
+  #mapstr .ms-shell{ padding-left: 0 !important; padding-right: 0 !important; }
+  #mapstr-mount{ padding: 0 !important; }
+  .ms-stage{
+    height: 64vh !important;
+    min-height: 520px !important;
+    border-radius: 16px !important;
+    width: 100% !important;
+  }
+  /* Bottom info card — contain so it doesn't overlap CARTO legend */
+  .ms-stage .ms-info, .ms-stage .ms-summary, .ms-stage .ms-legend-card{
+    left: 8px !important; right: 8px !important;
+    bottom: 8px !important;
+    max-width: calc(100% - 16px) !important;
+  }
+  /* CARTO attribution — keep small bottom right */
+  .ms-map .maplibregl-ctrl-bottom-right, .ms-map .maplibregl-ctrl-attrib{
+    bottom: 4px !important; right: 4px !important;
+  }
+  /* zoom controls — push to bottom-right, smaller, less obstructive */
+  .ms-zoom, .ms-zoom-controls, .mapboxgl-ctrl-top-right, .leaflet-control-zoom{
+    top: auto !important;
+    bottom: 92px !important;
+    right: 10px !important;
+    transform: scale(.85);
+    transform-origin: bottom right;
+  }
+  /* Place photo pop-up: PINNED to the viewport top so the internal map/page
+     scroll on marker-tap can never push it off-screen (it used to render above
+     the fold at a negative offset -> "no image pops out"). Fixed positioning +
+     full width makes the real place photo pop out large and clear on mobile. */
+  .ms-photo-pop{
+    position: fixed !important;
+    top: 72px !important;
+    left: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    border-radius: 14px !important;
+    z-index: 1300 !important;
+  }
+  .ms-photo-pop .ms-photo-pop-img{ aspect-ratio: 16 / 9 !important; }
+  /* The detail panel: true bottom sheet, pinned to the viewport bottom so it
+     sits below the photo pop-up with no overlap, and never covers the map. */
+  .ms-panel{
+    position: fixed !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    max-height: 46% !important;
+    border-radius: 18px 18px 0 0 !important;
+    padding: 1.1rem 1.1rem 1.4rem !important;
+    overflow-y: auto !important;
+    z-index: 1200 !important;
+  }
+  .ms-panel-city, .ms-panel h3{ font-size: 1.45rem !important; }
+  .ms-panel-region, .ms-panel-meta{  }
+  /* Tap-to-close affordance */
+  .ms-panel-close{
+    width: 38px !important; height: 38px !important;
+    top: 10px !important; right: 10px !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   6) PRINCIPLE CARDS  — were running into the next card on mobile
+      ("once each card clicked on in mobile, other card blocks").
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  .sorb-principles{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+  .sorb-pr{
+    padding: 1.3rem 1.2rem !important;
+    background: rgba(255,255,255,.04) !important;
+    border-radius: 14px !important;
+  }
+  .sorb-pr-tt{ font-size: 1.45rem !important; margin: .3rem 0 .5rem !important; }
+  .sorb-pr-tx{ font-size: .92rem !important; line-height: 1.55 !important; }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   7) HERO TYPOGRAPHY + LEADS  — tighten on small screens
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  .sorb-v4 .sorb-title{ font-size: 2rem !important; line-height: 1.12 !important; }
+  .sorb-v4 .sorb-eyebrow{  }
+  .sorb-v4 .sorb-sub{ font-size: .98rem !important; line-height: 1.55 !important; }
+  .hiw3-title{ font-size: 2rem !important; line-height: 1.12 !important; }
+  .display-md{ font-size: 1.85rem !important; line-height: 1.1 !important; }
+  .lede, .lede-c{ font-size: 1rem !important; line-height: 1.55 !important; }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   8) HERO — mobile rebuild: header clearance, brand CTA, readable copy
+      Fixes: H1 colliding with logo, light-grey unreadable sub,
+      generic blue button, edge-flush trustpilot block.
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  .hero{ min-height: 100vh !important; position: relative; }
+  .hero-bg img{ object-position: 76% center !important; }
+  /* Stronger left-side gradient so body copy stays readable over the suit/face */
+  .hero-bg::after{
+    content:''; position:absolute; inset:0;
+    background:
+      linear-gradient(180deg, rgba(0,0,20,.55) 0%, rgba(0,0,20,.15) 22%, rgba(0,0,20,0) 38%, rgba(0,0,20,.55) 100%),
+      linear-gradient(95deg, rgba(0,0,20,.88) 0%, rgba(0,0,20,.72) 38%, rgba(0,0,20,.32) 62%, rgba(0,0,20,0) 90%) !important;
+  }
+  /* Push hero content BELOW the fixed header (avoids the logo overlap) */
+  .hero .hero-content{
+    padding-top: 180px !important;
+    padding-bottom: 40px !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+  .hero h1{
+    font-size: 2.35rem !important;
+    line-height: 1.08 !important;
+    margin: 0 0 1.1rem !important;
+    color:#F3EEE3 !important;
+    text-shadow: 0 2px 24px rgba(0,0,16,.55);
+  }
+  .hero h1 .gold-ital{ color:#E8C77A !important; }
+  .hero-sub{
+    font-size: 1.02rem !important;
+    line-height: 1.55 !important;
+    color: rgba(243,238,227,.95) !important;
+    max-width: 30ch !important;
+    margin: 0 0 1.8rem !important;
+    text-shadow: 0 1px 16px rgba(0,0,16,.6);
+  }
+  /* Brand-correct gold CTA on mobile (replaces baby-blue gradient) */
+  /* Hero CTA + Trustpilot: ROW like desktop — gold CTA next to Trustpilot */
+  .hero .hero-ctas{
+    display:flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    width: 100%;
+    flex-wrap: wrap !important;
+  }
+  .hero .hero-ctas .btn-gold,
+  .hero .hero-ctas .btn.btn-gold,
+  .hero .hero-ctas a.btn{
+    background: linear-gradient(135deg,#F3DFA6 0%,#D9B45A 45%,#B8862F 100%) !important;
+    color:#1A1205 !important;
+    border: 1px solid rgba(243,223,166,.75) !important;
+    box-shadow: 0 0 0 1px rgba(217,180,90,.35), 0 10px 30px rgba(184,134,47,.35), 0 0 48px rgba(217,180,90,.28), inset 0 1px 0 rgba(255,248,225,.6) !important;
+    text-shadow: 0 1px 1px rgba(255,246,220,.5) !important;
+    font-weight: 700 !important;
+    letter-spacing: .14em !important;
+    text-transform: uppercase !important;
+    
+    padding: 1rem 1.4rem !important;
+    border-radius: 14px !important;
+    width: auto !important;
+    max-width: none !important;
+    text-align: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+  }
+  /* Trustpilot block: inline beside CTA */
+  .hero-trustpilot{
+    display:flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: .3rem !important;
+    flex-wrap: wrap !important;
+    margin: 0 !important;
+    padding: 0 0 0 .3rem !important;
+    border-top: 0 !important;
+    border-left: 1px solid rgba(255,255,255,.18) !important;
+    padding-left: .9rem !important;
+    width: auto !important;
+    max-width: none !important;
+    flex: 0 0 auto !important;
+  }
+  .hero-trustpilot .tp-logo img{ height: 16px !important; width:auto !important; }
+  .hero-trustpilot .tp-stars img{ height: 18px !important; width:auto !important; }
+  .hero-trustpilot .tp-rating{
+    
+    letter-spacing: .22em !important;
+    color: rgba(243,238,227,.85) !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   8b) LEARNING JOURNEY — CEFR timeline as single horizontal row
+       Was wrapping to 2 columns; hide carousel arrows (overlap card)
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  /* CEFR ladder — force a single horizontal row, tight gaps, smaller dots */
+  .hiw3-arc{
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    gap: .3rem !important;
+    padding: 0 4px !important;
+    margin-bottom: 2.4rem !important;
+  }
+  .hiw3-arc-track{ display: block !important; }
+  .hiw3-arc .han{ flex: 1 1 0 !important; min-width: 0 !important; }
+  .hiw3-arc .han-dot{ width: 11px !important; height: 11px !important; }
+  .hiw3-arc .han-lvl{  margin-top: .55rem !important; }
+  .hiw3-arc .han-cap{  letter-spacing: .12em !important; }
+  /* Hide the prev/next round arrows on mobile — swipe is the gesture */
+  .hiw3-slider .hiw3-arrow{ display: none !important; }
+  /* Add a swipe hint above the cards */
+  .hiw3-slider::before{
+    content: none !important; /* swipe hint removed */
+    display: block; text-align: center;
+    font-size: .68rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--gold-deep); margin-bottom: .8rem; opacity: .75;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   8c) eTEACHER PLATFORM — hide the carousel round arrows on mobile
+       They sit over the dot pagination and visually clutter the rail.
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  .etg2-section .etg2-arrow,
+  .etg3-arrow,
+  .etg3-controls,
+  #platform .etg3-arrow,
+  #platform .etg3-controls,
+  #platform .carousel-prev, #platform .carousel-next,
+  #platform [class*="-prev"], #platform [class*="-next"]{ display: none !important; }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   8d) JULIEN — keep the SOUND toggle INSIDE the card on mobile
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  .jul-hero{ position: relative; overflow: hidden !important; }
+  .jul-hero .jul-hero-card{ position: relative; overflow: hidden !important; }
+  /* Keep the real SOUND toggle INSIDE the card */
+  .jul-hero .jul-hero-card > .jul-hero-sound{
+    position: absolute !important;
+    bottom: 14px !important;
+    right: 14px !important;
+    top: auto !important;
+    left: auto !important;
+    
+    padding: .45rem .85rem !important;
+    z-index: 5;
+  }
+  /* Hide any duplicate SOUND button that's a sibling of the card or section root */
+  .jul-hero > .jul-hero-sound,
+  .jul-hero .jul-hero-inner > .jul-hero-sound,
+  .jul-hero .sound-toggle,
+  .jul-hero > .sound-toggle,
+  /* Hide JS-injected fa-sound-btn inside Julien fold — the fold has its own toggle */
+  #julien-fold .fa-sound-btn,
+  .jul-hero .fa-sound-btn{ display: none !important; }
+}
+/* Belt-and-braces: hide fa-sound-btn inside Julien fold at ALL viewports */
+#julien-fold .fa-sound-btn{ display: none !important; }
+
+/* ─────────────────────────────────────────────────────────────────
+   9) TEACHERS (.fac-gallery)  — convert 8-tall stack into swipe rail
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  .fac-gallery{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 4px 16px 18px !important;
+    margin: 1.6rem -16px 0 !important;
+  }
+  .fac-gallery::-webkit-scrollbar{ display:none; }
+  .fac-card{
+    flex: 0 0 64vw !important;
+    width: 64vw !important;
+    scroll-snap-align: center !important;
+    display: block !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    background: #fff !important;
+    box-shadow: 0 18px 40px -22px rgba(8,14,43,.35) !important;
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+  .fac-photo{ aspect-ratio: 3/4; overflow: hidden; }
+  .fac-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .fac-info{ padding: .8rem .9rem 1rem; }
+  .fac-info{
+    padding: .8rem .9rem 1rem !important;
+    background: #fff !important;
+    position: relative;
+    z-index: 2;
+  }
+  .fac-name{ font-family: var(--serif); font-size: 1.05rem; font-weight: 700; margin: 0 0 .15rem; color: #0A1128 !important; }
+  .fac-region{ font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: #8C6D2E !important; font-weight: 600; }
+
+  /* swipe hint under teachers */
+  .tctr-head::after{
+    content: none !important; /* swipe hint removed */
+    display: block;
+    margin-top: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: .68rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: rgba(200,169,107,.7);
+    text-align: center;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   10) TESTIMONIALS (.tst-track)  — swipe rail of 5 cards
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  #testimonials .tst-stage{ overflow: hidden; }
+  #testimonials .tst-track{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 4px 16px 18px !important;
+    margin: 1.4rem -16px 0 !important;
+  }
+  #testimonials .tst-track::-webkit-scrollbar{ display: none; }
+  #testimonials .tst-card{
+    flex: 0 0 86vw !important;
+    width: 86vw !important;
+    max-width: 86vw !important;
+    min-height: 0 !important;
+    height: auto !important;
+    scroll-snap-align: center !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+    background: transparent !important;
+    border: 1px solid rgba(201,162,78,.28) !important;
+    box-shadow:
+      0 28px 60px -22px rgba(0,0,0,.85),
+      0 0 0 1px rgba(201,162,78,.18) !important;
+    display: block !important;
+    padding: 0 !important;
+  }
+  #testimonials .tst-card img{
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    border-radius: 22px !important;
+  }
+
+  #testimonials .tst-head::after{
+    content: none !important; /* swipe hint removed */
+    display: block;
+    margin-top: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: .68rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: rgba(216,188,133,.6);
+    text-align: center;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   11) ACADOMIA POWER stats (.ac-power-figs)  — swipe rail on mobile
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  .ac-power-figs{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    grid-template-columns: none !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 4px 16px 18px !important;
+    margin: 1.4rem -16px 0 !important;
+    max-width: none !important;
+  }
+  .ac-power-figs::-webkit-scrollbar{ display: none; }
+  .ac-power-figs > *{
+    flex: 0 0 76vw !important;
+    width: 76vw !important;
+    scroll-snap-align: center !important;
+    min-width: 0 !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   12) Courses swipe hint
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  #courses .wrap > div:first-child::after{
+    content: none !important; /* swipe hint removed */
+    display: block;
+    margin-top: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: .68rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: rgba(200,169,107,.7);
+    text-align: center;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   14) SORBONNE METHOD — principle cards become a swipe rail on mobile,
+        and citation links become a horizontal rail (not vertical stack).
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  /* Principles -> horizontal swipe rail */
+  .sorb-principles{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: .9rem !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: .25rem .25rem 1rem !important;
+    margin: 0 -1rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .sorb-principles .sorb-pr{
+    flex: 0 0 86% !important;
+    max-width: 86% !important;
+    min-height: 360px !important;
+    scroll-snap-align: center !important;
+    /* DEEP NAVY 3D PREMIUM CARD */
+    position: relative !important;
+    background:
+      radial-gradient(110% 70% at 0% 0%, rgba(232,199,122,.22), transparent 55%),
+      radial-gradient(90% 70% at 100% 100%, rgba(201,162,78,.14), transparent 60%),
+      linear-gradient(165deg, #0E1E40 0%, #061029 60%, #04081A 100%) !important;
+    border: 1px solid rgba(216,188,133,.38) !important;
+    border-radius: 22px !important;
+    padding: 1.9rem 1.6rem 1.9rem !important;
+    box-shadow:
+      0 1px 0 rgba(232,199,122,.22) inset,
+      0 -1px 0 rgba(255,255,255,.05) inset,
+      0 24px 48px -16px rgba(0,0,0,.65),
+      0 56px 100px -32px rgba(0,0,16,.7),
+      0 0 0 1px rgba(216,188,133,.10) inset,
+      0 0 60px -10px rgba(216,188,133,.18) !important;
+    transform: perspective(1100px) rotateX(2deg) !important;
+    transform-origin: 50% 100% !important;
+    overflow: hidden !important;
+    color: #F3EEE3 !important;
+  }
+  /* Top gold ribbon */
+  .sorb-principles .sorb-pr::before{
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important; left: 0 !important; right: 0 !important;
+    height: 4px !important;
+    background: linear-gradient(90deg, transparent 0%, #E8C77A 25%, #C9A24E 50%, #E8C77A 75%, transparent 100%) !important;
+    opacity: 1 !important;
+  }
+  /* Huge watermark numeral on the right (decorative) */
+  .sorb-principles .sorb-pr::after{
+    content: attr(data-bg-num) !important;
+    position: absolute !important;
+    right: -8px !important; bottom: -34px !important;
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    font-size: 11rem !important;
+    font-weight: 700 !important;
+    color: rgba(216,188,133,.07) !important;
+    line-height: 1 !important;
+    pointer-events: none !important;
+  }
+  /* Foreground numeral in gold gradient */
+  .sorb-principles .sorb-pr .sorb-pr-no{
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, #FFE9B0 0%, #E8C77A 40%, #C9A24E 100%) !important;
+    -webkit-background-clip: text !important;
+            background-clip: text !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    margin: 0 0 .4rem !important;
+    text-shadow: 0 2px 12px rgba(216,188,133,.25) !important;
+    position: relative !important; z-index: 2 !important;
+  }
+  .sorb-principles .sorb-pr .sorb-pr-fr{
+    color: #E8C77A !important;
+    font-size: 1.05rem !important;
+    font-weight: 500 !important;
+    margin: 0 0 .6rem !important;
+    font-style: italic !important;
+    opacity: .92 !important;
+    position: relative !important; z-index: 2 !important;
+  }
+  .sorb-principles .sorb-pr .sorb-pr-tt{
+    font-size: 1.55rem !important;
+    color: #FFFFFF !important;
+    margin: 0 0 .8rem !important;
+    font-weight: 600 !important;
+    line-height: 1.18 !important;
+    position: relative !important; z-index: 2 !important;
+  }
+  .sorb-principles .sorb-pr .sorb-pr-tx{
+    color: rgba(243,238,227,.82) !important;
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+    position: relative !important; z-index: 2 !important;
+  }
+
+  /* Citations -> horizontal pill rail, premium look */
+  .sorb-cred-links,
+  .sorb-cred-links-v2{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: .65rem !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: .25rem 1rem 1rem !important;
+    margin: 0 -1rem !important;
+  }
+  .sorb-cred-links .sorb-cite,
+  .sorb-cred-links-v2 .sorb-cite{
+    flex: 0 0 78% !important;
+    max-width: 78% !important;
+    scroll-snap-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: .65rem !important;
+    padding: .85rem 1rem !important;
+    background: linear-gradient(135deg, #FFF 0%, #FAF6EC 100%) !important;
+    border: 1px solid rgba(140, 35, 36, .18) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 14px rgba(28,22,15,.06), 0 1px 0 rgba(255,255,255,.6) inset !important;
+    text-decoration: none !important;
+    color: #1a1a1a !important;
+  }
+  .sorb-cite .sorb-cite-yr{
+    flex: 0 0 auto !important;
+    background: linear-gradient(135deg, #8C2324 0%, #6A1A1B 100%) !important;
+    color: #fff !important;
+    
+    font-weight: 700 !important;
+    letter-spacing: .06em !important;
+    padding: .35rem .55rem !important;
+    border-radius: 8px !important;
+    text-transform: uppercase !important;
+    min-width: 48px !important;
+    text-align: center !important;
+  }
+  .sorb-cite .sorb-cite-tx{
+    flex: 1 1 auto !important;
+    
+    font-weight: 600 !important;
+    line-height: 1.25 !important;
+    color: #1a1a1a !important;
+  }
+  .sorb-cite .sorb-cite-arrow{
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+    color: #C9A24E !important;
+    font-size: 1rem !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   15) TESTIMONIALS FOLD — premium pitch-black background (mobile)
+   Reinforce the deep black + warm gold accents.
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  .tst-fold{
+    background:
+      radial-gradient(120% 80% at 50% 0%, rgba(201,162,78,.10), transparent 55%),
+      radial-gradient(80% 60% at 50% 100%, rgba(140,35,36,.08), transparent 60%),
+      #000 !important;
+    padding: 6.5rem 0 7rem !important;
+    min-height: 720px !important;
+  }
+  .tst-fold::before{
+    content: '' !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.02) 0%, transparent 30%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence baseFrequency='0.9'/></filter><rect width='200' height='200' filter='url(%23n)' opacity='0.04'/></svg>") !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+  }
+  .tst-fold .wrap{ position: relative; z-index: 1; }
+  /* Eyebrow pill — gold border */
+  .tst-fold .tst-eyebrow,
+  .tst-fold [class*="eyebrow"]{
+    border: 1px solid rgba(201,162,78,.45) !important;
+    background: rgba(0,0,0,.4) !important;
+    color: #E8C77A !important;
+  }
+  /* Cards on solid black, gold edge */
+  .tst-card{
+    background: linear-gradient(180deg, #0A0A0F 0%, #000 100%) !important;
+    border: 1px solid rgba(201,162,78,.16) !important;
+    box-shadow:
+      0 24px 48px rgba(0,0,0,.6),
+      0 0 0 1px rgba(201,162,78,.08) inset !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   13) Universal mobile slider dots + edge-peek shadows
+   Makes it OBVIOUS every rail is swipeable on mobile.
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width: 760px){
+  .fa-rail-dots{
+    display: flex;
+    justify-content: center;
+    gap: .55rem;
+    margin: .85rem 0 1rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+  }
+  .fa-rail-dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    background: rgba(201, 162, 78, .28);
+    transition: background .25s ease, transform .25s ease, width .25s ease;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px transparent;
+  }
+  .fa-rail-dot.is-active{
+    background: #C9A24E;
+    width: 22px;
+    border-radius: 4px;
+  }
+  /* On dark sections, brighter dots */
+  .bg-navy .fa-rail-dot,
+  .bg-navy-deep .fa-rail-dot,
+  section[id="culture"] .fa-rail-dot,
+  section[id="testimonials"] .fa-rail-dot,
+  section[id="julien-fold"] .fa-rail-dot{
+    background: rgba(232, 199, 122, .38);
+  }
+  .bg-navy .fa-rail-dot.is-active,
+  .bg-navy-deep .fa-rail-dot.is-active,
+  section[id="culture"] .fa-rail-dot.is-active,
+  section[id="testimonials"] .fa-rail-dot.is-active{
+    background: #E8C77A;
+  }
+
+  /* Visible scroll hint: subtle scrollbar (Chrome/iOS) */
+  .cls-cards, .pillars-grid, .hiw3-journey, .fac-gallery, .tst-track, .etg3-track{
+    scroll-padding-left: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(201,162,78,.45) transparent;
+  }
+  .cls-cards::-webkit-scrollbar,
+  .pillars-grid::-webkit-scrollbar,
+  .hiw3-journey::-webkit-scrollbar,
+  .fac-gallery::-webkit-scrollbar,
+  .tst-track::-webkit-scrollbar,
+  .etg3-track::-webkit-scrollbar{ height: 3px; }
+  .cls-cards::-webkit-scrollbar-thumb,
+  .pillars-grid::-webkit-scrollbar-thumb,
+  .hiw3-journey::-webkit-scrollbar-thumb,
+  .fac-gallery::-webkit-scrollbar-thumb,
+  .tst-track::-webkit-scrollbar-thumb,
+  .etg3-track::-webkit-scrollbar-thumb{
+    background: rgba(201,162,78,.45); border-radius: 3px;
+  }
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   17) SORBONNE — calm premium pass: less ornament, more hierarchy
+   ───────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+  /* Card sizing + breathing room */
+  .sorb-principles .sorb-pr{
+    flex: 0 0 84% !important;
+    max-width: 84% !important;
+    min-height: 420px !important;
+    padding: 2.2rem 1.7rem 2rem !important;
+    transform: none !important;        /* remove the 3D tilt — was reading wrong */
+    border-radius: 24px !important;
+    background:
+      radial-gradient(120% 80% at 0% 0%, rgba(232,199,122,.16), transparent 55%),
+      linear-gradient(165deg, #0E1E40 0%, #061029 60%, #04081A 100%) !important;
+    box-shadow:
+      0 1px 0 rgba(232,199,122,.18) inset,
+      0 30px 60px -20px rgba(0,0,0,.7),
+      0 0 0 1px rgba(216,188,133,.08) inset !important;
+  }
+  /* Soften gold ribbon */
+  .sorb-principles .sorb-pr::before{
+    height: 3px !important;
+    background: linear-gradient(90deg, transparent, #C9A24E 50%, transparent) !important;
+    opacity: .8 !important;
+  }
+  /* Calm the watermark numeral */
+  .sorb-principles .sorb-pr::after{
+    font-size: 9rem !important;
+    color: rgba(216,188,133,.05) !important;
+    right: -4px !important;
+    bottom: -18px !important;
+  }
+  /* Foreground numeral — bigger but quieter */
+  .sorb-principles .sorb-pr .sorb-pr-no{
+    font-size: 2.6rem !important;
+    margin: 0 0 .6rem !important;
+    text-shadow: none !important;
+    letter-spacing: -.01em !important;
+  }
+  .sorb-principles .sorb-pr .sorb-pr-fr{
+    font-size: 1rem !important;
+    color: rgba(232,199,122,.78) !important;
+    margin: 0 0 1rem !important;
+  }
+  .sorb-principles .sorb-pr .sorb-pr-tt{
+    font-size: 1.45rem !important;
+    line-height: 1.22 !important;
+    margin: 0 0 .9rem !important;
+    color: #FFF !important;
+    letter-spacing: -.01em !important;
+  }
+  .sorb-principles .sorb-pr .sorb-pr-tx{
+    font-size: 1.02rem !important;
+    line-height: 1.7 !important;
+    color: rgba(243,238,227,.88) !important;
+  }
+  /* Section title polish */
+  .sorb-v4 .sorb-title{
+    font-size: 2.15rem !important;
+    line-height: 1.1 !important;
+    letter-spacing: -.015em !important;
+  }
+}
+
+/* ============================================================
+   MOBILE COMPREHENSIVE RESCUE (must come LAST to win cascade)
+   Targets phones <=760px. Forces unified hierarchy, kills overflow,
+   sliders, container gutters, lede sizing.
+   ============================================================ */
+@media (max-width: 760px) {
+
+  /* === HARD HORIZONTAL OVERFLOW LOCK ===
+     Root cause: swipe past slider end was chaining scroll up to body.
+     overscroll-behavior-x: none on every horizontal scroller blocks chain.
+     html/body locked with overflow:clip (stronger than hidden) + width:100%. */
+  html, body {
+    overflow-x: clip !important;
+    overflow-x: hidden !important;   /* fallback for older WebKit */
+    max-width: 100% !important;
+    width: 100% !important;
+    overscroll-behavior-x: none !important;
+    touch-action: pan-y !important;
+  }
+  body * { max-width: 100%; box-sizing: border-box; }
+
+  /* Every horizontal scroller must contain its own scroll chain */
+  .cls-cards, .s5-grid, .pillars-grid, .culture-grid,
+  .ac-power-figs, #hiw3-journey, .hiw3-steps,
+  .tctr-badges, .fac-gallery, .tst-track, .etg3-track,
+  [class*="-track"], [class*="-rail"], [class*="-slider"], [class*="-swiper"] {
+    overscroll-behavior-x: contain !important;
+    overscroll-behavior: contain !important;
+    touch-action: pan-x !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* Universal container gutters */
+  section, .section, .section-pad,
+  .wrap, .container, [class*="-wrap"], [class*="container"],
+  .s5-wrap, .culture-head, .hiw3-head, .tctr-head, .ms-wrap,
+  .ac-power, .ac-power-wrap, .tst-fold, .etg, .jul-home,
+  .lead-magnet, .lg-fold, #lead-form .lg-wrap, #faq, #faq .wrap {
+    padding-left: clamp(1rem, 4vw, 1.4rem) !important;
+    padding-right: clamp(1rem, 4vw, 1.4rem) !important;
+  }
+  /* Children inside section that already have padding -> reset margins */
+  .s5-wrap, .culture-head, .hiw3-head, .tctr-head, .ms-wrap, .lg-wrap {
+    margin-left: 0 !important; margin-right: 0 !important; max-width: 100% !important;
+  }
+
+  /* ---- TYPOGRAPHY HIERARCHY (force consistency) ---- */
+  /* H1 / hero */
+  h1, .h1, .hero h1, .hero-title { font-size: clamp(1.85rem, 7.2vw, 2.35rem) !important; line-height: 1.12 !important; letter-spacing: -0.012em !important; }
+  /* H2 / section title (Cormorant) */
+  h2, .h2, .s5-title, .culture-title, .hiw3-title, .tctr-title,
+  .ac-power-title, .tst-title, .etg-title, .jh-title, .lg-title,
+  .fold-title, .ms-title, .faq-title, .cta-title,
+  .courses-title, #courses .h2, #culture .h2 {
+    font-size: clamp(1.5rem, 5.6vw, 1.9rem) !important;
+    line-height: 1.18 !important;
+    letter-spacing: -0.008em !important;
+    text-wrap: balance;
+  }
+  /* H3 / card title */
+  h3, .h3, .cls-card-title, .cls-course-name, .crd-title, .fac-name, .stp-title, .pl-title, .tst-name, .stat-num {
+    font-size: clamp(1.15rem, 4.6vw, 1.4rem) !important;
+    line-height: 1.22 !important;
+  }
+  /* Eyebrow */
+  .eyebrow, .kicker, .s5-kicker, .ac-power-kicker, .tst-kicker, .etg-kicker, .jh-kicker, .lg-kicker, .culture-kicker, .hiw3-kicker, .tctr-kicker, .ms-kicker, .faq-kicker, .cta-kicker {
+    
+    letter-spacing: 0.20em !important;
+  }
+  /* LEDE — unified subheader (highest specificity wins) */
+  body .lede,
+  body .lede.lede-c,
+  body .lede-c,
+  body .s5-lede,
+  body .lg-lede,
+  body .ms-lede,
+  body #culture .lede,
+  body #courses .lede,
+  body #teachers .lede,
+  body #how-it-works .lede,
+  body #method-fold.s5 .s5-lede,
+  body .jul-home .lede,
+  body .cta-band .lede,
+  body #acadomia-power .lede,
+  body #lead-form .lg-lede,
+  body .tst-fold .lede,
+  body .etg .lede {
+    font-size: 0.98rem !important;
+    line-height: 1.58 !important;
+    max-width: 38ch !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-wrap: pretty;
+    font-weight: 300 !important;
+  }
+  /* Body paragraphs in card bodies */
+  .cls-course-hook, .crd-body, .stp-body, .pl-body, .tst-quote, .fac-bio, .stat-label, .ac-stat-label, .pillar-body {
+    font-size: 0.94rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* ---- HEADER / LOGO ---- */
+  .site-header, .nav, header.nav, .nav-wrap {
+    padding-left: 1rem !important; padding-right: 1rem !important;
+  }
+  .logo, .nav-logo, .brand, .brand-logo { max-width: 160px !important; height: auto !important; }
+  .logo img, .nav-logo img, .brand img { max-width: 100% !important; height: auto !important; display: block; }
+
+  /* ---- COURSES — horizontal slider, compact card height ---- */
+  .cls-cards {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
+    grid-template-columns: none !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    padding: 4px 16px 18px !important;
+    margin: 0 -16px !important;
+  }
+  .cls-rail { display: flex !important; flex-direction: row !important; overflow-x: auto !important; gap: 12px !important; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 0 1rem !important; margin: 0 -1rem !important; scrollbar-width: none; }
+  .cls-rail::-webkit-scrollbar { display: none; }
+  .cls-rail > .cls-course { flex: 0 0 84vw !important; max-width: 84vw !important; width: 84vw !important; scroll-snap-align: start !important; }
+  /* Tighten course card height — was 498px, target ~360px */
+  #courses .cls-card,
+  .cls-card.cls-card-fa,
+  .cls-card {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 1.1rem 1.15rem 1.1rem !important;
+  }
+  #courses .cls-card-title, .cls-card-title { font-size: 1.35rem !important; line-height: 1.15 !important; margin: .25rem 0 .35rem !important; }
+  #courses .cls-card-sub, .cls-card-sub {  line-height: 1.45 !important; margin: 0 0 .6rem !important; }
+  #courses .cls-card-eyebrow, .cls-card-eyebrow {  margin-bottom: .35rem !important; }
+  #courses .cls-card-meta, .cls-card-meta { margin-top: .6rem !important; padding-top: .7rem !important; gap: .5rem .5rem !important; }
+  #courses .cls-meta-val { font-size: 1.05rem !important; }
+  #courses .cls-meta-key {  }
+  #courses .cls-card-action {  margin-top: .7rem !important; padding-top: .6rem !important; }
+
+  /* ---- HERO — lighten top of gradient so image is visible ---- */
+  .hero-bg::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(8,14,43,0.05) 0%,
+      rgba(8,14,43,0.10) 35%,
+      rgba(8,14,43,0.55) 70%,
+      rgba(8,14,43,0.90) 100%
+    ) !important;
+  }
+  .hero-bg img { object-fit: cover !important; object-position: center 35% !important; width: 100% !important; height: 100% !important; }
+
+  /* ---- TEACHERS slider ---- */
+  .faculty-grid, .fac-grid, .tctr-grid {
+    display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important;
+    overflow-x: auto !important; gap: 12px !important; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; padding: 0 1rem !important; margin: 0 -1rem !important;
+    scrollbar-width: none;
+  }
+  .faculty-grid::-webkit-scrollbar, .fac-grid::-webkit-scrollbar, .tctr-grid::-webkit-scrollbar { display: none; }
+  .faculty-grid > .fac-card, .fac-grid > .fac-card, .tctr-grid > .fac-card {
+    flex: 0 0 78vw !important; max-width: 78vw !important; width: 78vw !important; scroll-snap-align: start !important;
+  }
+
+  /* ---- TESTIMONIALS — kill overflow, contain card ---- */
+  .tst-fold, .tst-wrap, .tst-track, .tst-card, [class*="tst-"] { max-width: 100% !important; box-sizing: border-box; }
+  .tst-track, .testimonials-track { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; overflow-x: auto !important; gap: 12px !important; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 0 1rem !important; margin: 0 -1rem !important; scrollbar-width: none; }
+  .tst-track::-webkit-scrollbar, .testimonials-track::-webkit-scrollbar { display: none; }
+  .tst-card, .testimonial-card { flex: 0 0 84vw !important; width: 84vw !important; max-width: 84vw !important; scroll-snap-align: start !important; padding: 1.4rem 1.2rem !important; }
+  .tst-name, .testimonial-name { font-size: 1.05rem !important; word-break: break-word; }
+  .tst-quote, .testimonial-quote { font-size: .95rem !important; line-height: 1.5 !important; }
+  .tst-avatar, .testimonial-avatar { width: 96px !important; height: 96px !important; }
+
+  /* ---- ACADOMIA stats stack vertically ---- */
+  .ac-stats, .ac-power-stats { display: flex !important; flex-direction: column !important; gap: 1.2rem !important; align-items: center !important; }
+  .ac-stat, .ac-power-stat { width: 100% !important; max-width: 100% !important; text-align: center !important; }
+  .ac-stat-num, .ac-power-stat-num, .stat-num { font-size: 2.2rem !important; }
+  .ac-stat-label, .ac-power-stat-label {  letter-spacing: 0.18em !important; }
+  .ac-marquee, .ac-marquee-track { max-width: 100% !important; }
+
+  /* ---- MAPSTR — contain modal, fix image ---- */
+  .ms-section, #mapstr, .ms-wrap { max-width: 100% !important; overflow: hidden; }
+  .ms-card, .ms-modal { max-width: calc(100vw - 2rem) !important; left: 1rem !important; right: 1rem !important; }
+  .ms-modal .ms-kicker {  line-height: 1.4 !important; word-break: normal; padding-right: 36px; }
+  .ms-tooltip, .mapboxgl-popup { max-width: 220px !important; }
+  .ms-modal img, .ms-card img { max-width: 100% !important; height: auto !important; display: block; }
+
+  /* ===== TYPOGRAPHY OVERHAUL — bigger headers, proper hierarchy ===== */
+  body h1, .hero h1, .hero-title{
+    font-size: clamp(2.4rem, 9vw, 3.1rem) !important;
+    line-height: 1.08 !important;
+    font-weight: 500 !important;
+    letter-spacing: -.01em !important;
+  }
+  body h2,
+  #courses h2, #culture h2, #acadomia-power h2, #teachers h2,
+  .jul-home h2, .tst-head h2, #testimonials h2, #faq h2,
+  .hiw3-title, #mapstr h2, #mapstr .ms-title,
+  .lj-title, .stp-title{
+    font-size: clamp(2.05rem, 7.6vw, 2.6rem) !important;
+    line-height: 1.1 !important;
+    font-weight: 500 !important;
+    letter-spacing: -.005em !important;
+  }
+  /* Sorbonne h2 was tiny (16.8px) — fix specifically */
+  #method-fold h2, #method-fold .s5-title{
+    font-size: clamp(2.05rem, 7.6vw, 2.6rem) !important;
+    line-height: 1.1 !important;
+    font-weight: 500 !important;
+  }
+  body h3, .hiw3-name, .cls-course-title, .fac-name, .s5-cardtitle{
+    font-size: 1.32rem !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+  }
+  body .eyebrow, body [class*="eyebrow"],
+  body .kicker, body [class*="kicker"],
+  body .ms-eyebrow, .s5-eyebrow, .hiw3-eyebrow,
+  .ac-power-eyebrow, .tst-eyebrow, .faq-eyebrow,
+  .tch-eyebrow, .cls-eyebrow, .jul-eyebrow{
+    
+    letter-spacing: .22em !important;
+    font-weight: 600 !important;
+  }
+  body p, body .lede, body .section-lede,
+  body .hero .lede, body .hero p,
+  body #courses .lede, body #method-fold .lede,
+  body #culture p, body .hiw3-lede, body .jul-lede,
+  body .tst-head p, body .faq-lede, body .lj-lede{
+    font-size: 1.06rem !important;
+    line-height: 1.6 !important;
+    font-weight: 300 !important;
+    max-width: 38ch !important;
+    text-wrap: pretty !important;
+  }
+
+  /* ---- LEARNING JOURNEY steps — stack and contain ---- */
+  .lj-steps, .stp-rail, .stp-row { display: flex !important; flex-direction: column !important; gap: 1.4rem !important; max-width: 100% !important; }
+  .lj-dots, .stp-dots { max-width: 100% !important; overflow: hidden; }
+
+  /* ---- JULIEN HOME — make him BIG on mobile (was 294px on 390 viewport) ---- */
+  .jul-home .jul-home-split{
+    grid-template-columns: 1fr !important;
+    gap: 1.4rem !important;
+  }
+  .jul-home .jul-cutout-wrap{
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .jul-home .jul-cutout,
+  .jul-home #jul-home-video{
+    width: 78% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  .jul-home .jul-cutout-badge{
+    
+  }
+  .jul-home .jul-home-sound{
+    margin: 1rem auto 0 !important;
+    padding: .55rem 1rem !important;
+    min-width: 0 !important;
+    white-space: nowrap !important;
+  }
+  .jul-home .jul-home-sound .jhs-label{
+    
+    letter-spacing: .16em !important;
+    white-space: nowrap !important;
+  }
+
+  /* ---- LEARNING JOURNEY CEFR arc — labels need to fit ---- */
+  .hiw3-arc{ gap: .1rem !important; padding: 0 .15rem !important; }
+  .hiw3-arc .han{ min-width: 0 !important; flex: 1 1 0 !important; }
+  .hiw3-arc .han-lvl{  }
+  .hiw3-arc .han-cap{ font-size: .48rem !important; line-height: 1.12 !important; word-break: keep-all !important; overflow-wrap: normal !important; hyphens: none !important; letter-spacing: .02em !important; white-space: normal !important; }
+
+  /* ---- SORBONNE citations — clean stack on mobile ---- */
+  #method-fold.s5 .s5-cred-list{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem 0 !important;
+  }
+  #method-fold.s5 .s5-cite{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: baseline !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: .45rem !important;
+    padding: 0 .4rem !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  #method-fold.s5 .s5-cite + .s5-cite::before{ display: none !important; }
+  #method-fold.s5 .s5-cite-yr{
+    
+    color: #D8BC85 !important;
+  }
+  #method-fold.s5 .s5-cite-tx{
+    font-size: .95rem !important;
+    line-height: 1.35 !important;
+    text-align: center !important;
+  }
+  #method-fold.s5 .s5-cite-arrow{
+    
+  }
+
+  /* ---- LEAD FORM ---- */
+  #lead-form .lg-wrap, #lead-form .lg-grid { grid-template-columns: 1fr !important; display: flex !important; flex-direction: column !important; gap: 1.6rem !important; }
+  #lead-form input, #lead-form select, #lead-form textarea { font-size: 16px !important; /* prevents iOS zoom */ }
+
+  /* ---- HERO — tighten on mobile ---- */
+  .hero, .hero-fold { padding-top: 5rem !important; padding-bottom: 3rem !important; }
+  .hero h1 { padding: 0 .4rem; }
+
+  /* ---- FAQ ---- */
+  .faq-list { max-width: 100% !important; }
+  .faq-btn, .faq-q { font-size: 1.05rem !important; padding: 1.2rem 0.2rem !important; gap: 0.8rem !important; }
+  .faq-body { font-size: 0.95rem !important; }
+
+  /* ---- Generic safety: any element with absolute fixed width gets capped ---- */
+  [style*="width:"][style*="px"] { max-width: 100% !important; }
+}
+
+/* ============================================================
+   AWARD-WINNING MOBILE REBUILD — June 13 2026
+   Fold-by-fold mobile polish. Loads last → wins cascade.
+   Constraint: mobile only (≤760px). Desktop untouched.
+   ============================================================ */
+@media (max-width: 760px) {
+
+  /* GLOBAL: lock horizontal overflow, normalize gutters */
+  html, body { overflow-x: hidden !important; }
+  body { -webkit-text-size-adjust: 100% !important; }
+  * { max-width: 100% !important; }
+  img, video, iframe { max-width: 100% !important; height: auto !important; }
+  /* Inline SVG icons keep their designed size; a blanket height:auto made every icon 150px tall */
+  svg { max-width: 100%; }
+
+  /* Reusable container gutter */
+  .wrap, section > .wrap, section > .container {
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+    width: 100% !important;
+  }
+
+  /* ============================================================
+     FOLD 1 — HERO: image visible, gradient scrim, premium typo
+     ============================================================ */
+  .hero {
+    min-height: 92vh !important;
+    padding: 8.5rem 0 4rem !important;
+    display: flex !important;
+    align-items: flex-end !important;
+  }
+  .hero-bg { position: absolute !important; inset: 0 !important; z-index: 0 !important; }
+  .hero-bg img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 60% 35% !important;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+  .hero-bg::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(180deg,
+      rgba(8,14,43,0.05) 0%,
+      rgba(8,14,43,0.10) 35%,
+      rgba(8,14,43,0.55) 72%,
+      rgba(8,14,43,0.90) 100%) !important;
+    z-index: 1 !important;
+  }
+  .hero-content {
+    position: relative !important;
+    z-index: 3 !important;
+    text-align: left !important;
+    padding-top: 0 !important;
+  }
+  .hero h1, .hero .display-xl, .hero .display-lg {
+    font-size: clamp(2.4rem, 9.4vw, 3.1rem) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.015em !important;
+    margin-bottom: 1.1rem !important;
+    text-wrap: balance !important;
+  }
+  .hero-sub, .hero .lede {
+    font-size: 1.02rem !important;
+    line-height: 1.5 !important;
+    max-width: 36ch !important;
+    margin-bottom: 1.6rem !important;
+    color: rgba(255,255,255,0.88) !important;
+  }
+  .hero-ctas {
+    flex-direction: row !important;
+    gap: 1rem !important;
+    width: 100% !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+  .hero-ctas .btn, .hero-ctas a.btn {
+    width: auto !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 1.05rem 1.4rem !important;
+    font-size: 1rem !important;
+  }
+  .hero .eyebrow {  letter-spacing: 0.22em !important; margin-bottom: 1rem !important; }
+
+  /* ============================================================
+     FOLD 2 — COURSES: tight cards, badge inline, no overlap
+     ============================================================ */
+  #courses { padding: 4.5rem 0 4rem !important; }
+  #courses .display-md, #courses h2 {
+    font-size: clamp(1.85rem, 6.8vw, 2.3rem) !important;
+    line-height: 1.08 !important;
+    margin-bottom: 0.7rem !important;
+  }
+  #courses .eyebrow {  letter-spacing: 0.22em !important; }
+  #courses .lede { font-size: 1rem !important; line-height: 1.5 !important; margin-bottom: 1.8rem !important; }
+  #courses .cls-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.4rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  #courses .cls-card {
+    min-height: auto !important;
+    padding: 2.6rem 1.4rem 2rem !important;
+    border-radius: 22px !important;
+    width: 100% !important;
+  }
+  /* Best Seller pill — top-right, never overlaps anything because eyebrow sits BELOW it */
+  #courses .cls-card { padding-top: 3.4rem !important; }
+  .cls-bestseller {
+    top: 0.9rem !important;
+    right: 0.9rem !important;
+    
+    padding: 0.28rem 0.7rem !important;
+    letter-spacing: 0.06em !important;
+    z-index: 5 !important;
+  }
+  .cls-bestseller::before { font-size: 0.8em !important; }
+  /* Eyebrow MUST clear the Best Seller pill at top-right */
+  #courses .cls-card-eyebrow {
+    display: block !important;
+    
+    letter-spacing: 0.12em !important;
+    margin-bottom: 0.55rem !important;
+    padding-right: 105px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.35 !important;
+    opacity: .72 !important;
+  }
+  #courses .cls-card-title {
+    font-size: 1.55rem !important;
+    line-height: 1.12 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  #courses .cls-card-sub {
+    font-size: 0.98rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 1rem !important;
+  }
+  #courses .cls-card-meta {  gap: 0.4rem !important; }
+  #courses .cls-card .btn, #courses .cls-card a.btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 0.95rem 1.2rem !important;
+    font-size: 0.95rem !important;
+    margin-top: 1rem !important;
+  }
+
+  /* ============================================================
+     FOLD 3 — SORBONNE: compact, refined
+     ============================================================ */
+  #method-fold.s5, .s5 { padding: 4rem 0 3.5rem !important; }
+  #method-fold.s5 .s5-wrap { padding: 0 1.15rem !important; }
+  #method-fold.s5 h2, #method-fold.s5 .display-md {
+    font-size: clamp(1.75rem, 6.4vw, 2.2rem) !important;
+    line-height: 1.1 !important;
+  }
+  #method-fold.s5 .lede, #method-fold.s5 .s5-lede {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1.4rem !important;
+  }
+  #method-fold.s5 .s5-cite-tx { font-size: 0.92rem !important; line-height: 1.4 !important; }
+  #method-fold.s5 .s5-cite-yr {  }
+  #method-fold.s5 .s5-cred-list { gap: 0.85rem 0 !important; }
+
+  /* ============================================================
+     FOLD 4 — CULTURE: pillar cards contained, no edge bleed
+     ============================================================ */
+  #culture { padding: 4rem 0 3.5rem !important; overflow: hidden !important; }
+  #culture .wrap { padding: 0 1.15rem !important; }
+  #culture .culture-head h2 {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.08 !important;
+  }
+  #culture .culture-head .lede { font-size: 1rem !important; line-height: 1.5 !important; }
+  .culture-grid, .culture-pillars {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    grid-template-columns: 1fr !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .culture-pillar, .culture-card {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1.6rem 1.3rem !important;
+    border-radius: 18px !important;
+  }
+  .culture-pillar h3, .culture-card h3 {
+    font-size: 1.2rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .culture-pillar p, .culture-card p { font-size: 0.95rem !important; line-height: 1.45 !important; }
+
+  /* ============================================================
+     FOLD 5 — ACADOMIA STATS: centered grid, premium spacing
+     ============================================================ */
+  #acadomia-power { padding: 4rem 0 3.5rem !important; }
+  #acadomia-power .ac-power-wrap { padding: 0 1.15rem !important; }
+  #acadomia-power h2 {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+  }
+  #acadomia-power .lede { font-size: 1rem !important; text-align: center !important; line-height: 1.5 !important; }
+  .ac-power-stats, .acadomia-stats {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem !important;
+    margin-top: 1.5rem !important;
+  }
+  .ac-power-stat, .acadomia-stat {
+    padding: 1.4rem 0.9rem !important;
+    text-align: center !important;
+  }
+  .ac-power-stat .num, .ac-power-stat-num, .acadomia-stat .num {
+    font-size: clamp(2rem, 8.4vw, 2.7rem) !important;
+    line-height: 1 !important;
+    margin-bottom: 0.4rem !important;
+  }
+  .ac-power-stat .lbl, .ac-power-stat-label, .acadomia-stat .lbl {
+    
+    line-height: 1.35 !important;
+    letter-spacing: 0.04em !important;
+  }
+
+  /* ============================================================
+     FOLD 6 — LEARNING JOURNEY (HIW3): arc readable, steps swipe
+     ============================================================ */
+  #how-it-works { padding: 4rem 0 3.5rem !important; overflow: hidden !important; }
+  #how-it-works .hiw3-head h2 {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.08 !important;
+    text-align: center !important;
+  }
+  .hiw3-arc {
+    transform: scale(0.94) !important;
+    transform-origin: center top !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+  .hiw3-steps {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  .hiw3-step {
+    width: 100% !important;
+    padding: 1.4rem 1.2rem !important;
+    border-radius: 16px !important;
+  }
+
+  /* ============================================================
+     FOLD 7 — TEACHERS: horizontal chip swipe
+     ============================================================ */
+  #teachers { padding: 4rem 0 3.5rem !important; }
+  #teachers .tctr-head h2, #teachers h2 {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.1 !important;
+  }
+  #teachers .tctr-head .lede { font-size: 1rem !important; line-height: 1.5 !important; }
+  /* Tab/chip filter row: horizontal scroll instead of stacked buttons */
+  #teachers .tctr-tabs, #teachers .teacher-filters, #teachers .filter-chips {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 0.4rem 1.15rem 0.8rem !important;
+    margin: 0 -1.15rem 1.2rem !important;
+    scrollbar-width: none !important;
+  }
+  #teachers .tctr-tabs::-webkit-scrollbar,
+  #teachers .filter-chips::-webkit-scrollbar { display: none !important; }
+  #teachers .tctr-tab, #teachers .filter-chip, #teachers .tctr-tabs button {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    padding: 0.55rem 1rem !important;
+    
+    white-space: nowrap !important;
+    scroll-snap-align: start !important;
+    border-radius: 999px !important;
+  }
+  /* Teacher cards: 1 column */
+  #teachers .tctr-grid, #teachers .teachers-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.2rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  #teachers .tctr-card, #teachers .teacher-card {
+    width: 100% !important;
+    padding: 1.4rem 1.2rem !important;
+    border-radius: 18px !important;
+  }
+
+  /* ============================================================
+     FOLD 8 — WATCH REAL CLASS: fits, controls visible
+     ============================================================ */
+  .watch-real-class, #watch-class, .class-video-fold { padding: 4rem 0 3.5rem !important; }
+  .watch-real-class h2, #watch-class h2 {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.1 !important;
+  }
+  .watch-real-class video, #watch-class video, .class-video {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 14px !important;
+  }
+
+  /* ============================================================
+     FOLD 9 — MAPSTR: bigger France, category chips visible
+     ============================================================ */
+  #mapstr { padding: 4rem 0 3.5rem !important; overflow: hidden !important; }
+  #mapstr .ms-wrap { padding: 0 1.15rem !important; }
+  #mapstr h2, #mapstr .display-md {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.1 !important;
+  }
+  #mapstr .lede { font-size: 1rem !important; line-height: 1.5 !important; }
+  /* The france map container — make it dominant */
+  #mapstr .ms-map, #mapstr .france-map, #mapstr svg.france,
+  #mapstr [class*="map-container"], #mapstr .ms-canvas {
+    width: 100% !important;
+    min-height: 380px !important;
+    height: 56vh !important;
+    max-height: 540px !important;
+  }
+  /* Category chips: horizontal scroll, no wrap */
+  #mapstr .ms-cats, #mapstr .ms-categories, #mapstr .ms-filters,
+  #mapstr .map-categories, #mapstr [class*="categories"] {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    gap: 0.45rem !important;
+    padding: 0.5rem 1.15rem !important;
+    margin: 0.6rem -1.15rem 1rem !important;
+    scrollbar-width: none !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  #mapstr .ms-cats::-webkit-scrollbar,
+  #mapstr .ms-categories::-webkit-scrollbar { display: none !important; }
+  #mapstr .ms-cat, #mapstr .ms-cat-chip, #mapstr .ms-categories button,
+  #mapstr .map-cat, #mapstr [class*="cat-chip"] {
+    flex: 0 0 auto !important;
+    padding: 0.5rem 0.95rem !important;
+    
+    white-space: nowrap !important;
+    border-radius: 999px !important;
+  }
+  /* Info card / details panel on right side → stack below map */
+  #mapstr .ms-detail, #mapstr .ms-info, #mapstr .ms-card,
+  #mapstr [class*="info-panel"], #mapstr [class*="detail-card"] {
+    width: 100% !important;
+    margin: 1rem 0 0 !important;
+    padding: 1.2rem 1.1rem !important;
+    border-radius: 16px !important;
+    position: relative !important;
+    inset: auto !important;
+  }
+  #mapstr .ms-grid, #mapstr .ms-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ============================================================
+     FOLD 10 — JULIEN: clean cutout, single-line button
+     ============================================================ */
+  #julien-fold { padding: 4rem 0 3.5rem !important; overflow: hidden !important; }
+  #julien-fold .wrap, #julien-fold .jul-wrap { padding: 0 1.15rem !important; }
+  #julien-fold h2, #julien-fold .display-md {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.7rem !important;
+  }
+  #julien-fold .lede, #julien-fold p { font-size: 1rem !important; line-height: 1.5 !important; }
+  #julien-fold .jul-grid, #julien-fold .julien-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.4rem !important;
+    grid-template-columns: 1fr !important;
+    align-items: center !important;
+  }
+  /* Julien video container */
+  #julien-fold video, #julien-fold .julien-video, #julien-fold .jul-video {
+    width: min(78%, 320px) !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+    background: transparent !important;
+  }
+  /* "HEAR JULIEN" button — single line, no wrap */
+  #julien-fold .btn, #julien-fold a.btn, #julien-fold button {
+    white-space: nowrap !important;
+    padding: 0.95rem 1.3rem !important;
+    font-size: 0.92rem !important;
+    letter-spacing: 0.05em !important;
+    width: auto !important;
+    max-width: 100% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+  }
+
+  /* ============================================================
+     FOLD 11 — TESTIMONIALS: contained, no horizontal overflow
+     ============================================================ */
+  #testimonials, .tst-fold { padding: 4rem 0 3.5rem !important; overflow: hidden !important; }
+  #testimonials .wrap, .tst-fold .wrap { padding: 0 1.15rem !important; }
+  #testimonials h2, .tst-fold h2 {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.1 !important;
+  }
+  .tst-grid, .testimonial-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  .tst-card, .testimonial-card {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1.5rem 1.3rem !important;
+    border-radius: 18px !important;
+  }
+  .tst-card blockquote, .testimonial-card blockquote, .tst-card .quote {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+  .tst-card .author, .testimonial-card .author {  }
+
+  /* ============================================================
+     FOLD 12-14 — eTeacher / Placement / Lead Gen
+     ============================================================ */
+  #platform, #placement, #lead-form, .lead-magnet, .lg-fold {
+    padding: 3.8rem 0 3.2rem !important;
+  }
+  #platform .wrap, #placement .wrap, #lead-form .wrap, .lead-magnet .wrap, .lg-fold .wrap {
+    padding: 0 1.15rem !important;
+  }
+  #platform h2, #placement h2, #lead-form h2, .lead-magnet h2 {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.1 !important;
+  }
+  #platform .lede, #placement .lede, #lead-form .lede { font-size: 1rem !important; line-height: 1.5 !important; }
+  /* eTeacher feature grid → 1 column */
+  #platform .etg, #platform .etg-grid, #platform .features {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  #platform .etg > *, #platform .feature-card {
+    width: 100% !important;
+    padding: 1.4rem 1.2rem !important;
+    border-radius: 16px !important;
+  }
+  /* Lead form: all fields full-width, 16px to prevent iOS zoom */
+  #lead-form .lg-wrap, #lead-form .lg-grid, #lead-form form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.85rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  #lead-form .lg-field, #lead-form .form-row, #lead-form .field {
+    width: 100% !important;
+  }
+  #lead-form input, #lead-form select, #lead-form textarea {
+    width: 100% !important;
+    font-size: 16px !important;
+    padding: 0.95rem 1rem !important;
+    border-radius: 12px !important;
+  }
+  #lead-form label {  margin-bottom: 0.35rem !important; }
+  #lead-form button, #lead-form .btn {
+    width: 100% !important;
+    padding: 1.05rem 1.4rem !important;
+    font-size: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  /* ============================================================
+     FOLD 15 — FAQ: clean hairlines, smooth accordion
+     ============================================================ */
+  #faq { padding: 3.8rem 0 3.5rem !important; }
+  #faq .wrap { padding: 0 1.15rem !important; }
+  #faq h2 {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.1 !important;
+    margin-bottom: 1.4rem !important;
+  }
+  .faq-list { border-top: 1px solid rgba(0,0,0,0.08) !important; }
+  .faq-item { border-bottom: 1px solid rgba(0,0,0,0.08) !important; }
+  .faq-btn, .faq-q {
+    font-size: 1rem !important;
+    line-height: 1.35 !important;
+    padding: 1.15rem 0.2rem !important;
+    gap: 0.7rem !important;
+    text-align: left !important;
+  }
+  .faq-body, .faq-a {
+    font-size: 0.93rem !important;
+    line-height: 1.55 !important;
+    padding: 0 0.2rem 1.15rem !important;
+  }
+
+  /* ============================================================
+     FOLD 16 — CTA FOOTER
+     ============================================================ */
+  .cta-fold, #cta, .final-cta { padding: 4rem 0 4rem !important; }
+  .cta-fold h2, #cta h2, .final-cta h2 {
+    font-size: clamp(1.9rem, 7vw, 2.4rem) !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+  }
+  .cta-fold .btn, #cta .btn, .final-cta .btn {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 1.05rem 1.4rem !important;
+    font-size: 1rem !important;
+  }
+
+  /* ============================================================
+     UNIVERSAL POLISH
+     ============================================================ */
+  /* Section heading consistency */
+  section .eyebrow {
+    
+    letter-spacing: 0.22em !important;
+    margin-bottom: 0.7rem !important;
+  }
+  /* Buttons baseline */
+  .btn, a.btn, button.btn {
+    min-height: 48px !important;
+    border-radius: 12px !important;
+  }
+  /* Tap targets */
+  a, button { min-height: 44px !important; }
+  /* Smoother scrolling for horizontal swipers */
+  [class*="swiper"], .scroll-x { -webkit-overflow-scrolling: touch !important; scroll-behavior: smooth !important; }
+  /* Anything absolutely positioned with negative offset that bleeds */
+  [style*="position: absolute"], [style*="position:absolute"] { max-width: 100vw !important; }
+
+}
+
+/* ============================================================
+   AWARD-WINNING REBUILD — PATCH 2 (correct selectors)
+   ============================================================ */
+@media (max-width: 760px) {
+
+  /* JULIEN — actual selectors: .jul-home .jul-cutout (img) */
+  .jul-home, #julien-fold.jul-home { padding: 4rem 0 3.5rem !important; overflow: hidden !important; }
+  .jul-home .wrap { padding: 0 1.15rem !important; }
+  .jul-home-split { 
+    display: flex !important; 
+    flex-direction: column !important; 
+    gap: 2rem !important; 
+    grid-template-columns: 1fr !important; 
+  }
+  .jul-home .jul-cutout, .jul-cutout {
+    max-width: 280px !important;
+    width: 78% !important;
+    margin: 0 auto !important;
+    height: auto !important;
+  }
+  .jul-cutout-wrap--intro .jul-cutout, .jul-cutout-wrap--feature .jul-cutout {
+    max-width: 280px !important;
+  }
+  .jul-home h2, .jul-home .display-md {
+    font-size: clamp(1.85rem, 6.6vw, 2.3rem) !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+  }
+  .jul-home .lede, .jul-home p { font-size: 1rem !important; line-height: 1.5 !important; text-align: center !important; }
+  .jul-home-points { margin-left: auto !important; margin-right: auto !important; max-width: 320px !important; }
+  .jul-home-points li { font-size: .95rem !important; line-height: 1.4 !important; }
+  .jul-home-sound, .jul-home .btn {
+    white-space: nowrap !important;
+    padding: 0.7rem 1.1rem !important;
+    
+    letter-spacing: 0.14em !important;
+  }
+  .jul-cutout-badge {  padding: 0.4rem 0.8rem !important; }
+
+  /* TEACHERS — actual selectors */
+  #teachers .tctr-badges {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    gap: 0.5rem !important;
+    padding: 0.4rem 1.15rem 0.8rem !important;
+    margin: 1rem -1.15rem 1.5rem !important;
+    scrollbar-width: none !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  #teachers .tctr-badges::-webkit-scrollbar { display: none !important; }
+  #teachers .tctr-badge {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    padding: 0.5rem 0.9rem !important;
+    
+    border-radius: 999px !important;
+  }
+  /* Teacher gallery: 2 columns at mobile is good actually (8 portraits) */
+  #teachers .fac-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.7rem !important;
+    flex-direction: unset !important;
+  }
+  #teachers .fac-card {
+    width: 100% !important;
+    border-radius: 14px !important;
+    overflow: hidden !important;
+  }
+  #teachers .fac-card .fac-photo {
+    aspect-ratio: 3 / 4 !important;
+    overflow: hidden !important;
+  }
+  #teachers .fac-card .fac-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  #teachers .fac-card .fac-info {
+    position: absolute !important;
+    left: 0 !important; right: 0 !important; bottom: 0 !important;
+    padding: 0.6rem 0.7rem !important;
+    background: linear-gradient(180deg, transparent, rgba(0,0,15,0.85)) !important;
+  }
+  #teachers .fac-card .fac-name {
+    font-size: 0.92rem !important;
+    color: #fff !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+  }
+  #teachers .fac-card .fac-region {
+    
+    color: rgba(255,255,255,0.7) !important;
+    letter-spacing: 0.06em !important;
+  }
+
+  /* JULIEN PARIS VIDEO (background of Julien section) — keep contained */
+  .jul-home .jul-paris-video {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 200px !important;
+    object-fit: cover !important;
+  }
+
+  /* Section heading — ensure h2 inside .display-md sizing */
+  section h2, section .display-md, section .display-lg {
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    text-wrap: balance !important;
+  }
+}
+
+/* ============================================================
+   PATCH 4 — CONVERT ALL CARD FOLDS TO HORIZONTAL SLIDERS
+   Per user spec: every card fold = swipeable slider on mobile
+   ============================================================ */
+@media (max-width: 760px) {
+
+  /* Remove the destructive universal rule for SVGs */
+  .jul-cutout-badge svg, .jul-home-points svg, .cls-card svg, .faq-btn svg,
+  .tctr-badge svg, .ac-power-marquee svg, button svg, a svg {
+    max-width: none !important;
+    flex-shrink: 0 !important;
+  }
+  /* Icons with no CSS size of their own: sensible inline-icon default (component CSS overrides) */
+  a svg:not([width]), button svg:not([width]), span svg:not([width]) { width: 1.1em; height: 1.1em; }
+
+  /* ---------- COURSES → horizontal slider ---------- */
+  #courses .cls-cards {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 1rem !important;
+    padding: 0.5rem 1.15rem 2rem !important;
+    margin: 0 -1.15rem !important;
+    scrollbar-width: none !important;
+  }
+  #courses .cls-cards::-webkit-scrollbar { display: none !important; }
+  #courses .cls-card {
+    flex: 0 0 86% !important;
+    scroll-snap-align: center !important;
+    min-height: auto !important;
+    width: 86% !important;
+    max-width: 86% !important;
+  }
+
+  /* ---------- CULTURE → horizontal slider ---------- */
+  #culture .culture-grid, #culture .culture-pillars,
+  #culture [class*="culture-cards"], #culture .pillar-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 1rem !important;
+    padding: 0.5rem 1.15rem 2rem !important;
+    margin: 0 -1.15rem !important;
+    scrollbar-width: none !important;
+    grid-template-columns: none !important;
+  }
+  #culture .culture-grid::-webkit-scrollbar,
+  #culture .culture-pillars::-webkit-scrollbar { display: none !important; }
+  #culture .culture-pillar, #culture .culture-card, #culture .pillar-card {
+    flex: 0 0 86% !important;
+    scroll-snap-align: center !important;
+    width: 86% !important;
+    max-width: 86% !important;
+  }
+
+  /* ---------- LEARNING JOURNEY (HIW3) → horizontal slider ---------- */
+  #how-it-works .hiw3-steps, #how-it-works .stp-rail {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 1rem !important;
+    padding: 0.5rem 1.15rem 2rem !important;
+    margin: 0 -1.15rem !important;
+    scrollbar-width: none !important;
+    grid-template-columns: none !important;
+  }
+  #how-it-works .hiw3-steps::-webkit-scrollbar,
+  #how-it-works .stp-rail::-webkit-scrollbar { display: none !important; }
+  #how-it-works .hiw3-step, #how-it-works .stp-card {
+    flex: 0 0 86% !important;
+    scroll-snap-align: center !important;
+    width: 86% !important;
+    max-width: 86% !important;
+    min-height: 280px !important;
+  }
+
+  /* ---------- TEACHERS → horizontal portrait slider ---------- */
+  #teachers .fac-gallery {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 0.9rem !important;
+    padding: 0.5rem 1.15rem 2rem !important;
+    margin: 0 -1.15rem !important;
+    scrollbar-width: none !important;
+    grid-template-columns: none !important;
+    max-width: none !important;
+  }
+  #teachers .fac-gallery::-webkit-scrollbar { display: none !important; }
+  #teachers .fac-card {
+    flex: 0 0 80% !important;
+    scroll-snap-align: center !important;
+    width: 80% !important;
+    max-width: 80% !important;
+    aspect-ratio: auto !important;
+  }
+  #teachers .fac-photo, #teachers .fac-card img{
+    width: 100% !important;
+    height: auto !important;
+    min-height: 380px !important;
+    object-fit: cover !important;
+  }
+  #teachers .fac-card .fac-photo {
+    aspect-ratio: 3 / 4 !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  #teachers .fac-card .fac-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* ---------- Universal swipe hint visibility on sliders ---------- */
+  #courses, #culture, #how-it-works, #teachers, #testimonials, #method-fold {
+    overflow: hidden !important;
+  }
+
+  /* =============================================================
+     COMPACT MOBILE PATCH — cut total scroll from 22 screens to ~12
+     ============================================================= */
+
+  /* --- 1. HERO — tighter, image prominent --- */
+  .hero { min-height: 640px !important; height: 640px !important; }
+  .hero .hero-content { padding-top: 130px !important; padding-bottom: 28px !important; }
+  .hero h1 { font-size: 2.05rem !important; line-height: 1.06 !important; margin: 0 0 .8rem !important; }
+  .hero .lede, .hero .hero-lede, .hero p { font-size: .95rem !important; line-height: 1.45 !important; margin: 0 0 1.1rem !important; max-width: 30ch !important; }
+  .hero .cta-pill, .hero .btn-primary, .hero .hero-cta { padding: .9rem 1.4rem !important;  }
+  .hero .trustpilot, .hero .tp-row { margin-top: .9rem !important; }
+
+  /* --- 2. SECTION HEADERS — universal tighten --- */
+  section, .section { padding-top: 2.2rem !important; padding-bottom: 2.2rem !important; }
+  .eyebrow, .section-eyebrow, .ms-eyebrow, .etg2-eyebrow, .ac-power-eyebrow, .hiw3-eyebrow, .tctr-eyebrow, .lg-eyebrow, .faq-eyebrow {  letter-spacing: .14em !important; margin-bottom: .6rem !important; }
+  h2, .h2, .display-sm, .ms-title, .hiw3-title, .tctr-title, .ac-power-title, .lg-title, .etg2-head h2 { font-size: 1.65rem !important; line-height: 1.12 !important; margin: 0 0 .7rem !important; }
+  .lede, .lede-c, .ms-tagline, .hiw3-sub, .tctr-sub, .etg2-head p, .lg-sub { font-size: .92rem !important; line-height: 1.45 !important; margin: 0 0 1rem !important; max-width: 36ch !important; }
+
+  /* --- 3. COURSES — shorter card, tighter rail --- */
+  #courses { padding-top: 1.8rem !important; padding-bottom: 1.6rem !important; }
+  #courses .cls-card, .cls-card.cls-card-fa { padding: 1rem 1.05rem !important; }
+  #courses .cls-card-title { font-size: 1.25rem !important; }
+  #courses .cls-card-sub {  -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+  #courses .cls-card-meta { gap: .45rem .45rem !important; margin-top: .55rem !important; padding-top: .55rem !important; }
+  #courses .cls-meta-val { font-size: .95rem !important; }
+  #courses .cls-meta-key {  }
+  #courses .cls-card-action {  padding-top: .5rem !important; margin-top: .5rem !important; }
+
+  /* --- 4. SORBONNE / method-fold — compact --- */
+  #method-fold, .s5 { padding-top: 1.8rem !important; padding-bottom: 1.6rem !important; }
+  #method-fold .s5-cardtitle, .s5 .s5-cardtitle { font-size: 1.1rem !important; }
+  #method-fold .s5-card, .s5 .s5-card { padding: 1rem 1.05rem !important; min-height: 0 !important; }
+  #method-fold .s5-body, .s5 .s5-body {  line-height: 1.45 !important; }
+  /* Trim citation block */
+  #method-fold .sorb-v4, .sorb-v4 { padding: 1rem !important; }
+  #method-fold .sorb-cite, .sorb-cite { padding: .7rem .9rem !important;  }
+
+  /* --- 5. CULTURE — compact --- */
+  #culture { padding-top: 1.8rem !important; padding-bottom: 1.8rem !important; }
+  #culture .pillar, #culture .pillar-card { min-height: 0 !important; }
+
+  /* --- 6. ACADOMIA POWER — already short, just tighten --- */
+  #acadomia-power { padding-top: 1.6rem !important; padding-bottom: 1.6rem !important; }
+
+  /* --- 7. HOW-IT-WORKS — tight step card --- */
+  #how-it-works { padding-top: 1.8rem !important; padding-bottom: 1.8rem !important; }
+  #how-it-works .hiw3-step, #how-it-works .step-card { padding: 1.1rem 1.1rem !important; min-height: 0 !important; }
+  #how-it-works .stp-title, #how-it-works .hiw3-name { font-size: 1.2rem !important; }
+  #how-it-works .stp-body {  }
+
+  /* --- 8. TEACHERS — already slider, tighten chrome --- */
+  #teachers { padding-top: 1.8rem !important; padding-bottom: 1.8rem !important; }
+
+  /* --- 9. MAPSTR — CRITICAL: stacked buttons -> horizontal swipe row --- */
+  #mapstr { padding-top: 1.4rem !important; padding-bottom: 1.4rem !important; }
+  #mapstr .ms-shell { padding-left: 0 !important; padding-right: 0 !important; }
+  #mapstr .ms-head { padding-left: 1rem !important; padding-right: 1rem !important; }
+  #mapstr .ms-tabs {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 10px !important;
+    padding: 8px 16px 16px !important;
+    margin: 0 !important;
+    grid-template-columns: none !important;
+    scrollbar-width: none !important;
+    overscroll-behavior-x: contain !important;
+    touch-action: pan-x !important;
+  }
+  #mapstr .ms-tabs::-webkit-scrollbar { display: none !important; }
+  #mapstr .ms-tab {
+    flex: 0 0 64% !important;
+    width: 64% !important;
+    max-width: 64% !important;
+    scroll-snap-align: start !important;
+    padding: .9rem 1rem !important;
+    min-height: 0 !important;
+  }
+  #mapstr .ms-tab-level {  }
+  #mapstr .ms-tab-name { font-size: .95rem !important; line-height: 1.2 !important; }
+  #mapstr .ms-tab-region {  line-height: 1.3 !important; }
+  #mapstr .ms-stage { margin-top: .6rem !important; }
+  #mapstr .ms-map { height: 320px !important; min-height: 320px !important; }
+
+  /* --- 10. JULIEN — already compact, tighten gutters --- */
+  #julien-fold, .jul-home { padding-top: 1.8rem !important; padding-bottom: 1.8rem !important; }
+
+  /* --- 11. TESTIMONIALS --- */
+  #testimonials { padding-top: 1.8rem !important; padding-bottom: 1.8rem !important; }
+  #testimonials .tst-card { padding: 1.1rem 1.1rem !important; }
+
+  /* --- 12. PLATFORM (eTeacher) — stats horizontal not stacked --- */
+  #platform, .etg2-section { padding-top: 1.8rem !important; padding-bottom: 1.8rem !important; }
+  #platform .etg2-trust, .etg2-section .etg2-trust {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    margin: 1.2rem 0 1rem !important;
+    max-width: 100% !important;
+    padding: 6px !important;
+    background: linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02)) !important;
+    border: 1px solid rgba(200,169,107,.22) !important;
+    border-radius: 16px !important;
+  }
+  #platform .etg2-tf, .etg2-section .etg2-tf {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    width: auto !important;
+    padding: .85rem .3rem !important;
+    text-align: center !important;
+    min-height: 0 !important;
+    border: 0 !important;
+    border-radius: 10px !important;
+  }
+  #platform .etg2-sep, .etg2-section .etg2-sep { display: none !important; }
+  #platform .etg2-tf-num, .etg2-section .etg2-tf-num { font-size: 1.4rem !important; display: block !important; margin-bottom: .35rem !important; line-height: 1 !important; }
+  #platform .etg2-tf-lab, .etg2-section .etg2-tf-lab {  letter-spacing: .06em !important; text-transform: uppercase !important; line-height: 1.25 !important; margin-top: 0 !important; }
+  .etg2-brand-logo { max-width: 120px !important; height: auto !important; }
+  /* Platform capability slider — compact cards */
+  #platform .etg3-card { padding: 1.2rem 1.1rem !important; }
+  #platform .etg3-card h3 { font-size: 1.15rem !important; margin: .5rem 0 .4rem !important; }
+  #platform .etg3-card p {  line-height: 1.45 !important; margin: 0 0 .7rem !important; }
+  #platform .etg3-no {  }
+  #platform .etg3-pill {  padding: .3rem .65rem !important; }
+  #platform .etg3-ic { width: 38px !important; height: 38px !important; }
+  #platform .etg3-ic svg { width: 20px !important; height: 20px !important; }
+
+  /* --- 13. PLACEMENT — fix headline overflow + compact --- */
+  #placement { padding-top: 1.8rem !important; padding-bottom: 1.8rem !important; }
+  /* Critical: collapse 2-col grid to 1-col on mobile + force min-width:0 to defeat grid track auto-expansion from intrinsic image width */
+  #placement .lm-card, .lead-magnet .lm-card, .lead-magnet#placement .lm-card { grid-template-columns: minmax(0,1fr) !important; max-width: 100% !important; width: auto !important; overflow: hidden !important; }
+  #placement .lm-card > *, .lead-magnet .lm-card > * { min-width: 0 !important; max-width: 100% !important; }
+  #placement .lm-cover, .lead-magnet .lm-cover { min-height: 200px !important; max-height: 240px !important; aspect-ratio: 16/10 !important; width: 100% !important; }
+  #placement .lm-cover img { width: 100% !important; height: 100% !important; object-fit: cover !important; }
+  #placement .lm-cover, #placement .lm-body {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding-left: 1.1rem !important;
+    padding-right: 1.1rem !important;
+  }
+  #placement .lm-cover img, #placement .lm-cover { max-height: 220px !important; }
+  #placement h2, #placement .display-sm, #placement .pl-title, #placement .lm-title {
+    font-size: 1.45rem !important;
+    line-height: 1.12 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+  }
+  #placement .lede, #placement p, #placement .lm-sub { font-size: .9rem !important; line-height: 1.45 !important; }
+  #placement .lm-btn, #placement .btn, #placement .cta-pill, #placement .btn-3d {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: .95rem 1rem !important;
+    
+    text-align: center !important;
+    justify-content: center !important;
+    gap: .6rem !important;
+  }
+  #placement .btn-3d .fa-icon, #placement .btn-3d svg { width: 16px !important; height: 16px !important; font-size: 14px !important; flex-shrink: 0 !important; }
+  #placement .link-arrow {  }
+  #placement .link-arrow svg { width: 14px !important; height: 14px !important; }
+
+  /* --- 14. LEAD FORM — tighten header, keep inputs 16px --- */
+  #lead-form.lg-fold { padding-top: 1.6rem !important; padding-bottom: 1.8rem !important; }
+  #lead-form .lg-wrap { padding: 0 1.1rem !important; gap: 1.4rem !important; }
+  #lead-form .lg-left .lg-eyebrow {  letter-spacing: .22em !important; margin: 0 0 .7rem !important; }
+  #lead-form .lg-left h2 { font-size: 1.7rem !important; line-height: 1.1 !important; margin: 0 0 .8rem !important; }
+  #lead-form .lg-left .lg-lede { font-size: .92rem !important; line-height: 1.5 !important; margin: 0 0 1rem !important; }
+  #lead-form .lg-trust { gap: .55rem !important; margin-top: .8rem !important; }
+  #lead-form .lg-trust-item {  gap: .65rem !important; }
+  #lead-form .lg-trust-item svg { width: 15px !important; height: 15px !important; }
+  #lead-form .lg-form { padding: 1.2rem 1.05rem !important; border-radius: 14px !important; }
+  #lead-form .lg-form-title { font-size: 1.1rem !important; margin: 0 0 .25rem !important; }
+  #lead-form .lg-form-sub {  margin: 0 0 1rem !important; }
+  #lead-form .lg-row { gap: .8rem !important; }
+  #lead-form .lg-row[style*="margin-top"] { margin-top: .8rem !important; }
+  #lead-form .lg-field { gap: .3rem !important; }
+  #lead-form .lg-field label {  letter-spacing: .14em !important; }
+  #lead-form .lg-field input, #lead-form .lg-field select { font-size: 16px !important; padding: .75rem .85rem !important; border-radius: 9px !important; }
+  #lead-form .lg-submit { margin-top: 1.1rem !important; padding: .95rem 1.2rem !important;  letter-spacing: .14em !important; }
+  #lead-form .lg-fineprint {  margin: .85rem 0 0 !important; line-height: 1.5 !important; }
+
+  /* --- 15. FAQ — already tight, tiny tighten --- */
+  #faq { padding-top: 1.6rem !important; padding-bottom: 1.6rem !important; }
+  #faq .faq-question, #faq summary { padding: .85rem 0 !important; font-size: .95rem !important; }
+  #faq .faq-body {  }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   FINAL POLISH PASS — readability, theming, jank
+   Addresses user's brutal feedback: tiny fonts, ugly stripes, cream
+   bands between dark sections, slider arrows ugly.
+   ────────────────────────────────────────────────────────────────── */
+@media (max-width:760px){
+
+  /* 1. Body must be NAVY behind dark sections — kill cream gaps */
+  html, body{ background:#0a1128 !important; }
+  /* Sections that ARE cream/paper keep their bg explicitly */
+  #courses, #faq, #how-it-works, #teachers, #placement{ background-color: var(--paper, #f7f3ea) !important; }
+  /* Make sure dark sections fully fill */
+  #culture, #mapstr, #julien-fold, #testimonials, #lead-form, #platform, #acadomia-power, #method-fold{
+    background-color: #0a1128 !important;
+  }
+
+  /* 2. Bump readable copy sizes — user said "fucking tiny fonts" */
+  body{ font-size: 16px !important; line-height: 1.6 !important; }
+  p, .lede, .desc, .sub, .crd-body, .stp-body, .pl-body, .tst-quote, .fac-bio{
+    font-size: 1rem !important;
+    line-height: 1.55 !important;
+  }
+  .eyebrow, .pl-eyebrow, .culture-eyebrow, .hiw3-eyebrow, .ms-eyebrow, .tst-eyebrow{
+    
+    letter-spacing: .18em !important;
+  }
+  h2, .display-sm, .pl-title, .culture-head h2, .lm-title, .tst-title{
+    font-size: 1.75rem !important;
+    line-height: 1.12 !important;
+  }
+  /* Pillar copy bumped */
+  #culture .pillar-title{ font-size: 1.5rem !important; line-height: 1.12 !important; }
+  #culture .pillar-desc{ font-size: .98rem !important; line-height: 1.5 !important; opacity: .94 !important; max-width: none !important; }
+  #culture .pillar-num{  letter-spacing: .2em !important; }
+
+  /* 3. Pagination dots — unify across all sliders to a clean look */
+  .slider-dots, .swiper-pagination, .tst-dots, .cls-dots, .fac-dots, .pillars-dots, .etg3-dots, .hiw3-dots {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin: 16px auto 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+  .slider-dots > *, .swiper-pagination > *, .tst-dots > *, .cls-dots > *,
+  .fac-dots > *, .pillars-dots > *, .etg3-dots > *, .hiw3-dots > *,
+  .swiper-pagination-bullet{
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 50% !important;
+    background: rgba(216, 188, 133, .35) !important;
+    border: 0 !important;
+    flex: 0 0 7px !important;
+    transition: width .25s, background .25s !important;
+  }
+  .slider-dots > .active, .slider-dots > [aria-current="true"],
+  .swiper-pagination-bullet-active,
+  .tst-dots > .active, .cls-dots > .active, .fac-dots > .active,
+  .pillars-dots > .active, .etg3-dots > .active, .hiw3-dots > .active{
+    background: #d8bc85 !important;
+    width: 22px !important;
+    border-radius: 6px !important;
+  }
+  /* Kill obnoxious old pagination shapes (those ovals/bars in screenshots) */
+  .swiper-pagination-bullet, .tst-dots span, .cls-dots span,
+  .fac-dots span, .pillars-dots span, .hiw3-dots span{
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  /* 4. Reduce header padding so it doesn't dominate small viewports */
+  .site-header, header.site-header{ padding-top: 8px !important; padding-bottom: 8px !important; }
+
+  /* 5. Mapstr panel: dark-theme on mobile so it doesn't clash with section bg */
+  #mapstr .ms-panel, #mapstr .ms-card{
+    background: rgba(8, 14, 43, .94) !important;
+    color: #f3eee3 !important;
+    border: 1px solid rgba(216,188,133,.22) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+  }
+  #mapstr .ms-panel-city, #mapstr .ms-panel-step{ color: #d8bc85 !important; }
+  #mapstr .ms-panel-city{ color: #f3eee3 !important; }
+  #mapstr .ms-unit-fr{ color: #f3eee3 !important; }
+  #mapstr .ms-unit-en{ color: rgba(243,238,227,.78) !important; }
+  #mapstr .ms-unit{ background: rgba(255,255,255,.04) !important; border-color: rgba(216,188,133,.2) !important; }
+  #mapstr .ms-unit-num{ color: #d8bc85 !important; }
+  #mapstr .ms-panel-close{ background: rgba(255,255,255,.08) !important; border-color: rgba(255,255,255,.18) !important; color: #f3eee3 !important; }
+  #mapstr .ms-panel-loc{ color: rgba(243,238,227,.62) !important; }
+  /* Match photo-pop too */
+  #mapstr .ms-photo-pop{
+    background: rgba(8, 14, 43, .92) !important;
+    color: #f3eee3 !important;
+    border: 1px solid rgba(216,188,133,.22) !important;
+  }
+
+  /* 6. Section vertical rhythm — kill awkward gaps between adjacent dark sections */
+  #culture + section, #mapstr + section, #julien-fold + section, #testimonials + section,
+  #placement + section, #how-it-works + section, #teachers + section, #platform + section,
+  #acadomia-power + section, #method-fold + section { margin-top: 0 !important; }
+
+  /* 7. Hero text MUST be visible immediately — force opacity */
+  .hero .display, .hero h1, .hero .hero-lede, .hero .hero-cta, .hero .hero-trust,
+  .hero .reveal, .hero .reveal-d1, .hero .reveal-d2, .hero .reveal-d3,
+  .hero .hero-sub, .hero .hero-ctas, .hero .hero-trustpilot{
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+  /* Hero bg fallback so it never appears blank/white before image loads */
+  .hero{ background: #0a1128 !important; }
+  .hero-bg{ background: linear-gradient(180deg, #1a2750 0%, #0a1128 100%) !important; }
+  .hero-bg img{ opacity: 1 !important; visibility: visible !important; }
+
+  /* 8. Hide any swipe-hint-flagged elements */
+  [data-swipe-hint], .swipe-hint{ display: none !important; }
+}
+
+/* ---------- HOMEPAGE MOBILE REPAIR 2026-09-09: label floor (12px) for the exact tiny classes found by live scan ---------- */
+@media (max-width:760px){
+  html body .cs-tag, html body .tp-rating, html body .cls-bestseller, html body .cls-card-eyebrow,
+  html body .cls-meta-key, html body .cls-card-action-text, html body .han-cap, html body .han-lvl,
+  html body .hiw3-kick, html body .hiw3-tag, html body .drawer-group-label, html body .eyebrow,
+  html body .eyebrow-line, html body .ms-tab-level, html body .tp-badge{
+     line-height: 1.3 !important;
+  }
+  html body .link-arrow svg{ width: 18px !important; height: 10px !important; }
+  html body .btn svg, html body .btn-3d svg, html body .bfaq-q svg, html body .bc-read svg{ width: 1.1em !important; height: 1.1em !important; }
+}
+
+
+/* ---------- MOBILE FINAL 2026-09-10: contrast repair, label floor, rails, tighter scroll ---------- */
+@media (max-width:760px){
+  /* 1. Light folds stay light; their navy copy is readable again */
+  #how-it-works, #teachers{ background:var(--paper,#f7f3ea) !important; }
+  #teachers h2, #teachers .lede, #teachers .display-md, #how-it-works .hiw3-title, #how-it-works .lede{ color:#1A1E33 !important; }
+  /* 2. Lead form is a dark fold — keep its navy ground under the cream copy */
+  #lead-form, .lg-fold{ background:linear-gradient(180deg,#0B1340 0%,#0A1128 65%,#080E20 100%) !important; }
+  #lead-form h2, #lead-form .lg-lede, #lead-form .lg-trust-item, #lead-form label{ color:#F3EEE3 !important; }
+  #lead-form .lg-eyebrow, #lead-form .gold-ital{ color:#D8BC85 !important; }
+  /* 3. Brand gold on light grounds: deeper gold so eyebrows, italics and tags pass contrast */
+  :is(.bg-ivory,.bg-paper,.bg-cream,.bg-white,.bg-sand,.hiw3-section,#courses,#faq,#teachers,.legal-body,.post-body,.blog-grid,.faq-wrap,.pricing-grid)
+    :is(.eyebrow,.eyebrow-line,.gold-ital,em,.tag,.faq-num,.faq-group-eyebrow,.faq-group-count,.fc-qual,.fc-location,.fc-cefr,.bc-read,.cap,.fr,.ix-num,.pf-num,.ts-num,.asr-num,.an-course,.cdb-label,.lead-role,.award-year,.dp-no,.trust-icon,.principle-num,.btn-outline):not(.on-dark *){
+    color:#8C7040 !important;
+  }
+  :is(.bg-ivory,.bg-paper,.bg-cream,.bg-white,.hiw3-section,#courses,#faq,#teachers) .btn-outline{ border-color:#8C7040 !important; }
+  :is(.bg-ivory,.bg-paper,.bg-cream,.bg-white,.post-body) h2:not(.on-dark *){ color:#1A1E33 !important; }
+  :is(.bg-ivory,.bg-paper,.bg-cream,.bg-white,.post-body) h2 .gold-ital, :is(.bg-ivory,.bg-paper,.bg-cream,.bg-white,.post-body) h2 em{ color:#8C7040 !important; }
+  /* 4. No text under 12.5px anywhere */
+  html body :is(.fac-region,label,.han-cap,.sc-recap,.tl-tag,.ts-label,.jul-drill-tag,.si-muted,.stars,.tst-trust,.lg-eyebrow,.scroll-cue,.fr,.ms-legend-sub,.jul-cutout-badge,.bc-read,.bc-meta,.bc-meta span,.blog-meta span,footer h4,.foot h4,.maplibregl-ctrl-attrib-inner,.maplibregl-ctrl-attrib-inner a){  line-height:1.35 !important; }
+  /* 5. Stacked stat rows and step ladders become swipe rails */
+  .stat-strip, .acad-stat-row, .ladder, .jul-timeline, .pillar-grid-about, .reveal.reveal-d1:has(> .stat){
+    display:flex !important; flex-wrap:nowrap !important; overflow-x:auto !important; overflow-y:hidden !important;
+    scroll-snap-type:x mandatory !important; -webkit-overflow-scrolling:touch; gap:.9rem !important; padding:0 1.2rem 1rem !important;
+    scrollbar-width:none; grid-template-columns:none !important;
+  }
+  .stat-strip::-webkit-scrollbar, .acad-stat-row::-webkit-scrollbar, .ladder::-webkit-scrollbar, .jul-timeline::-webkit-scrollbar{ display:none; }
+  .stat-strip > *, .acad-stat-row > *, .ladder > *, .jul-timeline > *, .reveal.reveal-d1:has(> .stat) > .stat{
+    flex:0 0 76% !important; max-width:76% !important; scroll-snap-align:center !important; border-right:0 !important; border-bottom:0 !important; height:auto !important;
+  }
+  .stat-strip > *, .acad-stat-row > *, .reveal.reveal-d1:has(> .stat) > .stat{ flex-basis:58% !important; max-width:58% !important; }
+  /* 6. Shorter pages: tighter fold rhythm */
+  .section-pad{ padding-top:3.2rem !important; padding-bottom:3.2rem !important; }
+  .section-pad-0{ padding-top:0 !important; }
+  #teachers{ padding:3.2rem 0 2.8rem !important; }
+}
+
+
+/* ---------- MOBILE FINAL 2026-09-10 (pass 2) ---------- */
+@media (max-width:760px){
+  /* Placement fold is a light fold */
+  #placement, .lead-magnet{ background:var(--paper,#f7f3ea) !important; }
+  #placement .lm-card, #placement .lm-body{ background:#00001F !important; }
+  #placement .lm-body h2, #placement .lm-body p, #placement .lm-body .lede, #placement .lm-body li{ color:#F3EEE3 !important; }
+  #placement .lm-body .gold-ital, #placement .lm-body em, #placement .lm-body .eyebrow{ color:#D8BC85 !important; }
+  .bg-ivory span.gi, .bg-paper span.gi, .capsule-intro .gi{ color:#8C7040 !important; }
+  /* Rails must run horizontally (earlier generic rules force column) */
+  .stat-strip, .acad-stat-row, .ladder, .jul-timeline, .reveal.reveal-d1:has(> .stat){ flex-direction:row !important; align-items:stretch !important; }
+  .stat-strip > .ss-item, .acad-stat-row > .asr-item{ padding:1.4rem 1rem !important; border:1px solid rgba(200,165,96,.18) !important; border-radius:10px !important; }
+  /* About: pillar cards — navy card, image on top, text below, nothing spills onto the ivory */
+  .pillar-about{ aspect-ratio:auto !important; height:auto !important; min-height:0 !important; display:flex !important; flex-direction:column !important; background:#0a1128 !important; overflow:hidden !important; border-radius:10px !important; }
+  .pillar-about > img, .pillar-about > video, .pillar-about .pa-media, .pillar-about picture{ position:relative !important; width:100% !important; height:220px !important; object-fit:cover !important; flex:0 0 auto !important; }
+  .pillar-about .pa-body{ position:relative !important; inset:auto !important; padding:1.2rem 1.3rem 1.5rem !important; background:#0a1128 !important; }
+  .pillar-about .pa-body h3, .pillar-about .pa-body p, .pillar-about .pa-body li{ color:#F3EEE3 !important; }
+  .pillar-about .pa-body p, .pillar-about .pa-body li{ color:rgba(243,238,227,.82) !important; }
+  /* Remaining pale-gold-on-light copy */
+  .trophee-wrap .muted, .trophee-wrap p{ color:rgba(243,238,227,.82) !important; }
+  :is(.bg-ivory,.bg-paper,.bg-white) p[style*="BEA37B"], :is(.bg-ivory,.bg-paper,.bg-white) span.gi{ color:#8C7040 !important; }
+  .price-card.glass-light .btn-outline, .price-card.alt .btn-outline, .bg-white .btn-outline{ color:#8C7040 !important; border-color:#8C7040 !important; }
+}
+
+/* ---------- MOBILE FINAL 2026-09-10 (pass 4): label floor at ID specificity, capsule gold ---------- */
+@media (max-width:760px){
+  html body #teachers .fac-region, html body #lead-form label, html body #lead-form .lg-eyebrow, html body #placement .han-cap,
+  html body #julien-fold .jul-cutout-badge, html body .fac-region, html body label, html body .han-cap, html body .lg-eyebrow,
+  html body .jul-cutout-badge, html body .ts-label, html body .tl-tag, html body .jul-drill-tag, html body .sc-recap{  line-height:1.35 !important; }
+  html body span.gi{ color:#8C7040 !important; }
+  html body .on-dark span.gi, html body [class*="navy"] span.gi, html body .hero span.gi{ color:#D8BC85 !important; }
+}
+
+/* pass 5: breadcrumb must clear the fixed header on internal heroes */
+@media (max-width:760px){
+  html body .page-hero .breadcrumb, html body .page-hero--premium .breadcrumb, html body .breadcrumb{ margin-top:2.4rem !important; display:block !important; position:relative !important; z-index:2 !important;  }
+}
+
+/* ===== HOUSE STYLE 2026-09-10: sentence case everywhere, no all-caps ===== */
+html body *,html body *::before,html body *::after{text-transform:none!important}
+html body .eyebrow,html body [class*="eyebrow"],html body .btn,html body .nav-cta,html body .taste-who,html body [class*="badge"],html body [class*="tag"],html body [class*="label"],html body .sound-toggle,html body .fa-sound-btn,html body .jul-say-btn{letter-spacing:.04em!important}
+/* ===== MOBILE TYPE FLOOR 2026-09-10 ===== */
+@media (max-width:760px){
+  html{font-size:17px}
+  html body p,html body li,html body dd,html body blockquote,html body .lede,html body td,html body th{font-size:max(1rem,16px)!important;line-height:1.6!important}
+  html body .lede{font-size:1.08rem!important}
+  html body small,html body .eyebrow,html body [class*="eyebrow"],html body .img-caption,html body figcaption,html body .taste-who,html body .credit,html body [class*="meta"],html body [class*="cap"],html body [class*="note"]{font-size:max(13.5px,.8rem)}
+  html body h1 *,html body h2 *,html body h3 *{font-size:inherit!important}
+  html body h1,html body .display-xl{font-size:clamp(2.35rem,10.5vw,3.1rem)!important;line-height:1.08!important}
+  html body h2,html body .display-md,html body .display-lg{font-size:clamp(2rem,8.6vw,2.6rem)!important;line-height:1.12!important}
+  html body h3{font-size:max(1.3rem,21px)!important;line-height:1.25!important}
+  html body h4{font-size:max(1.1rem,18px)!important}
+  html body .btn,html body button:not(.mapstr-marker):not(.sound-toggle){font-size:15px!important;padding:.95rem 1.4rem!important}
+  html body .sound-toggle{font-size:14px!important}
+  html body .taste-line{font-size:1.25rem!important}
+  html body .taste-card{flex:0 0 92%!important}
+}
+
+/* ===== MOBILE TYPE FLOOR pass 2 (measured on live, 10 pages) ===== */
+@media (max-width:760px){
+  html body span.drawer-group-label{font-size:14px!important}
+  html body span.cs-tag{font-size:14px!important}
+  html body a.btn.btn-gold.btn-lg{font-size:15px!important}
+  html body span.tp-rating{font-size:14px!important}
+  html body p.eyebrow.eyebrow-line{font-size:15px!important}
+  html body span.cls-bestseller{font-size:14px!important}
+  html body span.cls-card-eyebrow{font-size:14px!important}
+  html body span.cls-card-sub{font-size:14px!important}
+  html body span.cls-meta-key{font-size:14px!important}
+  html body span.cls-card-action-text{font-size:14px!important}
+  html body span.han-lvl{font-size:14px!important}
+  html body span.han-cap{font-size:14px!important}
+  html body span.hiw3-kick{font-size:14px!important}
+  html body span.hiw3-tag{font-size:14px!important}
+  html body span.hiw3-kick.hiw3-kick-final{font-size:14px!important}
+  html body span.hiw3-tag.hiw3-tag-final{font-size:14px!important}
+  html body p.s5-eyebrow{font-size:15px!important}
+  html body span.s5-cite-yr{font-size:14px!important}
+  html body span.pillar-num{font-size:14px!important}
+  html body p.ac-power-eyebrow{font-size:15px!important}
+  html body div.apf-lab{font-size:14px!important}
+  html body span.tctr-badge{font-size:14px!important}
+  html body span.fac-region{font-size:14px!important}
+  html body span.si-muted{font-size:14px!important}
+  html body span.ms-eyebrow{font-size:14px!important}
+  html body span.ms-tab-level{font-size:14px!important}
+  html body span.ms-tab-region{font-size:14px!important}
+  html body span.ms-legend-txt{font-size:14px!important}
+  html body span.ms-legend-txt.ms-legend-sub{font-size:14px!important}
+  html body span.jul-cutout-badge{font-size:14px!important}
+  html body span.jhs-label{font-size:14px!important}
+  html body span.tst-trust{font-size:14px!important}
+  html body span.stars{font-size:14px!important}
+  html body span.etg2-tf-lab{font-size:14px!important}
+  html body span.etg3-no{font-size:14px!important}
+  html body p{font-size:15px!important}
+  html body span.etg3-pill{font-size:14px!important}
+  html body a.link-arrow{font-size:15px!important}
+  html body span.lm-cover-badge{font-size:14px!important}
+  html body p.eyebrow.eyebrow-line.lm-eyebrow{font-size:15px!important}
+  html body button.btn.btn-3d.btn-3d-primary{font-size:15px!important}
+  html body p.lg-eyebrow{font-size:15px!important}
+  html body div.lg-trust-item{font-size:14px!important}
+  html body p.lg-form-sub{font-size:15px!important}
+  html body label{font-size:15px!important}
+  html body button.lg-submit{font-size:15px!important}
+  html body p.lg-fineprint{font-size:15px!important}
+  html body h4{font-size:18px!important}
+  html body span.ec-eyebrow{font-size:14px!important}
+  html body span.ec-title{font-size:14px!important}
+  html body a.ec-cta{font-size:15px!important}
+  html body span.jul-live-badge{font-size:14px!important}
+  html body div.jul-drill-tag{font-size:14px!important}
+  html body span.jul-drill-tag{font-size:14px!important}
+  html body span.jul-chip{font-size:14px!important}
+  html body span.fa-sound-txt{font-size:14px!important}
+  html body span.msg-label{font-size:14px!important}
+  html body span.eyebrow.eyebrow-line{font-size:14px!important}
+  html body div.sc-label{font-size:14px!important}
+  html body div.an-course{font-size:14px!important}
+  html body span.cc-badge{font-size:14px!important}
+  html body div.cc-track{font-size:14px!important}
+  html body div.cc-meta-item{font-size:14px!important}
+  html body p.plan-eyebrow.dark{font-size:15px!important}
+  html body p.plan-includes-label{font-size:15px!important}
+  html body span.plan-badge{font-size:14px!important}
+  html body p.plan-eyebrow.light{font-size:15px!important}
+  html body th{font-size:14px!important}
+  html body span.bd-plan{font-size:14px!important}
+  html body span.bd-save{font-size:14px!important}
+  html body span.trust-label{font-size:14px!important}
+  html body span.tr-pill{font-size:14px!important}
+  html body div.ts-label{font-size:14px!important}
+  html body span.fc-region-tag{font-size:14px!important}
+  html body div.fc-location{font-size:14px!important}
+  html body span.fc-qual{font-size:14px!important}
+  html body span.tpb-name{font-size:14px!important}
+  html body span.tpb-region{font-size:14px!important}
+  html body div.ss-label{font-size:14px!important}
+  html body span.m-lbl{font-size:14px!important}
+  html body span.tl-tag{font-size:14px!important}
+  html body span.step-chip{font-size:14px!important}
+  html body span.lr-course{font-size:14px!important}
+  html body span.lr-arc{font-size:14px!important}
+  html body span.lr-region{font-size:14px!important}
+  html body div.wc-day{font-size:14px!important}
+  html body span.wc-tag{font-size:14px!important}
+  html body span.tn-region{font-size:14px!important}
+  html body span.fr{font-size:14px!important}
+  html body span.cefr-tag{font-size:14px!important}
+  html body span.pf-label{font-size:14px!important}
+  html body summary,html body .faq-q,html body [class*="faq-q"],html body details>summary *{font-size:16px!important}
+  html body footer a,html body .footer a,html body [class*="foot"] a,html body [class*="foot"] li{font-size:15px!important}
+  html body h1,html body .hero-title,html body [class*="hero"] h1{font-size:clamp(2.5rem,11vw,3.3rem)!important;line-height:1.06!important}
+}
