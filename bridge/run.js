@@ -2,7 +2,7 @@
 // Reads bridge/manifest.json, writes into bridge/out/.
 const fs = require('fs');
 const path = require('path');
-const { chromium } = require('playwright');
+let chromium=null; try { chromium = require('playwright').chromium; } catch { console.log('playwright not installed, downloads only'); }
 
 const ROOT = path.join(__dirname, 'out');
 const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, 'manifest.json'), 'utf8'));
@@ -162,9 +162,11 @@ async function downloads() {
 (async () => {
   fs.mkdirSync(ROOT, { recursive: true });
   for (const site of manifest.sites || []) if (site.mirror) await mirror(site);
-  const browser = await chromium.launch();
-  for (const site of manifest.sites || []) await shots(site, browser);
-  await browser.close();
   await downloads();
+  if (chromium && (manifest.sites || []).length) {
+    const browser = await chromium.launch();
+    for (const site of manifest.sites || []) await shots(site, browser);
+    await browser.close();
+  }
   fs.writeFileSync(path.join(ROOT, '_done_' + Date.now() + '.txt'), 'ok');
 })();
