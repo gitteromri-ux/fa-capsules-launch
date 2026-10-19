@@ -2,39 +2,39 @@
   "media": [
     {
       "id": "final-fashion_and_art",
-      "title": "Fashion & Art \u00b7 final film",
-      "file": "media/finished/FA_Culture_Capsules_fashion_and_art_FINAL_Zoom.mp4",
-      "poster": "media/thumbnails/final-fashion_and_art.jpg",
+      "title": "Fashion & Art \u00b7 approved UGC",
+      "file": "video-kit/ugc/ugc_fashion_and_art.mp4?v=approved-14692ea",
+      "poster": "video-kit/posters/ugc_fashion_and_art.jpg?v=approved-14692ea",
       "type": "video",
       "group": "finished",
-      "duration": 83.033333,
+      "duration": 75.633333,
       "width": 1920,
       "height": 1080,
-      "description": "Supplied opening + UGC story + supplied outro + animated phones-to-Zoom ending"
+      "description": "Your selected video-kit version, unchanged: hooks, captions, graphic cards, music and Enroll now close"
     },
     {
       "id": "final-gastronomy_and_wine",
-      "title": "Gastronomy & Wine \u00b7 final film",
-      "file": "media/finished/FA_Culture_Capsules_gastronomy_and_wine_FINAL_Zoom.mp4",
-      "poster": "media/thumbnails/final-gastronomy_and_wine.jpg",
+      "title": "Gastronomy & Wine \u00b7 approved UGC",
+      "file": "video-kit/ugc/ugc_gastronomy_and_wine.mp4?v=approved-14692ea",
+      "poster": "video-kit/posters/ugc_gastronomy_and_wine.jpg?v=approved-14692ea",
       "type": "video",
       "group": "finished",
-      "duration": 83.118,
+      "duration": 75.633333,
       "width": 1920,
       "height": 1080,
-      "description": "Supplied opening + UGC story + supplied outro + animated phones-to-Zoom ending"
+      "description": "Your selected video-kit version, unchanged: hooks, captions, graphic cards, music and Enroll now close"
     },
     {
       "id": "final-cinema_and_music",
-      "title": "Cinema & Music \u00b7 final film",
-      "file": "media/finished/FA_Culture_Capsules_cinema_and_music_FINAL_Zoom.mp4",
-      "poster": "media/thumbnails/final-cinema_and_music.jpg",
+      "title": "Cinema & Music \u00b7 approved UGC",
+      "file": "video-kit/ugc/ugc_cinema_and_music.mp4?v=approved-14692ea",
+      "poster": "video-kit/posters/ugc_cinema_and_music.jpg?v=approved-14692ea",
       "type": "video",
       "group": "finished",
-      "duration": 83.033333,
+      "duration": 75.633333,
       "width": 1920,
       "height": 1080,
-      "description": "Supplied opening + UGC story + supplied outro + animated phones-to-Zoom ending"
+      "description": "Your selected video-kit version, unchanged: hooks, captions, graphic cards, music and Enroll now close"
     },
     {
       "id": "02_outro",
@@ -307,42 +307,6 @@
       "description": "Original website footage"
     },
     {
-      "id": "original-ugc-fashion_and_art",
-      "title": "Fashion & Art \u00b7 supplied UGC v2 source",
-      "file": "video-kit/ugc/ugc_fashion_and_art.mp4?source=9941a5f",
-      "poster": "video-kit/posters/ugc_fashion_and_art.jpg?source=9941a5f",
-      "type": "video",
-      "group": "kit",
-      "duration": 77.033333,
-      "width": 1920,
-      "height": 1080,
-      "description": "Original source file supplied in the Claude video kit, including lower thirds, cards and music"
-    },
-    {
-      "id": "original-ugc-gastronomy_and_wine",
-      "title": "Gastronomy & Wine \u00b7 supplied UGC v2 source",
-      "file": "video-kit/ugc/ugc_gastronomy_and_wine.mp4?source=9941a5f",
-      "poster": "video-kit/posters/ugc_gastronomy_and_wine.jpg?source=9941a5f",
-      "type": "video",
-      "group": "kit",
-      "duration": 77.033333,
-      "width": 1920,
-      "height": 1080,
-      "description": "Original source file supplied in the Claude video kit, including lower thirds, cards and music"
-    },
-    {
-      "id": "original-ugc-cinema_and_music",
-      "title": "Cinema & Music \u00b7 supplied UGC v2 source",
-      "file": "video-kit/ugc/ugc_cinema_and_music.mp4?source=9941a5f",
-      "poster": "video-kit/posters/ugc_cinema_and_music.jpg?source=9941a5f",
-      "type": "video",
-      "group": "kit",
-      "duration": 77.033333,
-      "width": 1920,
-      "height": 1080,
-      "description": "Original source file supplied in the Claude video kit, including lower thirds, cards and music"
-    },
-    {
       "id": "restored-Fashion",
       "title": "Fashion & Art \u00b7 intro/outro edit",
       "file": "https://raw.githubusercontent.com/gitteromri-ux/fa-capsules-launch/67de4e047b492e050c5ab88590d970a2bd3ab7ec/media/finished/FA_Capsules_Fashion_ThemeTeaser_V1_23s.mp4",
@@ -412,10 +376,12 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_style_1080x1080.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_style_1080x1080.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-      "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_style_1080x1080.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_style_1080x1080.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_style_1080x1350",
@@ -425,10 +391,12 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_style_1080x1350.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_style_1080x1350.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-      "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_style_1080x1350.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_style_1080x1350.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_style_1080x1920",
@@ -438,10 +406,12 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_style_1080x1920.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_style_1080x1920.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-      "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_style_1080x1920.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_style_1080x1920.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_table_1080x1080",
@@ -451,10 +421,12 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_table_1080x1080.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_table_1080x1080.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-      "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_table_1080x1080.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_table_1080x1080.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_table_1080x1350",
@@ -464,10 +436,12 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_table_1080x1350.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_table_1080x1350.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-      "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_table_1080x1350.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_table_1080x1350.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_table_1080x1920",
@@ -477,10 +451,12 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_table_1080x1920.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_table_1080x1920.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-      "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_table_1080x1920.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_table_1080x1920.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_screen_1080x1080",
@@ -490,10 +466,12 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_screen_1080x1080.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_screen_1080x1080.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-      "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_screen_1080x1080.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_screen_1080x1080.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_screen_1080x1350",
@@ -503,10 +481,12 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_screen_1080x1350.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_screen_1080x1350.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-      "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_screen_1080x1350.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_screen_1080x1350.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_screen_1080x1920",
@@ -516,10 +496,12 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_screen_1080x1920.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_screen_1080x1920.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-      "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_screen_1080x1920.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_screen_1080x1920.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_three-worlds_1080x1080",
@@ -529,10 +511,12 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_three-worlds_1080x1080.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_three-worlds_1080x1080.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_three-worlds_1080x1080.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_three-worlds_1080x1080.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_three-worlds_1080x1350",
@@ -542,10 +526,12 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_three-worlds_1080x1350.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_three-worlds_1080x1350.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_three-worlds_1080x1350.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_three-worlds_1080x1350.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_three-worlds_1080x1920",
@@ -555,10 +541,12 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_three-worlds_1080x1920.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_three-worlds_1080x1920.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_three-worlds_1080x1920.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_three-worlds_1080x1920.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_live-from-france_1080x1080",
@@ -568,10 +556,12 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_live-from-france_1080x1080.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_live-from-france_1080x1080.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_live-from-france_1080x1080.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_live-from-france_1080x1080.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_live-from-france_1080x1350",
@@ -581,10 +571,12 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_live-from-france_1080x1350.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_live-from-france_1080x1350.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_live-from-france_1080x1350.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_live-from-france_1080x1350.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_live-from-france_1080x1920",
@@ -594,10 +586,12 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_live-from-france_1080x1920.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_live-from-france_1080x1920.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_live-from-france_1080x1920.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_live-from-france_1080x1920.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_no-french_1080x1080",
@@ -607,10 +601,12 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_no-french_1080x1080.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_no-french_1080x1080.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_no-french_1080x1080.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_no-french_1080x1080.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_no-french_1080x1350",
@@ -620,10 +616,12 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_no-french_1080x1350.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_no-french_1080x1350.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_no-french_1080x1350.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_no-french_1080x1350.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_no-french_1080x1920",
@@ -633,10 +631,12 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_no-french_1080x1920.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_no-french_1080x1920.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_no-french_1080x1920.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_no-french_1080x1920.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_promo_1080x1080",
@@ -646,10 +646,12 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_promo_1080x1080.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_promo_1080x1080.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_promo_1080x1080.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_promo_1080x1080.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_promo_1080x1350",
@@ -659,10 +661,12 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_promo_1080x1350.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_promo_1080x1350.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_promo_1080x1350.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_promo_1080x1350.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_promo_1080x1920",
@@ -672,10 +676,12 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_promo_1080x1920.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_promo_1080x1920.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_promo_1080x1920.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_promo_1080x1920.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "caitlin original website video frame"
     },
     {
       "id": "FA_Capsules_curiosity_1080x1080",
@@ -685,10 +691,12 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_curiosity_1080x1080.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_curiosity_1080x1080.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_curiosity_1080x1080.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_curiosity_1080x1080.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_curiosity_1080x1350",
@@ -698,10 +706,12 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_curiosity_1080x1350.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_curiosity_1080x1350.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_curiosity_1080x1350.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_curiosity_1080x1350.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     },
     {
       "id": "FA_Capsules_curiosity_1080x1920",
@@ -711,10 +721,12 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_curiosity_1080x1920.png?v=20261019-final4",
-      "source": "banners/source/FA_Capsules_curiosity_1080x1920.html?v=20261019-final4",
-      "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-      "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+      "file": "banners/FA_Capsules_curiosity_1080x1920.png?v=masterclass-v2",
+      "source": "banners/source/FA_Capsules_curiosity_1080x1920.html?v=masterclass-v2",
+      "font_display": "Instrument Serif Regular / Italic",
+      "font_body": "Inter",
+      "reference": "Julie masterclass card-gold/card-blue",
+      "photo_source": "philippe original website video frame"
     }
   ],
   "emails": [
@@ -6247,8 +6259,8 @@
       "download_status": "Exact YouTube stream blocked by sign-in/bot check; use verified embed."
     }
   ],
-  "revision": "20261019-restored",
-  "ugc_source_commit": "9941a5f",
+  "revision": "approved-kit-banners-v2",
+  "ugc_source_commit": "14692ea",
   "original_pairs": [
     "capsule-hero-couture",
     "restored-Fashion",

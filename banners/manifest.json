@@ -9,8 +9,10 @@
     "height": 1080,
     "file": "FA_Capsules_style_1080x1080.png",
     "source": "source/FA_Capsules_style_1080x1080.html",
-    "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-    "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_style_1080x1350",
@@ -22,8 +24,10 @@
     "height": 1350,
     "file": "FA_Capsules_style_1080x1350.png",
     "source": "source/FA_Capsules_style_1080x1350.html",
-    "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-    "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_style_1080x1920",
@@ -35,8 +39,10 @@
     "height": 1920,
     "file": "FA_Capsules_style_1080x1920.png",
     "source": "source/FA_Capsules_style_1080x1920.html",
-    "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-    "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_table_1080x1080",
@@ -48,8 +54,10 @@
     "height": 1080,
     "file": "FA_Capsules_table_1080x1080.png",
     "source": "source/FA_Capsules_table_1080x1080.html",
-    "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-    "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_table_1080x1350",
@@ -61,8 +69,10 @@
     "height": 1350,
     "file": "FA_Capsules_table_1080x1350.png",
     "source": "source/FA_Capsules_table_1080x1350.html",
-    "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-    "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_table_1080x1920",
@@ -74,8 +84,10 @@
     "height": 1920,
     "file": "FA_Capsules_table_1080x1920.png",
     "source": "source/FA_Capsules_table_1080x1920.html",
-    "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-    "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_screen_1080x1080",
@@ -87,8 +99,10 @@
     "height": 1080,
     "file": "FA_Capsules_screen_1080x1080.png",
     "source": "source/FA_Capsules_screen_1080x1080.html",
-    "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-    "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_screen_1080x1350",
@@ -100,8 +114,10 @@
     "height": 1350,
     "file": "FA_Capsules_screen_1080x1350.png",
     "source": "source/FA_Capsules_screen_1080x1350.html",
-    "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-    "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_screen_1080x1920",
@@ -113,8 +129,10 @@
     "height": 1920,
     "file": "FA_Capsules_screen_1080x1920.png",
     "source": "source/FA_Capsules_screen_1080x1920.html",
-    "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-    "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_three-worlds_1080x1080",
@@ -126,8 +144,10 @@
     "height": 1080,
     "file": "FA_Capsules_three-worlds_1080x1080.png",
     "source": "source/FA_Capsules_three-worlds_1080x1080.html",
-    "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_three-worlds_1080x1350",
@@ -139,8 +159,10 @@
     "height": 1350,
     "file": "FA_Capsules_three-worlds_1080x1350.png",
     "source": "source/FA_Capsules_three-worlds_1080x1350.html",
-    "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_three-worlds_1080x1920",
@@ -152,8 +174,10 @@
     "height": 1920,
     "file": "FA_Capsules_three-worlds_1080x1920.png",
     "source": "source/FA_Capsules_three-worlds_1080x1920.html",
-    "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_live-from-france_1080x1080",
@@ -165,8 +189,10 @@
     "height": 1080,
     "file": "FA_Capsules_live-from-france_1080x1080.png",
     "source": "source/FA_Capsules_live-from-france_1080x1080.html",
-    "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_live-from-france_1080x1350",
@@ -178,8 +204,10 @@
     "height": 1350,
     "file": "FA_Capsules_live-from-france_1080x1350.png",
     "source": "source/FA_Capsules_live-from-france_1080x1350.html",
-    "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_live-from-france_1080x1920",
@@ -191,8 +219,10 @@
     "height": 1920,
     "file": "FA_Capsules_live-from-france_1080x1920.png",
     "source": "source/FA_Capsules_live-from-france_1080x1920.html",
-    "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_no-french_1080x1080",
@@ -204,8 +234,10 @@
     "height": 1080,
     "file": "FA_Capsules_no-french_1080x1080.png",
     "source": "source/FA_Capsules_no-french_1080x1080.html",
-    "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_no-french_1080x1350",
@@ -217,8 +249,10 @@
     "height": 1350,
     "file": "FA_Capsules_no-french_1080x1350.png",
     "source": "source/FA_Capsules_no-french_1080x1350.html",
-    "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_no-french_1080x1920",
@@ -230,8 +264,10 @@
     "height": 1920,
     "file": "FA_Capsules_no-french_1080x1920.png",
     "source": "source/FA_Capsules_no-french_1080x1920.html",
-    "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_promo_1080x1080",
@@ -243,8 +279,10 @@
     "height": 1080,
     "file": "FA_Capsules_promo_1080x1080.png",
     "source": "source/FA_Capsules_promo_1080x1080.html",
-    "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_promo_1080x1350",
@@ -256,8 +294,10 @@
     "height": 1350,
     "file": "FA_Capsules_promo_1080x1350.png",
     "source": "source/FA_Capsules_promo_1080x1350.html",
-    "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_promo_1080x1920",
@@ -269,8 +309,10 @@
     "height": 1920,
     "file": "FA_Capsules_promo_1080x1920.png",
     "source": "source/FA_Capsules_promo_1080x1920.html",
-    "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "caitlin original website video frame"
   },
   {
     "id": "FA_Capsules_curiosity_1080x1080",
@@ -282,8 +324,10 @@
     "height": 1080,
     "file": "FA_Capsules_curiosity_1080x1080.png",
     "source": "source/FA_Capsules_curiosity_1080x1080.html",
-    "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_curiosity_1080x1350",
@@ -295,8 +339,10 @@
     "height": 1350,
     "file": "FA_Capsules_curiosity_1080x1350.png",
     "source": "source/FA_Capsules_curiosity_1080x1350.html",
-    "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   },
   {
     "id": "FA_Capsules_curiosity_1080x1920",
@@ -308,7 +354,9 @@
     "height": 1920,
     "file": "FA_Capsules_curiosity_1080x1920.png",
     "source": "source/FA_Capsules_curiosity_1080x1920.html",
-    "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
-    "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
+    "font_display": "Instrument Serif Regular / Italic",
+    "font_body": "Inter",
+    "reference": "Julie masterclass card-gold/card-blue",
+    "photo_source": "philippe original website video frame"
   }
 ]
