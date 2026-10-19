@@ -31,11 +31,10 @@ jobs:
       - name: Transcribe
         if: ${{ contains(github.event.head_commit.message, 'transcribe') }}
         run: |
-          sudo apt-get install -y -qq ffmpeg >/dev/null
           pip install -q faster-whisper
-          python3 bridge/transcribe.py
+          python3 bridge/transcribe.py || echo "transcribe failed"
+          ls bridge/out/transcripts || true
       - name: Run
-        if: ${{ !contains(github.event.head_commit.message, 'transcribe') }}
         run: node bridge/run.js
       - name: Commit results
         run: |

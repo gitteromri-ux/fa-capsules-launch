@@ -1,6 +1,6 @@
 import glob, json, os, sys
 from faster_whisper import WhisperModel
-m = WhisperModel("medium.en", device="cpu", compute_type="int8")
+m = WhisperModel("small.en", device="cpu", compute_type="int8")
 os.makedirs("bridge/out/transcripts", exist_ok=True)
 for f in sorted(glob.glob("bridge/out/ugc/*.mp4")):
     name = os.path.basename(f)[:-4]
