@@ -7,7 +7,7 @@
       "poster": "media/thumbnails/final-fashion_and_art.jpg",
       "type": "video",
       "group": "finished",
-      "duration": 77.843,
+      "duration": 83.033333,
       "width": 1920,
       "height": 1080,
       "description": "Supplied opening + UGC story + supplied outro + animated phones-to-Zoom ending"
@@ -19,7 +19,7 @@
       "poster": "media/thumbnails/final-gastronomy_and_wine.jpg",
       "type": "video",
       "group": "finished",
-      "duration": 77.806,
+      "duration": 83.118,
       "width": 1920,
       "height": 1080,
       "description": "Supplied opening + UGC story + supplied outro + animated phones-to-Zoom ending"
@@ -31,7 +31,7 @@
       "poster": "media/thumbnails/final-cinema_and_music.jpg",
       "type": "video",
       "group": "finished",
-      "duration": 77.806,
+      "duration": 83.033333,
       "width": 1920,
       "height": 1080,
       "description": "Supplied opening + UGC story + supplied outro + animated phones-to-Zoom ending"
@@ -308,39 +308,39 @@
     },
     {
       "id": "original-ugc-fashion_and_art",
-      "title": "Fashion & Art \u00b7 supplied UGC source",
-      "file": "video-kit/ugc/ugc_fashion_and_art.mp4",
-      "poster": "video-kit/posters/ugc_fashion_and_art.jpg",
+      "title": "Fashion & Art \u00b7 supplied UGC v2 source",
+      "file": "video-kit/ugc/ugc_fashion_and_art.mp4?source=9941a5f",
+      "poster": "video-kit/posters/ugc_fashion_and_art.jpg?source=9941a5f",
       "type": "video",
       "group": "kit",
-      "duration": 71.733,
+      "duration": 77.033333,
       "width": 1920,
       "height": 1080,
-      "description": "Original source file supplied in the Claude video kit"
+      "description": "Original source file supplied in the Claude video kit, including lower thirds, cards and music"
     },
     {
       "id": "original-ugc-gastronomy_and_wine",
-      "title": "Gastronomy & Wine \u00b7 supplied UGC source",
-      "file": "video-kit/ugc/ugc_gastronomy_and_wine.mp4",
-      "poster": "video-kit/posters/ugc_gastronomy_and_wine.jpg",
+      "title": "Gastronomy & Wine \u00b7 supplied UGC v2 source",
+      "file": "video-kit/ugc/ugc_gastronomy_and_wine.mp4?source=9941a5f",
+      "poster": "video-kit/posters/ugc_gastronomy_and_wine.jpg?source=9941a5f",
       "type": "video",
       "group": "kit",
-      "duration": 71.733,
+      "duration": 77.033333,
       "width": 1920,
       "height": 1080,
-      "description": "Original source file supplied in the Claude video kit"
+      "description": "Original source file supplied in the Claude video kit, including lower thirds, cards and music"
     },
     {
       "id": "original-ugc-cinema_and_music",
-      "title": "Cinema & Music \u00b7 supplied UGC source",
-      "file": "video-kit/ugc/ugc_cinema_and_music.mp4",
-      "poster": "video-kit/posters/ugc_cinema_and_music.jpg",
+      "title": "Cinema & Music \u00b7 supplied UGC v2 source",
+      "file": "video-kit/ugc/ugc_cinema_and_music.mp4?source=9941a5f",
+      "poster": "video-kit/posters/ugc_cinema_and_music.jpg?source=9941a5f",
       "type": "video",
       "group": "kit",
-      "duration": 71.733,
+      "duration": 77.033333,
       "width": 1920,
       "height": 1080,
-      "description": "Original source file supplied in the Claude video kit"
+      "description": "Original source file supplied in the Claude video kit, including lower thirds, cards and music"
     }
   ],
   "banners": [
@@ -352,8 +352,8 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_style_1080x1080.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_style_1080x1080.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_style_1080x1080.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_style_1080x1080.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
       "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
     },
@@ -365,8 +365,8 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_style_1080x1350.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_style_1080x1350.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_style_1080x1350.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_style_1080x1350.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
       "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
     },
@@ -378,8 +378,8 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_style_1080x1920.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_style_1080x1920.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_style_1080x1920.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_style_1080x1920.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
       "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
     },
@@ -391,8 +391,8 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_table_1080x1080.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_table_1080x1080.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_table_1080x1080.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_table_1080x1080.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
       "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
     },
@@ -404,8 +404,8 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_table_1080x1350.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_table_1080x1350.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_table_1080x1350.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_table_1080x1350.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
       "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
     },
@@ -417,8 +417,8 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_table_1080x1920.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_table_1080x1920.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_table_1080x1920.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_table_1080x1920.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
       "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
     },
@@ -430,8 +430,8 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_screen_1080x1080.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_screen_1080x1080.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_screen_1080x1080.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_screen_1080x1080.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
       "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
     },
@@ -443,8 +443,8 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_screen_1080x1350.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_screen_1080x1350.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_screen_1080x1350.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_screen_1080x1350.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
       "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
     },
@@ -456,8 +456,8 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_screen_1080x1920.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_screen_1080x1920.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_screen_1080x1920.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_screen_1080x1920.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
       "offer": "$99/month, three monthly payments; extra20% withCAPSULE20"
     },
@@ -469,8 +469,8 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_three-worlds_1080x1080.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_three-worlds_1080x1080.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_three-worlds_1080x1080.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_three-worlds_1080x1080.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -482,8 +482,8 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_three-worlds_1080x1350.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_three-worlds_1080x1350.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_three-worlds_1080x1350.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_three-worlds_1080x1350.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -495,8 +495,8 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_three-worlds_1080x1920.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_three-worlds_1080x1920.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_three-worlds_1080x1920.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_three-worlds_1080x1920.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -508,8 +508,8 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_live-from-france_1080x1080.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_live-from-france_1080x1080.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_live-from-france_1080x1080.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_live-from-france_1080x1080.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -521,8 +521,8 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_live-from-france_1080x1350.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_live-from-france_1080x1350.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_live-from-france_1080x1350.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_live-from-france_1080x1350.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -534,8 +534,8 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_live-from-france_1080x1920.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_live-from-france_1080x1920.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_live-from-france_1080x1920.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_live-from-france_1080x1920.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -547,8 +547,8 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_no-french_1080x1080.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_no-french_1080x1080.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_no-french_1080x1080.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_no-french_1080x1080.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -560,8 +560,8 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_no-french_1080x1350.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_no-french_1080x1350.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_no-french_1080x1350.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_no-french_1080x1350.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -573,8 +573,8 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_no-french_1080x1920.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_no-french_1080x1920.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_no-french_1080x1920.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_no-french_1080x1920.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/charline-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -586,8 +586,8 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_promo_1080x1080.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_promo_1080x1080.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_promo_1080x1080.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_promo_1080x1080.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -599,8 +599,8 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_promo_1080x1350.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_promo_1080x1350.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_promo_1080x1350.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_promo_1080x1350.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -612,8 +612,8 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_promo_1080x1920.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_promo_1080x1920.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_promo_1080x1920.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_promo_1080x1920.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/caitlin-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -625,8 +625,8 @@
       "format": "square",
       "width": 1080,
       "height": 1080,
-      "file": "banners/FA_Capsules_curiosity_1080x1080.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_curiosity_1080x1080.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_curiosity_1080x1080.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_curiosity_1080x1080.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -638,8 +638,8 @@
       "format": "portrait",
       "width": 1080,
       "height": 1350,
-      "file": "banners/FA_Capsules_curiosity_1080x1350.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_curiosity_1080x1350.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_curiosity_1080x1350.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_curiosity_1080x1350.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     },
@@ -651,8 +651,8 @@
       "format": "story",
       "width": 1080,
       "height": 1920,
-      "file": "banners/FA_Capsules_curiosity_1080x1920.png?v=20261019-final3",
-      "source": "banners/source/FA_Capsules_curiosity_1080x1920.html?v=20261019-final3",
+      "file": "banners/FA_Capsules_curiosity_1080x1920.png?v=20261019-final4",
+      "source": "banners/source/FA_Capsules_curiosity_1080x1920.html?v=20261019-final4",
       "portrait_source": "capsules-launch-work/media/portraits/philippe-website.jpg",
       "offer": "$63/month per capsule, three monthly payments; extra20% withCAPSULE20"
     }
@@ -6187,5 +6187,6 @@
       "download_status": "Exact YouTube stream blocked by sign-in/bot check; use verified embed."
     }
   ],
-  "revision": "20261019-final3"
+  "revision": "20261019-final4",
+  "ugc_source_commit": "9941a5f"
 }

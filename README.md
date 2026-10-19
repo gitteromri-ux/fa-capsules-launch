@@ -17,4 +17,4 @@ The supplied video-kit paths remain intact. Original UGC source files are retain
 The public Culture Capsules site, checkout and tracking were not modified by this launch-library build.
 The website mockup's per-session labels use total package price divided by session count: $29.70, $26.70 and $18.90. Package totals remain $297/$534/$567.
 Email assets are not installed ActiveCampaign automations. Trigger, timing and suppression metadata are included for implementation.
-The final-film ZIP is a GitHub release asset because it exceeds GitHub's per-file repository limit.
+The three final films are available individually and together in a downloadable ZIP.
