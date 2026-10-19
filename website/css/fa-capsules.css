@@ -357,10 +357,11 @@ html:root:root:root:root body#fa .kps-plan .kps-btn{width:100%}
   .kps-reel .kps-pill{font-size:.72rem;padding:.48rem .75rem;letter-spacing:.12em}
 }
 /* let the footage breathe */
-.kps-hero::before{background:linear-gradient(180deg,rgba(0,0,31,.5) 0%,rgba(0,0,31,.1) 30%,rgba(0,0,31,.42) 62%,rgba(0,0,31,.96) 100%),radial-gradient(55% 75% at 8% 78%,rgba(0,0,31,.55),transparent 70%)}
+.kps-hero .bg video{filter:brightness(1.2) saturate(1.06)}
+.kps-hero::before{background:linear-gradient(180deg,rgba(0,0,31,.22) 0%,rgba(0,0,31,.03) 30%,rgba(0,0,31,.24) 62%,rgba(0,0,31,.87) 100%),linear-gradient(90deg,rgba(0,0,31,.56),rgba(0,0,31,.12) 58%,transparent)}
 .kps-stage::before{background:linear-gradient(180deg,rgba(0,0,31,.18) 0%,rgba(0,0,31,.06) 30%,rgba(0,0,31,.66) 68%,rgba(0,0,31,.96) 100%)}
 @media (max-width:600px){
-  .kps-hero::before{background:linear-gradient(180deg,rgba(0,0,31,.55) 0%,rgba(0,0,31,.3) 28%,rgba(0,0,31,.62) 52%,rgba(0,0,31,.97) 100%)}
+  .kps-hero::before{background:linear-gradient(180deg,rgba(0,0,31,.3) 0%,rgba(0,0,31,.12) 28%,rgba(0,0,31,.54) 52%,rgba(0,0,31,.9) 100%)}
   .kps-hero .bg video{object-position:50% 35%}
 }
 .kps-h1,.kps-h1 .gi{text-shadow:0 1px 3px rgba(0,0,31,.75),0 2px 28px rgba(0,0,31,.85)}

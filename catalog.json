@@ -140,11 +140,11 @@
     },
     {
       "id": "charline-ad",
-      "title": "Charline \u2014 existing French Atelier presenter advertisement",
+      "title": "Charline \u00b7 original website recording",
       "file": "media/originals/charline-ad.mp4",
       "poster": "media/thumbnails/charline-ad.jpg",
       "type": "video",
-      "group": "website",
+      "group": "presenter-original",
       "duration": 54.721,
       "width": 1280,
       "height": 720,
@@ -164,15 +164,15 @@
     },
     {
       "id": "capsule-hero-garnier",
-      "title": "Cinema & Music \u2014 gilded opera auditorium",
+      "title": "Cinema & Music \u00b7 original website film",
       "file": "media/originals/capsule-hero-garnier.mp4",
       "poster": "media/thumbnails/capsule-hero-garnier.jpg",
       "type": "video",
-      "group": "website",
+      "group": "original-website",
       "duration": 8,
       "width": 1280,
       "height": 720,
-      "description": "Original website footage"
+      "description": "Original theme footage from the Culture Capsules page"
     },
     {
       "id": "pillar-fashion",
@@ -200,15 +200,15 @@
     },
     {
       "id": "capsule-hero-couture",
-      "title": "Fashion & Art \u2014 couture embroidery",
+      "title": "Fashion & Art \u00b7 original website film",
       "file": "media/originals/capsule-hero-couture.mp4",
       "poster": "media/thumbnails/capsule-hero-couture.jpg",
       "type": "video",
-      "group": "website",
+      "group": "original-website",
       "duration": 8,
       "width": 1280,
       "height": 720,
-      "description": "Original website footage"
+      "description": "Original theme footage from the Culture Capsules page"
     },
     {
       "id": "capsule-gastro-plating",
@@ -224,11 +224,11 @@
     },
     {
       "id": "demo-class",
-      "title": "French Atelier \u2014 existing dining-culture presenter advertisement",
+      "title": "Philippe \u00b7 original website recording",
       "file": "media/originals/demo-class.mp4",
       "poster": "media/thumbnails/demo-class.jpg",
       "type": "video",
-      "group": "website",
+      "group": "presenter-original",
       "duration": 53.057007,
       "width": 1280,
       "height": 720,
@@ -248,15 +248,15 @@
     },
     {
       "id": "capsule-hero-crayere",
-      "title": "Gastronomy & Wine \u2014 vaulted wine cellar",
+      "title": "Gastronomy & Wine \u00b7 original website film",
       "file": "media/originals/capsule-hero-crayere.mp4",
       "poster": "media/thumbnails/capsule-hero-crayere.jpg",
       "type": "video",
-      "group": "website",
+      "group": "original-website",
       "duration": 8,
       "width": 1280,
       "height": 720,
-      "description": "Original website footage"
+      "description": "Original theme footage from the Culture Capsules page"
     },
     {
       "id": "pillar-art",
@@ -341,6 +341,66 @@
       "width": 1920,
       "height": 1080,
       "description": "Original source file supplied in the Claude video kit, including lower thirds, cards and music"
+    },
+    {
+      "id": "restored-Fashion",
+      "title": "Fashion & Art \u00b7 intro/outro edit",
+      "file": "https://raw.githubusercontent.com/gitteromri-ux/fa-capsules-launch/67de4e047b492e050c5ab88590d970a2bd3ab7ec/media/finished/FA_Capsules_Fashion_ThemeTeaser_V1_23s.mp4",
+      "poster": "media/thumbnails/capsule-hero-couture.jpg",
+      "type": "video",
+      "group": "original-edits",
+      "duration": 23,
+      "width": 1920,
+      "height": 1080,
+      "description": "Existing edit: supplied opening, original website footage and supplied closing"
+    },
+    {
+      "id": "restored-Gastronomy",
+      "title": "Gastronomy & Wine \u00b7 intro/outro edit",
+      "file": "https://raw.githubusercontent.com/gitteromri-ux/fa-capsules-launch/67de4e047b492e050c5ab88590d970a2bd3ab7ec/media/finished/FA_Capsules_Gastronomy_ThemeTeaser_V1_23s.mp4",
+      "poster": "media/thumbnails/capsule-hero-crayere.jpg",
+      "type": "video",
+      "group": "original-edits",
+      "duration": 23,
+      "width": 1920,
+      "height": 1080,
+      "description": "Existing edit: supplied opening, original website footage and supplied closing"
+    },
+    {
+      "id": "restored-Cinema",
+      "title": "Cinema & Music \u00b7 intro/outro edit",
+      "file": "https://raw.githubusercontent.com/gitteromri-ux/fa-capsules-launch/67de4e047b492e050c5ab88590d970a2bd3ab7ec/media/finished/FA_Capsules_Cinema_ThemeTeaser_V1_23s.mp4",
+      "poster": "media/thumbnails/capsule-hero-garnier.jpg",
+      "type": "video",
+      "group": "original-edits",
+      "duration": 23,
+      "width": 1920,
+      "height": 1080,
+      "description": "Existing edit: supplied opening, original website footage and supplied closing"
+    },
+    {
+      "id": "restored-Philippe",
+      "title": "Philippe \u00b7 website edit",
+      "file": "https://raw.githubusercontent.com/gitteromri-ux/fa-capsules-launch/67de4e047b492e050c5ab88590d970a2bd3ab7ec/media/finished/FA_Capsules_Philippe_WebsiteEdit_Intro_Outro_Zoom.mp4",
+      "poster": "media/thumbnails/demo-class.jpg",
+      "type": "video",
+      "group": "presenter-edits",
+      "duration": 73.057,
+      "width": 1920,
+      "height": 1080,
+      "description": "Existing opening, presenter, outro and Zoom mockup sequence"
+    },
+    {
+      "id": "restored-Charline",
+      "title": "Charline \u00b7 website edit",
+      "file": "https://raw.githubusercontent.com/gitteromri-ux/fa-capsules-launch/67de4e047b492e050c5ab88590d970a2bd3ab7ec/media/finished/FA_Capsules_Charline_WebsiteEdit_Intro_Outro_Zoom.mp4",
+      "poster": "media/thumbnails/charline-ad.jpg",
+      "type": "video",
+      "group": "presenter-edits",
+      "duration": 74.721,
+      "width": 1920,
+      "height": 1080,
+      "description": "Existing opening, presenter, outro and Zoom mockup sequence"
     }
   ],
   "banners": [
@@ -6187,6 +6247,20 @@
       "download_status": "Exact YouTube stream blocked by sign-in/bot check; use verified embed."
     }
   ],
-  "revision": "20261019-final4",
-  "ugc_source_commit": "9941a5f"
+  "revision": "20261019-restored",
+  "ugc_source_commit": "9941a5f",
+  "original_pairs": [
+    "capsule-hero-couture",
+    "restored-Fashion",
+    "capsule-hero-crayere",
+    "restored-Gastronomy",
+    "capsule-hero-garnier",
+    "restored-Cinema"
+  ],
+  "presenter_edit_ids": [
+    "demo-class",
+    "restored-Philippe",
+    "charline-ad",
+    "restored-Charline"
+  ]
 }
