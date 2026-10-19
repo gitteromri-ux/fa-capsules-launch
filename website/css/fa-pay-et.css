@@ -1,0 +1,94 @@
+/* French Atelier — payment page in the eTeacher checkout format (plan band · course lines + tuition band · pay tabs · fee summary). */
+#fa-pay.fa-pay-et .fa-pay-plan{display:flex;flex-wrap:wrap;align-items:baseline;gap:.35rem 1rem;margin:0 0 1.5rem;padding:1.15rem 1.5rem;border-radius:18px;border:1px solid var(--nx-line-2);background:linear-gradient(120deg,rgba(10,107,214,.28),rgba(4,10,30,.35) 70%);box-shadow:0 0 0 1px rgba(47,164,255,.15),0 0 36px -12px rgba(47,164,255,.55)}
+#fa-pay.fa-pay-et .fa-pay-plan .k{flex-basis:100%;font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--nx-neon-b)}
+#fa-pay.fa-pay-et .fa-pay-plan strong{font-family:var(--serif);font-weight:600;font-size:clamp(1.5rem,2.2vw,1.95rem);line-height:1.1;color:#fff}
+#fa-pay.fa-pay-et .fa-pay-plan .s{font-family:var(--sans);font-size:1rem;color:var(--nx-ice)}
+#fa-pay.fa-pay-et .fa-pay-grid{grid-template-columns:minmax(0,1.15fr) minmax(340px,.85fr);align-items:start}
+#fa-pay.fa-pay-et .fa-pay-course{padding:0;overflow:hidden}
+#fa-pay.fa-pay-et .fa-pay-lines{padding:1.6rem 1.9rem 1.4rem;display:grid;gap:.55rem}
+#fa-pay.fa-pay-et .fa-pay-lines .ln{font-family:var(--sans);font-size:1.02rem;line-height:1.5;color:var(--nx-ice)}
+#fa-pay.fa-pay-et .fa-pay-lines .ln b{color:#fff;font-weight:600}
+#fa-pay.fa-pay-et .fa-pay-lines .ln:first-child span{color:var(--nx-gold);font-weight:600}
+#fa-pay.fa-pay-et .fa-pay-tband .fa-ck-band{border-radius:0;margin:0}
+#fa-pay.fa-pay-et .fa-pay-foot{font-family:var(--sans);font-size:.9rem;color:var(--nx-ice);margin:.9rem .2rem 1.3rem;opacity:.9}
+#fa-pay.fa-pay-et .fa-pay-paycard{padding:0;overflow:hidden}
+#fa-pay.fa-pay-et .fa-pay-methods{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:0;border-bottom:1px solid var(--nx-line)}
+#fa-pay.fa-pay-et .fa-pay-tab{display:flex;align-items:center;justify-content:center;gap:.55rem;flex-wrap:wrap;padding:1.05rem .9rem;border:0;border-radius:0;border-bottom:2px solid transparent;background:rgba(4,10,30,.55);box-shadow:none;cursor:pointer}
+#fa-pay.fa-pay-et .fa-pay-tab+.fa-pay-tab{border-left:1px solid var(--nx-line)}
+#fa-pay.fa-pay-et .fa-pay-tab.active{background:rgba(10,20,48,.95);border-bottom-color:var(--nx-neon-b);box-shadow:inset 0 -14px 28px -22px rgba(47,164,255,.9)}
+#fa-pay.fa-pay-et .fa-pay-tab img{height:26px;width:auto;display:block}
+#fa-pay.fa-pay-et .fa-pay-tab img.pp{height:30px}
+#fa-pay.fa-pay-et .fa-pay-wallet{display:inline-flex;align-items:center;height:26px;padding:0 .5rem;border-radius:6px;background:#fff;color:#111;border:1px solid rgba(0,0,0,.08)}
+#fa-pay.fa-pay-et .fa-pay-wallet img{height:17px}
+#fa-pay.fa-pay-et .fa-pay-body{padding:1.5rem 1.9rem 1.7rem}
+#fa-pay.fa-pay-et .fa-pay-lbl{font-family:var(--sans);font-size:1.02rem;font-weight:600;color:#fff;margin:0 0 .9rem}
+#fa-pay.fa-pay-et .fa-pay-sbnote{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-family:var(--sans);font-size:.9rem;line-height:1.5;color:var(--nx-ice);margin:0 0 .9rem}
+#fa-pay.fa-pay-et .fa-pay-today{grid-template-columns:1fr auto;padding:.85rem 1.1rem;margin-bottom:1.1rem;border-radius:14px}
+#fa-pay.fa-pay-et .fa-pay-today strong{grid-row:1;font-size:1.7rem}
+#fa-pay.fa-pay-et .fa-pay-summary .body{padding:1.5rem 1.7rem 1.6rem;gap:1rem}
+#fa-pay.fa-pay-et .fa-pay-summary h2{font-size:1.55rem}
+#fa-pay.fa-pay-et .fa-pay-fees{display:grid;gap:.9rem;padding-top:.6rem}
+#fa-pay.fa-pay-et .fee-row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-family:var(--sans)}
+#fa-pay.fa-pay-et .fee-row .k{font-size:1rem;font-weight:600;color:#fff}
+#fa-pay.fa-pay-et .fee-row .v{font-size:1.12rem;font-weight:700;color:#fff;white-space:nowrap}
+#fa-pay.fa-pay-et .fee-row .v s{font-weight:500;color:rgba(214,232,255,.5);margin-right:.5rem}
+#fa-pay.fa-pay-et .fee-note{font-family:var(--sans);font-size:.9rem;font-style:italic;color:var(--nx-ice);margin:.25rem 0 0}
+#fa-pay.fa-pay-et .fee-total{padding-top:.9rem;border-top:1px solid var(--nx-line)}
+#fa-pay.fa-pay-et .fee-total .fee-row .v{color:var(--nx-gold);font-size:1.3rem}
+#fa-pay.fa-pay-et .fa-pay-policy{padding-top:1rem;border-top:1px solid var(--nx-line);font-family:var(--sans);font-size:.92rem;line-height:1.6;color:var(--nx-ice)}
+#fa-pay.fa-pay-et .fa-pay-policy p{margin:0 0 .6rem}
+#fa-pay.fa-pay-et .fa-pay-policy a{color:var(--nx-neon-b);text-decoration:none;font-weight:500}
+#fa-pay.fa-pay-et .fa-pay-policy a:hover{text-decoration:underline}
+@media (max-width:960px){
+  #fa-pay.fa-pay-et .fa-pay-plan{margin-bottom:1rem;padding:.95rem 1.1rem}
+  #fa-pay.fa-pay-et .fa-pay-grid{grid-template-columns:1fr;grid-template-areas:"side" "main";gap:1rem}
+  #fa-pay.fa-pay-et .fa-pay-side{display:contents}
+  #fa-pay.fa-pay-et .fa-pay-summary{grid-area:side}
+  #fa-pay.fa-pay-et .fa-pay-main{grid-area:main}
+  #fa-pay.fa-pay-et .fa-pay-help{grid-row:3}
+  #fa-pay.fa-pay-et .fa-pay-sumbar{display:flex}
+  #fa-pay.fa-pay-et .fa-pay-sumfull{display:none}
+  #fa-pay.fa-pay-et .fa-pay-summary.is-open .fa-pay-sumfull{display:block}
+  #fa-pay.fa-pay-et .fa-pay-summary h2,#fa-pay.fa-pay-et .fa-pay-summary .fa-ck-brandline,#fa-pay.fa-pay-et .fa-pay-summary .fa-ck-aside-sub{display:none}
+  #fa-pay.fa-pay-et .fa-pay-lines{padding:1.2rem 1.1rem 1rem}
+  #fa-pay.fa-pay-et .fa-pay-body{padding:1.2rem 1.1rem 1.3rem}
+  #fa-pay.fa-pay-et .fa-pay-tab{padding:.9rem .6rem;gap:.4rem}
+  #fa-pay.fa-pay-et .fa-pay-tab img{height:22px}
+  #fa-pay.fa-pay-et .fa-pay-wallet{height:22px;padding:0 .4rem}
+  #fa-pay.fa-pay-et .fa-pay-wallet img{height:14px}
+}
+/* light themes */
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-plan{background:#fff;border-color:rgba(var(--lt-acc-rgb),.45);box-shadow:0 0 0 1px rgba(var(--lt-acc-rgb),.12),0 18px 40px -24px rgba(26,30,51,.25)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-plan .k{color:var(--lt-acc-2)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-plan strong{color:var(--lt-ink)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-plan .s{color:var(--lt-ink-2)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-lines .ln{color:var(--lt-ink-2)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-lines .ln b{color:var(--lt-ink)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-lines .ln:first-child span{color:var(--lt-gold)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-foot{color:var(--lt-ink-2)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-methods{border-bottom-color:rgba(26,30,51,.12)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-tab{background:#F4F1EA}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-tab+.fa-pay-tab{border-left-color:rgba(26,30,51,.12)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-tab.active{background:#fff;border-bottom-color:var(--lt-acc);box-shadow:none}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-wallet{border-color:rgba(26,30,51,.15)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-lbl{color:var(--lt-ink)}
+body[class*="fa-ckt-"] #fa-pay.fa-pay-et .fa-pay-sbnote{color:var(--lt-ink-2)}
+body.fa-ckt-paper #fa-pay.fa-pay-et .fee-row .k,body.fa-ckt-ivory #fa-pay.fa-pay-et .fee-row .k,body.fa-ckt-paper #fa-pay.fa-pay-et .fee-row .v,body.fa-ckt-ivory #fa-pay.fa-pay-et .fee-row .v{color:var(--lt-ink)}
+body.fa-ckt-paper #fa-pay.fa-pay-et .fee-row .v s,body.fa-ckt-ivory #fa-pay.fa-pay-et .fee-row .v s{color:rgba(26,30,51,.4)}
+body.fa-ckt-paper #fa-pay.fa-pay-et .fee-note,body.fa-ckt-ivory #fa-pay.fa-pay-et .fee-note,body.fa-ckt-paper #fa-pay.fa-pay-et .fa-pay-policy,body.fa-ckt-ivory #fa-pay.fa-pay-et .fa-pay-policy{color:var(--lt-ink-2)}
+body.fa-ckt-paper #fa-pay.fa-pay-et .fee-total,body.fa-ckt-ivory #fa-pay.fa-pay-et .fee-total,body.fa-ckt-paper #fa-pay.fa-pay-et .fa-pay-policy,body.fa-ckt-ivory #fa-pay.fa-pay-et .fa-pay-policy{border-top-color:rgba(26,30,51,.12)}
+body.fa-ckt-paper #fa-pay.fa-pay-et .fee-total .fee-row .v,body.fa-ckt-ivory #fa-pay.fa-pay-et .fee-total .fee-row .v{color:var(--lt-gold)}
+body.fa-ckt-paper #fa-pay.fa-pay-et .fa-pay-policy a,body.fa-ckt-ivory #fa-pay.fa-pay-et .fa-pay-policy a{color:var(--lt-acc-2)}
+/* house mobile rules force img height:auto / width:100%; pin the payment marks */
+html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-methods{display:grid!important;grid-template-columns:1fr 1fr!important}
+html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-tab{display:flex!important;flex-direction:row!important;flex-wrap:wrap!important;align-items:center!important;justify-content:center!important;width:auto!important}
+html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-tab img{height:26px!important;width:auto!important;max-width:none!important;max-height:none!important;margin:0!important;display:block!important}
+html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-tab img.pp{height:30px!important}
+html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-wallet img{height:17px!important}
+@media (max-width:960px){
+  html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-tab img{height:21px!important}
+  html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-tab img.pp{height:24px!important}
+  html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-wallet{height:21px!important;padding:0 .35rem!important}
+  html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-wallet img{height:13px!important}
+  html:root:root:root:root:root:root:root:root body#fa #fa-pay.fa-pay-et .fa-pay-tab{gap:.35rem!important;padding:.8rem .4rem!important}
+}

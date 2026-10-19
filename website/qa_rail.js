@@ -1,0 +1,24 @@
+const pw = require('/home/user/node_modules/playwright');
+(async () => {
+  const browser = await pw.chromium.launch();
+  const page = await browser.newPage();
+  await page.route('**/*', r => r.request().resourceType()==='media'?r.abort():r.continue());
+  page.setDefaultNavigationTimeout(30000); page.setDefaultTimeout(10000);
+  await page.setViewportSize({width:1280,height:900});
+  await page.goto('http://localhost:8066/index.html',{waitUntil:'domcontentloaded'});
+  await page.waitForTimeout(700);
+  await page.evaluate(()=>document.getElementById('cls-btn-fa').click());
+  await page.waitForTimeout(700);
+  let bb = await page.locator('#cls-track-fa').boundingBox();
+  await page.evaluate(y=>window.scrollTo(0,y-40), bb.y);
+  await page.waitForTimeout(300);
+  await page.locator('#cls-track-fa').screenshot({path:'/home/user/workspace/v3_clusters_fa_rail.png'});
+  await page.evaluate(()=>document.getElementById('cls-btn-lsf').click());
+  await page.waitForTimeout(800);
+  bb = await page.locator('#cls-track-lsf').boundingBox();
+  await page.evaluate(y=>window.scrollTo(0,y-40), bb.y);
+  await page.waitForTimeout(300);
+  await page.locator('#cls-track-lsf').screenshot({path:'/home/user/workspace/v3_clusters_lsf_rail.png'});
+  await browser.close();
+  console.log('done');
+})();

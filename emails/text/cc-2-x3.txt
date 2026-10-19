@@ -1,0 +1,19 @@
+%IF !empty($FIRSTNAME)%Bonjour %FIRSTNAME%,%ELSE%Bonjour,%/IF%
+
+Your next included Culture Capsules conference is three days away. Check your joining instructions now so you have the time and Zoom access ready.
+
+If something is still preventing you from joining, reply. We can check your booking and help with access questions.
+
+Prepare for My Next Conference
+https://fa-capsules-v3.pplx.app/capsules.html?utm_source=activecampaign&utm_medium=email&utm_campaign=fa_capsules_x_two-capsules&utm_content=cc-2-x3
+
+À bientôt,
+The French Atelier team
+
+The French Atelier by Acadomia
+7 rue de la Baume, 75008 Paris, France
+
+Sent to %EMAIL%. You are enrolled in Culture Capsules with The French Atelier.
+
+Unsubscribe: %UNSUBSCRIBELINK%
+Update preferences: %UPDATELINK%

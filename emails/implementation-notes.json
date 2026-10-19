@@ -1,0 +1,64 @@
+{
+  "status": "Assets only. Nothing installed, sent or published.",
+  "cmo_lock": {
+    "audience": "Four French Atelier launch audiences plus package-specific checkout abandoners and paid students.",
+    "belief": "You can experience French culture live without speaking French.",
+    "proof": "Approved public programme, live French expertise, real French Atelier/Acadomia and Trustpilot marks; no rating.",
+    "offer": "One/two/three Capsules; CAPSULE20 extra 20%; one accurately labeled programme-page CTA.",
+    "format": "Responsive table-based 720px email; 18px body; 375px mobile; editable HTML and plaintext."
+  },
+  "inventory": "64 total: 27 cart recovery, 12 onboarding, 12 post-attendance, 9 no-show, 4 launch.",
+  "general": "Retain sender configuration from the approved French Atelier account. No invented personal sender or reply-to is embedded.",
+  "activation_gate": [
+    "Confirm approved sender and monitored reply-to",
+    "Confirm consent, segmentation and deduplication",
+    "Map real checkout/order/attendance/schedule events; no custom field or automation names are asserted",
+    "Session reminders require separate real joining instructions; all requested CTA links intentionally point to the programme page",
+    "Proposed cadences are not AC installation claims",
+    "Run actual inbox/client tests and standard tag resolution before activation"
+  ],
+  "routing": {
+    "stage_precedence": "Purchase stops all A sequences. A3 suppresses A2/A1; A2 suppresses A1. One package track per contact.",
+    "unknown_package": "No package-specific recovery until package intent is verified; do not guess.",
+    "frequency_cap": "At most one marketing email per 24 hours; transaction confirmation may bypass only under approved messaging policy. Session reminders outrank U. No-show recovery suppresses U.",
+    "launch_priority": [
+      "active-students",
+      "alumni",
+      "noncompleters",
+      "leads"
+    ],
+    "session_reminders": "B2-B4 refer to first scheduled conference only. Skip reminders whose relative send time has passed; do not batch-send missed reminders.",
+    "post_attendance": "U1-U4 run once after first attended conference. They are programme participation emails, not offers to repurchase owned packages.",
+    "no_show": "X3 is valid only if verified next included conference is three days away after X2; otherwise skip that slot. No auto-reschedule, refund, replay or replacement lesson promise."
+  },
+  "source_authority": [
+    "User-approved offer overrides stale repository pricing and website per-session arithmetic",
+    "Current public site supplies programme and brand facts",
+    "Original masterclass repository supplies all 20 unique lifecycle slots",
+    "Revised masterclass and FA repositories supply corrected lifecycle roles and wrapper patterns",
+    "Julie /blast invitation supplies audience-aware letter structure"
+  ],
+  "source_defects_not_imported": [
+    "FA source contains unrelated longevity/Blueprint copy and conflicting legacy benefit values",
+    "LLA source date/refund/credit claims belong to another product",
+    "Current public site per-session price labels are mathematically wrong and omitted",
+    "Current public site expiry wording is not repeated; brief prohibits expiry claims"
+  ],
+  "source_urls": [
+    "https://fa-capsules-v3.pplx.app/capsules.html",
+    "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails",
+    "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier",
+    "https://github.com/gitteromri-ux/lla-masterclass-emails"
+  ],
+  "brand": {
+    "navy": "#000034",
+    "gold": "#C8A96B",
+    "ivory": "#F3EFE9",
+    "paper": "#FAF7F1",
+    "font": "Cormorant Garamond with Georgia fallback; Inter with Arial fallback for email clients",
+    "logos": "Unmodified approved public-site assets",
+    "trustpilot": "Logo only. No rating, star strip, review count or endorsement claim."
+  },
+  "compatibility": "Inline presentation tables, fixed Outlook wrapper and VML CTA. Webfonts are optional enhancements. Trustpilot SVG image falls back to its alt label in clients that block SVG; an exact raster fallback is included for future asset hosting.",
+  "claims": "CAPSULE20 must be entered manually. No automatic discount-application, saved cart, date, seat hold, payment failure or inventory urgency claim."
+}

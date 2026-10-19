@@ -1,0 +1,115 @@
+/* French Atelier — readability layer. Raises the small type across the sales surfaces to a readable scale:
+   body copy ≥ 1.08rem (≈17–18px), bullets ≥ 1.05rem, notes ≥ 1rem, eyebrows/labels ≥ .85rem. Loaded last. */
+:root{--fa-t-body:1.18rem;--fa-t-li:1.15rem;--fa-t-note:1.05rem;--fa-t-lbl:.92rem;--fa-t-lh:1.55}
+/* ---------- pricing page plan cards ---------- */
+html:root:root:root:root body .plan-card .plan-eyebrow{font-size:var(--fa-t-lbl)!important;letter-spacing:.16em}
+html:root:root:root:root body .plan-card .plan-name{font-size:1.9rem!important;line-height:1.15}
+html:root:root:root:root body .plan-card .plan-price{font-size:clamp(2.8rem,3.4vw,3.6rem)!important}
+html:root:root:root:root body .plan-card .plan-per{font-size:1.05rem!important}
+html:root:root:root:root body .plan-card .plan-saving{font-size:1.12rem!important;line-height:1.5!important;opacity:1!important}
+html:root:root:root:root body .plan-card .plan-saving strong{font-weight:600}
+html:root:root:root:root body .plan-card .plan-includes-label{font-size:.9rem!important;letter-spacing:.08em}
+html:root:root:root:root body .plan-card .plan-includes li{font-size:var(--fa-t-li)!important;line-height:1.5!important;padding:.42rem 0!important}
+html:root:root:root:root body .plan-card .plan-badge{font-size:.82rem!important;padding:.4rem 1rem!important;letter-spacing:.12em}
+html:root:root:root:root body .plan-card .plan-cta{font-size:1.05rem!important;min-height:56px}
+html:root:root:root:root body .breakdown-table th{font-size:.9rem!important;letter-spacing:.1em}
+html:root:root:root:root body .breakdown-table td{font-size:1.15rem!important;padding:1rem 1.1rem!important;line-height:1.45}
+html:root:root:root:root body .breakdown-table .bd-plan{font-size:1.15rem!important}
+html:root:root:root:root body .breakdown-note,html:root:root:root:root body .inclusions-note p{font-size:var(--fa-t-note)!important;line-height:1.6!important}
+html:root:root:root:root body .pricing-grid+.breakdown .bd-save{font-size:1.1rem!important}
+/* ---------- online offer block (home, pricing, course pages) ---------- */
+html:root:root:root:root body .fa-offer .fa-offer-badge{font-size:.86rem!important;padding:.5rem 1.1rem!important;letter-spacing:.12em}
+html:root:root:root:root body .fa-offer .fa-offer-eyebrow{font-size:1.25rem!important}
+html:root:root:root:root body .fa-offer .fa-offer-title{font-size:clamp(2.2rem,3.4vw,3.2rem)!important;line-height:1.08!important}
+html:root:root:root:root body .fa-offer .fa-offer-copy{font-size:1.22rem!important;line-height:1.6!important}
+html:root:root:root:root body .fa-offer .fa-offer-points li{font-size:1.22rem!important;line-height:1.5!important;padding:.35rem 0 .35rem 1.7rem!important}
+html:root:root:root:root body .fa-offer .fa-offer-points li::before{width:.6rem;height:.6rem;top:.85em}
+html:root:root:root:root body .fa-offer .fa-offer-price .was{font-size:1.02rem!important}
+html:root:root:root:root body .fa-offer .fa-offer-price .now{font-size:clamp(3rem,4vw,4.2rem)!important}
+html:root:root:root:root body .fa-offer .fa-offer-price .now small{font-size:1rem!important}
+html:root:root:root:root body .fa-offer .fa-offer-price .today{font-size:1.2rem!important}
+html:root:root:root:root body .fa-offer .fa-offer-price .total{font-size:1.05rem!important;line-height:1.5!important}
+html:root:root:root:root body .fa-offer .pay-icons span{font-size:.9rem!important}
+/* ---------- course page price cards ---------- */
+html:root:root:root:root body .price-card .pc-tag{font-size:.86rem!important}
+html:root:root:root:root body .price-card .pc-sub{font-size:1.08rem!important;line-height:1.5!important}
+html:root:root:root:root body .price-card ul li{font-size:var(--fa-t-li)!important;line-height:1.5!important}
+/* ---------- capsules offers ---------- */
+html:root:root:root:root body .fa-cap-offer .k{font-size:.84rem!important}
+html:root:root:root:root body .fa-cap-offer h3{font-size:1.7rem!important}
+html:root:root:root:root body .fa-cap-offer .price{font-size:3rem!important}
+html:root:root:root:root body .fa-cap-offer .price small{font-size:.9rem!important}
+html:root:root:root:root body .fa-cap-offer .sub{font-size:1.05rem!important;line-height:1.55!important}
+html:root:root:root:root body .fa-cap-offer ul li{font-size:var(--fa-t-li)!important;line-height:1.5!important}
+html:root:root:root:root body .fa-promo-tag{font-size:.95rem!important}
+/* ---------- checkout modal ---------- */
+html:root:root:root:root body #fa-ck .fa-ck-stepline{font-size:1.05rem!important}
+html:root:root:root:root body #fa-ck p.fa-ck-sub{font-size:1.2rem!important;line-height:1.55!important}
+html:root:root:root:root body #fa-ck .fa-ck-field>label,html:root:root:root:root body #fa-ck label{font-size:1.02rem!important}
+html:root:root:root:root body #fa-ck input,html:root:root:root:root body #fa-ck select{font-size:1.1rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-consent span,html:root:root:root:root body #fa-ck p.fa-ck-fine,html:root:root:root:root body #fa-ck p.fa-ck-hint,html:root:root:root:root body #fa-ck p.fa-ck-msg{font-size:var(--fa-t-note)!important;line-height:1.55!important}
+html:root:root:root:root body #fa-ck .fa-ck-group legend{font-size:1.25rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-opt-in b,html:root:root:root:root body #fa-ck .fa-ck-pick-txt b{font-size:1.3rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-opt-in span,html:root:root:root:root body #fa-ck .fa-ck-opt-cefr,html:root:root:root:root body #fa-ck .fa-ck-opt-route,html:root:root:root:root body #fa-ck .fa-ck-pick-txt span{font-size:1.02rem!important;line-height:1.45!important}
+html:root:root:root:root body #fa-ck .fa-ck-facts dt{font-size:.88rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-facts dd,html:root:root:root:root body #fa-pay dd{font-size:1.08rem!important;line-height:1.5!important}
+html:root:root:root:root body #fa-ck .fa-ck-course-name{font-size:1.5rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-band-k,html:root:root:root:root body #fa-pay .fa-ck-band-k{font-size:1rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-band-s,html:root:root:root:root body #fa-pay .fa-ck-band-s{font-size:1.15rem!important;line-height:1.55!important}
+html:root:root:root:root body #fa-ck .fa-ck-off,html:root:root:root:root body #fa-pay .fa-ck-off{font-size:.95rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-promo,html:root:root:root:root body #fa-ck .fa-ck-promo-k{font-size:1.08rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-sum-row{font-size:1.15rem!important;padding:.85rem 0!important}
+html:root:root:root:root body #fa-ck .fa-ck-sum-row strong{font-size:1.2rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-sum-row.is-accent strong,html:root:root:root:root body #fa-ck .fa-ck-sum-row.is-total strong{font-size:1.35rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-save,html:root:root:root:root body #fa-pay .fa-pay-save{font-size:1rem!important;padding:.5rem 1rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-trust li,html:root:root:root:root body #fa-ck li{font-size:1.12rem!important;line-height:1.5!important}
+html:root:root:root:root body #fa-ck .fa-ck-price-lab{font-size:1rem!important;line-height:1.4!important}
+html:root:root:root:root body #fa-ck .fa-ck-aside-sub{font-size:1.1rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-brandline,html:root:root:root:root body #fa-pay .fa-ck-brandline{font-size:1.05rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-help,html:root:root:root:root body #fa-ck .fa-wa-inline{font-size:1.02rem!important}
+html:root:root:root:root body #fa-ck .fa-ck-step{font-size:1.02rem!important}
+/* ---------- payment page ---------- */
+html:root:root:root:root body #fa-pay .fa-ck-step{font-size:1.05rem!important}
+html:root:root:root:root body #fa-pay .fa-pay-plan .k{font-size:.9rem!important}
+html:root:root:root:root body #fa-pay .fa-pay-plan .s{font-size:1.15rem!important}
+html:root:root:root:root body #fa-pay .fa-pay-lines .ln{font-size:1.2rem!important;line-height:1.55!important;padding:.3rem 0!important}
+html:root:root:root:root body #fa-pay .fa-pay-foot{font-size:1.02rem!important;line-height:1.55!important}
+html:root:root:root:root body #fa-pay .fa-pay-lbl{font-size:1.2rem!important}
+html:root:root:root:root body #fa-pay .fa-pay-today .k{font-size:1.05rem!important}
+html:root:root:root:root body #fa-pay .fa-pay-sbnote,html:root:root:root:root body #fa-pay .fa-pay-status{font-size:1rem!important;line-height:1.55!important}
+html:root:root:root:root body #fa-pay .fa-pay-secure span{font-size:.95rem!important}
+html:root:root:root:root body #fa-pay .fa-pay-summary h2{font-size:2rem!important}
+html:root:root:root:root body #fa-pay .fa-ck-aside-sub{font-size:1.1rem!important}
+html:root:root:root:root body #fa-pay .fee-row .k{font-size:1.15rem!important;font-weight:600}
+html:root:root:root:root body #fa-pay .fee-row .v{font-size:1.3rem!important}
+html:root:root:root:root body #fa-pay .fee-row .v s{font-size:1rem!important}
+html:root:root:root:root body #fa-pay .fee-note{font-size:1.05rem!important;line-height:1.5!important;font-style:normal!important}
+html:root:root:root:root body #fa-pay .fee-total .fee-row .k{font-size:1.15rem!important}
+html:root:root:root:root body #fa-pay .fee-total .fee-row .v{font-size:1.85rem!important}
+html:root:root:root:root body #fa-pay .buyer{font-size:1.12rem!important;line-height:1.6!important}
+html:root:root:root:root body #fa-pay .buyer .k{font-size:.9rem!important}
+html:root:root:root:root body #fa-pay .fa-pay-policy p{font-size:1.05rem!important;line-height:1.6!important}
+html:root:root:root:root body #fa-pay .fa-pay-help p{font-size:1.15rem!important;line-height:1.55!important}
+html:root:root:root:root body #fa-pay .fa-pay-help-tel{font-size:1.2rem!important}
+html:root:root:root:root body #fa-pay p.fa-pay-help-fine{font-size:.95rem!important;line-height:1.5!important}
+html:root:root:root:root body #fa-pay .fa-pay-help-tp span{font-size:1rem!important}
+/* ---------- promo strip + floater ---------- */
+html:root:root:root:root body .fa-strip-msg{font-size:1.05rem!important}
+html:root:root:root:root body .fa-strip-code{font-size:.9rem!important}
+html:root:root:root:root body .fa-strip-ends{font-size:1rem!important}
+html:root:root:root:root body .fa-strip-cta{font-size:1rem!important}
+html:root:root:root:root body .fa-float-cta .fa-cta-eyebrow{font-size:11.5px!important}
+html:root:root:root:root body .fa-float-cta .fa-cta-title{font-size:17px!important}
+html:root:root:root:root body .hero .hero-choice{font-size:1.05rem!important}
+/* ---------- mobile: keep the same floors, no shrink ---------- */
+@media (max-width:760px){
+  html:root:root:root:root body .fa-strip-msg{font-size:.84rem!important}
+  html:root:root:root:root body .fa-strip-ends{font-size:.84rem!important}
+  html:root:root:root:root body .fa-offer .fa-offer-points li{font-size:1.08rem!important}
+  html:root:root:root:root body .plan-card .plan-price{font-size:2.8rem!important}
+  html:root:root:root:root body .breakdown-table td{font-size:1rem!important;padding:.8rem .7rem!important}
+  html:root:root:root:root body #fa-pay .fa-pay-plan .s{font-size:1.05rem!important}
+}
+
+html:root:root:root:root body .fa-cap-offer .fa-tot{display:block;margin-top:.35rem;font-size:.92rem!important;opacity:.62;font-weight:400}
+html:root:root:root:root body .fa-cap-offer .price small{font-size:.95rem!important;letter-spacing:.02em;text-transform:none;opacity:.8}

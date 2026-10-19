@@ -1,0 +1,36 @@
+{
+  "status": "Inventory fixed before drafting",
+  "scope": "Assets only. No ActiveCampaign installation, sending or publishing.",
+  "count": 64,
+  "lifecycle_count": 60,
+  "launch_count": 4,
+  "source_repositories": [
+    {"repository":"gitteromri-ux/french-atelier-lifecycle-emails","head":"118f6d4b0e6e781b864a8d53b2109ffbb904d009","url":"https://github.com/gitteromri-ux/french-atelier-lifecycle-emails","current_revised_count":36},
+    {"repository":"gitteromri-ux/lla-masterclass-emails-3tier","head":"098fbb448ee3233d9ab60f619989889cd7d9003a","url":"https://github.com/gitteromri-ux/lla-masterclass-emails-3tier","current_revised_count":36},
+    {"repository":"gitteromri-ux/lla-masterclass-emails","head":"e83ccd4dbc2335ac8173fa8427c8be4fba270d60","url":"https://github.com/gitteromri-ux/lla-masterclass-emails","unique_lifecycle_slots":20}
+  ],
+  "source_resolution": "Current revised branches have 16 Regular plus 20 VIP emails. The original has all 20 unique lifecycle slots. Preserve that full union for each of three Capsules packages. FA additional-offer mockups are not independent lifecycle slots. Legacy benefits, price, deadlines and custom fields are not imported.",
+  "families": [
+    {"sequence":"A1","source_ids":["jm-a1-1","jm-a1-2","jm-a1-3"],"meaning":"Name/contact-details abandoned","count_per_package":3,"output_count":9},
+    {"sequence":"A2","source_ids":["jm-a2-1","jm-a2-2","jm-a2-3"],"meaning":"Package/theme-details abandoned","count_per_package":3,"output_count":9},
+    {"sequence":"A3","source_ids":["jm-a3-1","jm-a3-2","jm-a3-3"],"meaning":"Payment not completed","count_per_package":3,"output_count":9},
+    {"sequence":"B","source_ids":["jm-b1","jm-b2","jm-b3","jm-b4"],"meaning":"Confirmation/preparation/reminders","count_per_package":4,"output_count":12},
+    {"sequence":"U","source_ids":["jm-u1","jm-u2","jm-u3","jm-u4"],"meaning":"Post-attendance participation/enrichment, no invented upsell credit","count_per_package":4,"output_count":12},
+    {"sequence":"X","source_ids":["jm-x1","jm-x2","jm-x3"],"meaning":"Missed-session support, no automatic transfer or replay promise","count_per_package":3,"output_count":9}
+  ],
+  "packages": [
+    {"id":"one-capsule","name":"One capsule","sessions":10,"base_total":297,"base_monthly":99,"payments":3,"promo_code":"CAPSULE20","promo_total":237.60,"promo_monthly":79.20},
+    {"id":"two-capsules","name":"Two capsules","sessions":20,"base_total":534,"base_monthly":178,"payments":3,"promo_code":"CAPSULE20","promo_total":427.20,"promo_monthly":142.40},
+    {"id":"three-capsules","name":"All three capsules","sessions":30,"base_total":567,"base_monthly":189,"payments":3,"promo_code":"CAPSULE20","promo_total":453.60,"promo_monthly":151.20}
+  ],
+  "launch_segments":["alumni","active-students","noncompleters","leads"],
+  "approved_offer_url":"https://fa-capsules-v3.pplx.app/capsules.html",
+  "safety_notes":[
+    "No fixed class dates, discount expiry, refund terms, teacher identities, seat holds, saved-cart or payment failure claims.",
+    "All marketing CTA URLs go to the approved Capsules page, carry UTMs and omit fragments.",
+    "Onboarding/reminder CTA is programme review, not a falsely labeled Zoom or learning-platform link.",
+    "Operational session reminders require a verified schedule and separately delivered joining instructions.",
+    "Only FIRSTNAME, EMAIL, UNSUBSCRIBELINK, UPDATELINK and approved FIRSTNAME fallback syntax are permitted.",
+    "Cadences are proposed adaptations, not claims about installed ActiveCampaign automations."
+  ]
+}

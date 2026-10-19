@@ -1,0 +1,19 @@
+%IF !empty($FIRSTNAME)%Bonjour %FIRSTNAME%,%ELSE%Bonjour,%/IF%
+
+How is your two-capsule programme going? If you need help finding a session time or your joining instructions, reply to this email.
+
+Keep the next conference in your calendar and a question in your notebook. The programme is here whenever you want to look ahead.
+
+Plan My Next Culture Conference
+https://fa-capsules-v3.pplx.app/capsules.html?utm_source=activecampaign&utm_medium=email&utm_campaign=fa_capsules_u_two-capsules&utm_content=cc-2-u4
+
+À bientôt,
+The French Atelier team
+
+The French Atelier by Acadomia
+7 rue de la Baume, 75008 Paris, France
+
+Sent to %EMAIL%. You are enrolled in Culture Capsules with The French Atelier.
+
+Unsubscribe: %UNSUBSCRIBELINK%
+Update preferences: %UPDATELINK%

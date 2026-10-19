@@ -1,0 +1,49 @@
+/* French Atelier — MIDNIGHT (new default for the dark build).
+   Dark, lit page atmosphere (navy + light-blue and gold glows) with WHITE content cards and navy ink for maximum legibility,
+   gold for money and CTAs. Inherits the light component styling (body.fa-ckt-midnight) and re-darkens the page shell. */
+body.fa-ckt-midnight{--lt-acc:#C8A96B;--lt-acc-2:#A98D52;--lt-acc-3:#E8D3A6;--lt-acc-rgb:200,169,107;--lt-line:rgba(200,169,107,.32);--lt-line-2:rgba(200,169,107,.55);--lt-sel-bg:linear-gradient(170deg,#FFFFFF,#FBF5E8);--lt-step-txt:#00001F}
+/* page shell back to night */
+body.fa-ckt-midnight .fa-pay-page{background:radial-gradient(60% 50% at 10% 0%,rgba(47,164,255,.26),transparent 60%),radial-gradient(45% 40% at 95% 15%,rgba(10,107,214,.28),transparent 65%),radial-gradient(55% 40% at 70% 105%,rgba(216,188,133,.22),transparent 70%),linear-gradient(180deg,#071028 0%,#050B24 45%,#02031F 100%);color:#fff}
+body.fa-ckt-midnight .fa-pay-atmos{background:radial-gradient(40% 30% at 30% 40%,rgba(111,196,255,.10),transparent 70%)}
+body.fa-ckt-midnight .fa-pay-progress .fa-ck-step{color:rgba(255,255,255,.72)}
+body.fa-ckt-midnight .fa-pay-progress .fa-ck-step.is-on{color:#fff}
+body.fa-ckt-midnight .fa-pay-progress .fa-ck-step i{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff}
+body.fa-ckt-midnight .fa-pay-progress .fa-ck-step.is-done i{background:rgba(200,169,107,.25);color:#F3E2BD}
+body.fa-ckt-midnight .fa-pay-progress .fa-ck-step+.fa-ck-step::before{background:rgba(255,255,255,.2)}
+body.fa-ckt-midnight .fa-pay-foot{color:rgba(255,255,255,.86)}
+body.fa-ckt-midnight .fa-env-ribbon{background:linear-gradient(90deg,#0A6BD6,#2FA4FF,#0A6BD6);color:#fff}
+/* white cards float on the night with real light around them */
+body.fa-ckt-midnight .fa-pay-card,body.fa-ckt-midnight .fa-pay-summary,body.fa-ckt-midnight .fa-pay-help{border-color:rgba(255,255,255,.55);box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 90px -20px rgba(111,196,255,.55),0 50px 100px -50px rgba(0,0,0,.9)}
+body.fa-ckt-midnight #fa-pay.fa-pay-et .fa-pay-plan{background:linear-gradient(115deg,#1B4CA8 0%,#102B6A 50%,#0A1A45 100%);border-color:rgba(111,196,255,.55);box-shadow:0 0 0 1px rgba(47,164,255,.25),0 0 80px -16px rgba(47,164,255,.8),0 30px 70px -40px rgba(0,0,0,.9)}
+body.fa-ckt-midnight #fa-pay.fa-pay-et .fa-pay-plan .k{color:#BFE0FF}
+body.fa-ckt-midnight #fa-pay.fa-pay-et .fa-pay-plan .s{color:#fff}
+body.fa-ckt-midnight #fa-pay.fa-pay-et .fa-pay-plan::after{background:linear-gradient(90deg,transparent,#fff,transparent)}
+/* modal: white sheet, dark lit overlay */
+body.fa-ckt-midnight .fa-ck-overlay{background:radial-gradient(70% 60% at 15% 0%,rgba(47,164,255,.35),transparent 60%),radial-gradient(50% 50% at 100% 100%,rgba(216,188,133,.25),transparent 60%),rgba(0,0,31,.78)}
+body.fa-ckt-midnight .fa-ck-modal{box-shadow:0 0 0 1px rgba(255,255,255,.25),0 0 120px -20px rgba(111,196,255,.6),0 90px 160px -60px rgba(0,0,0,.9)}
+/* savings and offer chips: gold on navy, never green */
+body.fa-ckt-midnight #fa-ck .fa-ck-save,body.fa-ckt-midnight #fa-pay .fa-pay-save,body.fa-ckt-midnight #fa-ck .fa-ck-off,body.fa-ckt-midnight #fa-pay .fa-ck-off,body.fa-ckt-midnight .fa-promo-tag{color:#00001F;background:linear-gradient(135deg,#F6E7C3,#D8BC85 55%,#C09A5A);box-shadow:0 0 0 1px rgba(255,255,255,.35) inset,0 10px 24px -12px rgba(200,169,107,.9)}
+/* midnight keeps a WHITE payment summary (navy aside only inside the modal) */
+body.fa-ckt-midnight #fa-pay .fa-pay-summary{background:linear-gradient(180deg,#fff,#FAF7F1);color:#1A1E33;border-color:rgba(255,255,255,.6)}
+body.fa-ckt-midnight #fa-pay .fa-pay-summary h2,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fee-row .k,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fee-row .v,body.fa-ckt-midnight #fa-pay .fa-pay-summary .buyer,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-ck-sumbar-txt b,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-ck-sumbar-price b,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-ck-facts dd{color:#1A1E33}
+body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-ck-aside-sub,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fee-note,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-pay-policy p,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-ck-sumbar-txt>span,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-ck-sumbar-price span,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-ck-facts dt,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-ck-sumbar-chev{color:rgba(26,30,51,.72)}
+body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-ck-brandline,body.fa-ckt-midnight #fa-pay .fa-pay-summary .buyer .k,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fee-row .v s{color:#8B6F2E}
+body.fa-ckt-midnight #fa-pay .fa-pay-summary .fee-row .v s{color:rgba(26,30,51,.45)}
+body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-pay-fees .fee:first-child .fee-row .v{color:#8B6F2E}
+body.fa-ckt-midnight #fa-pay .fa-pay-summary .fee,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fee-total,body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-pay-policy,body.fa-ckt-midnight #fa-pay .fa-pay-summary .buyer{border-color:rgba(26,30,51,.12)}
+body.fa-ckt-midnight #fa-pay.fa-pay-et .fee-total{background:radial-gradient(90% 130% at 100% 50%,rgba(200,169,107,.26),transparent 70%),rgba(200,169,107,.08);border-color:rgba(200,169,107,.6)}
+body.fa-ckt-midnight #fa-pay.fa-pay-et .fee-total .fee-row .v{background:linear-gradient(135deg,#C9A961,#A98D52 55%,#8B6F2E);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+body.fa-ckt-midnight #fa-pay .fa-pay-summary a{color:#8B6F2E}
+body.fa-ckt-midnight #fa-pay .fa-pay-summary .fa-pay-save{color:#fff;background:linear-gradient(135deg,#1A2A5C,#0B1340);box-shadow:0 0 0 1px rgba(200,169,107,.6) inset}
+body.fa-ckt-midnight #fa-pay .fa-pay-help .tp-logo{content:url("../assets/logo/trustpilot-logo-dark.svg")}
+/* modal aside (navy) — keep every line legible */
+body.fa-ckt-midnight #fa-ck .fa-ck-aside .fa-ck-price-lab{color:#fff}
+body.fa-ckt-midnight #fa-ck .fa-ck-aside .fa-ck-sum-row{color:#fff}
+body.fa-ckt-midnight #fa-ck .fa-ck-aside .fa-ck-sum-row.is-total strong{color:#fff}
+body.fa-ckt-midnight #fa-ck .fa-ck-aside .fa-ck-trust li{color:#fff}
+body.fa-ckt-midnight #fa-ck .fa-ck-aside .fa-ck-save{color:#00001F;background:linear-gradient(135deg,#F6E7C3,#D8BC85 55%,#C09A5A)}
+/* help card white; footnote white on the night */
+body.fa-ckt-midnight #fa-pay .fa-pay-help{background:linear-gradient(180deg,#fff,#FAF7F1);border-color:rgba(255,255,255,.6)}
+body.fa-ckt-midnight #fa-pay .fa-pay-help p,body.fa-ckt-midnight #fa-pay .fa-pay-help .fa-pay-help-tp b,body.fa-ckt-midnight #fa-pay .fa-pay-help .fa-pay-help-tp span,body.fa-ckt-midnight #fa-pay .fa-pay-help .fa-pay-help-tel{color:#1A1E33}
+body.fa-ckt-midnight #fa-pay .fa-pay-help .fa-pay-help-fine{color:rgba(26,30,51,.7)}
+body.fa-ckt-midnight #fa-pay.fa-pay-et .fa-pay-foot{color:rgba(255,255,255,.9)}

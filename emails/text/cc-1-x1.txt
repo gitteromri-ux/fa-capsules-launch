@@ -1,0 +1,19 @@
+%IF !empty($FIRSTNAME)%Bonjour %FIRSTNAME%,%ELSE%Bonjour,%/IF%
+
+Our attendance record shows you missed a Culture Capsules conference in your one-capsule programme. If that is not right, reply so we can check.
+
+If joining was the problem, tell us what happened. Check your booking and joining instructions for the next included session.
+
+Review My Culture Programme
+https://fa-capsules-v3.pplx.app/capsules.html?utm_source=activecampaign&utm_medium=email&utm_campaign=fa_capsules_x_one-capsule&utm_content=cc-1-x1
+
+À bientôt,
+The French Atelier team
+
+The French Atelier by Acadomia
+7 rue de la Baume, 75008 Paris, France
+
+Sent to %EMAIL%. You are enrolled in Culture Capsules with The French Atelier.
+
+Unsubscribe: %UNSUBSCRIBELINK%
+Update preferences: %UPDATELINK%

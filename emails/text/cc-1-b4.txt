@@ -1,0 +1,19 @@
+%IF !empty($FIRSTNAME)%Bonjour %FIRSTNAME%,%ELSE%Bonjour,%/IF%
+
+Your first conference starts in about two hours. Open the joining instructions from your booking, check the time and use the Zoom access provided there.
+
+Your one-capsule programme is taught in English. Bring your curiosity; there is Q&A after the 60-minute conference.
+
+Review My Programme Before We Begin
+https://fa-capsules-v3.pplx.app/capsules.html?utm_source=activecampaign&utm_medium=email&utm_campaign=fa_capsules_b_one-capsule&utm_content=cc-1-b4
+
+À bientôt,
+The French Atelier team
+
+The French Atelier by Acadomia
+7 rue de la Baume, 75008 Paris, France
+
+Sent to %EMAIL%. You are enrolled in Culture Capsules with The French Atelier.
+
+Unsubscribe: %UNSUBSCRIBELINK%
+Update preferences: %UPDATELINK%

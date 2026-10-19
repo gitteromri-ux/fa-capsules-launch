@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Our Method — The French Atelier by Acadomia</title>
+<meta name="description" content="A culture-first, CEFR-aligned French pedagogy taught live from France. Discover the methodology behind The French Atelier: contextual immersion, CEFR alignment, and six cultural pillars.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/fa.css?v=1790665240">
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+<style>
+.method-hero-img{width:100%;max-width:520px;border:1px solid var(--gold-line-soft)}
+.pillar-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.pillar-card{background:var(--white);border:1px solid var(--gold-line-soft);padding:2.2rem 2rem}
+.pillar-card .pc-num{font-family:var(--serif);font-size:3rem;color:var(--gold-deep);line-height:1;margin-bottom:.8rem}
+.pillar-card h3{font-size:1.4rem;margin:.4rem 0 .9rem;color:var(--navy)}
+.pillar-card ul{padding-left:1.1rem;margin:0}
+.pillar-card ul li{font-size:.92rem;color:var(--on-light-soft);line-height:1.7;margin-bottom:.3rem}
+
+.cefr-table{width:100%;border-collapse:collapse;margin-top:2rem}
+.cefr-table th{font-family:var(--sans);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-deep);padding:.8rem 1.2rem;border-bottom:1px solid var(--gold-line-soft);text-align:left}
+.cefr-table td{padding:.9rem 1.2rem;font-size:.95rem;border-bottom:1px solid var(--gold-line-soft);vertical-align:top}
+.cefr-table tr:last-child td{border-bottom:none}
+.cefr-table .cefr-level{font-family:var(--serif);font-size:1.1rem;color:var(--navy);font-weight:600}
+.cefr-table .cefr-tag{display:inline-block;background:var(--navy);color:var(--gold-soft);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;padding:.3rem .7rem;border-radius:2px}
+
+.trio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--gold-line-soft)}
+.trio-item{padding:2.8rem 2.2rem;border-right:1px solid var(--gold-line-soft);text-align:center}
+.trio-item:last-child{border-right:none}
+.trio-item .ti-icon{font-family:var(--serif);font-size:2.4rem;color:var(--gold-deep);margin-bottom:1rem}
+.trio-item h3{font-size:1.3rem;margin:.4rem 0 .7rem}
+.trio-item p{font-size:.92rem;color:var(--on-light-soft);line-height:1.65}
+
+.principle-row{display:grid;grid-template-columns:1fr 1fr;gap:3.6rem;align-items:start}
+.principle-num{font-family:var(--serif);font-size:5rem;color:var(--gold-line);line-height:1;margin-bottom:.6rem}
+.principle-body h3{font-size:1.5rem;margin:.2rem 0 .8rem}
+
+/* ===== 5 METHODOLOGICAL PILLARS (dark, scholarly, click-to-open) ===== */
+.science-fold{background:linear-gradient(180deg,#0A0C16,#070910);color:var(--on-dark);position:relative;overflow:hidden}
+.mp-list{display:flex;flex-direction:column;gap:1rem;max-width:980px;margin:2.8rem auto 0}
+.mp{border:1px solid rgba(243,238,227,.14);border-radius:16px;background:rgba(255,255,255,.025);overflow:hidden;transition:border-color .4s var(--ease),background .4s var(--ease)}
+.mp.is-open{border-color:var(--gold-line);background:rgba(255,255,255,.05)}
+.mp-head{width:100%;display:flex;align-items:center;gap:1.3rem;padding:1.5rem 1.8rem;background:transparent;border:0;cursor:pointer;text-align:left;color:var(--on-dark)}
+.mp-rom{font-family:var(--serif);font-size:1.7rem;color:var(--gold-soft);line-height:1;flex-shrink:0;width:2.2rem}
+.mp-title{font-family:var(--serif);font-size:1.45rem;font-weight:600;line-height:1.15;flex:1;min-width:0}
+.mp-title .fr{font-style:italic;color:var(--gold-soft);font-weight:500;font-size:.92em}
+.mp-toggle{width:32px;height:32px;border-radius:50%;border:1px solid var(--gold-line);position:relative;flex-shrink:0;transition:background .35s}
+.mp-toggle::before,.mp-toggle::after{content:"";position:absolute;left:50%;top:50%;background:var(--gold-soft);transform:translate(-50%,-50%);transition:opacity .35s}
+.mp-toggle::before{width:12px;height:2px}.mp-toggle::after{width:2px;height:12px}
+.mp.is-open .mp-toggle{background:rgba(200,165,96,.12)}
+.mp.is-open .mp-toggle::after{opacity:0}
+.mp-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.mp.is-open .mp-body{grid-template-rows:1fr}
+.mp-body-inner{overflow:hidden}
+.mp-body-inner > div{padding:0 1.8rem 1.7rem 5.3rem}
+.mp-body p{color:var(--on-dark-soft);line-height:1.7;margin-bottom:.9rem}
+.mp-quote{font-family:var(--serif);font-style:italic;font-size:1.12rem;color:var(--on-dark);border-left:2px solid var(--gold-line);padding-left:1.1rem;margin:1rem 0}
+.mp-src{font-size:.82rem;color:var(--on-dark-faint);letter-spacing:.01em}
+.mp-src a{color:var(--gold-soft);border-bottom:1px solid rgba(200,165,96,.35)}
+.mp-src a:hover{color:var(--gold)}
+.method-sources{max-width:980px;margin:3rem auto 0;border-top:1px solid rgba(243,238,227,.12);padding-top:1.8rem}
+.method-sources .ms-eyebrow{font-size:.66rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft);text-align:center;margin-bottom:1.2rem}
+.method-sources ul{display:flex;flex-direction:column;gap:.7rem}
+.method-sources li{font-size:.86rem;color:var(--on-dark-soft);line-height:1.55;padding-left:1.1rem;position:relative}
+.method-sources li::before{content:"";position:absolute;left:0;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--gold-soft)}
+.method-sources a{color:var(--gold-soft);border-bottom:1px solid rgba(200,165,96,.35);word-break:break-word}
+.method-sources a:hover{color:var(--gold)}
+@media(max-width:600px){.mp-body-inner > div{padding-left:1.8rem}.mp-head{padding:1.2rem 1.3rem;gap:.9rem}.mp-rom{width:1.6rem;font-size:1.4rem}.mp-title{font-size:1.2rem}}
+@media(max-width:980px){.pillar-row{grid-template-columns:repeat(2,1fr)}.principle-row{grid-template-columns:1fr}.trio-grid{grid-template-columns:1fr}.trio-item{border-right:none;border-bottom:1px solid var(--gold-line-soft)}.trio-item:last-child{border-bottom:none}}
+@media(max-width:600px){.pillar-row{grid-template-columns:1fr}.cefr-table th:nth-child(3),.cefr-table td:nth-child(3){display:none}}
+
+/* ===== CEFR can-do descriptor cards ===== */
+.cando-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3.4rem}
+.cando-card{background:var(--white);border:1px solid var(--gold-line-soft);border-radius:8px;padding:1.8rem 1.7rem;box-shadow:0 18px 44px -28px rgba(11,19,64,.45)}
+.cando-card .cd-level{display:inline-block;font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--gold-deep);line-height:1;margin-bottom:.9rem}
+.cando-card h3{font-family:var(--serif);font-size:1.18rem;color:var(--navy);margin:0 0 .9rem;line-height:1.2}
+.cando-card ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.65rem}
+.cando-card li{display:flex;align-items:flex-start;gap:.6rem;font-size:.86rem;color:var(--on-light-soft);line-height:1.55}
+.cando-card li svg{width:14px;height:14px;color:var(--gold-deep);flex-shrink:0;margin-top:.18rem}
+
+/* ===== action-oriented cycle (expanded methodology) ===== */
+.aoa-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(200,165,96,.22);border-radius:10px;overflow:hidden;margin-top:2.8rem}
+.aoa-step{padding:2.4rem 1.8rem;border-right:1px solid rgba(200,165,96,.18);position:relative}
+.aoa-step:last-child{border-right:none}
+.aoa-step .aoa-no{font-family:var(--serif);font-size:2.6rem;color:var(--gold-soft);line-height:1;margin-bottom:.7rem}
+.aoa-step h3{font-size:1.12rem;color:var(--on-dark);margin:0 0 .6rem;line-height:1.2}
+.aoa-step .aoa-fr{display:block;font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--gold-soft);margin-bottom:.7rem}
+.aoa-step p{font-size:.86rem;color:var(--on-dark-soft);line-height:1.6;margin:0}
+@media(max-width:980px){.cando-grid{grid-template-columns:1fr}.aoa-grid{grid-template-columns:1fr}.aoa-step{border-right:none;border-bottom:1px solid rgba(200,165,96,.18)}.aoa-step:last-child{border-bottom:none}}
+</style>
+<link rel="stylesheet" href="css/mobile-fix.css?v=1790665240"><link rel="stylesheet" href="css/homepage-mobile-polish.css?v=1790665240">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="css/house-style.css?v=1790665240">
+<link rel="stylesheet" href="css/enroll-modal.css?v=1790665240">
+</head>
+<body id="fa">
+
+<!-- ============================================================
+     FRENCH ATELIER — BESPOKE SVG ICON SPRITE  (Agent 5)
+     Paste ONCE near the top of <body> on any page.
+     Use anywhere with:  <svg class="fa-icon" style="font-size:24px"><use href="#i-NAME"/></svg>
+     Icons use currentColor stroke. Stroke width set via .fa-icon in fa.css.
+     Available ids: i-arrow, i-arrow-right, i-chevron-down, i-close, i-menu,
+     i-check, i-calendar, i-clock, i-chat, i-play, i-globe, i-certificate,
+     i-sparkle, i-user, i-mail, i-phone, i-pin, i-facebook, i-instagram, i-youtube
+     ============================================================ -->
+<svg class="fa-icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 9h16M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 6 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-6-3.5-9S9.5 5.5 12 3z"/></symbol>
+    <symbol id="i-certificate" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 21l4-2 4 2-1-7.5"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h2.5V5H14a3.5 3.5 0 0 0-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V8.5A.5.5 0 0 1 14 8z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.7" cy="7.3" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M11 9.5l4 2.5-4 2.5z" fill="currentColor" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-logo" href="index.html">
+      <img class="nav-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" decoding="async" fetchpriority="high" decoding="async">
+    </a>
+    <nav class="nav-menu" aria-label="Primary">
+      <div class="nav-item">
+        <a class="nav-link" href="courses.html">Courses <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown nav-dropdown-wide">
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">French Atelier &middot; Structured &middot; A0&rarr;A2.2</span>
+            <a href="courses/fa-foundation.html">FA Foundation <em>A0&rarr;A1.1</em></a>
+            <a href="courses/fa-beginner.html">FA Beginner <em>A1.1&rarr;A1.2</em></a>
+            <a href="courses/fa-elementary.html">FA Elementary <em>A1.2&rarr;A2.1</em></a>
+            <a href="courses/fa-intermediate.html">FA Intermediate <em>A2.1&rarr;A2.2</em></a>
+            <a href="capsules.html" class="nav-dd-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+          </div>
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">Let&rsquo;s Speak French &middot; Spoken &middot; Conversation</span>
+            <a href="courses/lsf-foundation.html">LSF Foundation <em>Spoken</em></a>
+            <a href="courses/lsf-beginner.html">LSF Beginner <em>Spoken</em></a>
+            <a href="courses/lsf-elementary.html">LSF Elementary <em>Spoken</em></a>
+
+            <span class="nav-dd-divide"></span>
+            <a href="courses.html">All Courses</a>
+            <a href="map.html">Interactive Map of France</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></div>
+      
+      <div class="nav-item"><a class="nav-link active" href="method.html">Our Method</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="juliane.html">Julien AI Tutor</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="culture.html">French Culture</a></div>
+      <div class="nav-item">
+        <a class="nav-link" href="about.html">About Us <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown">
+          <a href="about.html">About French Atelier</a>
+          <a href="acadomia.html">The Acadomia Group</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      
+      <a class="btn btn-gold nav-cta" href="pricing.html">Enroll Now</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-drawer" aria-hidden="true">
+  <button class="nav-drawer-close" aria-label="Close menu">&times;</button>
+  <span class="drawer-group-label">Courses</span>
+  <div class="drawer-sub">
+    <a href="courses.html">All Courses</a>
+    <a href="courses/fa-foundation.html">FA Foundation</a>
+    <a href="courses/fa-beginner.html">FA Beginner</a>
+    <a href="courses/fa-elementary.html">FA Elementary</a>
+    <a href="courses/fa-intermediate.html">FA Intermediate</a>
+    <a href="courses/lsf-foundation.html">LSF Foundation</a>
+    <a href="courses/lsf-beginner.html">LSF Beginner</a>
+    <a href="courses/lsf-elementary.html">LSF Elementary</a>
+    <a href="map.html">Interactive Map of France</a>
+      <a href="capsules.html" class="drawer-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+  </div>
+  <span class="drawer-group-label">About Us</span>
+  <div class="drawer-sub">
+    <a href="about.html">About French Atelier</a>
+    <a href="acadomia.html">The Acadomia Group</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="method.html">Our Method</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="juliane.html">Julien AI Tutor</a>
+  <a href="culture.html">French Culture</a>
+  <a href="pricing.html" class="btn btn-gold" style="margin-top:1.6rem">Enroll Now</a>
+</div>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero page-hero--premium bg-navy">
+  <div class="page-hero-bg">
+    <video poster="assets/video/paris-seine-poster.jpg" loop muted autoplay playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover">
+      <source src="assets/video/paris-seine.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>Our Method</span>
+    </nav>
+    <p class="eyebrow eyebrow-line reveal">Pedagogy &amp; Philosophy</p>
+    <h1 class="display-lg reveal reveal-d1">The <span class="gold-ital">Method</span> Behind<br>the Language</h1>
+    <p class="lede reveal reveal-d2" style="max-width:58ch">A culture-first, action-oriented approach grounded in the communicative, action-oriented education tradition of Sorbonne Nouvelle University and the CEFR — taught live, from France.</p>
+    <div class="reveal reveal-d3" style="margin-top:2.2rem;display:inline-flex;align-items:center;gap:.9rem;background:rgba(200,165,96,.12);border:1px solid rgba(200,165,96,.35);padding:.8rem 1.4rem;border-radius:2px">
+      <span style="font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft)">Approach</span>
+      <span style="font-family:var(--serif);font-size:1.15rem;color:var(--on-dark);font-style:italic">Action-Oriented Tradition · CEFR-Aligned</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SORBONNE HERO FOLD ===== -->
+<section class="section-pad bg-navy-deep on-dark" style="border-bottom:1px solid rgba(200,165,96,.18)">
+  <div class="wrap">
+    <div class="split split-wide" style="align-items:center">
+      <div class="reveal">
+        <p class="eyebrow eyebrow-line">The Action-Oriented Tradition</p>
+        <h2 class="display-md" style="margin:1.2rem 0;font-weight:700;color:#fff">Built on the <span class="gold-ital">action-oriented</span><br>education tradition of Sorbonne Nouvelle University</h2>
+        <p style="font-family:var(--serif);font-style:italic;color:#BEA37B;font-size:18px;margin-top:8px;">An approach with deep roots in French language teaching: learn French by using it, not by memorising rules.</p>
+        <p class="lede">The French Atelier methodology is grounded in the action-oriented, communicative approach formalised by the Council of Europe in the CEFR and taught within French education programmes, including at Sorbonne Nouvelle University. In this approach, the learner is not a student of the language — they are a <em>social agent</em> who acts, communicates, and accomplishes real tasks in the target language.</p>
+        <div class="gold-rule"></div>
+        <p class="muted">This is why every French Atelier class begins not with a grammar rule, but with a living cultural situation: a quai in Lyon, a gallery opening in Paris, a village market in Provence. Language is encountered in context — and context is always France.</p>
+        <div style="margin-top:1.8rem;display:flex;gap:1.2rem;flex-wrap:wrap">
+          <div style="border:1px solid rgba(200,165,96,.3);padding:1.2rem 1.6rem;text-align:center;min-width:120px">
+            <div style="font-family:var(--serif);font-size:2.2rem;color:var(--gold-soft);line-height:1">CEFR</div>
+            <div style="font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-soft);margin-top:.4rem">Aligned Framework</div>
+          </div>
+          <div style="border:1px solid rgba(200,165,96,.3);padding:1.2rem 1.6rem;text-align:center;min-width:120px">
+            <div style="font-family:var(--serif);font-size:2.2rem;color:var(--gold-soft);line-height:1">A0→A2</div>
+            <div style="font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-soft);margin-top:.4rem">Full Progression</div>
+          </div>
+          <div style="border:1px solid rgba(200,165,96,.3);padding:1.2rem 1.6rem;text-align:center;min-width:120px">
+            <div style="font-family:var(--serif);font-size:2.2rem;color:var(--gold-soft);line-height:1">10–12</div>
+            <div style="font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-soft);margin-top:.4rem">Learners Per Class</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-d1" style="display:flex;flex-direction:column;gap:1.6rem">
+        <img src="assets/img/method/sorbonne.jpg" alt="Sorbonne Nouvelle university - the French language education tradition and inspiration of the French Atelier methodology." style="width:100%;border-radius:4px;border:1px solid rgba(200,165,96,.22);object-fit:cover;max-height:320px;display:block" loading="lazy" decoding="async">
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(200,165,96,.22);padding:2.4rem;border-radius:4px">
+          <div style="font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:1rem">Sorbonne Nouvelle · Paris 3</div>
+          <blockquote style="font-family:var(--serif);font-size:1.22rem;color:var(--on-dark);font-style:italic;line-height:1.5;margin:0 0 1rem">&ldquo;The learner is a social agent who uses the language to accomplish tasks that have meaning and relevance in the real world.&rdquo;</blockquote>
+          <cite style="font-size:.8rem;color:var(--on-dark-soft);font-style:normal">— Conseil de l&rsquo;Europe, CECRL · Action-Oriented Approach</cite>
+        </div>
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(200,165,96,.22);padding:2rem 2.4rem;border-radius:4px">
+          <p style="font-family:var(--serif);font-size:1rem;color:var(--gold-soft);letter-spacing:.06em;margin-bottom:.8rem">The Atelier Pedagogy</p>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.7rem">
+            <li style="display:flex;align-items:flex-start;gap:.8rem;color:var(--on-dark-soft);font-size:.93rem;line-height:1.55"><span aria-hidden="true" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.6;margin:.55em .6em 0 0;flex-shrink:0"></span>Action-oriented: language through real tasks</li>
+            <li style="display:flex;align-items:flex-start;gap:.8rem;color:var(--on-dark-soft);font-size:.93rem;line-height:1.55"><span aria-hidden="true" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.6;margin:.55em .6em 0 0;flex-shrink:0"></span>Live small groups of 10–12, from France</li>
+            <li style="display:flex;align-items:flex-start;gap:.8rem;color:var(--on-dark-soft);font-size:.93rem;line-height:1.55"><span aria-hidden="true" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.6;margin:.55em .6em 0 0;flex-shrink:0"></span>Immersion in real French regions</li>
+            <li style="display:flex;align-items:flex-start;gap:.8rem;color:var(--on-dark-soft);font-size:.93rem;line-height:1.55"><span aria-hidden="true" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.6;margin:.55em .6em 0 0;flex-shrink:0"></span>CEFR progression, certified by Acadomia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid rgba(200,165,96,.22);font-size:.78rem;letter-spacing:.04em;color:var(--on-dark-faint);line-height:1.65;max-width:78ch">The French Atelier is independent and is not affiliated with, nor endorsed by Sorbonne Nouvelle University (Paris 3), or Sorbonne University (Paris 4).</p>
+  </div>
+</section>
+
+<!-- ===== SORBONNE TRUST / MANIFESTO ===== -->
+<section class="section-pad bg-ivory">
+  <div class="wrap split split-wide">
+    <div class="reveal">
+      <p class="eyebrow eyebrow-line">The Foundation</p>
+      <h2 class="display-md" style="margin:1.4rem 0;font-weight:700;color:#0B0C31">Built on the modern <span class="gold-ital">science</span> of language acquisition</h2>
+      <p style="font-family:var(--serif);font-style:italic;color:#BEA37B;font-size:18px;margin-top:8px;">Cognitive science and second-language-acquisition research applied to every lesson.</p>
+      <p class="lede">The French Atelier method draws on second-language-acquisition and cognitive-science research — the action-oriented, communicative tradition codified by the Council of Europe in the Common European Framework of Reference for Languages (CEFR). It rests on one principle: language is not memorised in isolation — it is <em>encountered</em>, in real communicative situations, with cultural meaning attached.</p>
+      <div class="gold-rule"></div>
+      <p style="color:var(--on-light-soft);line-height:1.75">At The French Atelier, every unit is built around a living context — a market in Lyon, a gallery opening in Paris, an evening aperitif in Bordeaux. Grammar emerges from conversation. Vocabulary is anchored to culture. The learner arrives not at a rule, but at an experience they cannot forget.</p>
+    </div>
+    <div class="reveal reveal-d1" style="display:flex;flex-direction:column;gap:1.6rem">
+      <img src="assets/img/method/classroom.jpg" alt="French language classroom — the modern science of language acquisition" class="method-hero-img" style="border-radius:4px;object-fit:cover" loading="lazy" decoding="async">
+      <div class="pullquote" style="margin:0">
+        <p>"Language acquisition is not a study of forms — it is a habitation of meaning."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO BAND — paris-sunset-street ===== -->
+<section class="video-band">
+  <div class="video-bg">
+    <video poster="assets/video/paris-sunset-street-poster.jpg" loop muted autoplay playsinline preload="metadata">
+      <source src="assets/video/paris-sunset-street.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap"><div class="vb-inner reveal">
+    <p class="eyebrow eyebrow-line">Live from France</p>
+    <h2 class="display-md">The classroom is <span class="gold-ital">France itself</span></h2>
+    <p class="lede">Every live class is broadcast from an iconic location in France. The light, the architecture, the ambiance of the street — all part of the lesson. You don't study France. You inhabit it.</p>
+  </div></div>
+</section>
+
+<!-- ===== 5 METHODOLOGICAL PILLARS (science fold) ===== -->
+<section class="section-pad science-fold">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center;color:var(--gold-soft)">The Science Beneath the Atelier</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin:1rem 0;color:var(--on-dark)">Five pillars of <span class="gold-ital">modern</span> language acquisition</h2>
+      <p class="lede reveal reveal-d2 lede-narrow mx-auto" style="color:var(--on-dark-soft)">Our methods map to established research in French language teaching — centred on Sorbonne Nouvelle University and its DILTEC laboratory, and drawing on the wider French research community. Open each pillar to see the research behind it.</p>
+    </div>
+
+    <div class="mp-list reveal reveal-d1">
+      <div class="mp">
+        <button class="mp-head" type="button" aria-expanded="false">
+          <span class="mp-rom">I</span>
+          <span class="mp-title">The Action-Oriented Approach <span class="fr">&mdash; l&rsquo;approche actionnelle</span></span>
+          <span class="mp-toggle" aria-hidden="true"></span>
+        </button>
+        <div class="mp-body"><div class="mp-body-inner"><div>
+          <p>The learner is a <strong>social agent</strong> who acts with intention to accomplish real-life tasks. Learners don&rsquo;t merely learn <em>about</em> the language &mdash; they live the language. It is the scholarly form of our promise: <em>Live French. Live.</em></p>
+          <p class="mp-src">Beacco, J.-C. (2007), <em>L&rsquo;approche par comp&eacute;tences dans l&rsquo;enseignement des langues</em> &middot; Puren, C. &mdash; action-oriented perspective / co-action &middot; Council of Europe &mdash; CEFR. <a href="https://channelviewpublications.wordpress.com/2019/07/31/what-is-the-action-oriented-approach-to-language-education/" target="_blank" rel="noopener">Read more</a></p>
+        </div></div></div>
+      </div>
+
+      <div class="mp">
+        <button class="mp-head" type="button" aria-expanded="false">
+          <span class="mp-rom">II</span>
+          <span class="mp-title">Manageable Cognitive Load <span class="fr">&mdash; less is more</span></span>
+          <span class="mp-toggle" aria-hidden="true"></span>
+        </button>
+        <div class="mp-body"><div class="mp-body-inner"><div>
+          <p>Beginners meet no more than six to eight new items per lesson, learn fixed formulas before grammar rules, and work from a repeated template &mdash; a &ldquo;less is more&rdquo; design that keeps attention on what matters.</p>
+          <p class="mp-src">Bento, M. (Universit&eacute; Paris Cit&eacute;, EDA) &mdash; cognitive load &amp; digital tools &middot; Tricot, A. &mdash; cognitive-load principles &middot; Ellis, N. &mdash; usage-based learning.</p>
+        </div></div></div>
+      </div>
+
+      <div class="mp">
+        <button class="mp-head" type="button" aria-expanded="false">
+          <span class="mp-rom">III</span>
+          <span class="mp-title">Online Communication Scenario <span class="fr">&mdash; learning by doing</span></span>
+          <span class="mp-toggle" aria-hidden="true"></span>
+        </button>
+        <div class="mp-body"><div class="mp-body-inner"><div>
+          <p>Each online course is engineered as a communication scenario &mdash; who interacts with whom, when, and through which tool &mdash; blending live and asynchronous work with short 48-72-hour tasks between classes.</p>
+          <p class="mp-src">Mangenot, F. &mdash; communication scenario / online language teaching &middot; DILTEC, Universit&eacute; Sorbonne Nouvelle (Paris 3).</p>
+        </div></div></div>
+      </div>
+
+      <div class="mp">
+        <button class="mp-head" type="button" aria-expanded="false">
+          <span class="mp-rom">IV</span>
+          <span class="mp-title">Spaced Repetition &amp; Active Recall <span class="fr">&mdash; activating your memory</span></span>
+          <span class="mp-toggle" aria-hidden="true"></span>
+        </button>
+        <div class="mp-body"><div class="mp-body-inner"><div>
+          <p>Vocabulary and structures come back on a deliberate schedule &mdash; the day after, a week later, a month later &mdash; with warm-up recall and interleaving across lessons, rather than one-and-done coverage.</p>
+          <p class="mp-src">Coste, D. &mdash; plurilingual competence; spiral acquisition &middot; Ebbinghaus &mdash; spacing effect &middot; psycholinguistics of implicit vs explicit learning.</p>
+        </div></div></div>
+      </div>
+
+      <div class="mp">
+        <button class="mp-head" type="button" aria-expanded="false">
+          <span class="mp-rom">V</span>
+          <span class="mp-title">Pronunciation <span class="fr">&mdash; IPA &amp; Word Origins</span></span>
+          <span class="mp-toggle" aria-hidden="true"></span>
+        </button>
+        <div class="mp-body"><div class="mp-body-inner"><div>
+          <p>Pronunciation is taught from the first lesson with colour-coded IPA, silent letters greyed out, and word origins used to anchor grammatical gender &mdash; so beginners separate spelling from sound early.</p>
+          <p class="mp-src">DILTEC, Universit&eacute; Sorbonne Nouvelle (Paris 3) &mdash; second-language phonology &middot; research on orthographic representations in beginner learners.</p>
+        </div></div></div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d1" style="max-width:1080px;margin:4.6rem auto 0;text-align:center">
+      <p class="eyebrow eyebrow-line" style="justify-content:center;color:var(--gold-soft)">How a Lesson Is Built</p>
+      <h3 class="display-sm" style="margin:1rem 0;color:var(--on-dark);font-size:clamp(1.6rem,3vw,2.2rem)">The action-oriented <span class="gold-ital">cycle</span></h3>
+      <p class="lede" style="color:var(--on-dark-soft);max-width:60ch;margin:0 auto">Every unit follows the same scholarly arc — from a real cultural scenario to a concrete &ldquo;can-do&rdquo; outcome. This is backwards design, drawn directly from the action-oriented approach.</p>
+    </div>
+    <div class="aoa-grid reveal reveal-d2" style="max-width:1080px;margin-left:auto;margin-right:auto">
+      <div class="aoa-step">
+        <div class="aoa-no">01</div>
+        <h3>Cultural Scenario</h3>
+        <span class="aoa-fr">la mise en situation</span>
+        <p>The lesson opens inside a real French situation — a market in Lyon, a gallery in Paris. Meaning comes first; language follows.</p>
+      </div>
+      <div class="aoa-step">
+        <div class="aoa-no">02</div>
+        <h3>Live Interaction</h3>
+        <span class="aoa-fr">l&rsquo;interaction</span>
+        <p>In a group of 10&ndash;12, learners speak, respond, and negotiate meaning with their native teacher — the core of communicative acquisition.</p>
+      </div>
+      <div class="aoa-step">
+        <div class="aoa-no">03</div>
+        <h3>Guided Structure</h3>
+        <span class="aoa-fr">la structuration</span>
+        <p>Grammar and vocabulary are made explicit only after they have been encountered — structure consolidates what conversation revealed.</p>
+      </div>
+      <div class="aoa-step">
+        <div class="aoa-no">04</div>
+        <h3>Real Task</h3>
+        <span class="aoa-fr">la tâche actionnelle</span>
+        <p>Each unit closes on a concrete task with a measurable CEFR &ldquo;can-do&rdquo; outcome — ordering, booking, describing, persuading.</p>
+      </div>
+    </div>
+
+    <div class="method-sources reveal">
+      <p class="ms-eyebrow">Grounded in peer-reviewed applied-linguistics research</p>
+      <ul>
+        <li>Beacco, J.-C. (2007). <em>L&rsquo;approche par comp&eacute;tences dans l&rsquo;enseignement des langues.</em> &middot; Puren, C. &mdash; action-oriented perspective / co-action. <a href="https://channelviewpublications.wordpress.com/2019/07/31/what-is-the-action-oriented-approach-to-language-education/" target="_blank" rel="noopener">channelviewpublications.wordpress.com</a></li>
+        <li>Council of Europe (2020). <em>CEFR Companion Volume with New Descriptors.</em> <a href="https://www.ecml.at/" target="_blank" rel="noopener">ecml.at</a></li>
+        <li>Sorbonne Nouvelle &ndash; Paris 3, Master in Applied Linguistics / Didactique des langues. <a href="https://www.sorbonne-nouvelle.fr/master-applied-linguistics-868627.kjsp" target="_blank" rel="noopener">sorbonne-nouvelle.fr</a></li>
+        <li>Canadian Association of Second Language Teachers &mdash; Action-Oriented Approach overview. <a href="https://www.caslt.org/en/in-the-classroom/aoa/" target="_blank" rel="noopener">caslt.org</a></li>
+      </ul>
+      <p style="text-align:center;margin-top:1.4rem;font-size:.78rem;color:var(--on-dark-faint)">The French Atelier is independent and is not affiliated with, nor endorsed by Sorbonne Nouvelle University (Paris 3), or Sorbonne University (Paris 4).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOUR PRINCIPLES ===== -->
+<section class="section-pad bg-paper">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:3.6rem">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center">The Atelier Principles</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin-top:1rem">Four principles that <span class="gold-ital">transform</span> every lesson</h2>
+    </div>
+    <div class="principle-row reveal">
+      <div>
+        <div class="principle-num">01</div>
+        <div class="principle-body">
+          <h3>Culture First — Always</h3>
+          <p style="color:var(--on-light-soft);line-height:1.75">Every lesson begins with a cultural act — a piece of music, a film scene, a dish, a work of architecture. Culture is not the supplement to the language lesson; it <em>is</em> the lesson. Grammar and vocabulary arise naturally from the cultural encounter, making each new structure feel inevitable rather than arbitrary.</p>
+        </div>
+      </div>
+      <div>
+        <div class="principle-num">02</div>
+        <div class="principle-body">
+          <h3>Contextual, Real-World French</h3>
+          <p style="color:var(--on-light-soft);line-height:1.75">We teach French the way it is <em>actually spoken</em> — in cafés, at markets, in museums and cinemas, around French tables. No sanitised textbook French. Every phrase, every register, every social grace is practised in the context where it lives. Learners emerge speaking French that surprises native speakers with its naturalness.</p>
+        </div>
+      </div>
+    </div>
+    <div class="principle-row reveal" style="margin-top:3.6rem">
+      <div>
+        <div class="principle-num">03</div>
+        <div class="principle-body">
+          <h3>Live Immersion — Never Pre-Recorded</h3>
+          <p style="color:var(--on-light-soft);line-height:1.75">Fluency is built through spontaneous conversation, not rehearsed repetition. All French Atelier classes are live — never pre-recorded — broadcast from iconic locations across France by native certified teachers. The learner is inside France's cultural life, not watching it from outside.</p>
+        </div>
+      </div>
+      <div>
+        <div class="principle-num">04</div>
+        <div class="principle-body">
+          <h3>Small Groups, Maximum Speaking Time</h3>
+          <p style="color:var(--on-light-soft);line-height:1.75">Every live class runs with a maximum of 10–12 learners. Research in second-language acquisition is unambiguous: speaking time drives acquisition. Our small groups ensure every learner speaks, responds, and interacts — not once per class, but throughout it. Personal attention is not a luxury here; it is the methodology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SIX CULTURAL PILLARS ===== -->
+<section class="section-pad bg-navy on-dark">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:3.4rem">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center">The Six Pillars</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin:1rem 0">Six worlds, one <span class="gold-ital">language</span></h2>
+      <p class="lede reveal reveal-d2 lede-c" style="max-width:58ch;margin:0 auto">The French Atelier curriculum is organised around six cultural domains — each one a living world of French vocabulary, aesthetics, and social life.</p>
+    </div>
+    <div class="pillar-row">
+      <div class="pillar-card reveal">
+        <div class="pc-num">I</div>
+        <h3>Art &amp; Architecture</h3>
+        <ul>
+          <li>The Impressionists and the birth of modern vision</li>
+          <li>Haussmann, Garnier, Le Corbusier — the built language of France</li>
+          <li>Ateliers, salons, and the culture of artistic creation</li>
+          <li>Reading a French museum in French</li>
+          <li>The vocabulary of beauty, from the canvas to the cathedral</li>
+        </ul>
+      </div>
+      <div class="pillar-card reveal reveal-d1">
+        <div class="pc-num">II</div>
+        <h3>Gastronomy &amp; Wine</h3>
+        <ul>
+          <li>The market, the boulangerie, the fromagerie — daily food vocabulary</li>
+          <li>French table etiquette and the grammar of the meal</li>
+          <li>Wine regions, appellations, and tasting language</li>
+          <li>The art of ordering, hosting, and discussing food</li>
+          <li>Gastronomy as a UNESCO cultural heritage</li>
+        </ul>
+      </div>
+      <div class="pillar-card reveal reveal-d2">
+        <div class="pc-num">III</div>
+        <h3>Travel &amp; Landmarks</h3>
+        <ul>
+          <li>Navigating France — cities, regions, and transport</li>
+          <li>The vocabulary of the monument, the museum, the village</li>
+          <li>French geography as cultural itinerary</li>
+          <li>Speaking French on arrival, in transit, and at the table</li>
+          <li>Reading the city — Paris, Lyon, Marseille, Bordeaux</li>
+        </ul>
+      </div>
+      <div class="pillar-card reveal">
+        <div class="pc-num">IV</div>
+        <h3>Fashion &amp; Film</h3>
+        <ul>
+          <li>The grandes maisons — Chanel, Dior, Saint Laurent, Hermès</li>
+          <li>The codes of French elegance and their social grammar</li>
+          <li>La Nouvelle Vague and the cinema of ideas</li>
+          <li>Fashion vocabulary: describing, comparing, admiring</li>
+          <li>Film dialogue as a window into idiomatic French</li>
+        </ul>
+      </div>
+      <div class="pillar-card reveal reveal-d1">
+        <div class="pc-num">V</div>
+        <h3>Music &amp; Poetry</h3>
+        <ul>
+          <li>La chanson française — Piaf, Brel, Gainsbourg, Stromae</li>
+          <li>The sonority of French — how rhythm shapes meaning</li>
+          <li>Verlaine, Rimbaud, Prévert — listening to the language think</li>
+          <li>Analysing song lyrics as living grammar lessons</li>
+          <li>French music as cultural passport and learning tool</li>
+        </ul>
+      </div>
+      <div class="pillar-card reveal reveal-d2">
+        <div class="pc-num">VI</div>
+        <h3>Tradition &amp; History</h3>
+        <ul>
+          <li>The Revolution, the Republic, and the values they encoded in the language</li>
+          <li>French holidays, ceremonies, and their social vocabulary</li>
+          <li>The rituals of daily French life — greetings, apologies, formalities</li>
+          <li>Proverbs, idioms, and the historical roots of modern speech</li>
+          <li>The story of the French language itself</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem">
+      <a href="culture.html" class="btn btn-outline reveal">Explore French Culture</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CEFR ALIGNMENT ===== -->
+<section class="section-pad bg-ivory">
+  <div class="wrap">
+    <div class="split split-wide reveal">
+      <div>
+        <p class="eyebrow eyebrow-line">CEFR Alignment</p>
+        <h2 class="display-sm" style="margin:1.4rem 0">A structured journey from <span class="gold-ital">zero to fluency</span></h2>
+        <p style="color:var(--on-light-soft);line-height:1.75;max-width:46ch">Every French Atelier course is aligned with the Common European Framework of Reference for Languages — the international gold standard for language proficiency. Each course completes a defined CEFR level arc, and learners who complete 20 lessons receive a CEFR-aligned certificate from Acadomia.</p>
+        <div class="gold-rule" style="margin:2rem 0"></div>
+        <p class="muted" style="font-size:.92rem">Each 20-lesson course earns a CEFR-aligned certificate of completion from Acadomia — a mark of verified, structured attainment.</p>
+      </div>
+      <div>
+        <table class="cefr-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>CEFR Arc</th>
+              <th>Region</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="cefr-level">FA Foundation</span></td><td><span class="cefr-tag">A0 → A1.1</span></td><td>Paris</td></tr>
+            <tr><td><span class="cefr-level">FA Beginner</span></td><td><span class="cefr-tag">A1.1 → A1.2</span></td><td>Normandy → Paris</td></tr>
+            <tr><td><span class="cefr-level">FA Elementary</span></td><td><span class="cefr-tag">A1.2 → A2.1</span></td><td>Loire → Atlantic → Basque</td></tr>
+            <tr><td><span class="cefr-level">FA Intermediate</span></td><td><span class="cefr-tag">A2.1 → A2.2</span></td><td>Marseille · Chamonix · Alsace · Reims</td></tr>
+            <tr><td><span class="cefr-level">LSF · Let's Speak French</span></td><td><span class="cefr-tag">A0 → A1.2</span></td><td>Across France (speaking focus)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="cando-grid">
+      <div class="cando-card reveal">
+        <span class="cd-level">A1 &middot; Breakthrough</span>
+        <h3>What you can do</h3>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Introduce yourself and handle everyday courtesies in French</li>
+          <li><svg><use href="#i-check"/></svg>Order in a café, shop at a market, ask simple directions</li>
+          <li><svg><use href="#i-check"/></svg>Understand slow, clear speech on familiar topics</li>
+        </ul>
+      </div>
+      <div class="cando-card reveal reveal-d1">
+        <span class="cd-level">A2 &middot; Waystage</span>
+        <h3>What you can do</h3>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Describe your background, routine, and immediate environment</li>
+          <li><svg><use href="#i-check"/></svg>Manage short social exchanges — booking, planning, explaining</li>
+          <li><svg><use href="#i-check"/></svg>Read short texts and grasp the gist of everyday conversation</li>
+        </ul>
+      </div>
+      <div class="cando-card reveal reveal-d2">
+        <span class="cd-level">Assessment</span>
+        <h3>How progress is measured</h3>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>DELF/DALF-style &ldquo;can-do&rdquo; descriptors per unit</li>
+          <li><svg><use href="#i-check"/></svg>Continuous teacher feedback in every live class</li>
+          <li><svg><use href="#i-check"/></svg>CEFR-aligned certificate from Acadomia at 20 lessons</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LIVE CLASSES + RECORDINGS + STUDY GROUPS ===== -->
+<section class="section-pad bg-paper">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:3.2rem">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center">The Ecosystem</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin-top:1rem">Three pillars of <span class="gold-ital">active learning</span></h2>
+    </div>
+    <div class="trio-grid reveal">
+      <div class="trio-item">
+        <div class="ti-icon">◈</div>
+        <h3>Live Weekly Classes</h3>
+        <p>85-minute live sessions with a native certified teacher, broadcasting from an iconic location in France. Small groups of 10–12 ensure maximum speaking time and personal feedback. Every session is a cultural and linguistic event.</p>
+      </div>
+      <div class="trio-item">
+        <div class="ti-icon">◈</div>
+        <h3>Recordings &amp; Micro-Tasks</h3>
+        <p>Every class is recorded and available on-demand inside your learning platform. Between live sessions, structured micro-tasks consolidate vocabulary and grammar through real-world exercises — not abstract drills.</p>
+      </div>
+      <div class="trio-item">
+        <div class="ti-icon">◈</div>
+        <h3>Weekly Study Groups</h3>
+        <p>Peer-led study groups run twice weekly for learners on the pay-in-full plan — a structured space to rehearse, discuss, and deepen the week's cultural themes. Community is not an add-on; it accelerates acquisition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEMO CLASS VIDEO ===== -->
+<section class="section-pad bg-cream">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:2.8rem">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center">See It in Action</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin-top:1rem">Watch a <span class="gold-ital">real live class</span></h2>
+      <p class="lede reveal reveal-d2 lede-c" style="max-width:58ch;margin:0 auto">Discover French with Philippe from West Paris — a genuine French Atelier session, as it happens. Click Sound to hear the class live.</p>
+    </div>
+    <div class="sound-video reveal reveal-d2" data-soundvideo style="max-width:860px;margin:0 auto">
+      <video poster="assets/video/demo-class-poster.jpg" autoplay loop muted playsinline preload="metadata">
+        <source src="assets/video/demo-class.mp4" type="video/mp4">
+      </video>
+      <button class="sound-toggle" aria-pressed="false" aria-label="Toggle sound">
+        <span class="si-muted">▶ Sound</span><span class="si-on">Mute</span>
+      </button>
+    </div>
+    <p class="img-caption reveal" style="text-align:center;margin-top:1rem">"Discover French with Philippe" — a live French Atelier class, broadcast from West Paris.</p>
+  </div>
+</section>
+
+<!-- ===== JULIEN BRIDGE ===== -->
+<section class="section-pad bg-navy-deep on-dark">
+  <div class="wrap split">
+    <div class="reveal" style="position:relative;display:flex;align-items:flex-end;justify-content:center">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/juliane/video-alpha/julian-307-poster.webp" style="width:100%;max-width:380px;height:auto;display:block;object-fit:contain;filter:drop-shadow(0 22px 30px rgba(0,0,16,.5)) drop-shadow(0 3px 8px rgba(0,0,16,.35))" aria-label="Julien, the French Atelier AI tutor"><source src="assets/juliane/video-alpha/julian-307.webm" type="video/webm"><img src="assets/juliane/video-alpha/julian-307-poster.webp" alt="Julien, the French Atelier AI tutor" loading="lazy" decoding="async"></video>
+      <span class="img-tag" style="font-size:1rem">Julien · AI Tutor</span>
+    </div>
+    <div class="reveal reveal-d1">
+      <p class="eyebrow eyebrow-line">Always-On Coaching</p>
+      <h2 class="display-md" style="margin:1.4rem 0">Between classes: <span class="gold-ital">Julien</span></h2>
+      <p class="lede">The method continues beyond the live class. Julien — our advanced AI French coach — is available 24/7 inside the platform for pronunciation practice, conversation drills, instant corrections, and cultural Q&amp;A. No momentum is ever lost.</p>
+      <div class="gold-rule"></div>
+      <p class="muted">Julien is not a chatbot. He is a sophisticated language coach — patient, precise, and always in French.</p>
+      <a href="juliane.html" class="btn btn-outline" style="margin-top:1.4rem">Meet Julien</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section-pad bg-paper" style="text-align:center">
+  <div class="wrap-narrow">
+    <p class="eyebrow eyebrow-line reveal" style="justify-content:center">Begin</p>
+    <h2 class="display-md reveal reveal-d1" style="margin:1.2rem 0">Ready to live <span class="gold-ital">the method</span>?</h2>
+    <p class="lede reveal reveal-d2 lede-c" style="max-width:58ch;margin:0 auto 2rem">Join a live class broadcasting from France and experience the French Atelier method for yourself — culture, conversation, and community in one elegant program.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap" class="reveal reveal-d3">
+      <a href="how-it-works.html" class="btn btn-outline btn-lg">How It Works</a>
+      <a href="pricing.html" class="btn btn-gold btn-lg">Enroll Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FRENCH ATELIER — INLINE ADVISOR SECTION  (Agent 5)
+     Drop into any page where you want the lead form embedded
+     (not as a modal). Same validation/success behavior as the modal.
+     Wrap is .advisor-section; left column is editorial copy, right is the card.
+     ============================================================ -->
+<section class="section-pad bg-ivory advisor-section" id="talk-to-advisor">
+  <div class="wrap">
+    <div class="advisor-split">
+      <div class="reveal">
+        <span class="eyebrow eyebrow-line">Speak with us</span>
+        <h2 class="display-md" style="margin:1rem 0 1.1rem">Plan your French<br><span class="gold-ital">Atelier</span> journey</h2>
+        <p class="lede">Leave your details and one of our academic advisors will guide you through open class dates, levels and scheduling — no obligation.</p>
+        <ul style="margin-top:1.6rem;display:flex;flex-direction:column;gap:.9rem">
+          <li style="display:flex;align-items:center;gap:.8rem;color:var(--on-light-soft)"><svg class="fa-icon" style="font-size:20px;color:var(--gold-deep)"><use href="#i-globe"/></svg> Native French teachers, live from France</li>
+          <li style="display:flex;align-items:center;gap:.8rem;color:var(--on-light-soft)"><svg class="fa-icon" style="font-size:20px;color:var(--gold-deep)"><use href="#i-certificate"/></svg> Certified &middot; CEFR-aligned</li>
+          <li style="display:flex;align-items:center;gap:.8rem;color:var(--on-light-soft)"><svg class="fa-icon" style="font-size:20px;color:var(--gold-deep)"><use href="#i-clock"/></svg> Flexible mornings &amp; late evenings</li>
+        </ul>
+      </div>
+
+      <div class="advisor-card reveal reveal-d1">
+        <div class="advisor-head">
+          <h3>Talk to an Advisor</h3>
+          <p>We&rsquo;ll reach out to plan your start.</p>
+        </div>
+        <form class="advisor-form" novalidate>
+          <div class="field">
+            <label for="method-inl-name">Name</label>
+            <input id="method-inl-name" name="name" type="text" autocomplete="name" placeholder="Your full name">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="method-inl-email">Email</label>
+            <input id="method-inl-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="method-inl-phone">Phone</label>
+            <input id="method-inl-phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 123 4567">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="method-inl-country">Country</label>
+            <input id="method-inl-country" name="country" type="text" autocomplete="country-name" placeholder="United States">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="method-inl-level">French level</label>
+            <select id="method-inl-level" name="level">
+              <option value="" disabled selected>Select your level</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="method-inl-time">Preferred time</label>
+            <input id="method-inl-time" name="time" type="text" placeholder="e.g. Weekday evenings (CET)">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="form-submit">
+            <button class="btn btn-3d btn-3d-primary" type="submit">
+              Request a Call
+              <svg class="fa-icon" style="font-size:17px"><use href="#i-arrow-right"/></svg>
+            </button>
+          </div>
+        </form>
+        <div class="advisor-success" role="status">
+          <div class="success-mark"><svg class="fa-icon" style="font-size:28px"><use href="#i-check"/></svg></div>
+          <h3>Merci&nbsp;!</h3>
+          <p>Your request is on its way to our advisor. We&rsquo;ll be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" style="height:54px;width:auto;margin-bottom:.9rem;display:block" loading="lazy" decoding="async">
+        <p>Culture speaks French. What about you? An exclusive, culturally immersive, certified, live French language program — presented by one of France's leading private education groups.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <a href="courses/fa-foundation.html">FA Foundation</a>
+        <a href="courses/fa-beginner.html">FA Beginner</a>
+        <a href="courses/fa-elementary.html">FA Elementary</a>
+        <a href="courses/fa-intermediate.html">FA Intermediate</a>
+        <a href="courses.html">Let's Speak French</a>
+        <a href="map.html">Map of France</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="method.html">Our Method</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="juliane.html">Julien · AI Tutor</a>
+        <a href="teachers.html">Our Teachers</a>
+        <a href="culture.html">French Culture</a>
+        <a href="capsules.html">Culture Capsules</a>
+        <a href="blog.html">Cultural Journal</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="acadomia.html">Acadomia Group</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>7 rue de la Baume, 75008 Paris, France &nbsp;·&nbsp; +1-888-230-5110 &nbsp;·&nbsp; advisor@eTeacherGroup.com</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61577106456673" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.8.3-1.5 1.5-1.5H18V.2C17.5.1 16.3 0 15 0c-2.7 0-4.5 1.6-4.5 4.6V6H8v3h2.5v9H14V9z"/></svg></a>
+        <a href="https://www.instagram.com/livefrenchatelier" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.youtube.com/@FrenchbyAtelier" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C16.8 4 12 4 12 4s-4.8 0-7.9.2c-.4.1-1.4.1-2.2 1C1.2 5.9 1 7.5 1 7.5S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.8.9 1.9.9 2.4 1 1.7.1 7.7.2 7.7.2s4.8 0 7.9-.2c.4-.1 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.4c0-1.9-.2-3.8-.2-3.8zM9.7 15V9l5.2 3-5.2 3z"/></svg></a>
+      </div>
+    </div>
+    <p style="color:var(--on-dark-faint);font-size:.78rem;text-align:center;margin-top:1.6rem">Copyright ACADOMIA © 2026. All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- ============================================================
+     FRENCH ATELIER — ADVISOR MODAL  (Agent 5)
+     Paste ONCE per page, just before </body>. Opened by ANY element
+     with the data-advisor attribute (e.g. the nav CTA). JS handles
+     open/close, ESC, backdrop click, validation + success.
+     Submission: mailto fallback. ▶ Wire a real endpoint in js/fa.js
+     (search for "TO WIRE A REAL ENDPOINT").
+     ============================================================ -->
+<div class="advisor-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="advisorModalTitle">
+  <div class="advisor-card">
+    <button class="advisor-modal-close" aria-label="Close" type="button">
+      <svg class="fa-icon" style="font-size:16px"><use href="#i-close"/></svg>
+    </button>
+
+    <div class="advisor-head">
+      <span class="eyebrow eyebrow-line">Speak with us</span>
+      <h3 id="advisorModalTitle">Talk to an Advisor</h3>
+      <p>Tell us a little about you and a French Atelier academic advisor will be in touch to plan your start.</p>
+    </div>
+
+    <form class="advisor-form" novalidate>
+      <div class="field">
+        <label for="adv-name">Name</label>
+        <input id="adv-name" name="name" type="text" autocomplete="name" placeholder="Your full name">
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="adv-email">Email</label>
+        <input id="adv-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+          <div class="field">
+            <label for="adv-phone">Phone</label>
+            <input id="adv-phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 123 4567">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="adv-country">Country</label>
+            <input id="adv-country" name="country" type="text" autocomplete="country-name" placeholder="United States">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+      <div class="field">
+        <label for="adv-level">French level</label>
+        <select id="adv-level" name="level">
+          <option value="" disabled selected>Select your level</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="adv-time">Preferred time</label>
+        <input id="adv-time" name="time" type="text" placeholder="e.g. Weekday evenings (CET)">
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+      <div class="form-submit">
+        <button class="btn btn-3d btn-3d-primary" type="submit">
+          Request a Call
+          <svg class="fa-icon" style="font-size:17px"><use href="#i-arrow-right"/></svg>
+        </button>
+      </div>
+      <p class="advisor-fineprint">Native French teachers, live from France &middot; Certified &middot; CEFR-aligned</p>
+    </form>
+
+    <div class="advisor-success" role="status">
+      <div class="success-mark"><svg class="fa-icon" style="font-size:28px"><use href="#i-check"/></svg></div>
+      <h3>Merci&nbsp;!</h3>
+      <p>Your request is on its way to our advisor. We&rsquo;ll be in touch shortly to plan your French journey.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+/* Method science-fold accordion (.mp-head toggles .mp.is-open; single-open) */
+(function(){
+  var heads=document.querySelectorAll('.science-fold .mp-head');
+  heads.forEach(function(head){
+    head.addEventListener('click',function(){
+      var mp=head.closest('.mp');
+      if(!mp)return;
+      var open=mp.classList.contains('is-open');
+      var list=mp.parentNode;
+      if(list){
+        list.querySelectorAll('.mp.is-open').forEach(function(o){
+          if(o!==mp){o.classList.remove('is-open');var h=o.querySelector('.mp-head');if(h)h.setAttribute('aria-expanded','false');}
+        });
+      }
+      mp.classList.toggle('is-open',!open);
+      head.setAttribute('aria-expanded',String(!open));
+    });
+  });
+})();
+</script>
+<script src="js/fa.js?v=1790665240" defer></script>
+<script src="js/enroll-modal.js?v=1790665240"></script>
+<script src="js/eteacher-leads.js?v=1790665240" defer></script>
+</body>
+</html>

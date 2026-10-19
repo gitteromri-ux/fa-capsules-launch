@@ -1,0 +1,26 @@
+%IF !empty($FIRSTNAME)%Bonjour %FIRSTNAME%,%ELSE%Bonjour,%/IF%
+
+Fashion & Art. Gastronomy & Wine. Cinema & Music. Which part of France would you like to know better?
+
+Your two capsules option covers two themes. This is our last registration reminder in this sequence; you can review the programme whenever you are ready.
+
+Two capsules
+20 live conferences
+$534 total = 3 monthly payments of $178
+With CAPSULE20: $427.20 total = 3 monthly payments of $142.40. Prices in USD.
+
+Live from France, in English. No prior French needed. Each capsule has 10 weekly, 60-minute Zoom conferences, with Q&A after each session.
+
+Choose My French Culture Plan
+https://fa-capsules-v3.pplx.app/capsules.html?utm_source=activecampaign&utm_medium=email&utm_campaign=fa_capsules_a1_two-capsules&utm_content=cc-2-a1-3
+
+À bientôt,
+The French Atelier team
+
+The French Atelier by Acadomia
+7 rue de la Baume, 75008 Paris, France
+
+Sent to %EMAIL%. You began exploring Culture Capsules with The French Atelier.
+
+Unsubscribe: %UNSUBSCRIBELINK%
+Update preferences: %UPDATELINK%

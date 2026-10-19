@@ -1,0 +1,92 @@
+/* Culture Capsules: responsive presentation only. No checkout or offer changes. */
+@media(max-width:1100px){
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-grid{
+    display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:24px!important;max-width:560px!important;width:100%!important;margin:0 auto!important;perspective:none!important;
+  }
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-card{
+    width:100%!important;min-width:0!important;max-width:none!important;transform:none!important;translate:none!important;rotate:none!important;scale:none!important;box-sizing:border-box!important;
+  }
+}
+@media(max-width:760px){
+  html:root:root:root:root:root:root body#fa.cap-page .kps-hero .tp img{width:126px!important;max-width:126px!important;height:30px!important;max-height:30px!important;object-fit:contain!important;flex:none!important}
+  html:root:root:root:root:root:root body#fa.cap-page{overflow-x:clip!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-wrap{width:100%!important;max-width:100%!important;padding-left:20px!important;padding-right:20px!important;box-sizing:border-box!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-hero .cta{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:16px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-hero .cta .tp{display:flex!important;flex-wrap:wrap!important;gap:8px!important;align-items:center!important;width:auto!important;max-width:100%!important;font-size:15px!important;line-height:1.4!important;margin:0!important;transform:none!important}
+  html:root:root:root:root:root:root body#fa.cap-page .tp .stars{display:inline-flex!important;gap:2px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .tp .stars i{width:15px!important;height:15px!important;flex:none!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-trust .row{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:16px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-trust .t{min-width:0!important;max-width:100%!important;padding:24px!important;transform:none!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-trust .t img{max-width:160px!important;width:auto!important;height:auto!important;max-height:40px!important;object-fit:contain!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-trust .t p{font-size:17px!important;line-height:1.5!important;letter-spacing:normal!important;text-wrap:pretty!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers{padding-top:48px!important;padding-bottom:48px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .head{margin-bottom:28px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kps-h2{font-size:38px!important;line-height:1.1!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kps-sub{font-size:18px!important;line-height:1.5!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-card{padding:28px 24px!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;overflow:hidden!important;text-align:left!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-all{padding-top:74px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-card *{min-width:0;word-break:normal;overflow-wrap:normal}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-badge{font-size:15px!important;line-height:1.3!important;letter-spacing:.06em!important;padding:14px 10px!important;white-space:normal!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-name{font-size:32px!important;line-height:1.12!important;margin:8px 0 10px!important;letter-spacing:-.02em!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-sub{font-size:17px!important;line-height:1.4!important;margin-bottom:18px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-pricebox{padding:18px 0!important;width:100%!important;max-width:100%!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-was{display:block!important;font-size:25px!important;line-height:1.2!important;margin-bottom:10px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-reg{font-size:16px!important;letter-spacing:.04em!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-price{display:grid!important;grid-template-columns:auto auto minmax(0,1fr)!important;column-gap:5px!important;align-items:center!important;justify-content:start!important;transform:none!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-cur{font-size:32px!important;line-height:1!important;margin:0!important;align-self:start!important;padding-top:8px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-amt{font-size:76px!important;line-height:.95!important;letter-spacing:-.04em!important;transform:none!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-unit{font-size:16px!important;line-height:1.35!important;margin-left:7px!important;align-self:center!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-save{display:inline-block!important;align-self:flex-start!important;font-size:16px!important;line-height:1.4!important;max-width:100%!important;margin-top:16px!important;white-space:normal!important;padding:7px 10px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-pay{font-size:17px!important;line-height:1.6!important;white-space:normal!important;margin:18px 0!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-pay b{display:block!important;font-size:20px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-dot{display:inline!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-cta{display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;min-height:60px!important;width:100%!important;padding:16px 10px!important;font-size:18px!important;line-height:1.25!important;white-space:normal!important;border-radius:12px!important;transform:none!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-cta svg{width:20px!important;height:20px!important;flex:0 0 20px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-inc{font-size:15px!important;line-height:1.3!important;margin-top:24px!important;padding-top:20px!important;letter-spacing:.08em!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-feats{padding:0!important;margin:12px 0 0!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-feats li{display:flex!important;gap:10px!important;font-size:17px!important;line-height:1.45!important;margin:0 0 12px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-feats li svg{width:20px!important;height:20px!important;flex:0 0 20px!important;margin-top:3px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-per{font-size:16px!important;line-height:1.4!important;margin-top:14px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-promo{display:flex!important;flex-direction:column!important;align-items:center!important;gap:10px!important;padding:24px 16px!important;text-align:center!important;font-size:19px!important;line-height:1.4!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-cards{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:20px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-card{width:100%!important;min-width:0!important;grid-column:auto!important;transform:none!important;min-height:500px!important;padding:26px 22px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-card .title{font-size:36px!important;line-height:1.1!important;letter-spacing:-.02em!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-card .what{font-size:18px!important;line-height:1.45!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-card .meta{display:flex!important;flex-wrap:wrap!important;gap:16px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-card .meta small{font-size:15px!important;white-space:normal!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-card .action{max-width:100%!important;font-size:16px!important;white-space:normal!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-tiles,
+  html:root:root:root:root:root:root body#fa.cap-page .kps-steps,
+  html:root:root:root:root:root:root body#fa.cap-page .kps-learn .cols{grid-template-columns:minmax(0,1fr)!important}
+}
+@media(max-width:359px){
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-card{padding-left:18px!important;padding-right:18px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-amt{font-size:66px!important}
+  html:root:root:root:root:root:root body#fa.cap-page #offers .kpz-unit{font-size:15px!important;margin-left:4px!important}
+}
+@media(max-width:760px){
+  html:root:root:root:root:root:root body#fa.cap-page .kps-card .eyebrow{display:block!important;position:absolute!important;top:22px!important;left:22px!important;right:auto!important;width:fit-content!important;max-width:calc(100% - 44px)!important;font-size:15px!important;line-height:1.4!important;letter-spacing:.02em!important;white-space:normal!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-card .meta small{letter-spacing:normal!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-lessons{padding:24px 16px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-lessons .lhead{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:20px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:18px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-tile{display:flex!important;flex-direction:column!important;min-width:0!important;width:100%!important;transform:none!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-tile .img{width:100%!important;max-width:none!important;height:180px!important;min-height:180px!important;flex:0 0 180px!important;aspect-ratio:auto!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-tile .body{width:100%!important;max-width:none!important;padding:22px!important;box-sizing:border-box!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-tile .sub{font-size:15px!important;line-height:1.4!important;letter-spacing:.02em!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-tile h5{font-size:28px!important;line-height:1.15!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-tile p{font-size:17px!important;line-height:1.5!important;text-wrap:pretty!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-read .head{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:20px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-read .head>*{width:auto!important;max-width:100%!important;min-width:0!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-float-cta{display:inline-flex!important;left:12px!important;right:12px!important;max-width:calc(100% - 24px)!important;width:auto!important;box-sizing:border-box!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-float-cta .fa-cta-text{flex:1 1 0!important;min-width:0!important;padding:12px 10px!important;gap:5px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-float-cta .fa-cta-eyebrow{font-size:11px!important;line-height:1.25!important;white-space:normal!important;letter-spacing:.02em!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-float-cta .fa-cta-title{font-size:14px!important;line-height:1.2!important;white-space:normal!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-float-cta .fa-cta-pill{flex:0 0 auto!important;gap:4px!important;padding:0 10px!important;max-width:45%!important;box-sizing:border-box!important;font-size:12px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-float-cta .fa-cta-pill .price{font-size:14px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-strip{height:48px!important;gap:6px!important;padding-left:8px!important;padding-right:32px!important;box-sizing:border-box!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-strip-msg{display:block!important;flex:1 1 auto!important;font-size:12px!important;line-height:1.15!important;white-space:normal!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-strip-code{font-size:12px!important;letter-spacing:.04em!important;padding:0 6px!important;gap:4px!important;flex:0 0 auto!important}
+  html:root:root:root:root:root:root body#fa.cap-page .fa-strip-ends{font-size:12px!important;flex:0 0 auto!important;gap:3px!important}
+  html:root:root:root:root:root:root body#fa.cap-page .kps-trust img[alt="Trustpilot"]{width:126px!important;max-width:126px!important;height:30px!important;max-height:30px!important}
+}

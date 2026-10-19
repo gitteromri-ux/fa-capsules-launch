@@ -1,0 +1,21 @@
+%IF !empty($FIRSTNAME)%Bonjour %FIRSTNAME%,%ELSE%Bonjour,%/IF%
+
+Your enrollment in two capsules is confirmed: 20 live conferences across two themes.
+
+Keep your booking confirmation and joining instructions handy. They are your reference for session times and access. If anything is missing, reply and ask us to check.
+
+Live from France, in English. No prior French needed. Each capsule has 10 weekly, 60-minute Zoom conferences, with Q&A after each session.
+
+Review My Culture Programme
+https://fa-capsules-v3.pplx.app/capsules.html?utm_source=activecampaign&utm_medium=email&utm_campaign=fa_capsules_b_two-capsules&utm_content=cc-2-b1
+
+À bientôt,
+The French Atelier team
+
+The French Atelier by Acadomia
+7 rue de la Baume, 75008 Paris, France
+
+Sent to %EMAIL%. You are enrolled in Culture Capsules with The French Atelier.
+
+Unsubscribe: %UNSUBSCRIBELINK%
+Update preferences: %UPDATELINK%

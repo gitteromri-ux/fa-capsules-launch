@@ -1,0 +1,19 @@
+%IF !empty($FIRSTNAME)%Bonjour %FIRSTNAME%,%ELSE%Bonjour,%/IF%
+
+A quick follow-up after the conference you missed. Can you find the time and Zoom access in your joining instructions?
+
+If not, reply and tell us what you need. Your three-capsule programme includes 30 conferences in total; check your booking for the next one included in your enrollment.
+
+Check My Upcoming Programme
+https://fa-capsules-v3.pplx.app/capsules.html?utm_source=activecampaign&utm_medium=email&utm_campaign=fa_capsules_x_three-capsules&utm_content=cc-3-x2
+
+À bientôt,
+The French Atelier team
+
+The French Atelier by Acadomia
+7 rue de la Baume, 75008 Paris, France
+
+Sent to %EMAIL%. You are enrolled in Culture Capsules with The French Atelier.
+
+Unsubscribe: %UNSUBSCRIBELINK%
+Update preferences: %UPDATELINK%

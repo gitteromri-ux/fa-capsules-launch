@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>French Culture — The French Atelier by Acadomia</title>
+<meta name="description" content="Learn French through culture. Six cinematic chapters — Art & Architecture, Gastronomy & Wine, Travel & Landmarks, Fashion & Film, Music & Poetry, Tradition & History — each a world of language, aesthetics, and the French art of living.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/fa.css?v=1790665240">
+<link rel="stylesheet" href="css/mapstr.css?v=1790665240">
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+<style>
+/* ============================================================
+   CULTURE — CINEMATIC EDITION  (the "Coco Chanel world")
+   A luxury maison brand-film: full-bleed motion, oversized
+   Cormorant headlines, gold hairlines, slow elegant reveals.
+   ============================================================ */
+
+/* ---------- shared cinematic atoms ---------- */
+.cin-kicker{
+  font-family:var(--sans);font-size:.7rem;font-weight:600;
+  letter-spacing:.34em;text-transform:uppercase;color:var(--gold-soft);
+  display:inline-flex;align-items:center;gap:1rem;
+}
+.cin-kicker::before{content:"";width:42px;height:1px;background:var(--gold);display:inline-block}
+.cin-kicker.center{justify-content:center}
+.cin-kicker.center::after{content:"";width:42px;height:1px;background:var(--gold);display:inline-block}
+.on-light .cin-kicker, .cin-kicker.dark{color:var(--gold-deep)}
+.cin-kicker.dark::before,.cin-kicker.dark::after{background:var(--gold-deep)}
+
+.gold-rule{width:64px;height:1px;background:var(--gold);opacity:.85}
+.gold-rule.center{margin-left:auto;margin-right:auto}
+
+/* ===================== HERO ===================== */
+.cult-hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--navy-deep);padding-top:5rem}
+.cult-hero .bgvid{position:absolute;inset:0;z-index:0}
+.cult-hero .bgvid video{width:100%;height:100%;object-fit:cover}
+.cult-hero::before{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(0,0,31,.55) 0%,rgba(0,0,31,.18) 35%,rgba(0,0,31,.74) 82%,rgba(0,0,31,.96) 100%)}
+.cult-hero::after{content:"";position:absolute;inset:0;z-index:1;
+  background:radial-gradient(120% 90% at 15% 70%,rgba(0,0,31,.55),transparent 60%)}
+.cult-hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:clamp(4rem,9vh,8rem);padding-top:9rem}
+.cult-hero h1{
+  font-size:clamp(3.4rem,9.4vw,9rem);line-height:.92;color:var(--on-dark);
+  font-weight:500;letter-spacing:-.02em;margin:1.6rem 0 0;max-width:18ch;
+  text-shadow:0 2px 40px rgba(0,0,20,.45);
+}
+.cult-hero h1 .gi{font-style:italic;color:var(--gold-soft);font-weight:500}
+.cult-hero .hero-sub{max-width:44ch;color:var(--on-dark-soft);font-weight:300;
+  font-size:clamp(1.05rem,1.5vw,1.32rem);line-height:1.6;margin:1.8rem 0 2.4rem}
+.cult-hero .scroll-cue{display:inline-flex;align-items:center;gap:.8rem;color:var(--on-dark-soft);
+  font-size:.7rem;letter-spacing:.24em;text-transform:uppercase}
+.cult-hero .scroll-cue svg{width:14px;height:22px}
+.cult-hero .scroll-cue .dot{width:4px;height:4px;border-radius:50%;background:var(--gold-soft);
+  animation:scrolldot 1.8s var(--ease) infinite}
+@keyframes scrolldot{0%{transform:translateY(0);opacity:0}30%{opacity:1}100%{transform:translateY(12px);opacity:0}}
+
+/* ===================== THESIS ===================== */
+.cult-thesis{background:var(--navy);color:var(--on-dark);text-align:center;padding:var(--sp-8) 0}
+.cult-thesis .wrap-narrow{position:relative;z-index:1}
+.cult-thesis .tag-script{font-family:var(--serif);font-style:italic;color:var(--gold-soft);
+  font-size:clamp(1.4rem,2.6vw,2rem);margin-bottom:1.4rem}
+.cult-thesis h2{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:500;line-height:1.12;color:var(--on-dark);
+  max-width:20ch;margin:0 auto 1.6rem}
+.cult-thesis h2 em{color:var(--gold-soft);font-style:italic}
+.cult-thesis p{color:var(--on-dark-soft);max-width:60ch;margin:0 auto;font-weight:300;
+  font-size:clamp(1.02rem,1.4vw,1.18rem)}
+
+/* ===================== CHAPTER INDEX ===================== */
+.cult-index{background:var(--paper);padding:var(--sp-7) 0}
+.cult-index .ix-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;
+  flex-wrap:wrap;margin-bottom:3rem}
+.cult-index .ix-head h2{font-size:clamp(2rem,3.6vw,3rem);font-weight:500;color:var(--navy);max-width:14ch}
+.cult-index .ix-head p{color:var(--on-light-soft);max-width:32ch;font-weight:300;margin:0}
+.ix-list{border-top:1px solid var(--gold-line)}
+.ix-row{display:grid;grid-template-columns:5.5rem 1fr auto;align-items:center;gap:1.4rem;
+  padding:1.5rem .4rem;border-bottom:1px solid var(--gold-line-soft);
+  transition:background .4s var(--ease),padding .4s var(--ease);position:relative}
+.ix-row::after{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:0;background:var(--gold);
+  transition:width .5s var(--ease)}
+.ix-row:hover{background:rgba(200,169,107,.06);padding-left:1.2rem}
+.ix-row:hover::after{width:100%}
+.ix-num{font-family:var(--serif);font-size:1.5rem;color:var(--gold-deep);font-style:italic}
+.ix-title{font-family:var(--serif);font-size:clamp(1.4rem,2.4vw,2rem);color:var(--navy);font-weight:500;line-height:1.1}
+.ix-title .fr{display:block;font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--gold-deep);font-style:normal;margin-top:.4rem}
+.ix-go{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--on-light-soft);
+  display:inline-flex;align-items:center;gap:.5rem;white-space:nowrap}
+.ix-go svg{width:26px;height:8px}
+
+/* ===================== CHAPTER ===================== */
+.chapter{position:relative;overflow:hidden;padding-top:5rem}
+.chapter-stage{position:relative;min-height:92vh;display:flex;align-items:flex-end}
+.chapter-stage .bgvid{position:absolute;inset:0;z-index:0}
+.chapter-stage .bgvid video{width:100%;height:100%;object-fit:cover}
+.chapter-stage::before{content:"";position:absolute;inset:0;z-index:1}
+/* default scrim: weighted to the side the text sits on */
+.chapter.left .chapter-stage::before{background:linear-gradient(90deg,rgba(0,0,31,.88) 0%,rgba(0,0,31,.55) 42%,rgba(0,0,31,.12) 78%,rgba(0,0,31,.32) 100%)}
+.chapter.right .chapter-stage::before{background:linear-gradient(270deg,rgba(0,0,31,.88) 0%,rgba(0,0,31,.55) 42%,rgba(0,0,31,.12) 78%,rgba(0,0,31,.32) 100%)}
+.chapter-stage::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(0,0,31,.28),transparent 30%,transparent 60%,rgba(0,0,31,.5))}
+.chapter-stage .wrap{position:relative;z-index:2;width:100%;padding-top:8rem;padding-bottom:clamp(3rem,7vh,6rem)}
+.chapter.right .chapter-stage .wrap{display:flex;justify-content:flex-end}
+
+.ch-card{max-width:48ch}
+.ch-index{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--gold-soft);margin-bottom:.4rem}
+.ch-title{font-size:clamp(2.8rem,6.4vw,5.6rem);line-height:.96;color:var(--on-dark);font-weight:500;
+  letter-spacing:-.018em;margin:.6rem 0 0;text-shadow:0 2px 36px rgba(0,0,20,.5)}
+.ch-title .gi{font-style:italic;color:var(--gold-soft)}
+.ch-fr{font-family:var(--sans);font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold-soft);margin-top:1.1rem;display:block}
+.ch-lede{color:var(--on-dark);font-weight:300;font-size:clamp(1.04rem,1.45vw,1.24rem);
+  line-height:1.62;margin:1.4rem 0 0;max-width:42ch;opacity:.92}
+
+/* editorial detail band below each stage */
+.ch-detail{background:var(--paper);color:var(--on-light)}
+.chapter.alt .ch-detail{background:var(--ivory)}
+.ch-detail .wrap{padding:var(--sp-7) 2rem;display:grid;grid-template-columns:1fr 1.05fr;gap:4rem;align-items:center}
+.ch-detail-text .cap{font-family:var(--serif);font-style:italic;color:var(--gold-deep);font-size:1.15rem;margin-bottom:.8rem}
+.ch-detail-text h3{font-size:clamp(1.6rem,2.8vw,2.4rem);color:var(--navy);font-weight:500;line-height:1.12;margin-bottom:1.2rem}
+.ch-detail-text p{color:var(--on-light-soft);font-weight:300;font-size:1.06rem;line-height:1.7;max-width:46ch}
+.ch-vocab{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.6rem}
+.ch-vocab span{font-family:var(--serif);font-size:1.02rem;font-style:italic;color:var(--navy);
+  border:1px solid var(--gold-line);border-radius:30px;padding:.4rem 1.1rem;background:rgba(200,169,107,.06)}
+.ch-vocab span em{color:var(--gold-deep);font-style:normal;font-family:var(--sans);
+  font-size:.74rem;letter-spacing:.04em;margin-left:.5rem;text-transform:lowercase}
+
+/* image triptych / single in detail band */
+.ch-gallery{display:grid;gap:1rem;position:relative}
+.ch-gallery.single img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius)}
+.ch-gallery.single .gframe{aspect-ratio:16/9}
+.ch-gallery.single .gframe img{width:100%;height:100%;object-fit:cover;display:block}
+.ch-gallery .gframe{position:relative;overflow:hidden;border-radius:var(--radius);box-shadow:0 24px 60px -28px rgba(0,0,30,.5)}
+.ch-gallery .gframe img,.ch-gallery .gframe video{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.1s var(--ease)}
+.ch-gallery .gframe:hover img,.ch-gallery .gframe:hover video{transform:scale(1.05)}
+.ch-gallery .gframe::after{content:"";position:absolute;inset:0;border:1px solid var(--gold-line-soft);border-radius:var(--radius);pointer-events:none}
+.ch-gallery.duo{grid-template-columns:1fr 1fr}
+.ch-gallery.duo .gframe{aspect-ratio:3/4}
+.ch-gallery.trio{grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr}
+.ch-gallery.trio .gframe:nth-child(1){grid-row:1/3;aspect-ratio:auto}
+.ch-gallery.trio .gframe:nth-child(2),.ch-gallery.trio .gframe:nth-child(3){aspect-ratio:16/10}
+.ch-cap-line{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-light-faint);
+  margin-top:1rem;display:flex;align-items:center;gap:.7rem}
+.ch-cap-line::before{content:"";width:24px;height:1px;background:var(--gold-deep);display:inline-block}
+
+/* ===================== METHOD BRIDGE ===================== */
+.cult-bridge{background:var(--navy-deep);color:var(--on-dark);position:relative;overflow:hidden;
+  padding:var(--sp-8) 0;text-align:center}
+.cult-bridge::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(80% 120% at 50% -10%,rgba(200,169,107,.14),transparent 60%)}
+.cult-bridge .wrap-narrow{position:relative;z-index:1}
+.cult-bridge h2{font-size:clamp(2.2rem,4.6vw,3.6rem);font-weight:500;color:var(--on-dark);line-height:1.1;
+  max-width:18ch;margin:1.4rem auto 1.4rem}
+.cult-bridge h2 em{font-style:italic;color:var(--gold-soft)}
+.cult-bridge p{color:var(--on-dark-soft);max-width:54ch;margin:0 auto 2.4rem;font-weight:300;
+  font-size:clamp(1.02rem,1.4vw,1.18rem)}
+.cult-bridge .ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width:900px){
+  .ch-detail .wrap{grid-template-columns:1fr;gap:2.4rem;padding:var(--sp-6) 1.3rem}
+  .chapter.right .chapter-stage .wrap{justify-content:flex-start}
+  .chapter.left .chapter-stage::before,.chapter.right .chapter-stage::before{
+    background:linear-gradient(180deg,rgba(0,0,31,.5) 0%,rgba(0,0,31,.3) 40%,rgba(0,0,31,.85) 100%)}
+  .chapter-stage{min-height:78vh}
+  .ix-row{grid-template-columns:3rem 1fr;gap:1rem}
+  .ix-go{display:none}
+}
+@media (max-width:560px){
+  .ch-gallery.trio{grid-template-columns:1fr;grid-template-rows:none}
+  .ch-gallery.trio .gframe:nth-child(1){grid-row:auto;aspect-ratio:4/3}
+  .cult-hero h1{font-size:clamp(2.8rem,12vw,4rem)}
+  .cult-toc{display:none}
+}
+
+/* ===================== STICKY CHAPTER TOC ===================== */
+/* Force a solid navy header on this page so it doesn't blend with body */
+body{background:#000014}
+.site-header{background:rgba(0,0,20,.97) !important;backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(200,165,96,.18)}
+.cult-toc{
+  position:sticky;top:88px;z-index:80;
+  background:rgba(0,0,20,.96);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--gold-line-soft);
+  padding:.55rem 0;
+  margin-top:88px;
+}
+.cult-toc .toc-inner{
+  display:flex;align-items:center;gap:0;
+  overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none;
+  padding:0 max(1.5rem,(100vw - 1320px)/2);
+}
+.cult-toc .toc-inner::-webkit-scrollbar{display:none}
+.cult-toc .toc-link{
+  font-family:var(--sans);font-size:.68rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--on-dark-soft);white-space:nowrap;
+  padding:.45rem 1.1rem;border-radius:20px;
+  text-decoration:none;transition:color .25s,background .25s;
+  flex-shrink:0;
+}
+.cult-toc .toc-link:hover,.cult-toc .toc-link.active{
+  color:var(--gold-soft);background:rgba(200,169,107,.12);
+}
+.cult-toc .toc-num{
+  font-family:var(--serif);font-style:italic;
+  font-size:.85rem;color:var(--gold-deep);margin-right:.38rem;
+}
+</style>
+<link rel="stylesheet" href="css/mobile-fix.css?v=1790665240"><link rel="stylesheet" href="css/homepage-mobile-polish.css?v=1790665240">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="css/house-style.css?v=1790665240">
+<link rel="stylesheet" href="css/enroll-modal.css?v=1790665240">
+</head>
+<body id="fa">
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-logo" href="index.html">
+      <img class="nav-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" decoding="async" fetchpriority="high" decoding="async">
+    </a>
+    <nav class="nav-menu" aria-label="Primary">
+      <div class="nav-item">
+        <a class="nav-link" href="courses.html">Courses <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown nav-dropdown-wide">
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">French Atelier &middot; Structured &middot; A0&rarr;A2.2</span>
+            <a href="courses/fa-foundation.html">FA Foundation <em>A0&rarr;A1.1</em></a>
+            <a href="courses/fa-beginner.html">FA Beginner <em>A1.1&rarr;A1.2</em></a>
+            <a href="courses/fa-elementary.html">FA Elementary <em>A1.2&rarr;A2.1</em></a>
+            <a href="courses/fa-intermediate.html">FA Intermediate <em>A2.1&rarr;A2.2</em></a>
+            <a href="capsules.html" class="nav-dd-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+          </div>
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">Let&rsquo;s Speak French &middot; Spoken &middot; Conversation</span>
+            <a href="courses/lsf-foundation.html">LSF Foundation <em>Spoken</em></a>
+            <a href="courses/lsf-beginner.html">LSF Beginner <em>Spoken</em></a>
+            <a href="courses/lsf-elementary.html">LSF Elementary <em>Spoken</em></a>
+
+            <span class="nav-dd-divide"></span>
+            <a href="courses.html">All Courses</a>
+            <a href="map.html">Interactive Map of France</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="method.html">Our Method</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="juliane.html">Julien AI Tutor</a></div>
+      
+      <div class="nav-item"><a class="nav-link active" href="culture.html">French Culture</a></div>
+      <div class="nav-item">
+        <a class="nav-link" href="about.html">About Us <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown">
+          <a href="about.html">About French Atelier</a>
+          <a href="acadomia.html">The Acadomia Group</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      
+      <a class="btn btn-gold nav-cta" href="pricing.html">Enroll Now</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-drawer" aria-hidden="true">
+  <button class="nav-drawer-close" aria-label="Close menu">&times;</button>
+  <span class="drawer-group-label">Courses</span>
+  <div class="drawer-sub">
+    <a href="courses.html">All Courses</a>
+    <a href="courses/fa-foundation.html">FA Foundation</a>
+    <a href="courses/fa-beginner.html">FA Beginner</a>
+    <a href="courses/fa-elementary.html">FA Elementary</a>
+    <a href="courses/fa-intermediate.html">FA Intermediate</a>
+    <a href="courses/lsf-foundation.html">LSF Foundation</a>
+    <a href="courses/lsf-beginner.html">LSF Beginner</a>
+    <a href="courses/lsf-elementary.html">LSF Elementary</a>
+    <a href="map.html">Interactive Map of France</a>
+      <a href="capsules.html" class="drawer-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+  </div>
+  <span class="drawer-group-label">About Us</span>
+  <div class="drawer-sub">
+    <a href="about.html">About French Atelier</a>
+    <a href="acadomia.html">The Acadomia Group</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="method.html">Our Method</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="juliane.html">Julien AI Tutor</a>
+  <a href="culture.html">French Culture</a>
+  <a href="pricing.html" class="btn btn-gold" style="margin-top:1.6rem">Enroll Now</a>
+</div>
+
+<!-- ============================ STICKY CHAPTER TOC ============================ -->
+<nav class="cult-toc" aria-label="Chapter navigation">
+  <div class="toc-inner">
+    <a class="toc-link" href="#chapter-art"><span class="toc-num">I</span>Art &amp; Architecture</a>
+    <a class="toc-link" href="#chapter-gastronomy"><span class="toc-num">II</span>Gastronomy &amp; Wine</a>
+    <a class="toc-link" href="#chapter-travel"><span class="toc-num">III</span>Travel &amp; Landmarks</a>
+    <a class="toc-link" href="#chapter-fashion"><span class="toc-num">IV</span>Fashion &amp; Film</a>
+    <a class="toc-link" href="#chapter-music"><span class="toc-num">V</span>Music &amp; Poetry</a>
+    <a class="toc-link" href="#chapter-tradition"><span class="toc-num">VI</span>Tradition &amp; History</a>
+  </div>
+</nav>
+
+<!-- ============================ HERO ============================ -->
+<section class="cult-hero">
+  <div class="bgvid">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/video/pillar-fashion-poster.jpg">
+      <source src="assets/video/pillar-fashion.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap">
+    <span class="cin-kicker reveal reveal-d1">French Culture &middot; A Living Curriculum</span>
+    <h1 class="reveal reveal-d2">Culture speaks French.<br><span class="gi">What about you?</span></h1>
+    <p class="hero-sub reveal reveal-d3">At The French Atelier, a language is never learned in a vacuum. You learn it the way it is lived in France — through art, through the table, through couture, through song. Six cultural worlds, each a chapter in your fluency.</p>
+    <div class="reveal reveal-d4">
+      <span class="scroll-cue"><svg viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1" y="1" width="12" height="20" rx="6"/></svg><span class="dot" style="position:relative;left:-19px;top:4px"></span> Scroll to begin</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ THESIS ============================ -->
+<section class="cult-thesis">
+  <div class="wrap-narrow">
+    <p class="tag-script reveal">L'art de vivre — the art of living</p>
+    <h2 class="reveal reveal-d1">To learn French is to inherit <em>a way of seeing the world</em>.</h2>
+    <p class="reveal reveal-d2">Grammar gives you the structure; culture gives you the soul. Our native teachers — each broadcasting live from a different region of France — teach the language through the things the French hold dear, so that every word you learn arrives already wrapped in meaning, taste, and beauty.</p>
+  </div>
+</section>
+
+<!-- ============================ CHAPTER INDEX ============================ -->
+<section class="cult-index">
+  <div class="wrap">
+    <div class="ix-head reveal">
+      <h2>Six chapters in the French art of living.</h2>
+      <p>Each pillar is a cinematic world — and a doorway into living French.</p>
+    </div>
+    <div class="ix-list reveal reveal-d1">
+      <a class="ix-row" href="#chapter-art">
+        <span class="ix-num">I</span>
+        <span class="ix-title">Art &amp; Architecture <span class="fr">L'Art &amp; l'Architecture</span></span>
+        <span class="ix-go">Enter <svg viewBox="0 0 26 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h24M21 1l3 3-3 3"/></svg></span>
+      </a>
+      <a class="ix-row" href="#chapter-gastronomy">
+        <span class="ix-num">II</span>
+        <span class="ix-title">Gastronomy &amp; Wine <span class="fr">La Gastronomie &amp; le Vin</span></span>
+        <span class="ix-go">Enter <svg viewBox="0 0 26 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h24M21 1l3 3-3 3"/></svg></span>
+      </a>
+      <a class="ix-row" href="#chapter-travel">
+        <span class="ix-num">III</span>
+        <span class="ix-title">Travel &amp; Landmarks <span class="fr">Le Voyage &amp; les Monuments</span></span>
+        <span class="ix-go">Enter <svg viewBox="0 0 26 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h24M21 1l3 3-3 3"/></svg></span>
+      </a>
+      <a class="ix-row" href="#chapter-fashion">
+        <span class="ix-num">IV</span>
+        <span class="ix-title">Fashion &amp; Film <span class="fr">La Mode &amp; le Cinéma</span></span>
+        <span class="ix-go">Enter <svg viewBox="0 0 26 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h24M21 1l3 3-3 3"/></svg></span>
+      </a>
+      <a class="ix-row" href="#chapter-music">
+        <span class="ix-num">V</span>
+        <span class="ix-title">Music &amp; Poetry <span class="fr">La Musique &amp; la Poésie</span></span>
+        <span class="ix-go">Enter <svg viewBox="0 0 26 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h24M21 1l3 3-3 3"/></svg></span>
+      </a>
+      <a class="ix-row" href="#chapter-tradition">
+        <span class="ix-num">VI</span>
+        <span class="ix-title">Tradition &amp; History <span class="fr">La Tradition &amp; l'Histoire</span></span>
+        <span class="ix-go">Enter <svg viewBox="0 0 26 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h24M21 1l3 3-3 3"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CHAPTER I — ART ==================== -->
+<section id="chapter-art" class="chapter left">
+  <div class="chapter-stage">
+    <div class="bgvid">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/video/pillar-art-poster.jpg">
+        <source src="assets/video/pillar-art.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrap">
+      <div class="ch-card reveal">
+        <span class="ch-index">Chapter I</span>
+        <h2 class="ch-title">Art <span class="gi">&amp; Architecture</span></h2>
+        <span class="ch-fr">L'Art &amp; l'Architecture</span>
+        <p class="ch-lede">From the gilded halls of the Louvre to the limestone façades of Haussmann's boulevards — France taught the world how to look. Learn to describe beauty, and you learn to speak French.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ch-detail">
+    <div class="wrap">
+      <div class="ch-detail-text reveal">
+        <p class="cap">Le regard français — the French eye</p>
+        <h3>The vocabulary of beauty was written in French.</h3>
+        <p>Impressionnisme, atelier, vernissage, trompe-l'œil — so many of the words the world uses for art were born in Paris. In this chapter your teacher walks you through a gallery in real time, naming light, line, and form, so that aesthetic vocabulary becomes second nature.</p>
+        <div class="ch-vocab">
+          <span>le chef-d'œuvre <em>masterpiece</em></span>
+          <span>la voûte <em>vault</em></span>
+          <span>le vitrail <em>stained glass</em></span>
+          <span>la lumière <em>light</em></span>
+        </div>
+      </div>
+      <div class="ch-gallery single reveal reveal-d1">
+        <div class="gframe">
+          <img src="assets/img/culture/art-hero.jpg" alt="French art and architecture" style="width:100%;height:auto;display:block" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CHAPTER II — GASTRONOMY ==================== -->
+<section id="chapter-gastronomy" class="chapter right alt">
+  <div class="chapter-stage">
+    <div class="bgvid">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/video/wine-tasting-poster.jpg">
+        <source src="assets/video/wine-tasting.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrap">
+      <div class="ch-card reveal">
+        <span class="ch-index">Chapter II</span>
+        <h2 class="ch-title">Gastronomy <span class="gi">&amp; Wine</span></h2>
+        <span class="ch-fr">La Gastronomie &amp; le Vin</span>
+        <p class="ch-lede">The French meal is an institution — UNESCO says so. Around the table, language slows down and savours itself. Learn to order, to toast, to linger, and you learn the rhythm of French life.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ch-detail">
+    <div class="wrap">
+      <div class="ch-detail-text reveal">
+        <p class="cap">À table — at the table</p>
+        <h3>French is a language you can taste.</h3>
+        <p>From the boulangerie at dawn to the long Sunday lunch, food is where the French are most themselves. Your teacher takes you through markets, vineyards and pâtisseries, so terroir, dégustation and bon appétit stop being words and start being experiences.</p>
+        <div class="ch-vocab">
+          <span>le terroir <em>land &amp; taste</em></span>
+          <span>la dégustation <em>tasting</em></span>
+          <span>le millésime <em>vintage</em></span>
+          <span>l'apéritif <em>aperitif</em></span>
+        </div>
+      </div>
+      <div class="ch-gallery single reveal reveal-d1">
+        <div class="gframe">
+          <img src="assets/img/culture/wine-hero.jpg" alt="French gastronomy — wine and the art of the table" style="width:100%;height:auto;display:block" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CHAPTER III — TRAVEL ==================== -->
+<section id="chapter-travel" class="chapter left">
+  <div class="chapter-stage">
+    <div class="bgvid">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/video/pillar-travel-poster.jpg">
+        <source src="assets/video/pillar-travel.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrap">
+      <div class="ch-card reveal">
+        <span class="ch-index">Chapter III</span>
+        <h2 class="ch-title">Travel <span class="gi">&amp; Landmarks</span></h2>
+        <span class="ch-fr">Le Voyage &amp; les Monuments</span>
+        <p class="ch-lede">Paris is only the overture. From the lavender of Provence to the surf of Biarritz, every region speaks French with its own accent. Each of our courses is set in a different French place.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ch-detail">
+    <div class="wrap">
+      <div class="ch-detail-text reveal">
+        <p class="cap">En voyage — travelling</p>
+        <h3>A country you can practise in.</h3>
+        <p>Our flagship journey moves from Paris and Versailles through the Loire, Bordeaux and the Basque coast to Marseille, Chamonix and Alsace. You learn the French of directions, of stations and cafés — the French you will actually use the day you arrive.</p>
+        <div class="ch-vocab">
+          <span>la flânerie <em>strolling</em></span>
+          <span>le quartier <em>neighbourhood</em></span>
+          <span>le dépaysement <em>a change of scene</em></span>
+          <span>l'itinéraire <em>route</em></span>
+        </div>
+      </div>
+      <div class="ch-gallery single reveal reveal-d1">
+        <div class="gframe">
+          <img src="assets/img/culture/travel-hero.jpg" alt="French landmarks — Mont Saint Michel" style="width:100%;height:auto;display:block" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CHAPTER IV — FASHION ==================== -->
+<section id="chapter-fashion" class="chapter right alt">
+  <div class="chapter-stage">
+    <div class="bgvid">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/video/pillar-fashion-poster.jpg">
+        <source src="assets/video/pillar-fashion.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrap">
+      <div class="ch-card reveal">
+        <span class="ch-index">Chapter IV</span>
+        <h2 class="ch-title">Fashion <span class="gi">&amp; Film</span></h2>
+        <span class="ch-fr">La Mode &amp; le Cinéma</span>
+        <p class="ch-lede">"A girl should be two things: classy and fabulous," said Chanel. France gave the world haute couture and the nouvelle vague — an entire grammar of elegance. Learn its language and learn its taste.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ch-detail">
+    <div class="wrap">
+      <div class="ch-detail-text reveal">
+        <p class="cap">L'élégance — elegance</p>
+        <h3>From Chanel to the Croisette.</h3>
+        <p>Couture, prêt-à-porter, silhouette, the cinema of Truffaut and Godard — French is the language of style itself. This chapter turns the vocabulary of fashion and film into living conversation, the kind you overhear on a café terrace in Saint-Germain.</p>
+        <div class="ch-vocab">
+          <span>la haute couture <em>high fashion</em></span>
+          <span>la silhouette <em>silhouette</em></span>
+          <span>le défilé <em>runway show</em></span>
+          <span>la nouvelle vague <em>new wave</em></span>
+        </div>
+      </div>
+      <div class="ch-gallery single reveal reveal-d1">
+        <div class="gframe">
+          <img src="assets/img/culture/fashion-hero.jpg" alt="French fashion and film" style="width:100%;height:auto;display:block" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CHAPTER V — MUSIC ==================== -->
+<section id="chapter-music" class="chapter left">
+  <div class="chapter-stage">
+    <div class="bgvid">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/video/pillar-music-poster.jpg">
+        <source src="assets/video/pillar-music.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrap">
+      <div class="ch-card reveal">
+        <span class="ch-index">Chapter V</span>
+        <h2 class="ch-title">Music <span class="gi">&amp; Poetry</span></h2>
+        <span class="ch-fr">La Musique &amp; la Poésie</span>
+        <p class="ch-lede">From Édith Piaf to Stromae, from Baudelaire to Prévert, French is a language built for the ear. There is no faster way to feel a language than to fall in love with its songs.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ch-detail">
+    <div class="wrap">
+      <div class="ch-detail-text reveal">
+        <p class="cap">À l'oreille — by ear</p>
+        <h3>The most musical language in Europe.</h3>
+        <p>The liaison and the nasal vowel make French sing. Through chanson, slam poetry and verse, your teacher trains your ear and your accent at once — so pronunciation becomes a pleasure rather than a drill.</p>
+        <div class="ch-vocab">
+          <span>la chanson <em>song</em></span>
+          <span>le refrain <em>chorus</em></span>
+          <span>la liaison <em>linking sound</em></span>
+          <span>le vers <em>line of verse</em></span>
+        </div>
+      </div>
+      <div class="ch-gallery single reveal reveal-d1">
+        <div class="gframe">
+          <img src="assets/img/culture/music-hero.jpg" alt="French music and poetry" style="width:100%;height:auto;display:block" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CHAPTER VI — TRADITION ==================== -->
+<section id="chapter-tradition" class="chapter right alt">
+  <div class="chapter-stage">
+    <div class="bgvid">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/video/pillar-tradition-poster.jpg">
+        <source src="assets/video/pillar-tradition.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrap">
+      <div class="ch-card reveal">
+        <span class="ch-index">Chapter VI</span>
+        <h2 class="ch-title">Tradition <span class="gi">&amp; History</span></h2>
+        <span class="ch-fr">La Tradition &amp; l'Histoire</span>
+        <p class="ch-lede">Liberté, égalité, fraternité — three words that changed the world. Behind every French idiom lies a story: a king, a revolution, a saint's day. To learn the language is to inherit the memory.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ch-detail">
+    <div class="wrap">
+      <div class="ch-detail-text reveal">
+        <p class="cap">La mémoire — memory</p>
+        <h3>Every word carries a thousand years.</h3>
+        <p>From medieval markets to the Republic, from the fête to the formal vous, French custom is woven into French grammar. This chapter gives you the context behind the courtesy — why the French greet, toast and celebrate as they do.</p>
+        <div class="ch-vocab">
+          <span>la fête <em>celebration</em></span>
+          <span>le patrimoine <em>heritage</em></span>
+          <span>la coutume <em>custom</em></span>
+          <span>la politesse <em>courtesy</em></span>
+        </div>
+      </div>
+      <div class="ch-gallery single reveal reveal-d1">
+        <div class="gframe">
+          <img src="assets/gen/culture-tradition.webp" alt="French tradition and history" style="width:100%;height:auto;display:block" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ BRIDGE / CTA ============================ -->
+<section class="cult-bridge">
+  <div class="wrap-narrow">
+    <span class="cin-kicker center reveal">Your invitation</span>
+    <h2 class="reveal reveal-d1">Don't just study French. <em>Live it.</em></h2>
+    <p class="reveal reveal-d2">Every lesson at The French Atelier is broadcast live from France by native, certified teachers — in small groups of ten to twelve, with culture woven into every minute. Begin your own chapter.</p>
+    <div class="ctas reveal reveal-d3">
+      <a href="contact.html" class="btn btn-gold btn-lg" data-advisor>Talk to an Advisor</a>
+      <a href="capsules.html" class="btn btn-outline btn-lg">Explore Culture Capsules</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" style="height:54px;width:auto;margin-bottom:.9rem;display:block" loading="lazy" decoding="async">
+        <p>Culture speaks French. What about you? An exclusive, culturally immersive, certified, live French language program — presented by one of France's leading private education groups.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <a href="courses/fa-foundation.html">FA Foundation</a>
+        <a href="courses/fa-beginner.html">FA Beginner</a>
+        <a href="courses/fa-elementary.html">FA Elementary</a>
+        <a href="courses/fa-intermediate.html">FA Intermediate</a>
+        <a href="courses.html">Let's Speak French</a>
+        <a href="map.html">Map of France</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="method.html">Our Method</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="juliane.html">Julien · AI Tutor</a>
+        <a href="teachers.html">Our Teachers</a>
+        <a href="culture.html">French Culture</a>
+        <a href="capsules.html">Culture Capsules</a>
+        <a href="blog.html">Cultural Journal</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="acadomia.html">Acadomia Group</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>7 rue de la Baume, 75008 Paris, France &nbsp;·&nbsp; +1-888-230-5110 &nbsp;·&nbsp; advisor@eTeacherGroup.com</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61577106456673" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.8.3-1.5 1.5-1.5H18V.2C17.5.1 16.3 0 15 0c-2.7 0-4.5 1.6-4.5 4.6V6H8v3h2.5v9H14V9z"/></svg></a>
+        <a href="https://www.instagram.com/livefrenchatelier" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.youtube.com/@FrenchbyAtelier" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C16.8 4 12 4 12 4s-4.8 0-7.9.2c-.4.1-1.4.1-2.2 1C1.2 5.9 1 7.5 1 7.5S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.8.9 1.9.9 2.4 1 1.7.1 7.7.2 7.7.2s4.8 0 7.9-.2c.4-.1 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.4c0-1.9-.2-3.8-.2-3.8zM9.7 15V9l5.2 3-5.2 3z"/></svg></a>
+      </div>
+    </div>
+    <p style="color:var(--on-dark-faint);font-size:.78rem;text-align:center;margin-top:1.6rem">Copyright ACADOMIA © 2026. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== SVG ICON SPRITE ===== -->
+<svg class="fa-icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===== ADVISOR MODAL ===== -->
+<div class="advisor-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="advisorModalTitle">
+  <div class="advisor-card">
+    <button class="advisor-modal-close" aria-label="Close" type="button">
+      <svg class="fa-icon" style="font-size:16px"><use href="#i-close"/></svg>
+    </button>
+    <div class="advisor-head">
+      <span class="eyebrow eyebrow-line">Speak with us</span>
+      <h3 id="advisorModalTitle">Talk to an Advisor</h3>
+      <p>Tell us a little about you and a French Atelier academic advisor will be in touch to plan your start.</p>
+    </div>
+    <form class="advisor-form" novalidate>
+      <div class="field">
+        <label for="adv-name">Name</label>
+        <input id="adv-name" name="name" type="text" autocomplete="name" placeholder="Your full name">
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="adv-email">Email</label>
+        <input id="adv-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+          <div class="field">
+            <label for="adv-phone">Phone</label>
+            <input id="adv-phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 123 4567">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="adv-country">Country</label>
+            <input id="adv-country" name="country" type="text" autocomplete="country-name" placeholder="United States">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+      <div class="field">
+        <label for="adv-level">French level</label>
+        <select id="adv-level" name="level">
+          <option value="" disabled selected>Select your level</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="adv-time">Preferred time</label>
+        <input id="adv-time" name="time" type="text" placeholder="e.g. Weekday evenings (CET)">
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+      <div class="form-submit">
+        <button class="btn btn-3d btn-3d-primary" type="submit">
+          Request a Call
+          <svg class="fa-icon" style="font-size:17px"><use href="#i-arrow-right"/></svg>
+        </button>
+      </div>
+      <p class="advisor-fineprint">Native French teachers, live from France &middot; Certified &middot; CEFR-aligned</p>
+    </form>
+    <div class="advisor-success" role="status">
+      <div class="success-mark"><svg class="fa-icon" style="font-size:28px"><use href="#i-check"/></svg></div>
+      <h3>Merci&nbsp;!</h3>
+      <p>Your request is on its way to our advisor. We&rsquo;ll be in touch shortly to plan your French journey.</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/fa.js?v=1790665240" defer></script>
+<script src="js/enroll-modal.js?v=1790665240"></script>
+<script src="js/eteacher-leads.js?v=1790665240" defer></script>
+<script src="js/mapstr.js?v=1790665240" defer></script>
+</body>
+</html>

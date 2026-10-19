@@ -1,0 +1,425 @@
+/* =====================================================================
+   HOMEPAGE-MOBILE-POLISH.css
+   Brings every internal page up to homepage-standard on mobile.
+   Loaded LAST, overrides patchwork mobile-fix.css where they conflict.
+   Rule 0: NO font-size below 14px on any real content, ever.
+   Rule 1: All headlines editorially sized (min 1.4rem H2 on mobile).
+   Rule 2: Tap targets ≥44px height.
+   Rule 3: No horizontal overflow, ever.
+   Rule 4: Card grids collapse into swipe rails on ≤760px.
+   ===================================================================== */
+
+/* ---------- 0. Global hard guarantees ---------- */
+html,body{overflow-x:hidden !important;max-width:100vw}
+*{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+
+/* ---------- 1. Baseline typography on mobile ---------- */
+@media (max-width:760px){
+  html{font-size:17px}
+  body{font-size:1rem;line-height:1.6}
+  p,li,dd,dt,figcaption,label,.hero-sub,.lede{font-size:1.0625rem !important;line-height:1.6 !important}
+  small,.small,.pc-tag,.plan-per{letter-spacing:.14em !important}
+  /* Kill any residual tiny labels — hard floor at 13px, wins over any component CSS */
+  [style*="font-size:.6"], [style*="font-size:.5"], [style*="font-size:.7"]{}
+  .hm-k,.stat-label,.hiw3-kick,.tl-label,.hiw3-kick-final,.sc-label,.m-k,.cc-eyebrow{letter-spacing:.14em !important}
+  .breadcrumb{}
+  /* Hard floor: ANY eyebrow/label/tag/badge class anywhere, regardless of specificity.
+     Boosted selector specificity (html body .class) to beat any other !important same-specificity rule
+     loaded earlier in the cascade (mobile-fix.css uses bare .eyebrow{...!important}). */
+  html body .eyebrow,html body .eyebrow-line,html body .cs-tag,html body .cin-kicker,
+  html body .legal-toc-label,html body .sec-num,html body .drawer-group-label,
+  html body .fa-sound-txt,html body .jul-sound-label,html body .ss-label,
+  html body .h-badge,html body .apf-lab,html body .cc-eyebrow,html body .cf-meta,
+  html body section .eyebrow,html body .hero .eyebrow,html body #courses .eyebrow{
+    letter-spacing:.12em !important
+  }
+  html body .nav-drawer .drawer-group-label{letter-spacing:.18em !important}
+  /* Targeted floor for pricing-table + plan-card micro-copy found in audit */
+  html body .plan-eyebrow,html body .plan-badge,html body .bd-th,html body .bd-td,
+  html body .plan-includes-label,html body .plan-includes li,html body .price-card ul li,
+  html body .plan-card ul li,html body table th,html body table td,
+  html body .bd-plan,html body .bd-save,html body .bd-save-0{
+    line-height:1.4 !important
+  }
+  /* Headings sized to the homepage-standard scale but mobile-tuned */
+  h1,.display-xl,.display-lg{font-size:clamp(2.4rem,10vw,3.6rem) !important;line-height:1.02 !important}
+  h2,.display-md{font-size:clamp(2rem,7vw,2.8rem) !important;line-height:1.05 !important}
+  h3,.display-sm{font-size:clamp(1.5rem,5vw,2rem) !important;line-height:1.1 !important}
+  h4{font-size:1.25rem !important;line-height:1.25 !important}
+  .sec-head h2{font-size:clamp(2rem,7vw,2.8rem) !important}
+  .sec-head p{font-size:1.0625rem !important;line-height:1.55 !important}
+}
+
+/* ---------- 2. Section padding on mobile ---------- */
+@media (max-width:760px){
+  .sec,.section-pad{padding:3.5rem 0 !important}
+  .sec-sm,.section-pad-sm{padding:2.5rem 0 !important}
+  .cw,.cw-narrow{padding:0 1.25rem !important}
+}
+
+/* ---------- 3. Tap targets ≥44px ---------- */
+@media (max-width:760px){
+  .btn,.nav-link,a.btn,button,.faq-q,.faq-question,.hbtn,.h-badge,.pill,.tab{
+    min-height:44px !important;display:inline-flex;align-items:center;justify-content:center
+  }
+  .btn-3d,.btn-gold,.btn-outline,.btn-primary{padding:1rem 1.6rem !important;font-size:.9rem !important;letter-spacing:.1em !important}
+  .btn-lg{padding:1.15rem 2rem !important;font-size:.95rem !important}
+  a{-webkit-tap-highlight-color:rgba(200,165,96,.18)}
+  /* Sound-toggle tap target: force to 44px minimum, wins over any component CSS */
+  .sound-toggle,.fa-sound-btn,button[class*="sound" i],button[aria-label*="sound" i]{
+    min-height:44px !important;height:44px !important;padding:.5rem 1rem !important;
+    display:inline-flex !important;align-items:center !important;justify-content:center !important
+  }
+}
+
+/* ---------- 4. Card-grid → swipe rail (homepage standard) ----------
+   Comprehensive list covers every grid/card/list class name found across
+   all 23 internal pages (audited 2026-08-11), not just the original
+   homepage set. */
+@media (max-width:760px){
+  .pricing-grid,.plan-cards,.plans,.pricing-cards,
+  .val-grid,.val-cards,.value-grid,
+  .pillar-grid,.pillar-grid-about,.pillars-grid,.dna-grid,
+  .teachers-grid,.card-grid,.blog-grid,
+  .unit-cards,.lesson-cards,.hiw-grid,
+  .step-grid,.method-grid,.map-legend-grid,
+  .price-grid,.aoa-grid,.award-grid,.cando-grid,
+  .cap-grid,.coll-grid,.course-grid,.def-grid,
+  .faculty-grid,.lead-grid,.learn-grid,.loc-grid,
+  .more-grid,.partner-grid,.s5-grid,.stack-grid,
+  .tnet-grid,.tpb-grid,.track-grid,.trio-grid,
+  .unit-grid,.week-grid,
+  .cls-cards,.cls-rail,.jul-cover-list,.jul-tl-rail{
+    display:flex !important;flex-wrap:nowrap !important;
+    overflow-x:auto !important;scroll-snap-type:x mandatory !important;
+    -webkit-overflow-scrolling:touch;
+    gap:14px !important;padding:0 4px 1.2rem !important;
+    scroll-padding-inline:1rem;
+    scrollbar-width:none
+  }
+  .pricing-grid::-webkit-scrollbar,.plan-cards::-webkit-scrollbar,.plans::-webkit-scrollbar,
+  .val-grid::-webkit-scrollbar,.pillar-grid::-webkit-scrollbar,.pillars-grid::-webkit-scrollbar,
+  .teachers-grid::-webkit-scrollbar,.card-grid::-webkit-scrollbar,.blog-grid::-webkit-scrollbar,
+  .unit-cards::-webkit-scrollbar,.lesson-cards::-webkit-scrollbar,
+  .aoa-grid::-webkit-scrollbar,.award-grid::-webkit-scrollbar,.cando-grid::-webkit-scrollbar,
+  .cap-grid::-webkit-scrollbar,.coll-grid::-webkit-scrollbar,.course-grid::-webkit-scrollbar,
+  .def-grid::-webkit-scrollbar,.faculty-grid::-webkit-scrollbar,.lead-grid::-webkit-scrollbar,
+  .learn-grid::-webkit-scrollbar,.loc-grid::-webkit-scrollbar,.more-grid::-webkit-scrollbar,
+  .partner-grid::-webkit-scrollbar,.s5-grid::-webkit-scrollbar,.stack-grid::-webkit-scrollbar,
+  .tnet-grid::-webkit-scrollbar,.tpb-grid::-webkit-scrollbar,.track-grid::-webkit-scrollbar,
+  .trio-grid::-webkit-scrollbar,.unit-grid::-webkit-scrollbar,.week-grid::-webkit-scrollbar,
+  .cls-cards::-webkit-scrollbar,.cls-rail::-webkit-scrollbar{display:none}
+  .pricing-grid > *,.plan-cards > *,.plans > *,.pricing-cards > *,
+  .val-grid > *,.pillar-grid > *,.pillar-grid-about > *,.pillars-grid > *,.dna-grid > *,
+  .teachers-grid > *,.card-grid > *,.blog-grid > *,
+  .unit-cards > *,.lesson-cards > *,.hiw-grid > *,
+  .step-grid > *,.method-grid > *,.map-legend-grid > *,
+  .price-grid > *,.aoa-grid > *,.award-grid > *,.cando-grid > *,
+  .cap-grid > *,.coll-grid > *,.course-grid > *,.def-grid > *,
+  .faculty-grid > *,.lead-grid > *,.learn-grid > *,.loc-grid > *,
+  .more-grid > *,.partner-grid > *,.s5-grid > *,.stack-grid > *,
+  .tnet-grid > *,.tpb-grid > *,.track-grid > *,.trio-grid > *,
+  .unit-grid > *,.week-grid > *,
+  .cls-cards > *,.cls-rail > *,.jul-cover-list > *,.jul-tl-rail > *{
+    flex:0 0 84vw !important;max-width:340px !important;
+    scroll-snap-align:start !important;scroll-snap-stop:always
+  }
+  /* Hint that carousels are scrollable */
+  .pricing-grid,.plan-cards,.val-grid,.pillar-grid,.pillars-grid,
+  .teachers-grid,.card-grid,.blog-grid,.unit-cards,.lesson-cards,.price-grid,
+  .aoa-grid,.award-grid,.cando-grid,.cap-grid,.coll-grid,.course-grid,
+  .def-grid,.faculty-grid,.lead-grid,.learn-grid,.loc-grid,.more-grid,
+  .partner-grid,.s5-grid,.stack-grid,.tnet-grid,.tpb-grid,.track-grid,
+  .trio-grid,.unit-grid,.week-grid,.cls-cards,.cls-rail{
+    mask-image:linear-gradient(90deg,transparent 0,#000 4%,#000 96%,transparent 100%);
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 4%,#000 96%,transparent 100%)
+  }
+  /* Rows/lists/strips that should stack vertically, not become horizontal rails */
+  .contact-grid,.faq-list,.bfaq-list,.mp-list,.learn-list,.ix-list,
+  .s5-cred-list,.stat-row,.trust-row,.trust-strip,
+  .social-row,.counter-row,.principle-row,.pillar-row,
+  .lg-row,.ix-row,.jul-drill-row,.jul-drill-rows,.step-detail-row,
+  .partner-logo-strip{
+    display:flex !important;flex-direction:column !important;gap:1rem !important;
+    overflow-x:visible !important
+  }
+}
+
+/* ---------- 5. Image behavior ---------- */
+@media (max-width:760px){
+  img,video{max-width:100%;height:auto;border-radius:12px}
+  .hero img,.hero video,.hero-bg img,.page-hero img,.course-hero img,.course-hero video{border-radius:0}
+  picture,figure{max-width:100%}
+}
+
+/* ---------- 6. Fix LSF SOUND-button overlap (real defect) ---------- */
+/* Reserve bottom space on card so the sound-toggle never overlaps copy */
+.lesson-card,.unit-card,.video-frame,.card.has-sound{
+  padding-bottom:calc(1.2rem + 44px) !important;position:relative
+}
+.sound-toggle,.btn-sound,button[aria-label*="sound" i],button[class*="sound" i]{
+  position:absolute !important;bottom:1rem !important;right:1rem !important;
+  min-height:44px !important;height:44px !important;min-width:82px !important;
+  padding:.55rem 1rem !important;letter-spacing:.14em !important;
+  border-radius:6px !important;z-index:5;display:inline-flex !important;align-items:center !important;justify-content:center !important
+}
+.lesson-card p,.unit-card p{padding-right:1rem}
+/* Extra guarantee on desktop for the LSF card variant */
+@media (min-width:761px){
+  .lesson-card,.unit-card{padding-bottom:calc(1.5rem + 48px) !important}
+}
+
+/* ---------- 7. Nav + mobile drawer polish ---------- */
+@media (max-width:760px){
+  .nav-drawer > a{font-size:1.4rem !important;padding:1rem .4rem !important}
+  .nav-drawer .drawer-sub a{font-size:1.05rem !important;padding:.75rem 0 .75rem 1.2rem !important}
+  .nav-drawer .drawer-group-label{letter-spacing:.2em !important}
+  .nav-cta{padding:.9rem 1.4rem !important;min-height:44px}
+  .site-header,.nav{padding-top:.5rem;padding-bottom:.5rem}
+}
+
+/* ---------- 8. Footer polish on mobile ---------- */
+@media (max-width:760px){
+  .site-footer,footer.footer{padding:3rem 1rem 2rem !important;text-align:left}
+  .footer-brand p,.footer-col a,.footer-bottom p{font-size:.95rem !important;line-height:1.5 !important}
+  .footer-col h4{letter-spacing:.2em !important;margin-bottom:.9rem !important}
+  .footer-grid{display:flex !important;flex-direction:column !important;gap:1.8rem !important}
+}
+
+/* ---------- 9. Forms polish on mobile (advisor, contact) ---------- */
+@media (max-width:760px){
+  input[type="text"],input[type="email"],input[type="tel"],select,textarea{
+    font-size:16px !important;/*prevents iOS zoom*/ min-height:48px !important;
+    padding:.95rem 1rem !important;border-radius:10px !important
+  }
+  label,.form-label{font-size:.95rem !important;font-weight:600 !important}
+  button[type="submit"],.form-submit{width:100% !important;min-height:52px !important;font-size:1rem !important}
+}
+
+/* ---------- 10. FAQ accordion polish ---------- */
+@media (max-width:760px){
+  .faq-q,.bfaq-q,.faq-question,.faq-item button{
+    font-size:1.05rem !important;line-height:1.35 !important;
+    padding:1.1rem 1rem !important;min-height:60px !important
+  }
+  .faq-a,.bfaq-a,.faq-answer,.faq-body{
+    font-size:1rem !important;line-height:1.6 !important;padding:0 1rem 1.2rem !important
+  }
+}
+
+/* ---------- 11. Hero polish across all internal pages ---------- */
+@media (max-width:760px){
+  .page-hero,.course-hero,.map-hero,.hero,.hero-shift{
+    min-height:auto !important;padding-top:5rem !important;padding-bottom:3rem !important
+  }
+  .page-hero .cw,.course-hero .cw,.map-hero .wrap{padding-top:2rem !important;padding-bottom:2rem !important}
+  .hero-meta-strip,.hero-info-strip{flex-direction:column !important;gap:.6rem !important;border:none !important;padding:.8rem 0 !important}
+  .hero-meta-strip .hm,.hero-info-strip > *{border:none !important;border-bottom:1px solid rgba(200,165,96,.2) !important;padding:.75rem 0 !important;flex:1 1 100% !important}
+  .hero-meta-strip .hm-k,.hero-info-strip .k{letter-spacing:.18em !important;color:var(--gold-soft) !important}
+  .hero-meta-strip .hm-v,.hero-info-strip .v{font-size:1.05rem !important;font-family:var(--serif) !important}
+}
+
+/* ---------- 12. Pricing plan cards — larger amounts on mobile ---------- */
+@media (max-width:760px){
+  .plan-price,.pc-amt{font-size:3.2rem !important;line-height:1 !important}
+  .plan-per,.pc-amt small{font-size:1rem !important;letter-spacing:.05em !important}
+  .plan-card,.price-card{padding:1.8rem 1.5rem !important}
+  .pc-sub{font-size:1rem !important}
+  .price-card ul li,.plan-includes li{font-size:.98rem !important;line-height:1.45 !important}
+}
+
+/* ---------- 13. Blog cards on mobile ---------- */
+@media (max-width:760px){
+  .blog-feature{grid-template-columns:1fr !important;gap:1.5rem}
+  .bcard,.blog-card{border-radius:16px !important}
+  .bcard h3,.blog-card h3{font-size:1.3rem !important;line-height:1.25 !important}
+  .bcard p,.blog-card p{font-size:1rem !important;line-height:1.55 !important}
+}
+
+/* ---------- 14. Teacher grid on mobile ---------- */
+@media (max-width:760px){
+  .teacher-card{padding:1.4rem !important}
+  .teacher-card h3{font-size:1.3rem !important}
+  .teacher-card p{font-size:1rem !important}
+  .teacher-video-grid{grid-template-columns:1fr !important;gap:1.2rem}
+}
+
+/* ---------- 15. AI Tutor page (juliane.html) polish ---------- */
+@media (max-width:760px){
+  .jul-hero h1,.jul-hero .display-lg{font-size:clamp(2.4rem,10vw,3.4rem) !important}
+  .jul-chat{padding:1.5rem !important;font-size:1rem !important}
+  .jul-chat .msg{font-size:.98rem !important;line-height:1.5 !important;padding:1rem !important}
+  .jul-feat{grid-template-columns:1fr !important;gap:1rem !important}
+  .jul-feat > *{padding:1.5rem !important}
+  .jul-feat h3{font-size:1.2rem !important}
+  .jul-feat p{font-size:.98rem !important}
+}
+.jul-chat .msg,.jul-feat > *{position:relative}
+/* Fix: ensure Julien conversation demo scroll behavior */
+.jul-chat{max-height:none !important;overflow:visible !important}
+
+/* ---------- 16. Cross-page reveal safety ---------- */
+/* Never let reveal-on-scroll hide content forever if JS fails */
+.reveal:not(.in){opacity:1 !important;transform:none !important}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+}
+
+/* ---------- 17. Desktop homepage-standard reinforcement ---------- */
+@media (min-width:761px){
+  /* Ensure all internal-page headings match homepage editorial scale */
+  .page-hero h1{font-size:clamp(3rem,6vw,5.4rem) !important;line-height:1.02 !important}
+  .page-hero .lede,.page-hero p{font-size:clamp(1.1rem,1.5vw,1.35rem) !important;line-height:1.55 !important;font-weight:300 !important}
+  .sec-head h2{font-size:clamp(2.4rem,4.6vw,3.8rem) !important;line-height:1.03 !important}
+  /* Never allow smeared text-shadow that reads as broken */
+  h1,h2,h3{text-shadow:none;filter:none}
+  .course-hero h1{text-shadow:0 2px 30px rgba(0,0,31,.5)}
+}
+
+/* ---------- 18. Print / performance safety ---------- */
+@media print{.nav,.site-header,.site-footer,.footer,.mobile-drawer{display:none !important}}
+
+/* ---------- FINAL HARD FLOOR (appended last, wins all cascade ties) ---------- */
+@media (max-width:760px){
+  /* Floor only real reading copy. Labels, tags, badges and buttons keep their designed scale
+     (a blanket span/div floor previously inflated every badge to body size). */
+  html body :where(p,li,dd,dt,label,figcaption,td,th){
+    font-size:max(13px,1em) !important;
+  }
+  /* Restore intended large sizes explicitly so the floor above never shrinks headings/prices */
+  html body :where(h1,.display-xl,.display-lg){font-size:clamp(2.4rem,10vw,3.6rem) !important}
+  html body :where(h2,.display-md){font-size:clamp(2rem,7vw,2.8rem) !important}
+  html body :where(h3,.display-sm){font-size:clamp(1.5rem,5vw,2rem) !important}
+  html body .plan-price,html body .pc-amt{font-size:3.2rem !important}
+  html body .plan-per,html body .pc-amt small{font-size:1rem !important}
+  html body .hero-sub,html body .lede,html body p.lede{font-size:1.0625rem !important}
+}
+
+/* ---------- ABSOLUTE FINAL PASS: exact classes found by live 23-page scan
+   2026-08-11 23:04 IDT. Maximum specificity, appended last in file. ---------- */
+@media (max-width:760px){
+  html body div.drawer-group-label,html body span.drawer-group-label{}
+  html body span.cs-tag,html body div.cs-tag{}
+  html body a.btn.btn-gold.btn-lg,html body a.btn-lg{font-size:.95rem !important}
+  html body span.tp-rating,html body div.tp-rating{}
+  html body span.eyebrow.eyebrow-line,html body p.eyebrow.eyebrow-line{}
+  html body span.faq-group-eyebrow,html body div.faq-group-eyebrow{font-size:.9rem !important}
+  html body span.tc-kicker,html body div.tc-kicker,html body p.tc-kicker{font-size:.9rem !important}
+  html body span.ms-eyebrow,html body div.ms-eyebrow,html body p.ms-eyebrow{font-size:.9rem !important}
+  html body cite,html body figcaption cite{}
+  html body span.hm-k,html body div.hm-k,html body dt.hm-k{}
+  html body span.power-strip-eyebrow,html body div.power-strip-eyebrow,html body p.power-strip-eyebrow{font-size:.9rem !important}
+}
+
+/* ---------- MOBILE REPAIR 2026-09-09 — labels floor + remaining card grids → sliders ---------- */
+@media (max-width:760px){
+  /* Small labels/tags/badges: readable floor without inflating to body size */
+  html body .featured-badge,html body .bc-tag,html body .fa-sound-txt,html body p.tag,html body .mi-tag,
+  html body .cc-badge,html body .cc-track,html body .cc-meta-item,html body .tp-badge,html body .sib-dir,
+  html body .lt-tag,html body .m-lbl,html body .lr-course,html body .wc-day,html body .wc-tag,html body .tn-region,
+  html body .cs-tag,html body .tp-rating,html body .eyebrow,html body .eyebrow-line,html body .cls-bestseller,
+  html body .cls-card-eyebrow,html body .cls-meta-key,html body .cls-card-action-text,html body .jul-cutout-badge,
+  html body .msg-label,html body .ms-tab-level,html body .cefr-tag,html body .tr-pill,html body .fc-region-tag,
+  html body .fc-location,html body .fc-qual,html body .tpb-region,html body .drawer-group-label,html body .han-cap,
+  html body .han-lvl,html body .hiw3-kick,html body .hiw3-tag,html body .h-badge,html body .pc-tag,html body .plan-badge{
+    line-height:1.3 !important
+  }
+  html body .fc-qual{padding:.35rem .6rem !important}
+  html body .tpb figcaption span,html body .ts-item span,html body .teachers-stats span{}
+  html body .fc-qual svg{width:12px !important;height:12px !important}
+  html body .h-badge{white-space:normal !important;text-align:left !important;line-height:1.35 !important;height:auto !important;min-height:0 !important}
+  /* Remaining card grids → swipe rails */
+  .etg3-track,.def-points,.img-trio,.jul-region,.jstep,.pledge-four,.trio-band,.jul-cover{
+    display:flex !important;flex-wrap:nowrap !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;
+    -webkit-overflow-scrolling:touch;gap:14px !important;padding:0 4px 1.2rem !important;scrollbar-width:none;
+    grid-template-columns:none !important
+  }
+  .etg3-track::-webkit-scrollbar,.def-points::-webkit-scrollbar,.img-trio::-webkit-scrollbar,.jul-region::-webkit-scrollbar,
+  .jstep::-webkit-scrollbar,.pledge-four::-webkit-scrollbar,.trio-band::-webkit-scrollbar,.jul-cover::-webkit-scrollbar{display:none}
+  .etg3-track > *,.def-points > *,.img-trio > *,.jul-region > *,.jstep > *,.pledge-four > *,.trio-band > *,.jul-cover > *{
+    flex:0 0 84vw !important;max-width:340px !important;scroll-snap-align:start !important;scroll-snap-stop:always
+  }
+  .img-trio > *{aspect-ratio:4/3;object-fit:cover}
+}
+
+/* ---------- BLOG POSTS MOBILE 2026-09-10: contrast + label floor ---------- */
+@media (max-width:760px){
+  .article-body h2, .post h2, article h2, .article-hero h2{ color:#8C7040 !important; }
+  .tag, p.tag, .bc-read, .bc-meta span, .article-meta span, .pullquote p, .pullquote{ color:#8C7040 !important; }
+  .bc-meta span, .article-meta span, .article-meta, .bc-read{  }
+  .section-pad{ padding-top:3.2rem !important; padding-bottom:3.2rem !important; }
+}
+
+/* 2026-09-10: stat strips are swipe rails, not stacks */
+@media (max-width:760px){
+  html body .stat-strip, html body .acad-stat-row{ display:flex !important; flex-direction:row !important; overflow-x:auto !important; gap:.9rem !important; }
+}
+/* ---------- 2026-09-10 strict re-audit: course stat counters + How-It-Works journey → swipe rails ---------- */
+@media (max-width:760px){
+  .counter-row,.journey,.pillar-row,.quick-links{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;
+    -webkit-overflow-scrolling:touch;gap:14px !important;padding:0 4px 1.2rem !important;scrollbar-width:none;grid-template-columns:none !important}
+  .counter-row::-webkit-scrollbar,.journey::-webkit-scrollbar,.pillar-row::-webkit-scrollbar,.quick-links::-webkit-scrollbar{display:none}
+  .counter-row > *{flex:0 0 62vw !important;max-width:260px !important;scroll-snap-align:start !important;scroll-snap-stop:always}
+  .journey > *,.pillar-row > *,.quick-links > *{flex:0 0 84vw !important;max-width:340px !important;scroll-snap-align:start !important;scroll-snap-stop:always}
+}
+@media (max-width:760px){
+  html body .diff-image-overlay span,html body .diff-image-overlay{}
+  /* every rail defined in this file scrolls horizontally, never as a column */
+  .etg3-track,.def-points,.img-trio,.jul-region,.jstep,.pledge-four,.trio-band,.jul-cover,.counter-row,.journey,.pillar-row,.quick-links{flex-direction:row !important}
+}
+/* 2026-09-10: blog 'Continue Reading' eyebrow + Julien transcript label */
+@media (max-width:760px){
+  .eyebrow.eyebrow-line, p.eyebrow, span.eyebrow{ color:#8C7040 !important; }
+  .on-dark .eyebrow, .on-dark .eyebrow-line, [class*="navy"] .eyebrow, .hero .eyebrow, .cta-band .eyebrow{ color:#D8BC85 !important; }
+  .jul-transcript-head span{  }
+}
+
+/* ===== 2026-09-11 mobile visual repair: hero media fills hero, numerals restored ===== */
+@media (max-width:760px){
+  html body .page-hero,html body .course-hero,html body .hero{position:relative !important;overflow:hidden !important;isolation:isolate}
+  html body .page-hero-bg,html body .hero-media,html body .video-bg,html body .hero-bg{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;z-index:0 !important;overflow:hidden !important}
+  html body .page-hero-bg img,html body .page-hero-bg video,html body .hero-media img,html body .hero-media video,html body .video-bg video,html body .video-bg img,html body .hero-bg img,html body .hero-bg video{
+    position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;min-height:100% !important;max-height:none !important;object-fit:cover !important;object-position:center 30% !important;opacity:1 !important;visibility:visible !important;display:block !important}
+  html body .page-hero > *:not(.page-hero-bg):not(.video-bg),html body .course-hero > *:not(.hero-media):not(.video-bg),html body .hero > *:not(.hero-bg):not(.video-bg){position:relative;z-index:2}
+  /* numerals: never flattened */
+  html body .sc-num,html body .ss-num,html body .m-num,html body .p-num,html body .u-no,html body .numeral,html body .jn-fig,html body .c-num,html body .stat-num,html body .counter-num,html body .cnt-num,html body .hm-v,html body .price-num,html body .plan-price,html body .bd-price{font-size:clamp(1.6rem,7vw,2.4rem) !important;line-height:1.1 !important}
+  html body .trust-icon{font-size:1.25rem !important}
+  html body .bd-save{font-size:14px !important}
+  /* pricing comparison table scrolls instead of crushing */
+  html body .breakdown-table,html body .price-table,html body table.compare{display:block !important;overflow-x:auto !important;-webkit-overflow-scrolling:touch}
+  html body .breakdown-table table,html body .price-table table{min-width:560px !important}
+  html body .breakdown-table th,html body .breakdown-table td,html body table.compare th,html body table.compare td{white-space:nowrap !important;font-size:14px !important;padding:.6rem .7rem !important}
+}
+
+/* ===== 2026-09-11 pass 2: sprite icons render, journey step cards stack, course-card metrics readable ===== */
+html body svg:not([class]):has(> use),html body .sk-ico svg,html body .stack-card .sk-ico svg{fill:none !important;stroke:currentColor !important;stroke-width:1.6 !important;stroke-linecap:round !important;stroke-linejoin:round !important}
+@media (max-width:760px){
+  html body .journey .jstep{display:grid !important;grid-template-columns:1fr !important;grid-template-rows:220px auto !important;height:auto !important;align-items:start !important}
+  html body .journey .jstep .jmedia{order:1 !important;position:relative !important;height:220px !important;min-height:220px !important;max-height:220px !important;overflow:hidden !important}
+  html body .journey .jstep .jmedia img,html body .journey .jstep .jmedia video{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;object-fit:cover !important}
+  html body .journey .jstep .jbody{order:2 !important;height:auto !important;padding:1.6rem 1.4rem 1.8rem !important;justify-content:flex-start !important}
+  html body .journey .jstep .jn-fig{font-size:2rem !important}
+  html body .cls-card .cls-meta-val{font-size:1.35rem !important;line-height:1.1 !important;display:block !important;font-family:var(--serif) !important}
+  html body .cls-card .cls-meta-key{font-size:11.5px !important;letter-spacing:.06em !important;opacity:.8}
+  html body .cls-card .cls-card-action-text{font-size:14px !important;white-space:nowrap !important}
+}
+
+/* ===== 2026-09-11 pass 3: course hero legibility, hero meta values, FAQ collapsed leak ===== */
+@media (max-width:760px){
+  html body .course-hero::before{content:"" !important;position:absolute !important;inset:0 !important;z-index:1 !important;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,52,.45) 0%,rgba(0,0,52,.78) 45%,rgba(0,0,52,.96) 100%) !important}
+  html body .course-hero .hero-media{z-index:0 !important}
+  html body .course-hero > *:not(.hero-media){position:relative !important;z-index:2 !important}
+  html body .hero-meta-strip .hm-v,html body .hm-v{font-size:1rem !important;line-height:1.3 !important}
+  html body .bfaq-a,html body .faq-a,html body .faq-answer{padding-top:0 !important;padding-bottom:0 !important}
+  html body .bfaq-a > *:first-child,html body .faq-a > *:first-child,html body .faq-answer > *:first-child{margin-top:.75rem !important}
+  html body .bfaq-a > *:last-child,html body .faq-a > *:last-child,html body .faq-answer > *:last-child{margin-bottom:1rem !important}
+}
+
+/* ===== 2026-09-11 pass 4: hero meta values readable, About culture video tiles single column ===== */
+@media (max-width:760px){
+  html:root:root:root:root body#fa .hero-meta-strip .hm-v,html:root:root:root:root body#fa .hm-v,html:root:root:root:root body#fa .hero-info-strip .v{font-size:17px !important;line-height:1.3 !important}
+  html:root:root:root:root body#fa .hero-meta-strip .hm-k,html:root:root:root:root body#fa .hm-k{font-size:12px !important;letter-spacing:.08em !important;opacity:.8}
+  html body .wrap > div:has(> figure.video-frame){display:grid !important;grid-template-columns:1fr !important;gap:1rem !important}
+  html body figure.video-frame{width:100% !important;height:auto !important}
+  html body figure.video-frame video{width:100% !important;height:auto !important;aspect-ratio:16/9 !important;object-fit:cover !important}
+}

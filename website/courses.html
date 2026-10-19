@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>All Courses — The French Atelier by Acadomia</title>
+<meta name="description" content="Explore all French Atelier courses: the FA main track (Foundation to Intermediate, A0–A2.2) and the LSF Let's Speak French conversation track (A0–A2.1). Live, cultural, certified.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/fa.css?v=1790665240">
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+<style>
+.courses-hero{min-height:62vh}
+
+/* Track headers */
+.track-header{border-left:2px solid var(--gold-deep);padding-left:1.4rem;margin-bottom:3.4rem}
+.on-dark .track-header .lede{color:var(--on-dark-soft)}
+
+/* Course cards grid */
+.course-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem}
+.course-card{display:flex;flex-direction:column;border-radius:10px;overflow:hidden;transition:box-shadow .45s var(--ease),transform .45s var(--ease),border-color .45s var(--ease)}
+.course-card:hover{transform:translateY(-4px)}
+.cc-hero{position:relative;aspect-ratio:16/7;overflow:hidden}
+.cc-hero img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.course-card:hover .cc-hero img{transform:scale(1.05)}
+.cc-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,31,.10) 30%,rgba(0,0,31,.78));display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;padding:1.4rem 1.6rem}
+.cc-cefr{font-family:var(--serif);font-size:1.1rem;font-style:italic;color:var(--gold-soft);letter-spacing:.02em}
+.cc-badge{align-self:flex-start;font-size:.6rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--navy-deep);background:linear-gradient(135deg,#D8BC85,#B7965D);padding:.42rem .7rem;border-radius:999px;white-space:nowrap}
+.cc-body{padding:1.9rem 1.9rem 2.1rem;display:flex;flex-direction:column;flex:1}
+.cc-track{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:.55rem}
+.cc-title{font-family:var(--serif);font-size:1.95rem;line-height:1.12;margin-bottom:.7rem}
+.cc-desc{font-size:.95rem;line-height:1.62;margin-bottom:1.3rem;flex:1}
+.cc-meta{display:flex;gap:1.4rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.cc-meta-item{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase}
+.cc-meta-item strong{display:block;font-family:var(--serif);font-size:1.05rem;letter-spacing:0;text-transform:none;margin-top:.15rem}
+.cc-actions{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+
+/* ===== FA cards — navy backgrounds, gold hairline ===== */
+.cc-fa{background:linear-gradient(165deg,#00001F,#000034 60%,#00001F);border:1px solid rgba(216,188,133,.20);box-shadow:0 18px 44px -28px rgba(11,19,64,.55)}
+.cc-fa:hover{border-color:rgba(216,188,133,.45);box-shadow:0 26px 60px -30px rgba(0,0,20,.7)}
+.cc-fa .cc-title{color:var(--on-dark)}
+.cc-fa .cc-title .gold-ital{color:var(--gold-soft)}
+.cc-fa .cc-desc{color:var(--on-dark-soft)}
+.cc-fa .cc-meta-item{color:var(--gold-soft)}
+.cc-fa .cc-meta-item strong{color:var(--on-dark)}
+.cc-fa .cc-body{border-top:1px solid rgba(216,188,133,.16)}
+
+/* ===== LSF cards — ivory backgrounds, gold hairline ===== */
+.cc-lsf{background:linear-gradient(165deg,#FAF6EE,#F2EDE3 70%,#F3EEE3);border:1px solid rgba(216,188,133,.30);box-shadow:0 18px 44px -28px rgba(11,19,64,.30)}
+.cc-lsf:hover{border-color:rgba(216,188,133,.55);box-shadow:0 26px 56px -30px rgba(11,19,64,.40)}
+.cc-lsf .cc-title{color:var(--navy)}
+.cc-lsf .cc-desc{color:var(--on-light-soft)}
+.cc-lsf .cc-meta-item{color:var(--gold-deep)}
+.cc-lsf .cc-meta-item strong{color:var(--navy)}
+.cc-lsf .cc-body{border-top:1px solid rgba(216,188,133,.22)}
+
+/* Level arc */
+.level-arc{display:flex;align-items:center;gap:0;margin-bottom:4rem}
+.arc-node{text-align:center;flex:1}
+.arc-node .an-level{font-family:var(--serif);font-size:1.3rem;color:var(--navy);font-weight:600}
+.arc-node .an-course{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);margin-top:.3rem}
+.arc-node .an-dot{width:14px;height:14px;border-radius:50%;background:var(--gold-deep);margin:.7rem auto 0}
+.arc-line{flex:2;height:1px;background:var(--gold-line-soft);position:relative;top:22px}
+.arc-line::after{content:'›';position:absolute;right:-2px;top:-10px;color:var(--gold-deep);font-size:1.1rem}
+
+/* LSF distinction */
+.lsf-band{background:linear-gradient(135deg,var(--navy) 0%,#0d1640 100%);border-left:3px solid var(--gold-deep)}
+
+/* Stats row */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--gold-line-soft);border-bottom:1px solid var(--gold-line-soft)}
+.stat-cell{padding:2rem 1.2rem;text-align:center;border-right:1px solid var(--gold-line-soft)}
+.stat-cell:last-child{border-right:none}
+.stat-cell .sc-num{font-family:var(--serif);font-size:2.6rem;color:var(--gold-deep);line-height:1}
+.stat-cell .sc-label{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--on-light-soft);margin-top:.4rem}
+
+@media(max-width:980px){.course-grid{grid-template-columns:1fr}.stat-row{grid-template-columns:repeat(2,1fr)}.stat-cell:nth-child(2){border-right:none}.level-arc{flex-wrap:wrap;gap:.5rem}}
+@media(max-width:600px){.stat-row{grid-template-columns:1fr}.stat-cell{border-right:none;border-bottom:1px solid var(--gold-line-soft)}.arc-line{display:none}}
+</style>
+<link rel="stylesheet" href="css/mobile-fix.css?v=1790665240"><link rel="stylesheet" href="css/homepage-mobile-polish.css?v=1790665240">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="css/house-style.css?v=1790665240">
+<link rel="stylesheet" href="css/enroll-modal.css?v=1790665240">
+</head>
+<body id="fa">
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-logo" href="index.html">
+      <img class="nav-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" decoding="async" fetchpriority="high" decoding="async">
+    </a>
+    <nav class="nav-menu" aria-label="Primary">
+      <div class="nav-item">
+        <a class="nav-link active" href="courses.html">Courses <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown nav-dropdown-wide">
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">French Atelier &middot; Structured &middot; A0&rarr;A2.2</span>
+            <a href="courses/fa-foundation.html">FA Foundation <em>A0&rarr;A1.1</em></a>
+            <a href="courses/fa-beginner.html">FA Beginner <em>A1.1&rarr;A1.2</em></a>
+            <a href="courses/fa-elementary.html">FA Elementary <em>A1.2&rarr;A2.1</em></a>
+            <a href="courses/fa-intermediate.html">FA Intermediate <em>A2.1&rarr;A2.2</em></a>
+            <a href="capsules.html" class="nav-dd-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+          </div>
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">Let&rsquo;s Speak French &middot; Spoken &middot; Conversation</span>
+            <a href="courses/lsf-foundation.html">LSF Foundation <em>Spoken</em></a>
+            <a href="courses/lsf-beginner.html">LSF Beginner <em>Spoken</em></a>
+            <a href="courses/lsf-elementary.html">LSF Elementary <em>Spoken</em></a>
+
+            <span class="nav-dd-divide"></span>
+            <a href="courses.html">All Courses</a>
+            <a href="map.html">Interactive Map of France</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="method.html">Our Method</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="juliane.html">Julien AI Tutor</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="culture.html">French Culture</a></div>
+      <div class="nav-item">
+        <a class="nav-link" href="about.html">About Us <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown">
+          <a href="about.html">About French Atelier</a>
+          <a href="acadomia.html">The Acadomia Group</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      
+      <a class="btn btn-gold nav-cta" href="pricing.html">Enroll Now</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-drawer" aria-hidden="true">
+  <button class="nav-drawer-close" aria-label="Close menu">&times;</button>
+  <span class="drawer-group-label">Courses</span>
+  <div class="drawer-sub">
+    <a href="courses.html">All Courses</a>
+    <a href="courses/fa-foundation.html">FA Foundation</a>
+    <a href="courses/fa-beginner.html">FA Beginner</a>
+    <a href="courses/fa-elementary.html">FA Elementary</a>
+    <a href="courses/fa-intermediate.html">FA Intermediate</a>
+    <a href="courses/lsf-foundation.html">LSF Foundation</a>
+    <a href="courses/lsf-beginner.html">LSF Beginner</a>
+    <a href="courses/lsf-elementary.html">LSF Elementary</a>
+    <a href="map.html">Interactive Map of France</a>
+      <a href="capsules.html" class="drawer-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+  </div>
+  <span class="drawer-group-label">About Us</span>
+  <div class="drawer-sub">
+    <a href="about.html">About French Atelier</a>
+    <a href="acadomia.html">The Acadomia Group</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="method.html">Our Method</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="juliane.html">Julien AI Tutor</a>
+  <a href="culture.html">French Culture</a>
+  <a href="pricing.html" class="btn btn-gold" style="margin-top:1.6rem">Enroll Now</a>
+</div>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero page-hero--premium courses-hero">
+  <div class="page-hero-bg"><img src="assets/gen/hero-paris.webp" alt="Paris at golden hour, the city where French is lived" decoding="async"></div>
+  <div class="wrap hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>›</span><span>Courses</span>
+    </nav>
+    <p class="eyebrow eyebrow-line reveal" style="margin-top:2rem">A0 → A2.2 · The Complete Journey</p>
+    <h1 class="display-lg reveal reveal-d1">All <span class="gold-ital">Courses</span></h1>
+    <p class="lede reveal reveal-d2" style="max-width:58ch;color:var(--on-dark-soft)">Seven courses. Two tracks. One journey through the language and culture of France &mdash; live, certified, and grounded in the pedagogical excellence of Acadomia, one of France&rsquo;s leading private education groups.</p>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="section-pad-sm bg-paper">
+  <div class="wrap">
+    <div class="stat-row reveal">
+      <div class="stat-cell"><div class="sc-num">7</div><div class="sc-label">Distinct Courses</div></div>
+      <div class="stat-cell"><div class="sc-num">130</div><div class="sc-label">Total Live Units</div></div>
+      <div class="stat-cell"><div class="sc-num">10–12</div><div class="sc-label">Students per Class</div></div>
+      <div class="stat-cell"><div class="sc-num">85<span style="font-size:1.4rem">min</span></div><div class="sc-label">Per Live Lesson</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== CINEMATIC VIDEO BAND ===== -->
+<section class="video-band">
+  <div class="video-bg">
+    <video poster="assets/video/paris-cityscape-poster.jpg" autoplay loop muted playsinline preload="metadata">
+      <source src="assets/video/paris-cityscape.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap"><div class="vb-inner reveal">
+    <p class="eyebrow eyebrow-line">Live from France</p>
+    <h2 class="display-md">Seven courses. One <span class="gold-ital">journey</span> through France.</h2>
+    <p class="lede">From the rooftops of Paris to the cellars of Champagne — every lesson is broadcast live from an iconic French location, by native certified teachers.</p>
+    <a href="how-it-works.html" class="btn btn-outline" style="margin-top:1.4rem">How It Works</a>
+  </div></div>
+</section>
+
+<!-- ===== LEVEL PROGRESSION ARC ===== -->
+<section class="section-pad bg-ivory">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:3rem">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center">The Level Arc</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin-top:1rem">From complete beginner to <span class="gold-ital">confident conversation</span></h2>
+      <p class="lede reveal reveal-d2 lede-c" style="max-width:58ch;margin:1rem auto 0">Every course is CEFR-aligned. You begin where you are — and arrive somewhere extraordinary.</p>
+    </div>
+    <div class="level-arc reveal reveal-d2">
+      <div class="arc-node">
+        <div class="an-level">A0</div>
+        <div class="an-course">Complete Beginner</div>
+        <div class="an-dot"></div>
+      </div>
+      <div class="arc-line"></div>
+      <div class="arc-node">
+        <div class="an-level">A1.1</div>
+        <div class="an-course">FA Foundation</div>
+        <div class="an-dot"></div>
+      </div>
+      <div class="arc-line"></div>
+      <div class="arc-node">
+        <div class="an-level">A1.2</div>
+        <div class="an-course">FA Beginner</div>
+        <div class="an-dot"></div>
+      </div>
+      <div class="arc-line"></div>
+      <div class="arc-node">
+        <div class="an-level">A2.1</div>
+        <div class="an-course">FA Elementary</div>
+        <div class="an-dot"></div>
+      </div>
+      <div class="arc-line"></div>
+      <div class="arc-node">
+        <div class="an-level">A2.2</div>
+        <div class="an-course">FA Intermediate</div>
+        <div class="an-dot"></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:1rem">
+      <a href="map.html" class="link-arrow reveal">Explore our interactive map of France <svg viewBox="0 0 18 10"><path d="M0 5h16M12 1l4 4-4 4" stroke="currentColor" fill="none" stroke-width="1.2"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FA MAIN TRACK ===== -->
+<section class="section-pad bg-navy on-dark">
+  <div class="wrap">
+    <div class="track-header reveal">
+      <p class="eyebrow eyebrow-line">The French Atelier Main Track</p>
+      <h2 class="display-sm" style="margin-top:.8rem">FA · <span class="gold-ital">Weekend Immersion</span> Track</h2>
+      <p class="lede" style="max-width:58ch;margin-top:.8rem">Four progressive courses, each anchored in a distinct region of France. Live classes broadcast from iconic locations — Parisian cafés, Loire châteaux, the Marseille calanques, the cellars of Champagne. Language and landscape are inseparable.</p>
+    </div>
+    <div class="course-grid">
+
+      <!-- FA Foundation -->
+      <div class="course-card cc-fa reveal">
+        <div class="cc-hero">
+          <img src="assets/courses_webp/fa-foundation-1.webp" alt="Paris — home of FA Foundation" loading="lazy" decoding="async">
+          <div class="cc-hero-overlay">
+            <span class="cc-cefr">A0 → A1.1</span>
+            <span class="cc-badge">Paris</span>
+          </div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-track">FA Main Track · Course 1 of 4</div>
+          <h3 class="cc-title">FA <span class="gold-ital">Foundation</span></h3>
+          <p class="cc-desc">For complete beginners. A long weekend in Paris — from the Eiffel Tower to the Canal Saint-Martin — where every speech act is anchored in a real landmark. You will greet, order, ask directions, and pay, all in authentic French.</p>
+          <div class="cc-meta">
+            <div class="cc-meta-item"><strong>20 Units</strong>Live Lessons</div>
+            <div class="cc-meta-item"><strong>85 min</strong>Per Class</div>
+            <div class="cc-meta-item"><strong>A0 → A1.1</strong>CEFR Arc</div>
+          </div>
+          <div class="cc-actions">
+            <a href="courses/fa-foundation.html" class="btn btn-gold">View Course</a>
+            <a href="pricing.html" class="btn btn-outline">Enroll</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FA Beginner -->
+      <div class="course-card cc-fa reveal reveal-d1">
+        <div class="cc-hero">
+          <img src="assets/gen/region-normandy.webp" alt="Normandy coast — home of FA Beginner" loading="lazy" decoding="async">
+          <div class="cc-hero-overlay">
+            <span class="cc-cefr">A1.1 → A1.2</span>
+            <span class="cc-badge">Normandy · Paris</span>
+          </div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-track">FA Main Track · Course 2 of 4</div>
+          <h3 class="cc-title">FA <span class="gold-ital">Beginner</span></h3>
+          <p class="cc-desc">From the chalk cliffs of Étretat to the markets of the Marais. You will talk about family, daily life, the weather, and plans — and complete a full market and museum outing with growing autonomy.</p>
+          <div class="cc-meta">
+            <div class="cc-meta-item"><strong>20 Units</strong>Live Lessons</div>
+            <div class="cc-meta-item"><strong>85 min</strong>Per Class</div>
+            <div class="cc-meta-item"><strong>A1.1 → A1.2</strong>CEFR Arc</div>
+          </div>
+          <div class="cc-actions">
+            <a href="courses/fa-beginner.html" class="btn btn-gold">View Course</a>
+            <a href="pricing.html" class="btn btn-outline">Enroll</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FA Elementary -->
+      <div class="course-card cc-fa reveal">
+        <div class="cc-hero">
+          <img src="assets/gen/region-loire.webp" alt="Loire Valley — home of FA Elementary" loading="lazy" decoding="async">
+          <div class="cc-hero-overlay">
+            <span class="cc-cefr">A1.2 → A2.1</span>
+            <span class="cc-badge">Loire · Atlantic · Basque</span>
+          </div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-track">FA Main Track · Course 3 of 4</div>
+          <h3 class="cc-title">FA <span class="gold-ital">Elementary</span></h3>
+          <p class="cc-desc">From the châteaux of the Loire to the oyster ports of Gujan-Mestras and the Basque harbour of Saint-Jean-de-Luz. Chain exchanges, narrate the past, describe art, compare, justify — in semi-guided production.</p>
+          <div class="cc-meta">
+            <div class="cc-meta-item"><strong>20 Units</strong>Live Lessons</div>
+            <div class="cc-meta-item"><strong>85 min</strong>Per Class</div>
+            <div class="cc-meta-item"><strong>A1.2 → A2.1</strong>CEFR Arc</div>
+          </div>
+          <div class="cc-actions">
+            <a href="courses/fa-elementary.html" class="btn btn-gold">View Course</a>
+            <a href="pricing.html" class="btn btn-outline">Enroll</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FA Intermediate -->
+      <div class="course-card cc-fa reveal reveal-d1">
+        <div class="cc-hero">
+          <img src="assets/gen/region-marseille.webp" alt="Marseille and beyond — home of FA Intermediate" loading="lazy" decoding="async">
+          <div class="cc-hero-overlay">
+            <span class="cc-cefr">A2.1 → A2.2</span>
+            <span class="cc-badge">Marseille · Alps · Reims</span>
+          </div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-track">FA Main Track · Course 4 of 4 · <span style="color:var(--gold-soft)">New</span></div>
+          <h3 class="cc-title">FA <span class="gold-ital">Intermediate</span></h3>
+          <p class="cc-desc">From the Vieux-Port of Marseille to the glaciers of Chamonix, the Gothic cathedral of Strasbourg, and a closing dinner in Reims. Debate, negotiate, narrate past events with nuance, and engage in intercultural comparison.</p>
+          <div class="cc-meta">
+            <div class="cc-meta-item"><strong>20 Units</strong>Live Lessons</div>
+            <div class="cc-meta-item"><strong>85 min</strong>Per Class</div>
+            <div class="cc-meta-item"><strong>A2.1 → A2.2</strong>CEFR Arc</div>
+          </div>
+          <div class="cc-actions">
+            <a href="courses/fa-intermediate.html" class="btn btn-gold">View Course</a>
+            <a href="pricing.html" class="btn btn-outline">Enroll</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PULLQUOTE ===== -->
+<section class="section-pad bg-ivory">
+  <div class="wrap-narrow" style="text-align:center">
+    <div class="pullquote reveal">
+      <p>«&nbsp;Language and landscape are inseparable. In the French Atelier, every speech act grows from a real encounter with a real place.&nbsp;»</p>
+    </div>
+    <p class="eyebrow eyebrow-line reveal reveal-d1" style="justify-content:center;margin-top:2rem">Our curriculum and pedagogy are grounded in the applied-linguistics tradition of Acadomia &mdash; one of France&rsquo;s leading private education groups, founded 1989.</p>
+  </div>
+</section>
+
+<!-- ===== LSF TRACK ===== -->
+<section class="section-pad bg-navy on-dark">
+  <div class="wrap">
+    <div class="track-header reveal">
+      <p class="eyebrow eyebrow-line">Let's Speak French · Conversation Track</p>
+      <h2 class="display-sm" style="margin-top:.8rem">LSF · <span class="gold-ital">Speaking-First</span> Track</h2>
+      <p class="lede" style="max-width:58ch;margin-top:.8rem">Three focused courses designed for adults who want to speak — quickly, confidently, and without hesitation. Shorter units, conversation-first sessions, and a relentless focus on real spoken output. Perfect as a stand-alone track or alongside the FA main series.</p>
+
+    <!-- LSF Conversation Class Video -->
+    <div class="reveal" style="margin-bottom:3rem">
+      <p class="eyebrow eyebrow-line" style="margin-bottom:1.2rem">The LSF Experience</p>
+      <div class="sound-video" data-soundvideo>
+        <video poster="assets/video/demo-class-poster.jpg" autoplay loop muted playsinline preload="metadata">
+          <source src="assets/video/demo-class.mp4" type="video/mp4">
+        </video>
+        <button class="sound-toggle" aria-pressed="false" aria-label="Toggle sound">
+          <span class="si-muted"> Sound</span><span class="si-on">&#10074;&#10074; Mute</span>
+        </button>
+      </div>
+      <p class="img-caption">French Atelier's Live Conversation Classes — speaking-focused, live, and culturally immersive.</p>
+    </div>
+
+    <div class="course-grid">
+
+      <!-- LSF Foundation -->
+      <div class="course-card cc-lsf reveal">
+        <div class="cc-hero">
+          <img src="assets/courses_webp/lsf-foundation-1.webp" alt="Paris — LSF Foundation" loading="lazy" decoding="async">
+          <div class="cc-hero-overlay">
+            <span class="cc-cefr">A0 → A1.1</span>
+            <span class="cc-badge">Spoken · Paris</span>
+          </div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-track">LSF Track · Course 1 of 3</div>
+          <h3 class="cc-title">LSF <span class="gold-ital">Foundation</span></h3>
+          <p class="cc-desc">For complete beginners. In ten focused sessions, you will introduce yourself, count, name objects, describe in simple terms, order at a café, and hold a short closing conversation — with confidence, not a script.</p>
+          <div class="cc-meta">
+            <div class="cc-meta-item"><strong>10 Units</strong>Live Lessons</div>
+            <div class="cc-meta-item"><strong>85 min</strong>Per Class</div>
+            <div class="cc-meta-item"><strong>A0 → A1.1</strong>CEFR Arc</div>
+          </div>
+          <div class="cc-actions">
+            <a href="courses/lsf-foundation.html" class="btn btn-gold">View Course</a>
+            <a href="pricing.html" class="btn btn-outline">Enroll</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- LSF Beginner -->
+      <div class="course-card cc-lsf reveal reveal-d1">
+        <div class="cc-hero">
+          <img src="assets/courses_webp/lsf-beginner-1.webp" alt="Daily life in France — LSF Beginner" loading="lazy" decoding="async">
+          <div class="cc-hero-overlay">
+            <span class="cc-cefr">A1.1 → A1.2</span>
+            <span class="cc-badge">Spoken · Daily life</span>
+          </div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-track">LSF Track · Course 2 of 3</div>
+          <h3 class="cc-title">LSF <span class="gold-ital">Beginner</span></h3>
+          <p class="cc-desc">The practical situations of daily life in France: shopping, getting around, eating out, describing your home, your routine, and your preferences. You will handle each situation without a script and respond to unexpected prompts.</p>
+          <div class="cc-meta">
+            <div class="cc-meta-item"><strong>10 Units</strong>Live Lessons</div>
+            <div class="cc-meta-item"><strong>85 min</strong>Per Class</div>
+            <div class="cc-meta-item"><strong>A1.1 → A1.2</strong>CEFR Arc</div>
+          </div>
+          <div class="cc-actions">
+            <a href="courses/lsf-beginner.html" class="btn btn-gold">View Course</a>
+            <a href="pricing.html" class="btn btn-outline">Enroll</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- LSF Elementary -->
+      <div class="course-card cc-lsf reveal">
+        <div class="cc-hero">
+          <img src="assets/courses_webp/lsf-elementary-1.webp" alt="Life in France — LSF Elementary" loading="lazy" decoding="async">
+          <div class="cc-hero-overlay">
+            <span class="cc-cefr">A1.2 → A2.1</span>
+            <span class="cc-badge">Spoken · Autonomy</span>
+          </div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-track">LSF Track · Course 3 of 3</div>
+          <h3 class="cc-title">LSF <span class="gold-ital">Elementary</span></h3>
+          <p class="cc-desc">The more complex situations of life in France: sharing opinions, handling complaints, making appointments by phone, talking about work, narrating past events, and decoding French cultural implicits — with real autonomy.</p>
+          <div class="cc-meta">
+            <div class="cc-meta-item"><strong>10 Units</strong>Live Lessons</div>
+            <div class="cc-meta-item"><strong>85 min</strong>Per Class</div>
+            <div class="cc-meta-item"><strong>A1.2 → A2.1</strong>CEFR Arc</div>
+          </div>
+          <div class="cc-actions">
+            <a href="courses/lsf-elementary.html" class="btn btn-gold">View Course</a>
+            <a href="pricing.html" class="btn btn-outline">Enroll</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== MAP CTA ===== -->
+<section class="section-pad bg-paper">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow eyebrow-line">Journey Through France</p>
+      <h2 class="display-sm" style="margin:1.2rem 0">Explore the <span class="gold-ital">regions</span> behind every lesson</h2>
+      <p class="lede">Each course follows a real itinerary — Paris, Normandy, the Loire Valley, Marseille, Chamonix, Strasbourg. Our interactive map lets you trace the full journey, discover the cultural context of every unit, and choose the region that calls to you.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.6rem">
+        <a href="map.html" class="btn btn-gold">Open the Interactive Map</a>
+        <a href="pricing.html" class="btn btn-outline">View Pricing</a>
+      </div>
+    </div>
+    <div class="reveal reveal-d1" style="position:relative">
+      <img src="assets/gen/culture-travel.webp" alt="France's regions — from Paris to the Basque Country" style="width:100%;border:1px solid var(--gold-line-soft)" loading="lazy" decoding="async">
+      <span class="img-tag">The French Atelier Region Journey</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="cta-band section-pad framed on-dark">
+  <div class="frame-border"></div>
+  <div class="wrap-narrow" style="position:relative;z-index:3;text-align:center">
+    <p class="eyebrow eyebrow-line reveal" style="justify-content:center">Begin Your Journey</p>
+    <h2 class="display-md reveal reveal-d1" style="margin:1.2rem 0">Culture speaks French.<br><span class="gold-ital">What about you?</span></h2>
+    <p class="lede reveal reveal-d2 lede-c" style="margin:1.2rem auto 2rem;max-width:58ch">From $62 a week — live lessons, certified teachers, small groups of 10–12, and a full CEFR certificate from Acadomia.</p>
+    <a href="pricing.html" class="btn btn-gold btn-lg reveal reveal-d3">View Plans &amp; Enroll</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" style="height:54px;width:auto;margin-bottom:.9rem;display:block" loading="lazy" decoding="async">
+        <p>Culture speaks French. What about you? An exclusive, culturally immersive, certified, live French language program — presented by one of France's leading private education groups.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <a href="courses/fa-foundation.html">FA Foundation</a>
+        <a href="courses/fa-beginner.html">FA Beginner</a>
+        <a href="courses/fa-elementary.html">FA Elementary</a>
+        <a href="courses/fa-intermediate.html">FA Intermediate</a>
+        <a href="courses.html">Let's Speak French</a>
+        <a href="map.html">Map of France</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="method.html">Our Method</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="juliane.html">Julien · AI Tutor</a>
+        <a href="teachers.html">Our Teachers</a>
+        <a href="culture.html">French Culture</a>
+        <a href="capsules.html">Culture Capsules</a>
+        <a href="blog.html">Cultural Journal</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="acadomia.html">Acadomia Group</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>7 rue de la Baume, 75008 Paris, France &nbsp;·&nbsp; +1-888-230-5110 &nbsp;·&nbsp; advisor@eTeacherGroup.com</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61577106456673" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.8.3-1.5 1.5-1.5H18V.2C17.5.1 16.3 0 15 0c-2.7 0-4.5 1.6-4.5 4.6V6H8v3h2.5v9H14V9z"/></svg></a>
+        <a href="https://www.instagram.com/livefrenchatelier" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.youtube.com/@FrenchbyAtelier" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C16.8 4 12 4 12 4s-4.8 0-7.9.2c-.4.1-1.4.1-2.2 1C1.2 5.9 1 7.5 1 7.5S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.8.9 1.9.9 2.4 1 1.7.1 7.7.2 7.7.2s4.8 0 7.9-.2c.4-.1 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.4c0-1.9-.2-3.8-.2-3.8zM9.7 15V9l5.2 3-5.2 3z"/></svg></a>
+      </div>
+    </div>
+    <p style="color:var(--on-dark-faint);font-size:.78rem;text-align:center;margin-top:1.6rem">Copyright ACADOMIA © 2026. All Rights Reserved.</p>
+  </div>
+</footer>
+<script src="js/fa.js?v=1790665240" defer></script>
+<script src="js/enroll-modal.js?v=1790665240"></script>
+<script src="js/eteacher-leads.js?v=1790665240" defer></script>
+</body>
+</html>

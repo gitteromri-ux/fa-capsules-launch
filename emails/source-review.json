@@ -1,0 +1,1591 @@
+{
+  "reviewed_files": 92,
+  "source_sets": [
+    [
+      "lla-masterclass-emails",
+      "emails"
+    ],
+    [
+      "lla-masterclass-emails-3tier",
+      "launch-email-for-chris/masterclass"
+    ],
+    [
+      "lla-masterclass-emails-3tier",
+      "launch-email-for-chris/vip-masterclass"
+    ],
+    [
+      "french-atelier-lifecycle-emails",
+      "launch-email-for-chris/course"
+    ],
+    [
+      "french-atelier-lifecycle-emails",
+      "launch-email-for-chris/vip-course"
+    ]
+  ],
+  "files": [
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-a1-1.html",
+      "id": "jm-a1-1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-a1-1.html",
+      "subject": "Your seat is being held, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "One click brings you back. Your masterclass registration is almost done.",
+      "body_text": "Your seat is held Hi %FIRSTNAME%, you started registering for Julie Gibson Clark s live masterclass, and we are holding your place. Everything you entered is saved. One click brings you right back to where you stopped, and finishing takes less than two minutes. This is a live, 60-minute session on Zoom with Julie herself, the woman ranked No. 2 in the world for slowing her pace of aging. One hour, her complete protocol: her sleep system, her plate, her supplement stack, and the testing that proves it works. The full price is $79, one payment . No subscriptions, no upsells inside the session, and a 14-day refund policy behind it. If the date you had in mind no longer works, you can choose the other live session on the same page. Your answers stay saved either way. Finish My Registration It takes less than two minutes. Your Held Seat Course The Longevity Masterclass Format 60 minutes, live on Zoom Price $79, one payment Reserved for %FIRSTNAME% Status held Finish My Registration To your longest, strongest life, The Longevity Life Academy team Your details are saved. You will pick up exactly where you left off.",
+      "body_word_count": 195,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_name_details&utm_content=jm-a1-1",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_name_details&utm_content=jm-a1-1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-a1-2.html",
+      "id": "jm-a1-2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-a1-2.html",
+      "subject": "The woman aging 34% slower than her calendar &middot; Longevity Life Academy",
+      "preheader": "Why thousands follow Julie Gibson Clark, and what she teaches live.",
+      "body_text": "Aging 34% slower , live on Zoom %FIRSTNAME%, before you decide, here is exactly who will be teaching you. Julie Gibson Clark s verified pace of aging is 0.665 , meaning she ages about 6.5 years every decade . That places her No. 2 in the world in the Rejuvenation Olympics, ahead of Bryan Johnson, who spends millions each year. Her routine costs about $100 a month . That contrast is why Fortune, Business Insider and The Sun keep writing about her. In one live hour she teaches the complete protocol: sleep, food, training, supplements and testing, with the exact numbers behind each. Students rate the academy 4.6 out of 5 on Trustpilot , across 600+ reviews. Your seat is still held. $79 is the full price , one payment for the whole live hour. Take My Seat Your registration continues where you stopped. The Proof Instructor Julie Gibson Clark Pace of aging 0.665, verified World ranking No. 2, Rejuvenation Olympics Her monthly budget about $100 Trustpilot 4.6 / 5, 600+ reviews Take My Seat To your longest, strongest life, The Longevity Life Academy team Julie's pace-of-aging results are independently verified through DunedinPACE testing.",
+      "body_word_count": 194,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_name_details&utm_content=jm-a1-2",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_name_details&utm_content=jm-a1-2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-a1-3.html",
+      "id": "jm-a1-3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-a1-3.html",
+      "subject": "Last call before your seat opens up &middot; Longevity Life Academy",
+      "preheader": "Dates are filling. Your registration is one click from done.",
+      "body_text": "Last call , %FIRSTNAME% This is the last note we will send about the seat we are holding for you. The live dates are filling, and held seats eventually go back to the pool for the next person. After today, we release yours. One thing worth saying plainly: the price will not drop. $79 is the full and final price , today and on the last day. So there is truly nothing to gain by waiting. If the masterclass is not for you, ignore this email and we will not nudge you about it again. No hard feelings, and the door stays open if you change your mind while seats remain. If it is, one click finishes what you started . Complete My Registration Less than two minutes, exactly where you left off. Your Held Seat Course The Longevity Masterclass Price $79, never discounted Your registration one click from done Status releasing soon Complete My Registration To your longest, strongest life, The Longevity Life Academy team After your seat is released, you can still register while dates remain open.",
+      "body_word_count": 179,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_name_details&utm_content=jm-a1-3",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_name_details&utm_content=jm-a1-3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-a2-1.html",
+      "id": "jm-a2-1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-a2-1.html",
+      "subject": "%FIRSTNAME%, your session on {{session_date}} is waiting &middot; Longevity Life Academy",
+      "preheader": "You picked your date. It is saved, and one click completes it.",
+      "body_text": "Your date is waiting Hi %FIRSTNAME%, you chose your session, {{session_date}} , and then something pulled you away. The good news: your chosen date is saved . Everything is exactly where you left it, one click from done. This is a live hour with Julie Gibson Clark on Zoom . She teaches her complete protocol in one sitting, from her sleep system to her plate to the roughly $100-a-month supplement stack, with the exact numbers behind each. Her routine costs about $100 a month , and she explains every piece of it. It is $79, one payment , with no subscription behind it. When a session fills, it closes, which is also why we cannot hold your place forever. Lock In My Date Your date is saved until we have to release it. Your Session Your date {{session_date}} Format 60 minutes, live on Zoom Price $79, one payment Status reserved, not yet confirmed Lock In My Date To your longest, strongest life, The Longevity Life Academy team You will return to the exact step where you stopped.",
+      "body_word_count": 177,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-1",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-a2-2.html",
+      "id": "jm-a2-2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-a2-2.html",
+      "subject": "Seats for {{session_date}} are filling &middot; Longevity Life Academy",
+      "preheader": "Your chosen session is filling up. Your place is still saved.",
+      "body_text": "Your session is filling %FIRSTNAME%, the session you picked, {{session_date}} , is filling up. This is a live hour, not a recording . That is the whole point: Julie Gibson Clark teaching in real time, on the day, with you in the room. Students rate the academy 4.6 out of 5 on Trustpilot , across 600+ reviews, and the live hour is a large part of the reason. Your place is still saved under your name. Completing it takes one click and about a minute , and then the seat is yours for good. If the date no longer works, you can pick the other one on the same page. Either way, do not leave it to the last day, because held places are the first thing we release when a session fills. Secure My Seat One click, about one minute. Your Session Your date {{session_date}} Live with Julie Gibson Clark Price $79, one payment Status filling Secure My Seat To your longest, strongest life, The Longevity Life Academy team When a session fills, it closes.",
+      "body_word_count": 176,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-2",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-a2-3.html",
+      "id": "jm-a2-3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-a2-3.html",
+      "subject": "Tonight, the seat next to your name goes back &middot; Longevity Life Academy",
+      "preheader": "Final call for your chosen session. One click keeps it.",
+      "body_text": "One seat, your name on it %FIRSTNAME%, this is the last word about the seat reserved next to your name for {{session_date}} . Tonight it goes back into the pool, because these sessions fill and others are waiting. Here is what stays true either way: 60 minutes, live on Zoom , with Julie Gibson Clark walking through the whole routine that keeps her aging 34% slower than her calendar, from first step to last. No replay is planned. The live hour is the product. Nothing about the offer will change later: $79 is the full price, always . The only thing that changes is whether your seat is still there. One click keeps it. That is all that is left to do, and it takes less than a minute. Keep My Seat Your date and details are still saved. Your Reserved Seat Your date {{session_date}} Price $79, never discounted Releases tonight Keep My Seat To your longest, strongest life, The Longevity Life Academy team If the date no longer suits you, the other session can be selected on the same page.",
+      "body_word_count": 181,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-3",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-a3-1.html",
+      "id": "jm-a3-1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-a3-1.html",
+      "subject": "Your payment didn't go through, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "Everything is saved. Finishing takes under a minute.",
+      "body_text": "Almost enrolled Hi %FIRSTNAME%, you were one step from done. Your details and your session, {{session_date}} , are saved. Only the payment did not go through. It happens, a card timeout, a page closed too soon, a bank check that took a moment too long. Nothing was charged, and nothing was lost. You are not starting over: the page remembers everything except the payment. The checkout is secure and takes under a minute : Visa, Mastercard, Amex, PayPal or Google Pay. The moment it completes, your seat is confirmed and your Zoom invitation goes out. It is $79, one payment , covered by a 14-day refund policy. There is nothing to lose except the seat, and seats are the one thing we cannot promise will wait. Complete My Payment Secure checkout, under one minute. Your Order Your session {{session_date}} Price $79, one payment Payment not completed Refund policy 14 days Complete My Payment To your longest, strongest life, The Longevity Life Academy team Nothing has been charged. Your seat is confirmed only after payment completes.",
+      "body_word_count": 175,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_no_payment&utm_content=jm-a3-1",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_no_payment&utm_content=jm-a3-1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-a3-2.html",
+      "id": "jm-a3-2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-a3-2.html",
+      "subject": "Your held seat is about to expire &middot; Longevity Life Academy",
+      "preheader": "Your date is saved, your payment is not. One minute closes the gap.",
+      "body_text": "Your seat is expiring %FIRSTNAME%, your seat for {{session_date}} is still being held, but not for much longer. You did everything except the last step. Your name, your date, your order, all saved. One minute of checkout is the only thing between you and a live hour with Julie Gibson Clark. If hesitation is about the money: it is $79 once , with a 14-day refund policy . Attend the session, and if it was not worth it, ask for your money back. Held seats expire so others can enroll, because when a session fills, it closes. Yours is close now. One more click today, and on {{session_date}} you are in the room, notebook open, taking down the protocol from the person who lives it. Finish Checkout You return straight to the payment step. Your Order Your session {{session_date}} Price $79, one payment Refund policy 14 days, no questions Status expiring Finish Checkout To your longest, strongest life, The Longevity Life Academy team Your order details remain saved until the hold expires.",
+      "body_word_count": 172,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_no_payment&utm_content=jm-a3-2",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_no_payment&utm_content=jm-a3-2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-a3-3.html",
+      "id": "jm-a3-3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-a3-3.html",
+      "subject": "We release your seat tonight &middot; Longevity Life Academy",
+      "preheader": "Last chance to complete your enrollment before the hold ends.",
+      "body_text": "Released tonight %FIRSTNAME%, tonight your held seat for {{session_date}} goes back into the pool. This is the final email about it. After tonight, your saved order expires, and the seat opens to the next person in line. We would honestly rather it stayed yours, you did almost all the work already. The price never changes, $79, no discounts, ever , so there is nothing to gain by waiting and one thing to lose. Your details and your chosen date are already saved, so finishing takes a single step from any device. One minute. One payment. And on {{session_date}}, you are in the room with the woman who ages 34% slower than her calendar, verified by DunedinPACE testing, learning the whole routine straight from her. Take My Seat Back Straight to the payment step, under one minute. Final Status Your session {{session_date}} Price $79, never discounted Hold ends tonight Take My Seat Back To your longest, strongest life, The Longevity Life Academy team After tonight you can still enroll while open seats remain, but your saved order will be gone.",
+      "body_word_count": 179,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_no_payment&utm_content=jm-a3-3",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_no_payment&utm_content=jm-a3-3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-b1.html",
+      "id": "jm-b1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-b1.html",
+      "subject": "You're in. Here's everything you need &middot; Longevity Life Academy",
+      "preheader": "Your Zoom link and session details are inside. Save this email.",
+      "body_text": "Welcome, %FIRSTNAME%. You re in Your seat is confirmed. On {{session_date}} , you join Julie Gibson Clark live. Here is the one thing to do right now: save this email . Your Zoom link is below, and it will not change. Add the session to your calendar while you are at it, future you will be grateful. We will also send a preparation note, a reminder the day before, and one two hours before we start. The session is 60 minutes, live . Julie teaches her complete protocol, sleep, food, training, supplements and testing, the same one that keeps her ranked No. 2 in the world for slowing aging, in one focused hour. Keep a notebook nearby, the specifics come quickly and they are worth writing down. Open My Zoom Link Bookmark this email. The link stays the same. Your Session Date {{session_date}} Where Zoom, link below Length 60 minutes, live Order $79, paid Open My Zoom Link To your longest, strongest life, The Longevity Life Academy team Your receipt is sent separately. Questions? Just reply to this email.",
+      "body_word_count": 179,
+      "cta_urls": [
+        "{{zoom_link}}",
+        "{{zoom_link}}",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-b2.html",
+      "id": "jm-b2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-b2.html",
+      "subject": "Three days to go. Here's how to prepare &middot; Longevity Life Academy",
+      "preheader": "What Julie will cover, and the one thing to bring.",
+      "body_text": "Three days to Julie %FIRSTNAME%, your session is on {{session_date}} . Here is how to get the most out of it. Julie will teach her complete protocol: the sleep system that runs from a 5:00 AM wake to lights out at 9:00 PM, her plate architecture, the roughly $100-a-month supplement stack item by item, and the testing she uses to prove it all works. Expect specifics, not philosophy: what she takes, what she skips, and what the numbers say. Give your current sleep and food habits a minute of thought beforehand , it makes every part of the hour land on your real life. Set up somewhere quiet, keep a notebook nearby, and join a few minutes early. Your link is below, the same one from your confirmation. There is no replay, so the notes you take in the room are the ones you keep. Open My Zoom Link Same link as your confirmation email. Get Ready Date {{session_date}} Where Zoom, link below Bring a notebook and a pen Tip join 5 minutes early Open My Zoom Link To your longest, strongest life, The Longevity Life Academy team Can't make it anymore? Reply to this email and we will help.",
+      "body_word_count": 200,
+      "cta_urls": [
+        "{{zoom_link}}",
+        "{{zoom_link}}",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-b3.html",
+      "id": "jm-b3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-b3.html",
+      "subject": "Tomorrow: your live session with Julie &middot; Longevity Life Academy",
+      "preheader": "Your session starts in 24 hours. Your link is inside.",
+      "body_text": "See you tomorrow %FIRSTNAME%, tomorrow is the day: {{session_date}} . Julie Gibson Clark, live, walking you through the exact routine that keeps her No. 2 in the world for slowing aging, from start to finish. Her verified pace of aging is 0.665 , roughly 6.5 years per decade, and tomorrow she explains exactly how she does it. Your Zoom link is below. Join five minutes early . Julie opens the hour by setting out the whole plan, and it is worth being settled in for. Have a notebook ready and a quiet room waiting. There is no replay, so the hour itself is everything, and the people who arrive prepared always leave with the most. That is all. See you tomorrow. Open My Zoom Link Add it to your calendar if you haven't yet. Tomorrow Date {{session_date}} Where Zoom, link below Length 60 minutes, live Open My Zoom Link To your longest, strongest life, The Longevity Life Academy team This is a live session. No replay will be available.",
+      "body_word_count": 169,
+      "cta_urls": [
+        "{{zoom_link}}",
+        "{{zoom_link}}",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-b4.html",
+      "id": "jm-b4",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-b4.html",
+      "subject": "Starting in two hours &middot; Longevity Life Academy",
+      "preheader": "Here's your link. See you inside.",
+      "body_text": "Starting soon %FIRSTNAME%, your session with Julie Gibson Clark starts in about two hours . Everything you need is right here. One click below takes you into the room. Join a few minutes early : Julie opens by setting the plan for the hour, and cameras stay optional, so come as you are. A quick checklist while you wait: a quiet spot, a glass of water, and a notebook. The hour is packed with specifics , and the notes you take today are the ones you will use for years. One more reminder, because it matters: this session is live only, with no replay . The hour happens once, and it happens today, with you in the room. See you inside. Join The Session The room opens shortly before start time. Right Now Session {{session_date}} Starts in about 2 hours Where Zoom, link below Join The Session To your longest, strongest life, The Longevity Life Academy team Live only. No replay. This is the email to keep open.",
+      "body_word_count": 168,
+      "cta_urls": [
+        "{{zoom_link}}",
+        "{{zoom_link}}",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-u1.html",
+      "id": "jm-u1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-u1.html",
+      "subject": "Thank you, %FIRSTNAME%. A $200 credit is now yours &middot; Longevity Life Academy",
+      "preheader": "Your masterclass credit is live, and it applies to the full course.",
+      "body_text": "Your $200 credit is live %FIRSTNAME%, thank you for spending that hour with Julie. We hope it moved something. The masterclass was the door. Behind it is The Longevity Blueprint , the 18-week course where you stop watching someone else s routine and build your own . As an attendee, a $200 credit is attached to your account, valid until {{credit_expires_date}} . No pressure today. The Blueprint is not for everyone, and the masterclass owes you nothing more. But if the hour left you wanting the full system rather than notes about someone else s, the credit makes this the right moment to look. Questions? Just reply, a real person answers. See The Blueprint Your credit is applied automatically at enrollment. Your Credit Credit $200 Applies to The Longevity Blueprint, 18 weeks Valid until {{credit_expires_date}} Status active See The Blueprint To your longest, strongest life, The Longevity Life Academy team The credit is personal to your account and cannot be transferred.",
+      "body_word_count": 161,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u1",
+        "https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-u2.html",
+      "id": "jm-u2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-u2.html",
+      "subject": "What the masterclass couldn't fit into 60 minutes &middot; Longevity Life Academy",
+      "preheader": "Inside the 18-week Longevity Blueprint, and what changes when you take it.",
+      "body_text": "Inside the Blueprint %FIRSTNAME%, one hour with Julie showed you what is possible. Eighteen weeks is where it becomes yours. The Longevity Blueprint turns the masterclass into practice: building your nutrition, sleep and training protocol week by week, and choosing supplements that earn their place. You learn live, week by week, on a real budget, the philosophy that keeps Julie s routine near $100 a month . Your $200 masterclass credit applies automatically at enrollment and stays valid until {{credit_expires_date}} . After that it quietly expires, so give the curriculum a proper look this week. Explore The Full Course Full curriculum and pricing on one page. The Longevity Blueprint Length 18 weeks, live You build your personal protocol Your credit $200, until {{credit_expires_date}} Explore The Full Course To your longest, strongest life, The Longevity Life Academy team Questions about fit or schedule? Reply and an advisor will answer personally.",
+      "body_word_count": 149,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u2",
+        "https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-u3.html",
+      "id": "jm-u3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-u3.html",
+      "subject": "4.6 out of 5, from 600+ students &middot; Longevity Life Academy",
+      "preheader": "What students say, what it costs, and what your credit changes.",
+      "body_text": "The proof , in numbers %FIRSTNAME%, when we say the Blueprint works, we mean numbers you can check. Students rate the academy 4.6 out of 5 on Trustpilot , across 600+ reviews, and the teacher behind the method ages 34% slower than her calendar. The honest math: $1,249 upfront (from $1,800) or 5 payments of $279 , with your $200 credit on top. It expires {{credit_expires_date}} . That credit exists because you showed up. Use it while it is alive, and reply if you want a human read on whether the course fits. Use My $200 Credit The credit is applied automatically at enrollment. The Math Trustpilot 4.6 / 5, 600+ reviews Blueprint $1,249 upfront, or 5 x $279 Your credit $200, applied at enrollment Credit expires {{credit_expires_date}} Use My $200 Credit To your longest, strongest life, The Longevity Life Academy team Prices shown are the standard academy rates. The credit applies on top.",
+      "body_word_count": 154,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u3",
+        "https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-u4.html",
+      "id": "jm-u4",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-u4.html",
+      "subject": "Your $200 credit expires on {{credit_expires_date}} &middot; Longevity Life Academy",
+      "preheader": "A real deadline, and a real person to talk it through with.",
+      "body_text": "Last days of your credit %FIRSTNAME%, your $200 Blueprint credit expires on {{credit_expires_date}} . This is a real deadline, not a marketing one. After that date the credit is gone and the standard price applies. This is the week to decide. If deciding alone is the hard part, talk to us . Reply here and an advisor will walk through your goals and whether the course fits. No pressure. Either way, thank you for the hour you gave Julie. It was a pleasure having you. Enroll With My Credit Or reply to this email and an advisor will help you choose. Before It Expires Your credit $200 Expires {{credit_expires_date}} Blueprint $1,249 upfront, or 5 x $279 Or simply reply to talk to an advisor Enroll With My Credit To your longest, strongest life, The Longevity Life Academy team After {{credit_expires_date}} the credit cannot be restored.",
+      "body_word_count": 145,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u4",
+        "https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u4",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-x1.html",
+      "id": "jm-x1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-x1.html",
+      "subject": "We missed you yesterday, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "Your seat already moved to the next session. Nothing to do.",
+      "body_text": "We missed you %FIRSTNAME%, life happens. You were not in the room yesterday, and that is completely fine. Here is what matters: your seat is not lost . Because the masterclass is live only, with no replay, we moved your seat to the remaining session, {{session_date}} , automatically and at no cost. There is nothing you need to do . It is already yours, same Zoom link, new date. Tomorrow we will send the full details, including your link and how to prepare. For now, just mark {{session_date}} in your calendar and protect the hour. Julie is worth being in the room for, and this time we would love to actually see you there. See Session Details Your new date is already confirmed. Your Transferred Seat New session {{session_date}} Cost $0, transferred automatically Replay none, live only Status confirmed See Session Details To your longest, strongest life, The Longevity Life Academy team If the new date cannot work for you, reply to this email and we will look at options together.",
+      "body_word_count": 171,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_no_show_buyers&utm_content=jm-x1",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_no_show_buyers&utm_content=jm-x1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-x2.html",
+      "id": "jm-x2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-x2.html",
+      "subject": "Your new session: {{session_date}} &middot; Longevity Life Academy",
+      "preheader": "Everything you need for your rescheduled session, in one email.",
+      "body_text": "Your new date %FIRSTNAME%, here is everything for your rescheduled session: {{session_date}} . Your Zoom link is below, the same one as before . Save this email, and join five minutes early on the day. You will also get the same reminders as everyone else: a preparation note, one the day before, and one two hours before start. Each of them carries this same link, so there is no way to lose it. Julie s hour is worth protecting on your calendar. Block it now , it is the final live date attached to your seat. Come with a notebook and a quiet room, and the hour will pay for itself several times over. Open My Zoom Link Same link, new date. Save this email. Your Session Date {{session_date}} Where Zoom, link below Length 60 minutes, live Open My Zoom Link To your longest, strongest life, The Longevity Life Academy team Reminders will arrive before the session, each with this link.",
+      "body_word_count": 161,
+      "cta_urls": [
+        "{{zoom_link}}",
+        "{{zoom_link}}",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails",
+      "path": "emails/jm-x3.html",
+      "id": "jm-x3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails/blob/main/emails/jm-x3.html",
+      "subject": "One seat, one session, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "This is the final live date attached to your seat.",
+      "body_text": "One seat, one session %FIRSTNAME%, your rescheduled session is on {{session_date}} , three days from now. We want to be clear and kind at the same time: this is the final live date attached to your seat . There is no replay, and no second transfer, so this is the one to protect on your calendar. The hour itself is the easiest part. Show up, listen, take notes. Julie does the rest, and afterwards your $200 course credit becomes yours, like every attendee s. Your link is below, the same one from your very first confirmation. Three days from now, set up somewhere quiet, join five minutes early, and give Julie the hour. We would love to actually meet you this time. Open My Zoom Link Join five minutes early on the day. Final Session Date {{session_date}} Where Zoom, link below Transfers left none, final date After you attend $200 credit is added Open My Zoom Link To your longest, strongest life, The Longevity Life Academy team If something truly cannot move, reply to this email before the session.",
+      "body_word_count": 179,
+      "cta_urls": [
+        "{{zoom_link}}",
+        "{{zoom_link}}",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-a1-1.html",
+      "id": "jm-a1-1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-a1-1.html",
+      "subject": "One step left: choose your session date &middot; Longevity Life Academy",
+      "preheader": "Your details are saved. Pick your live date with Julie and your seat is set.",
+      "body_text": "One step from your date Hi %FIRSTNAME%, you started registering for The Longevity Masterclass with Julie Gibson Clark, but have not picked your session date yet. Your details are saved. Choose your live session date on the pricing page and the rest of your booking follows in a minute. This is 60 minutes, live on Zoom , with Julie Gibson Clark teaching her complete protocol: sleep, food, training, supplements and the testing behind it. Your seat is $49, one payment , for the full hour with Julie and her complete protocol, taught live. Seats are allocated first come, first served , so choose your date soon. Pick whichever live date suits you; every session covers the same masterclass. From there it is a quick checkout and your seat is booked. Choose My Session Date Pick your date; the checkout follows. Your Registration Course The Longevity Masterclass Format 60 minutes, live on Zoom Price $49, one payment Your name %FIRSTNAME% Next step choose your session date Choose My Session Date To your longest, strongest life, The Longevity Life Academy team We have your details. All that is left is your session date and a quick checkout.",
+      "body_word_count": 195,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-1#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-1#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-a1-2.html",
+      "id": "jm-a1-2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-a1-2.html",
+      "subject": "Who is teaching you: Julie Gibson Clark &middot; Longevity Life Academy",
+      "preheader": "Verified pace of aging 0.665, a $100-a-month routine, and the date you still need to choose.",
+      "body_text": "Aging slower, live on Zoom %FIRSTNAME%, before you choose your date, here is exactly who will be teaching you. Julie Gibson Clark’s verified pace of aging is 0.665 on the DunedinPACE test, about eight months of biological aging per calendar year . That places her No. 2 in the world in the Rejuvenation Olympics rankings. Her routine costs about $100 a month . That contrast is why Fortune and Business Insider have written about her. In 60 live minutes she teaches the complete protocol: sleep, food, training, supplements and testing, with the exact numbers behind each. Your seat is $49, one payment . Choose your session date to finish. Choose My Session Date Pick your date; the checkout follows. The Proof Instructor Julie Gibson Clark Pace of aging 0.665, DunedinPACE Ranking No. 2, Rejuvenation Olympics Her monthly routine about $100 Next step choose your session date Choose My Session Date To your longest, strongest life, The Longevity Life Academy team Julie’s pace-of-aging results are verified through DunedinPACE testing.",
+      "body_word_count": 168,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-2#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-2#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-a1-3.html",
+      "id": "jm-a1-3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-a1-3.html",
+      "subject": "Still choosing a date? Seats are filling &middot; Longevity Life Academy",
+      "preheader": "Your details are saved. Choose your live date with Julie soon, while seats remain.",
+      "body_text": "Your date, soon %FIRSTNAME%, this is the last note we will send about the masterclass registration you started. Seats are allocated first come, first served . Choose your date soon so the session you want is still open. Worth saying plainly: your seat is $49, one payment , for 60 live minutes with Julie, her complete protocol taught live. If the masterclass is not for you, ignore this email and we will not nudge you about it again. If it is, choosing your date takes a minute , and the rest of the checkout follows. Choose My Session Date Pick your date; the checkout follows. Your Registration Course The Longevity Masterclass Price $49, one payment Status no session date chosen yet Next step choose your session date Choose My Session Date To your longest, strongest life, The Longevity Life Academy team You can register any time while dates remain open.",
+      "body_word_count": 150,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-3#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-3#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-a2-1.html",
+      "id": "jm-a2-1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-a2-1.html",
+      "subject": "Your date is chosen. One step finishes your booking &middot; Longevity Life Academy",
+      "preheader": "You picked %LGVMASTERCLASSSESSIONDATE%. Finish your booking and the seat is yours.",
+      "body_text": "Your date is chosen Hi %FIRSTNAME%, you chose your session, %LGVMASTERCLASSSESSIONDATE% , then left before the booking was finished. The good news: your date is chosen and your details are in. Finishing your booking takes about a minute. This is 60 minutes, live on Zoom , with Julie Gibson Clark teaching her complete protocol in one sitting: sleep, food, training, the roughly $100-a-month supplement stack and the testing behind it. It is $49, one payment , for the full hour with Julie and her complete protocol, taught live. Seats are allocated first come, first served, so finish your booking soon while the date you chose is still open. Finish My Booking Straight to the pricing section. Your Session Your date %LGVMASTERCLASSSESSIONDATE% Format 60 minutes, live on Zoom Price $49, one payment Status chosen, not yet booked Finish My Booking To your longest, strongest life, The Longevity Life Academy team Your seat is confirmed only when your payment completes.",
+      "body_word_count": 158,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-1#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-1#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-a2-2.html",
+      "id": "jm-a2-2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-a2-2.html",
+      "subject": "Live, not a recording: finish your booking &middot; Longevity Life Academy",
+      "preheader": "Live with Julie on %LGVMASTERCLASSSESSIONDATE%. Finish your booking in a minute.",
+      "body_text": "Live, not a recording %FIRSTNAME%, your chosen session, %LGVMASTERCLASSSESSIONDATE% , is still waiting to be booked. This is a live masterclass, not a recording : Julie Gibson Clark teaching in real time, with you in the room. Your seat is $49, one payment , for the full 60-minute live masterclass with Julie on Zoom. Finishing your booking takes about a minute : choose your package on the pricing page and complete the checkout. If the date no longer works, you can pick another live session on the same page. Either way, do not leave it too long: seats are allocated first come, first served. Finish My Booking Straight to the pricing section. Your Session Your date %LGVMASTERCLASSSESSIONDATE% Live with Julie Gibson Clark Price $49, one payment Status not yet booked Finish My Booking To your longest, strongest life, The Longevity Life Academy team When a session fills, it closes.",
+      "body_word_count": 149,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-2#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-2#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-a2-3.html",
+      "id": "jm-a2-3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-a2-3.html",
+      "subject": "Finish your booking soon, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "A last note about the session you chose. Booking takes a minute.",
+      "body_text": "Your chosen date, soon %FIRSTNAME%, this is the last word about the session you chose, %LGVMASTERCLASSSESSIONDATE% , before we leave you in peace. Sessions fill, and once a session is full it closes, so please finish soon if you still want that date. Here is what stays true either way: 60 minutes, live on Zoom , with Julie Gibson Clark walking through the whole routine she lives by, from first step to last. The live hour is the product ; it is not a recording. The offer is simple: $49, one payment , for the full 60-minute live masterclass with Julie on Zoom. One click takes you to the pricing section; the booking itself takes about a minute. Finish My Booking Straight to the pricing section. Your Chosen Session Your date %LGVMASTERCLASSSESSIONDATE% Price $49, one payment Status not yet booked Finish My Booking To your longest, strongest life, The Longevity Life Academy team If the date no longer suits you, another live session can be selected on the same page.",
+      "body_word_count": 170,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-3#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-3#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-a3-1.html",
+      "id": "jm-a3-1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-a3-1.html",
+      "subject": "Your order is set up. Complete your payment &middot; Longevity Life Academy",
+      "preheader": "Order and date saved, nothing charged. Payment takes about a minute.",
+      "body_text": "Almost enrolled Hi %FIRSTNAME%, you were one step from done. Your order and your session, %LGVMASTERCLASSSESSIONDATE% , are set up. Only the payment was not completed. It happens: a card timeout, a page closed too soon, a bank check that took a moment too long. Nothing was charged, and nothing was lost. Everything about your order is ready except the payment. The checkout is secure and takes about a minute , by card or PayPal. The moment it completes, your seat is confirmed and your confirmation follows by email. Your order is $49, one payment : 60 minutes live with Julie on Zoom, her complete protocol taught live. Complete My Order Card or PayPal, about one minute. Your Order Your session %LGVMASTERCLASSSESSIONDATE% Price $49, one payment Payment not completed Includes 60-minute live masterclass with Julie Complete My Order To your longest, strongest life, The Longevity Life Academy team Nothing has been charged. Your seat is confirmed only after payment. All sales final at checkout.",
+      "body_word_count": 164,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-1#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-1#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-a3-2.html",
+      "id": "jm-a3-2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-a3-2.html",
+      "subject": "One minute completes your order, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "Your order and date are saved; only the payment is missing. Card or PayPal, about a minute.",
+      "body_text": "Your order is almost complete %FIRSTNAME%, your order for %LGVMASTERCLASSSESSIONDATE% is saved, and the payment is still waiting. You did everything except the last step. Your name, your date, your order: all saved. One minute of checkout is all that stands between you and 60 live minutes with Julie Gibson Clark. If hesitation is about the money: it is $49 once , and you leave with her complete protocol, taught live . Nothing has been charged. Pay by card or PayPal , and on %LGVMASTERCLASSSESSIONDATE% you are in the room, notebook open, taking down the protocol from the person who lives it. Complete My Order Card or PayPal, about one minute. Your Order Your session %LGVMASTERCLASSSESSIONDATE% Price $49, one payment Includes 60-minute live masterclass with Julie Payment not completed Complete My Order To your longest, strongest life, The Longevity Life Academy team Your order details are saved. Nothing is charged until you complete payment.",
+      "body_word_count": 154,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-2#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-2#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-a3-3.html",
+      "id": "jm-a3-3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-a3-3.html",
+      "subject": "Complete your order soon, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "A last note about the order you set up. Nothing charged yet; payment takes a minute.",
+      "body_text": "Complete your order soon %FIRSTNAME%, this is the final note about your unpaid order for %LGVMASTERCLASSSESSIONDATE% . After this we will leave you in peace. Your order and date are saved and nothing has been charged, but seats are allocated first come, first served, so please complete it soon if you still want that date. $49, one payment. Your details and chosen date are already saved, so finishing is a single step from any device: card or PayPal, about a minute. One minute. One payment. And on %LGVMASTERCLASSSESSIONDATE% you are in the room with Julie Gibson Clark for 60 live minutes, learning the whole routine straight from her. Complete My Order Card or PayPal, about one minute. Your Order Your session %LGVMASTERCLASSSESSIONDATE% Price $49, one payment Payment not completed Complete My Order To your longest, strongest life, The Longevity Life Academy team You can still enroll later while seats remain, but this is our last reminder about this order.",
+      "body_word_count": 159,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-3#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-3#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-b1.html",
+      "id": "jm-b1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-b1.html",
+      "subject": "You’re in. Your learning platform is ready &middot; Longevity Life Academy",
+      "preheader": "Your seat is confirmed. Your learning platform has your session and materials.",
+      "body_text": "Welcome, %FIRSTNAME%. You re in Your seat is confirmed. On %LGVMASTERCLASSSESSIONDATE% you join Julie Gibson Clark live for 60 minutes. Here is the one thing to do right now: sign in to your learning platform at student.eteachergroup.com. That is where you join your session, and where your materials and progress live. Below you will also find The Longevity Blueprint, our complete 18-lesson course, if you want to go further after the masterclass. The session is 60 minutes, live . Julie teaches her complete protocol: sleep, food, training, supplements and testing, in one focused hour. She covers a lot of ground at a brisk pace , so a notebook is worth having nearby. Open My Learning Platform Need help signing in? Reply to this email. Your Session Date %LGVMASTERCLASSSESSIONDATE% Where your learning platform Length 60 minutes, live Order $49, paid Explore The Longevity Blueprint To your longest, strongest life, The Longevity Life Academy team Your receipt is sent separately. Questions? Just reply to this email.",
+      "body_word_count": 164,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b1",
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-b2.html",
+      "id": "jm-b2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-b2.html",
+      "subject": "Three days to Julie. Here’s how to prepare &middot; Longevity Life Academy",
+      "preheader": "What Julie will cover, and the one thing to bring.",
+      "body_text": "Three days to Julie %FIRSTNAME%, your session is on %LGVMASTERCLASSSESSIONDATE% . Here is how to get the most out of it. Julie will teach her complete protocol: the sleep system that runs from a 5:00 AM wake to lights out at 9:00 PM, her plate by the numbers, the roughly $100-a-month supplement stack dose by dose, and the testing loop she uses to prove it works. Expect specifics, not philosophy : what she does, what she skips, and what the numbers say. Give your current sleep and food habits a minute of thought beforehand ; it makes every part of the hour land on your real life. Set up somewhere quiet, keep a notebook nearby, and sign in to your learning platform a few minutes early; that is where you join the session. Curious about going further? The Longevity Blueprint, our complete 18-lesson course, is linked below. Open My Learning Platform Sign in a few minutes early. Get Ready Date %LGVMASTERCLASSSESSIONDATE% Where your learning platform Bring a notebook and a pen Tip sign in 5 minutes early Explore The Longevity Blueprint To your longest, strongest life, The Longevity Life Academy team Can’t make it anymore? Reply to this email and we will help.",
+      "body_word_count": 203,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b2",
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-b3.html",
+      "id": "jm-b3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-b3.html",
+      "subject": "Tomorrow: your live session with Julie &middot; Longevity Life Academy",
+      "preheader": "Your session starts in 24 hours. Join through your learning platform.",
+      "body_text": "See you tomorrow %FIRSTNAME%, tomorrow is the day: %LGVMASTERCLASSSESSIONDATE% . Julie Gibson Clark, live, walks you through the exact routine behind her verified pace of aging of 0.665 , roughly eight months of aging per calendar year , and explains exactly how she does it. Join through your learning platform five minutes early. Julie opens the hour by setting out the whole plan, and it is worth being settled in for. Have a notebook ready and a quiet room waiting. It is a live session, so the hour itself is everything, and the people who arrive prepared always leave with the most. That is all. See you tomorrow. Open My Learning Platform Add it to your calendar if you haven’t yet. Tomorrow Date %LGVMASTERCLASSSESSIONDATE% Where your learning platform Length 60 minutes, live Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team This is a live session. Join through your learning platform.",
+      "body_word_count": 156,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b3",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-b4.html",
+      "id": "jm-b4",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-b4.html",
+      "subject": "Starting in two hours &middot; Longevity Life Academy",
+      "preheader": "Sign in to your learning platform to join.",
+      "body_text": "Starting soon %FIRSTNAME%, your session with Julie Gibson Clark starts in about two hours . Everything you need is right here. Sign in to your learning platform and join from there a few minutes early. Julie opens by setting the plan for the hour, and it is worth being settled in for. A quick checklist while you wait: a quiet spot, a glass of water, and a notebook. The hour is packed with specifics , and the notes you take today are the ones you will use for years. One more reminder, because it matters: this is a live session . The hour happens once, and it happens today, with you in the room. See you inside. Open My Learning Platform Your session is listed in your learning platform. Right Now Session %LGVMASTERCLASSSESSIONDATE% Starts in about 2 hours Where your learning platform Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team Live session. Keep this email open; join through your learning platform.",
+      "body_word_count": 167,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b4",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b4",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-x1.html",
+      "id": "jm-x1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-x1.html",
+      "subject": "We missed you, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "You were not in the room. Here is where things stand, and how to reach us.",
+      "body_text": "We missed you %FIRSTNAME%, life happens. Our attendance record shows you were not in the room for your session with Julie. Here is what matters: your seat was paid and your learning platform is still yours. Sign in to see your session information and the materials included in your package. If you believe you did attend, reply to this email and the team will check the record. If the date simply could not work, reply and tell us; the team will look at the options with you . We would love to actually see you in the room with Julie. Open My Learning Platform Session information and materials inside. Your Booking Package The Longevity Masterclass Session %LGVMASTERCLASSSESSIONDATE% Status missed, per attendance record Next sign in, or reply for help Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team Reply to this email and a real person will help.",
+      "body_word_count": 153,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x1",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-x2.html",
+      "id": "jm-x2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-x2.html",
+      "subject": "Your session information, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "Where to find your session information and materials, and how to reach us.",
+      "body_text": "Your session information %FIRSTNAME%, a short follow-up after your missed session with Julie Gibson Clark . Your learning platform shows the current information for your booking, and the materials included in your package. If the team arranges anything further for your booking, the details will reach you by email and appear in your learning platform. Until then, this email does not change your booking. Your package is The Longevity Masterclass with Julie Gibson Clark : 60 minutes live on Zoom, with Julie teaching her complete protocol. Open My Learning Platform Sign in for your booking information and materials. Your Booking Package The Longevity Masterclass Session %LGVMASTERCLASSSESSIONDATE% Where your learning platform Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team Reply to this email with any question about your booking.",
+      "body_word_count": 134,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x2",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/masterclass/jm-x3.html",
+      "id": "jm-x3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/masterclass/jm-x3.html",
+      "subject": "Still here if you need us, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "A final follow-up on your missed session, and how to reach us.",
+      "body_text": "Still here %FIRSTNAME%, this is our final follow-up about the session you missed on %LGVMASTERCLASSSESSIONDATE% . Your learning platform stays open to you: sign in for your booking information and the materials included in your package. If something went wrong on the day, or you would like to talk about your options, reply to this email before making other plans. We would still love to have you in the room with Julie. Whatever you decide, thank you for booking with Longevity Life Academy. Open My Learning Platform Sign in, or reply for help. Your Booking Package The Longevity Masterclass Missed session %LGVMASTERCLASSSESSIONDATE% Where your learning platform Help reply to this email Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team Reply to this email and a real person will help.",
+      "body_word_count": 135,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x3",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-a1-1.html",
+      "id": "jm-a1-1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-a1-1.html",
+      "subject": "One step left: choose your VIP session date &middot; Longevity Life Academy",
+      "preheader": "Your details are saved. Pick your live date with Julie and your VIP seat is set.",
+      "body_text": "One step from your date Hi %FIRSTNAME%, you started registering for VIP Masterclass Access with Julie, but have not picked your session date yet. Your details are saved. Choose your live session date on the pricing page and the rest of your booking follows in a minute. This is 90 minutes with Julie in total : the 60-minute live masterclass, then a private 30-minute Q A, like being in a room with Julie online. Your VIP seat is $79, one payment . VIP also includes a $249 credit toward The Longevity Blueprint , code MASTERCLASS-VIP. Pick whichever live date suits you; every session covers the same masterclass. From there it is a quick checkout and your VIP seat is booked. Choose My Session Date Pick your date; the checkout follows. Your Registration Course VIP Masterclass Access Format 90 minutes: 60-min class + private 30-min Q A Price $79, one payment Your name %FIRSTNAME% Next step choose your session date Choose My Session Date To your longest, strongest life, The Longevity Life Academy team We have your details. All that is left is your session date and a quick checkout.",
+      "body_word_count": 189,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-1#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-1#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-a1-2.html",
+      "id": "jm-a1-2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-a1-2.html",
+      "subject": "Who is teaching you: Julie Gibson Clark &middot; Longevity Life Academy",
+      "preheader": "Verified pace of aging 0.665, a $100-a-month routine, and the date you still need to choose.",
+      "body_text": "Aging slower, live on Zoom %FIRSTNAME%, before you choose your date, here is exactly who will be teaching you. Julie Gibson Clark’s verified pace of aging is 0.665 on the DunedinPACE test, about eight months of biological aging per calendar year . That places her No. 2 in the world in the Rejuvenation Olympics rankings. Her routine costs about $100 a month . That contrast is why Fortune and Business Insider have written about her. In 90 minutes with Julie you get the 60-minute masterclass and a private 30-minute Q A, so you can ask about your own routine, like being in a room with her online. Your VIP seat is $79, one payment . Choose your session date to finish. Choose My Session Date Pick your date; the checkout follows. The Proof Instructor Julie Gibson Clark Pace of aging 0.665, DunedinPACE Ranking No. 2, Rejuvenation Olympics Her monthly routine about $100 Next step choose your session date Choose My Session Date To your longest, strongest life, The Longevity Life Academy team Julie’s pace-of-aging results are verified through DunedinPACE testing.",
+      "body_word_count": 180,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-2#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-2#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-a1-3.html",
+      "id": "jm-a1-3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-a1-3.html",
+      "subject": "Still choosing a date? VIP seats are limited &middot; Longevity Life Academy",
+      "preheader": "Your details are saved. Choose your live date soon, while VIP seats remain.",
+      "body_text": "Your date, soon %FIRSTNAME%, this is the last note we will send about the VIP registration you started. VIP seats are allocated first come, first served , and they go first. Choose your date soon while yours is still open. Worth saying plainly: $79, one payment , for 90 minutes with Julie, including your private 30-minute Q A. If the masterclass is not for you, ignore this email and we will not nudge you about it again. If it is, choosing your date takes a minute , and the rest of the checkout follows. Choose My Session Date Pick your date; the checkout follows. Your Registration Course VIP Masterclass Access Price $79, one payment Status no session date chosen yet Next step choose your session date Choose My Session Date To your longest, strongest life, The Longevity Life Academy team You can register any time while VIP seats remain open.",
+      "body_word_count": 150,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-3#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_name_details&amp;utm_content=jm-a1-3#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-a2-1.html",
+      "id": "jm-a2-1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-a2-1.html",
+      "subject": "Your VIP date is chosen. One step finishes booking &middot; Longevity Life Academy",
+      "preheader": "You picked %LGVMASTERCLASSSESSIONDATE%. Finish your booking and the VIP seat is yours.",
+      "body_text": "Your date is chosen Hi %FIRSTNAME%, you chose your VIP session, %LGVMASTERCLASSSESSIONDATE% , then left before the booking was finished. The good news: your date is chosen and your details are in. Finishing your booking takes about a minute. This is 90 minutes with Julie in total : the 60-minute masterclass, then a private 30-minute Q A, like being in a room with Julie online. It is $79, one payment , and includes a $249 credit toward The Longevity Blueprint with code MASTERCLASS-VIP. VIP seats are allocated first come, first served, so finish your booking soon while the date you chose is still open. Finish My Booking Straight to the pricing section. Your Session Your date %LGVMASTERCLASSSESSIONDATE% Format 90 minutes: 60-min class + private 30-min Q A Price $79, one payment Status chosen, not yet booked Finish My Booking To your longest, strongest life, The Longevity Life Academy team Your VIP seat is confirmed only when your payment completes.",
+      "body_word_count": 159,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-1#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-1#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-a2-2.html",
+      "id": "jm-a2-2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-a2-2.html",
+      "subject": "Live, not a recording: finish your VIP booking &middot; Longevity Life Academy",
+      "preheader": "Live with Julie on %LGVMASTERCLASSSESSIONDATE%. Finish booking in a minute.",
+      "body_text": "Live, not a recording %FIRSTNAME%, your VIP session, %LGVMASTERCLASSSESSIONDATE% , is still waiting to be booked. This is a live masterclass, not a recording : Julie teaching in real time, then your private 30-minute Q A to ask her anything. Your VIP seat is $79, one payment , with a $249 Blueprint credit included. Finishing your booking takes about a minute : choose VIP on the pricing page and complete the checkout. If the date no longer works, you can pick another live session on the same page. Either way, do not leave it too long: VIP seats are allocated first come, first served. Finish My Booking Straight to the pricing section. Your Session Your date %LGVMASTERCLASSSESSIONDATE% Live with Julie Gibson Clark Price $79, one payment Status not yet booked Finish My Booking To your longest, strongest life, The Longevity Life Academy team When a VIP session fills, it closes.",
+      "body_word_count": 150,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-2#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-2#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-a2-3.html",
+      "id": "jm-a2-3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-a2-3.html",
+      "subject": "Finish your VIP booking soon, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "A last note about the VIP session you chose. Booking takes a minute.",
+      "body_text": "Your chosen date, soon %FIRSTNAME%, this is the last word about the VIP session you chose, %LGVMASTERCLASSSESSIONDATE% , before we leave you in peace. VIP sessions fill, and once a session is full it closes, so please finish soon if you still want that date. What stays true either way: 90 minutes with Julie , the 60-minute masterclass then your private 30-minute Q A, like being in a room with her online. The live session is the product ; it is not a recording. The VIP terms are simple: $79, one payment , and a $249 credit toward The Longevity Blueprint with code MASTERCLASS-VIP. One click takes you to the pricing section; the booking itself takes about a minute. Finish My Booking Straight to the pricing section. Your Chosen Session Your date %LGVMASTERCLASSSESSIONDATE% Price $79, one payment Status not yet booked Finish My Booking To your longest, strongest life, The Longevity Life Academy team If the date no longer suits you, another live session can be selected on the same page.",
+      "body_word_count": 171,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-3#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_course_details&amp;utm_content=jm-a2-3#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-a3-1.html",
+      "id": "jm-a3-1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-a3-1.html",
+      "subject": "Your VIP order is set up. Complete your payment &middot; Longevity Life Academy",
+      "preheader": "Order and date saved, nothing charged. Payment takes about a minute.",
+      "body_text": "Almost enrolled Hi %FIRSTNAME%, you were one step from done. Your VIP order and your session, %LGVMASTERCLASSSESSIONDATE% , are set up. Only the payment was not completed. It happens: a card timeout, a page closed too soon, a bank check that took a moment too long. Nothing was charged, and nothing was lost. Everything about your order is ready except the payment. The checkout is secure and takes about a minute , by card or PayPal. The moment it completes, your VIP seat is confirmed and your confirmation follows by email. Your order is $79, one payment : 90 minutes with Julie, including your private 30-minute Q A, and a $249 Blueprint credit. Complete My Order Card or PayPal, about one minute. Your Order Your session %LGVMASTERCLASSSESSIONDATE% Price $79, one payment Payment not completed Includes private Q A + $249 credit Complete My Order To your longest, strongest life, The Longevity Life Academy team Nothing has been charged. Your VIP seat is confirmed only after payment. All sales final at checkout.",
+      "body_word_count": 171,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-1#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-1#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-a3-2.html",
+      "id": "jm-a3-2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-a3-2.html",
+      "subject": "One minute completes your VIP order, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "Your order and date are saved; only the payment is missing. Card or PayPal, about a minute.",
+      "body_text": "Your order is almost complete %FIRSTNAME%, your VIP order for %LGVMASTERCLASSSESSIONDATE% is saved, and the payment is still waiting. You did everything except the last step. Your name, your date, your order: all saved. One minute of checkout is all that stands between you and 90 minutes with Julie Gibson Clark. If hesitation is about the money: it is $79 once , and a $249 credit toward The Longevity Blueprint comes with it. Nothing has been charged. Pay by card or PayPal , and on %LGVMASTERCLASSSESSIONDATE% you are in the room, notebook open, with your questions ready for Julie. Complete My Order Card or PayPal, about one minute. Your Order Your session %LGVMASTERCLASSSESSIONDATE% Price $79, one payment Includes private Q A + $249 credit Payment not completed Complete My Order To your longest, strongest life, The Longevity Life Academy team Your order details are saved. Nothing is charged until you complete payment.",
+      "body_word_count": 152,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-2#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-2#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-a3-3.html",
+      "id": "jm-a3-3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-a3-3.html",
+      "subject": "Complete your VIP order soon, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "A last note about the order you set up. Nothing charged yet; payment takes a minute.",
+      "body_text": "Complete your order soon %FIRSTNAME%, this is the final note about your unpaid VIP order for %LGVMASTERCLASSSESSIONDATE% . After this we will leave you in peace. Your order and date are saved and nothing has been charged, but VIP seats are allocated first come, first served, so please complete it soon if you still want that date. $79, one payment, for 90 minutes with Julie. Your details and chosen date are saved, so finishing is a single step from any device: card or PayPal, about a minute. One minute. One payment. And on %LGVMASTERCLASSSESSIONDATE% you are in the room with Julie Gibson Clark , learning the whole routine straight from her, then your private 30-minute Q A. Complete My Order Card or PayPal, about one minute. Your Order Your session %LGVMASTERCLASSSESSIONDATE% Price $79, one payment Payment not completed Complete My Order To your longest, strongest life, The Longevity Life Academy team You can still enroll later while VIP seats remain, but this is our last reminder about this order.",
+      "body_word_count": 169,
+      "cta_urls": [
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-3#pricing",
+        "https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_abandoned_cart_no_payment&amp;utm_content=jm-a3-3#pricing",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-b1.html",
+      "id": "jm-b1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-b1.html",
+      "subject": "Your VIP seat is confirmed. Here’s what’s next &middot; Longevity Life Academy",
+      "preheader": "Your VIP seat is confirmed. Your learning platform is ready; bring questions for the Q&amp;A.",
+      "body_text": "Welcome, %FIRSTNAME%. You re in Your VIP seat is confirmed. On %LGVMASTERCLASSSESSIONDATE% you join Julie Gibson Clark live for 90 minutes. Here is the one thing to do right now: sign in to your learning platform at student.eteachergroup.com. That is where you join your session, and where your materials and progress live. We will also send a preparation note, a reminder the day before, and one two hours before we start. Your session is 90 minutes in total : the 60-minute masterclass, then your private 30-minute Q A with Julie, like being in a room with her online. Bring your questions. Your VIP seat also includes a $249 credit toward The Longevity Blueprint with code MASTERCLASS-VIP, linked below. Open My Learning Platform Need help signing in? Reply to this email. Your Session Date %LGVMASTERCLASSSESSIONDATE% Where your learning platform Length 90 minutes, incl. private Q A Order $79, paid Use My $249 Blueprint Credit To your longest, strongest life, The Longevity Life Academy team Your receipt is sent separately. Questions? Just reply to this email.",
+      "body_word_count": 174,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b1",
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-b2.html",
+      "id": "jm-b2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-b2.html",
+      "subject": "Three days to Julie. Here’s how to prepare &middot; Longevity Life Academy",
+      "preheader": "What Julie will cover, and the questions to bring for your private Q&amp;A.",
+      "body_text": "Three days to Julie %FIRSTNAME%, your 90-minute VIP session is on %LGVMASTERCLASSSESSIONDATE% . Here is how to get the most out of it. Julie will teach her complete protocol: the sleep system that runs from a 5:00 AM wake to lights out at 9:00 PM, her plate by the numbers, the roughly $100-a-month supplement stack dose by dose, and the testing loop she uses to prove it works. Expect specifics, not philosophy : what she does, what she skips, and what the numbers say. Write down two or three questions beforehand. Your private 30-minute Q A with Julie follows the masterclass. Set up somewhere quiet, keep a notebook nearby, and sign in to your learning platform a few minutes early; that is where you join the session. Your $249 Blueprint credit is linked below as well. Open My Learning Platform Sign in a few minutes early. Get Ready Date %LGVMASTERCLASSSESSIONDATE% Where your learning platform Bring a notebook and your questions Tip sign in 5 minutes early Use My $249 Blueprint Credit To your longest, strongest life, The Longevity Life Academy team Can’t make it anymore? Reply to this email and we will help.",
+      "body_word_count": 193,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b2",
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-b3.html",
+      "id": "jm-b3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-b3.html",
+      "subject": "Tomorrow: your live VIP session with Julie &middot; Longevity Life Academy",
+      "preheader": "Starts in 24 hours. Join via your learning platform; bring questions.",
+      "body_text": "See you tomorrow %FIRSTNAME%, tomorrow is the day: %LGVMASTERCLASSSESSIONDATE% . Julie Gibson Clark, live, walks you through the exact routine behind her verified pace of aging of 0.665 , roughly eight months of aging per calendar year , then answers your questions in the private 30-minute Q A. Join through your learning platform five minutes early. Julie opens by setting out the plan and closes with your 30-minute Q A, so bring questions. Have a notebook, your questions and a quiet room ready. It is live, so the session itself is everything, and the 30-minute Q A rewards the prepared. That is all. See you tomorrow. Open My Learning Platform Add it to your calendar if you haven’t yet. Tomorrow Date %LGVMASTERCLASSSESSIONDATE% Where your learning platform Length 90 minutes, incl. private Q A Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team This is a live session. Join through your learning platform.",
+      "body_word_count": 157,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b3",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-b4.html",
+      "id": "jm-b4",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-b4.html",
+      "subject": "Starting in two hours &middot; Longevity Life Academy",
+      "preheader": "Sign in to your learning platform to join.",
+      "body_text": "Starting soon %FIRSTNAME%, your VIP session with Julie Gibson Clark starts in about two hours . Everything you need is right here. Sign in to your learning platform and join from there a few minutes early. Julie opens by setting the plan for the 90 minutes, and it is worth being settled in for. A quick checklist while you wait: a quiet spot, a glass of water, a notebook and your questions. The masterclass is packed with specifics ; the private 30-minute Q A is your time to ask Julie directly. One more reminder, because it matters: this is a live session . The 90 minutes happen once, today, with you in the room. See you inside. Open My Learning Platform Your session is listed in your learning platform. Right Now Session %LGVMASTERCLASSSESSIONDATE% Starts in about 2 hours Where your learning platform Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team Live session. Keep this email open; join through your learning platform.",
+      "body_word_count": 167,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b4",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-b4",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-u1.html",
+      "id": "jm-u1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-u1.html",
+      "subject": "Thank you, %FIRSTNAME%. Your $249 credit is ready &middot; Longevity Life Academy",
+      "preheader": "Your VIP credit toward The Longevity Blueprint, code MASTERCLASS-VIP, applied through the button.",
+      "body_text": "Your $249 credit is ready %FIRSTNAME%, thank you for spending 90 minutes with Julie. We hope it moved something. The masterclass was the door. Behind it is The Longevity Blueprint , the complete 18-lesson course where you stop watching someone else’s routine and build your own . As a VIP attendee you have a $249 credit toward the Blueprint. Your code is MASTERCLASS-VIP ; the button below applies it for you . No pressure today. The Blueprint is not for everyone, and the masterclass owes you nothing more. But if the session left you wanting the full system rather than notes about someone else’s, take a look soon. Questions? Just reply, a real person answers. See The Blueprint Your code is applied automatically when you use this button. Your Credit Credit $249 toward The Longevity Blueprint Your code MASTERCLASS-VIP Applies to The Longevity Blueprint, 18 lessons How applied through the button See The Blueprint To your longest, strongest life, The Longevity Life Academy team Course credit toward The Longevity Blueprint, not a cash refund.",
+      "body_word_count": 174,
+      "cta_urls": [
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-u1",
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-u1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-u2.html",
+      "id": "jm-u2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-u2.html",
+      "subject": "What the masterclass couldn’t fit into 90 minutes &middot; Longevity Life Academy",
+      "preheader": "Inside the 18-lesson Longevity Blueprint, and what changes when you take it.",
+      "body_text": "Inside the Blueprint %FIRSTNAME%, 90 minutes with Julie showed you what is possible. Eighteen lessons are where it becomes yours. The Longevity Blueprint turns the masterclass into practice: 18 lessons building your nutrition, sleep and training protocol, with the protocol library and video vault to lean on. You also get a continuous glucose monitor , the student community and access to 1:1 coaching. Your $249 VIP credit applies with code MASTERCLASS-VIP ; the button below carries it for you. Give the curriculum a proper look soon. Explore The Full Course Full curriculum and pricing on one page, credit applied. The Longevity Blueprint Length 18 lessons You build your personal protocol Your credit $249, code MASTERCLASS-VIP Explore The Full Course To your longest, strongest life, The Longevity Life Academy team Questions about fit or schedule? Reply and an advisor will answer personally.",
+      "body_word_count": 141,
+      "cta_urls": [
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-u2",
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-u2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-u3.html",
+      "id": "jm-u3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-u3.html",
+      "subject": "The Blueprint, in numbers &middot; Longevity Life Academy",
+      "preheader": "What it costs, what your $249 credit changes, and the 14-day refund.",
+      "body_text": "The honest numbers %FIRSTNAME%, when we say the Blueprint is a serious course, we mean numbers you can check. Your teacher’s pace of aging is a verified 0.665 , about eight months per calendar year, and the course is 18 lessons built on the same protocol. The honest numbers: The Longevity Blueprint is $179 × 5 monthly payments ; your $249 VIP credit applies with code MASTERCLASS-VIP , and there is a 14-day refund from registration. That credit exists because you showed up. Take a look soon, and reply if you want a human read on whether the course fits. Use My $249 Credit The credit is applied automatically through this button. The Numbers Blueprint $179 × 5 monthly payments Lessons 18 Your credit $249, code MASTERCLASS-VIP Refund 14 days from registration Use My $249 Credit To your longest, strongest life, The Longevity Life Academy team Course credit toward The Longevity Blueprint, not a cash refund.",
+      "body_word_count": 156,
+      "cta_urls": [
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-u3",
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-u3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-u4.html",
+      "id": "jm-u4",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-u4.html",
+      "subject": "Your $249 credit, and a person to talk to &middot; Longevity Life Academy",
+      "preheader": "A next step to explore soon, and a real person to talk it through with.",
+      "body_text": "Your next step, soon %FIRSTNAME%, your $249 VIP credit toward The Longevity Blueprint is ready whenever you are. Code MASTERCLASS-VIP , applied through the button below. There is no pressure from us. But if the masterclass left you wanting to keep going, soon is a good time to decide, while the session is still fresh. If deciding alone is the hard part, talk to us . Reply here and an advisor will walk through your goals and whether the course fits. No pressure. Either way, thank you for the 90 minutes you gave Julie. It was a pleasure having you. Enroll With My Credit Or reply to this email and an advisor will help you choose. Your Next Step Your credit $249 Your code MASTERCLASS-VIP Blueprint $179 × 5, 18 lessons, 14-day refund Or simply reply to talk to an advisor Enroll With My Credit To your longest, strongest life, The Longevity Life Academy team Course credit toward The Longevity Blueprint, not a cash refund.",
+      "body_word_count": 165,
+      "cta_urls": [
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-u4",
+        "https://longevitylifeacademy.pages.dev/?enroll=1&amp;code=MASTERCLASS-VIP&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_onboarding&amp;utm_content=jm-u4",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-x1.html",
+      "id": "jm-x1",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-x1.html",
+      "subject": "We missed you, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "You were not in the room. Here is where things stand, and how to reach us.",
+      "body_text": "We missed you %FIRSTNAME%, life happens. Our attendance record shows you were not in the room for your VIP session with Julie. Here is what matters: your VIP seat was paid and your learning platform is still yours. Sign in to see your session information and the materials included in your package. If you believe you did attend, reply to this email and the team will check the record. If the date simply could not work, reply and tell us; the team will look at the options with you . We would love to actually see you in the room with Julie. Open My Learning Platform Session information and materials inside. Your Booking Package VIP Masterclass Access Session %LGVMASTERCLASSSESSIONDATE% Status missed, per attendance record Next sign in, or reply for help Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team Reply to this email and a real person will help.",
+      "body_word_count": 155,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x1",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-x2.html",
+      "id": "jm-x2",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-x2.html",
+      "subject": "Your session information, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "Where to find your session information and materials, and how to reach us.",
+      "body_text": "Your session information %FIRSTNAME%, a short follow-up after your missed VIP session with Julie Gibson Clark . Your learning platform shows the current information for your booking, and the materials included in your package. If the team arranges anything further for your booking, the details will reach you by email and appear in your learning platform. Until then, this email does not change your booking. Your package is VIP Masterclass Access : 90 minutes with Julie, including the private 30-minute Q A, plus your $249 credit toward The Longevity Blueprint with code MASTERCLASS-VIP. Open My Learning Platform Sign in for your booking information and materials. Your Booking Package VIP Masterclass Access Session %LGVMASTERCLASSSESSIONDATE% Where your learning platform Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team Reply to this email with any question about your booking.",
+      "body_word_count": 141,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x2",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "lla-masterclass-emails-3tier",
+      "path": "launch-email-for-chris/vip-masterclass/jm-x3.html",
+      "id": "jm-x3",
+      "url": "https://github.com/gitteromri-ux/lla-masterclass-emails-3tier/blob/main/launch-email-for-chris/vip-masterclass/jm-x3.html",
+      "subject": "Still here if you need us, %FIRSTNAME% &middot; Longevity Life Academy",
+      "preheader": "A final follow-up on your missed session, and how to reach us.",
+      "body_text": "Still here %FIRSTNAME%, this is our final follow-up about the session you missed on %LGVMASTERCLASSSESSIONDATE% . Your learning platform stays open to you: sign in for your booking information and the materials included in your package. Your $249 credit toward The Longevity Blueprint is still yours, code MASTERCLASS-VIP. And if you would like to talk about your options, reply to this email. We would still love to have you in the room with Julie. Whatever you decide, thank you for booking with Longevity Life Academy. Open My Learning Platform Sign in, or reply for help. Your Booking Package VIP Masterclass Access Missed session %LGVMASTERCLASSSESSIONDATE% Where your learning platform Help reply to this email Open My Learning Platform To your longest, strongest life, The Longevity Life Academy team Reply to this email and a real person will help.",
+      "body_word_count": 137,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x3",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=lgv_no_show&amp;utm_content=jm-x3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.longevitylifeacademy.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-a1-1.html",
+      "id": "jm-a1-1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-a1-1.html",
+      "subject": "One step left: choose your level &middot; The French Atelier",
+      "preheader": "Your details are saved. Pick your level and your seat is set.",
+      "body_text": "One step from your date Hi %FIRSTNAME%, you started registering for The French Atelier Live Course but have not picked your level yet. Your details are saved. Choose your live session date on the pricing page and the rest of your booking follows in a minute. This is 20 live lessons of 85 minutes on Zoom , with a certified native French teacher teaching the full course: conversation, pronunciation, grammar and culture. Your seat is $99 today, then 4 × $189 , for the full 20-lesson course with a certified native teacher, taught live. Seats in each group are allocated first come, first served , so choose your level soon. Pick the level that fits you; every level follows the same Acadomia method. From there it is a quick checkout and your seat is booked. Choose My Level Pick your level; the checkout follows. Your Registration Course The French Atelier Live Course Format 20 live lessons of 85 minutes on Zoom Price $99 today, then 4 × $189 Your name %FIRSTNAME% Next step choose your level Choose My Level À bientôt, The French Atelier team We have your details. All that is left is your level and a quick checkout.",
+      "body_word_count": 200,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-1#enroll-online",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-1#enroll-online",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-a1-2.html",
+      "id": "jm-a1-2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-a1-2.html",
+      "subject": "Who is teaching you: a certified native French teacher &middot; The French Atelier",
+      "preheader": "Certified native teachers, the Acadomia method, and the level you still need to choose.",
+      "body_text": "French slower, live on Zoom %FIRSTNAME%, before you choose your date, here is exactly who will be teaching you. Your teacher is a certified native speaker, trained in the Acadomia method that has taught French in France for more than 50 years. That places her No. 2 in the world in the Rejuvenation Olympics rankings. Her routine costs about $100 a month . That is why learners rate the Atelier 4.6 out of 5 on Trustpilot. In your first live lesson she teaches the full course: conversation, pronunciation, grammar and culture, with the exact numbers behind each. Your seat is $99 today, then 4 × $189 . Choose your level to finish. Choose My Level Pick your level; the checkout follows. The Proof Instructor your French Atelier teacher Pace of French 0.665, DunedinPACE Ranking No. 1 in France Her monthly routine about $100 Next step choose your level Choose My Level À bientôt, The French Atelier team The Atelier’s reviews are verified through DunedinPACE testing.",
+      "body_word_count": 165,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-2#enroll-online",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-2#enroll-online",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-a1-3.html",
+      "id": "jm-a1-3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-a1-3.html",
+      "subject": "Still choosing a date? Groups are filling &middot; The French Atelier",
+      "preheader": "Your details are saved. Choose your level soon, while seats in the group remain.",
+      "body_text": "Your date, soon %FIRSTNAME%, this is the last note we will send about the course enrollment you started. Seats in each group are allocated first come, first served . Choose your level soon so the group you want is still open. Worth saying plainly: your seat is $99 today, then 4 × $189 , for your first live lesson with your teacher, the full course taught live. If the course is not for you, ignore this email and we will not nudge you about it again. If it is, choosing your date takes a minute , and the rest of the checkout follows. Choose My Level Pick your level; the checkout follows. Your Registration Course The French Atelier Live Course Price $99 today, then 4 × $189 Status no session date chosen yet Next step choose your level Choose My Level À bientôt, The French Atelier team You can register any time while dates remain open.",
+      "body_word_count": 156,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-3#enroll-online",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-3#enroll-online",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-a2-1.html",
+      "id": "jm-a2-1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-a2-1.html",
+      "subject": "Your level is chosen. One step finishes your booking &middot; The French Atelier",
+      "preheader": "You picked %FACOURSESTARTDATE%. Finish your booking and the seat is yours.",
+      "body_text": "Your date is chosen Hi %FIRSTNAME%, you chose your first lesson, %FACOURSESTARTDATE% , then left before the booking was finished. The good news: your date is chosen and your details are in. Finishing your booking takes about a minute. This is 20 live lessons of 85 minutes on Zoom Across 20 live lessons your teacher builds your French step by step: conversation, pronunciation, grammar and culture. It is $99 today, then 4 × $189 , for the full 20-lesson course with a certified native teacher, taught live. Seats in each group are allocated first come, first served, so finish your booking soon while the date you chose is still open. Finish My Booking Straight to the pricing section. Your Course Your date %FACOURSESTARTDATE% Format 20 live lessons of 85 minutes on Zoom Price $99 today, then 4 × $189 Status chosen, not yet booked Finish My Booking À bientôt, The French Atelier team Your seat is confirmed only when your payment completes.",
+      "body_word_count": 162,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-1#enroll-online",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-1#enroll-online",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-a2-2.html",
+      "id": "jm-a2-2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-a2-2.html",
+      "subject": "Live, not a recording: finish your booking &middot; The French Atelier",
+      "preheader": "Live from France from %FACOURSESTARTDATE%. Finish your booking in a minute.",
+      "body_text": "Live, not a recording %FIRSTNAME%, your chosen session, %FACOURSESTARTDATE% , is still waiting to be booked. This is a live French course, not a recording : your French Atelier teacher teaching in real time, with you in the class. Your seat is $99 today, then 4 × $189 , for the full 60-minute live French course with your teacher on Zoom. Finishing your booking takes about a minute : choose your package on the pricing page and complete the checkout. If the level is not right, you can pick another level on the same page. Either way, do not leave it too long: seats are allocated first come, first served. Finish My Booking Straight to the pricing section. Your Course Your date %FACOURSESTARTDATE% Live with your French Atelier teacher Price $99 today, then 4 × $189 Status not yet booked Finish My Booking À bientôt, The French Atelier team When a session fills, it closes.",
+      "body_word_count": 155,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-2#enroll-online",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-2#enroll-online",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-a2-3.html",
+      "id": "jm-a2-3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-a2-3.html",
+      "subject": "Finish your booking soon, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "A last note about the course you chose. Booking takes a minute.",
+      "body_text": "Your chosen date, soon %FIRSTNAME%, this is the last word about the session you chose, %FACOURSESTARTDATE% , before we leave you in peace. Groups fill at 12 learners, and once a group is full it closes, so please finish soon if you still want that start. Here is what stays true either way: 20 live lessons of 85 minutes on Zoom , with your French Atelier teacher walking through the whole routine she lives by, from first step to last. The live hour is the product ; it is not a recording. The offer is simple: $99 today, then 4 × $189 , for the full 60-minute live French course with your teacher on Zoom. One click takes you to the pricing section; the booking itself takes about a minute. Finish My Booking Straight to the pricing section. Your Chosen Course Your date %FACOURSESTARTDATE% Price $99 today, then 4 × $189 Status not yet booked Finish My Booking À bientôt, The French Atelier team If the date no longer suits you, another live session can be selected on the same page.",
+      "body_word_count": 181,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-3#enroll-online",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-3#enroll-online",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-a3-1.html",
+      "id": "jm-a3-1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-a3-1.html",
+      "subject": "Your order is set up. Complete your payment &middot; The French Atelier",
+      "preheader": "Order and date saved, nothing charged. Payment takes about a minute.",
+      "body_text": "Almost enrolled Hi %FIRSTNAME%, you were one step from done. Your order and your first lesson, %FACOURSESTARTDATE% , are set up. Only the payment was not completed. It happens: a card timeout, a page closed too soon, a bank check that took a moment too long. Nothing was charged, and nothing was lost. Everything about your order is ready except the payment. The checkout is secure and takes about a minute , by card or PayPal. The moment it completes, your seat is confirmed and your confirmation follows by email. Your order is $99 today, then 4 × $189 : 20 live lessons on Zoom on Zoom, the full course taught live. Complete My Order Card or PayPal, about one minute. Your Order Your course %FACOURSESTARTDATE% Price $99 today, then 4 × $189 Payment not completed Includes 60-minute live French course with your teacher Complete My Order À bientôt, The French Atelier team Nothing has been charged. Your seat is confirmed only after payment. All sales final at checkout.",
+      "body_word_count": 169,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-1#enroll-online",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-1#enroll-online",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-a3-2.html",
+      "id": "jm-a3-2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-a3-2.html",
+      "subject": "One minute completes your order, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "Your order and date are saved; only the payment is missing. Card or PayPal, about a minute.",
+      "body_text": "Your order is almost complete %FIRSTNAME%, your order for %FACOURSESTARTDATE% is saved, and the payment is still waiting. You did everything except the last step. Your name, your date, your order: all saved. One minute of checkout is all that stands between you and your first live lesson with your French Atelier teacher. If hesitation is about the money: it is $99 today , and you leave with the full course, taught live . Nothing has been charged. Pay by card or PayPal , and on %FACOURSESTARTDATE% you are in the class, notebook open, taking down the protocol from a native speaker who lives it. Complete My Order Card or PayPal, about one minute. Your Order Your course %FACOURSESTARTDATE% Price $99 today, then 4 × $189 Includes 60-minute live French course with your teacher Payment not completed Complete My Order À bientôt, The French Atelier team Your order details are saved. Nothing is charged until you complete payment.",
+      "body_word_count": 158,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-2#enroll-online",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-2#enroll-online",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-a3-3.html",
+      "id": "jm-a3-3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-a3-3.html",
+      "subject": "Complete your order soon, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "A last note about the enrollment you set up. Nothing charged yet; payment takes a minute.",
+      "body_text": "Complete your order soon %FIRSTNAME%, this is the final note about your unpaid order for %FACOURSESTARTDATE% . After this we will leave you in peace. Your order and date are saved and nothing has been charged, but seats are allocated first come, first served, so please complete it soon if you still want that date. $99 today, then 4 × $189. Your details and chosen date are already saved, so finishing is a single step from any device: card or PayPal, about a minute. One minute. One payment. And on %FACOURSESTARTDATE% you are in the class with your French Atelier teacher for your first live lesson, learning the whole routine straight from her. Complete My Order Card or PayPal, about one minute. Your Order Your course %FACOURSESTARTDATE% Price $99 today, then 4 × $189 Payment not completed Complete My Order À bientôt, The French Atelier team You can still enroll later while seats remain, but this is our last reminder about this order.",
+      "body_word_count": 163,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-3#enroll-online",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-3#enroll-online",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-b1.html",
+      "id": "jm-b1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-b1.html",
+      "subject": "You’re in. Your learning platform is ready &middot; The French Atelier",
+      "preheader": "Your seat is confirmed. Your learning platform has your first lesson and materials.",
+      "body_text": "Welcome, %FIRSTNAME%. You re in Your seat is confirmed. On %FACOURSESTARTDATE% you join your French Atelier teacher live for 85 minutes. Here is the one thing to do right now: sign in to your learning platform at student.eteachergroup.com. That is where you join your first lesson, and where your materials and progress live. Below you will also find the Culture Capsules, our live French-culture conferences, if you want to go further alongside your course. The session is 85 minutes, live . Your teacher builds your French step by step: conversation, pronunciation, grammar and culture, in small live classes. She covers a lot of ground at a brisk pace , so a notebook is worth having nearby. Open My Learning Platform Need help signing in? Reply to this email. Your Course Date %FACOURSESTARTDATE% Where your learning platform Length 85 minutes, live Order $99 paid today Explore The Culture Capsules À bientôt, The French Atelier team Your receipt is sent separately. Questions? Just reply to this email.",
+      "body_word_count": 165,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b1",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-b2.html",
+      "id": "jm-b2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-b2.html",
+      "subject": "Three days to your first class. Here’s how to prepare &middot; The French Atelier",
+      "preheader": "What your first lesson covers, and the one thing to bring.",
+      "body_text": "Three days to your teacher %FIRSTNAME%, your first lesson is on %FACOURSESTARTDATE% . Here is how to get the most out of it. Your teacher takes you through the full course, lesson by lesson: real conversation from the first class, pronunciation you can actually use, the grammar behind it, and a CEFR certificate by Acadomia at the end. Expect specifics, not philosophy : what she does, what she skips, and what the numbers say. Give your current sleep and food habits a minute of thought beforehand ; it makes every part of the lesson land on your real life. Set up somewhere quiet, keep a notebook nearby, and sign in to your learning platform a few minutes early; that is where you join the session. Curious about going further? The Culture Capsules, our live French-culture conferences from $89 a month, are linked below. Open My Learning Platform Sign in a few minutes early. Get Ready Date %FACOURSESTARTDATE% Where your learning platform Bring a notebook and a pen Tip sign in 5 minutes early Explore The Culture Capsules À bientôt, The French Atelier team Can’t make it anymore? Reply to this email and we will help.",
+      "body_word_count": 195,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b2",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-b3.html",
+      "id": "jm-b3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-b3.html",
+      "subject": "Tomorrow: your first live lesson &middot; The French Atelier",
+      "preheader": "Your course starts in 24 hours. Join through your learning platform.",
+      "body_text": "See you tomorrow %FIRSTNAME%, tomorrow is the day: %FACOURSESTARTDATE% . your French Atelier teacher, live, walks you through the Acadomia method that has taught French in France for more than 50 years , from your first bonjour to your CEFR certificate. Join through your learning platform five minutes early. Your teacher opens the first lesson by setting out the whole plan, and it is worth being settled in for. Have a notebook ready and a quiet room waiting. It is a live class, so being there is everything, and the people who arrive prepared always leave with the most. That is all. See you tomorrow. Open My Learning Platform Add it to your calendar if you haven’t yet. Tomorrow Date %FACOURSESTARTDATE% Where your learning platform Length 85 minutes, live Open My Learning Platform À bientôt, The French Atelier team This is a live session. Join through your learning platform.",
+      "body_word_count": 149,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b3",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-b4.html",
+      "id": "jm-b4",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-b4.html",
+      "subject": "Starting in two hours &middot; The French Atelier",
+      "preheader": "Sign in to your learning platform to join.",
+      "body_text": "Starting soon %FIRSTNAME%, your first lesson with your French Atelier teacher starts in about two hours . Everything you need is right here. Sign in to your learning platform and join from there a few minutes early. Your teacher opens the first lesson by setting out the plan for the course, and it is worth being settled in for. A quick checklist while you wait: a quiet spot, a glass of water, and a notebook. The hour is packed with specifics , and the notes you take today are the ones you will use for years. One more reminder, because it matters: this is a live session . The hour happens once, and it happens today, with you in the class. See you inside. Open My Learning Platform Your course is listed in your learning platform. Right Now Session %FACOURSESTARTDATE% Starts in about 2 hours Where your learning platform Open My Learning Platform À bientôt, The French Atelier team Live session. Keep this email open; join through your learning platform.",
+      "body_word_count": 170,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b4",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b4",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-x1.html",
+      "id": "jm-x1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-x1.html",
+      "subject": "We missed you, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "You were not in the class. Here is where things stand, and how to reach us.",
+      "body_text": "We missed you %FIRSTNAME%, life happens. Our attendance record shows you were not in the class for your first lesson. Here is what matters: your seat was paid and your learning platform is still yours. Sign in to see your first lesson information and the materials included in your package. If you believe you did attend, reply to this email and the team will check the record. If the date simply could not work, reply and tell us; the team will look at the options with you . We would love to actually see you in the class. Open My Learning Platform Session information and materials inside. Your Booking Package The French Atelier Live Course Session %FACOURSESTARTDATE% Status missed, per attendance record Next sign in, or reply for help Open My Learning Platform À bientôt, The French Atelier team Reply to this email and a real person will help.",
+      "body_word_count": 149,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x1",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-x2.html",
+      "id": "jm-x2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-x2.html",
+      "subject": "Your course information, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "Where to find your first lesson information and materials, and how to reach us.",
+      "body_text": "Your course information %FIRSTNAME%, a short follow-up after your missed session with your French Atelier teacher . Your learning platform shows the current information for your booking, and the materials included in your package. If the team arranges anything further for your booking, the details will reach you by email and appear in your learning platform. Until then, this email does not change your booking. Your package is The French Atelier Live Course : 85 minutes live on Zoom, with your teacher teaching the full course. Open My Learning Platform Sign in for your booking information and materials. Your Booking Package The French Atelier Live Course Session %FACOURSESTARTDATE% Where your learning platform Open My Learning Platform À bientôt, The French Atelier team Reply to this email with any question about your booking.",
+      "body_word_count": 132,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x2",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/course/jm-x3.html",
+      "id": "jm-x3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/course/jm-x3.html",
+      "subject": "Still here if you need us, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "A final follow-up on your missed session, and how to reach us.",
+      "body_text": "Still here %FIRSTNAME%, this is our final follow-up about the session you missed on %FACOURSESTARTDATE% . Your learning platform stays open to you: sign in for your booking information and the materials included in your package. If something went wrong on the day, or you would like to talk about your options, reply to this email before making other plans. We would still love to have you in the class. Whatever you decide, thank you for booking with The French Atelier. Open My Learning Platform Sign in, or reply for help. Your Booking Package The French Atelier Live Course Missed session %FACOURSESTARTDATE% Where your learning platform Help reply to this email Open My Learning Platform À bientôt, The French Atelier team Reply to this email and a real person will help.",
+      "body_word_count": 131,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x3",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-a1-1.html",
+      "id": "jm-a1-1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-a1-1.html",
+      "subject": "One step left: choose your Culture Capsule date &middot; The French Atelier",
+      "preheader": "Your details are saved. Pick your live date with your speaker and your Capsule seat is set.",
+      "body_text": "One step from your date Hi %FIRSTNAME%, you started registering for Culture Capsules Course Access with your speaker, but have not picked your capsule yet. Your details are saved. Choose your live session date on the pricing page and the rest of your booking follows in a minute.This is 10 live one-hour conferences on Zoom with a bilingual signature speaker, with questions after each talk, no French required. Your Capsule seat is $89 a month per capsule, in 3 monthly payments ($267 total) . Culture Capsules also includes a 20% off your first Culture Capsule toward The Culture Capsules , the Live Course offer. Pick the capsule that fits you; every level follows the same Acadomia method. From there it is a quick checkout and your Capsule seat is booked. Choose My Capsule Pick your capsule; the checkout follows. Your Registration Course Culture Capsules Course Access Format 10 live conferences, 1 hour each Price $89 a month per capsule, in 3 monthly payments ($267 total) Your name %FIRSTNAME% Next step choose your capsule Choose My Capsule À bientôt, The French Atelier team We have your details. All that is left is your capsule and a quick checkout.",
+      "body_word_count": 197,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-1#offers",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-1#offers",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-a1-2.html",
+      "id": "jm-a1-2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-a1-2.html",
+      "subject": "Who is teaching you: a bilingual signature speaker &middot; The French Atelier",
+      "preheader": "Certified native teachers, the Acadomia method, and the capsule you still need to choose.",
+      "body_text": "French slower, live on Zoom %FIRSTNAME%, before you choose your date, here is exactly who will be teaching you. your speaker is a certified native speaker, trained in the Acadomia method that has taught French in France for more than 50 years. That places her No. 2 in the world in the Rejuvenation Olympics rankings. Her routine costs about $100 a month . That is why learners rate the Atelier 4.6 out of 5 on Trustpilot. In 10 conferences with your speaker you get the one-hour conferences and a Q A after every conference, so you can ask about your own routine, like being in a room with her online. Your Capsule seat is $89 a month per capsule, in 3 monthly payments ($267 total) . Choose your capsule to finish. Choose My Capsule Pick your capsule; the checkout follows. The Proof Instructor your Capsule speaker Pace of French 0.665, DunedinPACE Ranking No. 1 in France Her monthly routine about $100 Next step choose your capsule Choose My Capsule À bientôt, The French Atelier team The Atelier’s reviews are verified through DunedinPACE testing.",
+      "body_word_count": 183,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-2#offers",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-2#offers",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-a1-3.html",
+      "id": "jm-a1-3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-a1-3.html",
+      "subject": "Still choosing a date? Capsule seats are limited &middot; The French Atelier",
+      "preheader": "Your details are saved. Choose your live date soon, while Capsule seats remain.",
+      "body_text": "Your date, soon %FIRSTNAME%, this is the last note we will send about the Culture Capsules registration you started. Capsule seats are allocated first come, first served , and they go first. Choose your date soon while yours is still open. Worth saying plainly: $89 a month per capsule, in 3 monthly payments ($267 total) , for 10 conferences with your speaker, including the Q A after every conference. If the course is not for you, ignore this email and we will not nudge you about it again. If it is, choosing your date takes a minute , and the rest of the checkout follows. Choose My Capsule Pick your capsule; the checkout follows. Your Registration Course Culture Capsules Course Access Price $89 a month per capsule, in 3 monthly payments ($267 total) Status no session date chosen yet Next step choose your capsule Choose My Capsule À bientôt, The French Atelier team You can register any time while Capsule seats remain open.",
+      "body_word_count": 163,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-3#offers",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_name_details&amp;utm_content=jm-a1-3#offers",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-a2-1.html",
+      "id": "jm-a2-1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-a2-1.html",
+      "subject": "Your Culture Capsule is chosen. One step finishes booking &middot; The French Atelier",
+      "preheader": "You picked %FACOURSESTARTDATE%. Finish your booking and your Capsule seat is yours.",
+      "body_text": "Your date is chosen Hi %FIRSTNAME%, you chose your Culture Capsule, %FACOURSESTARTDATE% , then left before the booking was finished. The good news: your date is chosen and your details are in. Finishing your booking takes about a minute. This is 10 live one-hour conferences on Zoom with a bilingual signature speaker, with 15 to 20 minutes of questions after each talk, no French required. It is $89 a month per capsule, in 3 monthly payments ($267 total) , and code CAPSULE20 makes your first month $71.20. Capsule seats are allocated first come, first served, so finish your booking soon while the date you chose is still open. Finish My Booking Straight to the Capsules offers. Your Course Your date %FACOURSESTARTDATE% Format 10 live conferences, 1 hour each Price $89 a month per capsule, in 3 monthly payments ($267 total) Status chosen, not yet booked Finish My Booking À bientôt, The French Atelier team Your Capsule seat is confirmed only when your payment completes.",
+      "body_word_count": 164,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-1#offers",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-1#offers",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-a2-2.html",
+      "id": "jm-a2-2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-a2-2.html",
+      "subject": "Live, not a recording: finish your Culture Capsules booking &middot; The French Atelier",
+      "preheader": "Live from France from %FACOURSESTARTDATE%. Finish booking in a minute.",
+      "body_text": "Live, not a recording %FIRSTNAME%, your Culture Capsule, %FACOURSESTARTDATE% , is still waiting to be booked. This is a live French course, not a recording : your speaker teaching in real time, then your Q A after every conference to ask her anything. Your Capsule seat is $89 a month per capsule, in 3 monthly payments ($267 total) , with a 20% Capsule discount included. Finishing your booking takes about a minute : choose Culture Capsules on the pricing page and complete the checkout. If the capsule is not right, you can pick another level on the same page. Either way, do not leave it too long: Capsule seats are allocated first come, first served. Finish My Booking Straight to the Capsules offers. Your Course Your date %FACOURSESTARTDATE% Live with your Capsule speaker Price $89 a month per capsule, in 3 monthly payments ($267 total) Status not yet booked Finish My Booking À bientôt, The French Atelier team When a Culture Capsules session fills, it closes.",
+      "body_word_count": 166,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-2#offers",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-2#offers",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-a2-3.html",
+      "id": "jm-a2-3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-a2-3.html",
+      "subject": "Finish your Culture Capsules booking soon, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "A last note about the Culture Capsules session you chose. Booking takes a minute.",
+      "body_text": "Your chosen date, soon %FIRSTNAME%, this is the last word about the Culture Capsules session you chose, %FACOURSESTARTDATE% , before we leave you in peace. Culture Capsules sessions fill, and once a session is full it closes, so please finish soon if you still want that date. What stays true either way: 10 conferences with your speaker , the one-hour conferences then your Q A after every conference, like being in a room with her online. The live session is the product ; it is not a recording. The Culture Capsules terms are simple: $89 a month per capsule, in 3 monthly payments ($267 total) , and a 20% off your first Culture Capsule toward The Culture Capsules with the Live Course offer. One click takes you to the pricing section; the booking itself takes about a minute. Finish My Booking Straight to the Capsules offers. Your Chosen Course Your date %FACOURSESTARTDATE% Price $89 a month per capsule, in 3 monthly payments ($267 total) Status not yet booked Finish My Booking À bientôt, The French Atelier team If the date no longer suits you, another live session can be selected on the same page.",
+      "body_word_count": 194,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-3#offers",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_course_details&amp;utm_content=jm-a2-3#offers",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-a3-1.html",
+      "id": "jm-a3-1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-a3-1.html",
+      "subject": "Your Culture Capsule order is set up. Complete your payment &middot; The French Atelier",
+      "preheader": "Order and date saved, nothing charged. Payment takes about a minute.",
+      "body_text": "Almost enrolled Hi %FIRSTNAME%, you were one step from done. Your Culture Capsule order and your first conference, %FACOURSESTARTDATE% , are set up. Only the payment was not completed. It happens: a card timeout, a page closed too soon, a bank check that took a moment too long. Nothing was charged, and nothing was lost. Everything about your order is ready except the payment. The checkout is secure and takes about a minute , by card or PayPal. The moment it completes, your Capsule seat is confirmed and your confirmation follows by email. Your order is $89 a month per capsule, in 3 monthly payments ($267 total) : 10 live one-hour conferences on Zoom with a bilingual signature speaker, 15 to 20 minutes of questions after each talk, no French required. Complete My Order Card or PayPal, about one minute. Your Order Your course %FACOURSESTARTDATE% Price $89 a month per capsule, in 3 monthly payments ($267 total) Payment not completed Includes Q A after every conference + 20% off your first Culture Capsule Complete My Order À bientôt, The French Atelier team Nothing has been charged. Your Capsule seat is confirmed only after payment. All sales final at checkout.",
+      "body_word_count": 199,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-1#offers",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-1#offers",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-a3-2.html",
+      "id": "jm-a3-2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-a3-2.html",
+      "subject": "One minute completes your Capsule order, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "Your order and date are saved; only the payment is missing. Card or PayPal, about a minute.",
+      "body_text": "Your order is almost complete %FIRSTNAME%, your Capsule order for %FACOURSESTARTDATE% is saved, and the payment is still waiting. You did everything except the last step. Your name, your date, your order: all saved. One minute of checkout is all that stands between you and 10 conferences with your Capsule speaker. If hesitation is about the money: it is $89 / month · 3 monthly payments once , and a 20% off your first Culture Capsule toward The Culture Capsules comes with it. Nothing has been charged. Pay by card or PayPal , and on %FACOURSESTARTDATE% you are in the conference, notebook open, with your questions ready for your speaker. Complete My Order Card or PayPal, about one minute. Your Order Your course %FACOURSESTARTDATE% Price $89 a month per capsule, in 3 monthly payments ($267 total) Includes Q A after every conference + 20% off your first Culture Capsule Payment not completed Complete My Order À bientôt, The French Atelier team Your order details are saved. Nothing is charged until you complete payment.",
+      "body_word_count": 173,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-2#offers",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-2#offers",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-a3-3.html",
+      "id": "jm-a3-3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-a3-3.html",
+      "subject": "Complete your Capsule order soon, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "A last note about the enrollment you set up. Nothing charged yet; payment takes a minute.",
+      "body_text": "Complete your order soon %FIRSTNAME%, this is the final note about your unpaid Capsule order for %FACOURSESTARTDATE% . After this we will leave you in peace. Your order and date are saved and nothing has been charged, but Capsule seats are allocated first come, first served, so please complete it soon if you still want that date. $89 a month per capsule, in 3 monthly payments ($267 total) , for 10 conferences with your speaker. Your details and chosen date are saved, so finishing is a single step from any device: card or PayPal, about a minute. One minute. One payment. And on %FACOURSESTARTDATE% you are in the conference with your Capsule speaker , learning the whole routine straight from her, then your Q A after every conference. Complete My Order Card or PayPal, about one minute. Your Order Your course %FACOURSESTARTDATE% Price $89 a month per capsule, in 3 monthly payments ($267 total) Payment not completed Complete My Order À bientôt, The French Atelier team You can still enroll later while Capsule seats remain, but this is our last reminder about this order.",
+      "body_word_count": 184,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-3#offers",
+        "https://www.frenchatelierlive.com/capsules.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_abandoned_cart_no_payment&amp;utm_content=jm-a3-3#offers",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-b1.html",
+      "id": "jm-b1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-b1.html",
+      "subject": "Your Capsule seat is confirmed. Here’s what’s next &middot; The French Atelier",
+      "preheader": "Your Capsule seat is confirmed. Your learning platform is ready; bring questions for the Q&amp;A.",
+      "body_text": "Welcome, %FIRSTNAME%. You re in Your Capsule seat is confirmed. On %FACOURSESTARTDATE% you join your Capsule speaker live for 10 conferences. Here is the one thing to do right now: sign in to your learning platform at student.eteachergroup.com. That is where you join your first conference, and where your materials and progress live. We will also send a preparation note, a reminder the day before, and one two hours before we start. Your course is 10 conferences in total : the one-hour conferences, then your Q A after every conference with your speaker, like being in a room with her online. Bring your questions. Your Capsule seat also code CAPSULE20 · first month $71.20 instead of $89 with the Live Course offer, linked below. Open My Learning Platform Need help signing in? Reply to this email. Your Course Date %FACOURSESTARTDATE% Where your learning platform Length 10 conferences, incl. Q A after every conference Order $89 / month · 3 monthly payments, paid Use My $249 Blueprint Credit À bientôt, The French Atelier team Your receipt is sent separately. Questions? Just reply to this email.",
+      "body_word_count": 184,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b1",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-b2.html",
+      "id": "jm-b2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-b2.html",
+      "subject": "Three days to your first conference. Here’s how to prepare &middot; The French Atelier",
+      "preheader": "What your speaker will cover, and the questions to bring for your Q&amp;A after every conference.",
+      "body_text": "Three days to your speaker %FIRSTNAME%, your 90-minute Culture Capsules session is on %FACOURSESTARTDATE% . Here is how to get the most out of it. your speaker takes you through the full course, conference by conference: real conversation from the first conference, pronunciation you can actually use, the grammar behind it, and a French culture, told by the people who live it at the end. Expect specifics, not philosophy : what she does, what she skips, and what the numbers say. Write down two or three questions beforehand. Your Q A after every conference with your speaker follows the course. Set up somewhere quiet, keep a notebook nearby, and sign in to your learning platform a few minutes early; that is where you join the session. Your 20% Capsule discount is linked below as well. Open My Learning Platform Sign in a few minutes early. Get Ready Date %FACOURSESTARTDATE% Where your learning platform Bring a notebook and your questions Tip sign in 5 minutes early Use My $249 Blueprint Credit À bientôt, The French Atelier team Can’t make it anymore? Reply to this email and we will help.",
+      "body_word_count": 188,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b2",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-b3.html",
+      "id": "jm-b3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-b3.html",
+      "subject": "Tomorrow: your live Culture Capsules session with your speaker &middot; The French Atelier",
+      "preheader": "Starts in 24 hours. Join via your learning platform; bring questions.",
+      "body_text": "See you tomorrow %FIRSTNAME%, tomorrow is the day: %FACOURSESTARTDATE% . your Capsule speaker, live, walks you through the Acadomia method that has taught French in France for more than 50 years , from your first bonjour to your CEFR certificate. Join through your learning platform five minutes early. your speaker opens by setting out the plan and closes with your 30-minute Q A, so bring questions. Have a notebook, your questions and a quiet room ready. It is live, so the session itself is everything, and the 30-minute Q A rewards the prepared. That is all. See you tomorrow. Open My Learning Platform Add it to your calendar if you haven’t yet. Tomorrow Date %FACOURSESTARTDATE% Where your learning platform Length 10 conferences, incl. Q A after every conference Open My Learning Platform À bientôt, The French Atelier team This is a live session. Join through your learning platform.",
+      "body_word_count": 148,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b3",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-b4.html",
+      "id": "jm-b4",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-b4.html",
+      "subject": "Starting in two hours &middot; The French Atelier",
+      "preheader": "Sign in to your learning platform to join.",
+      "body_text": "Starting soon %FIRSTNAME%, your Culture Capsule with your Capsule speaker starts in about two hours . Everything you need is right here. Sign in to your learning platform and join from there a few minutes early. your speaker opens by setting the plan for the 10 conferences, and it is worth being settled in for. A quick checklist while you wait: a quiet spot, a glass of water, a notebook and your questions. The course is packed with specifics ; the Q A after every conference is your time to ask your speaker directly. One more reminder, because it matters: this is a live session . The 10 conferences happen once, today, with you in the conference. See you inside. Open My Learning Platform Your course is listed in your learning platform. Right Now Session %FACOURSESTARTDATE% Starts in about 2 hours Where your learning platform Open My Learning Platform À bientôt, The French Atelier team Live session. Keep this email open; join through your learning platform.",
+      "body_word_count": 166,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b4",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-b4",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-u1.html",
+      "id": "jm-u1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-u1.html",
+      "subject": "Thank you, %FIRSTNAME%. Your 20% off your first Culture Capsule is ready &middot; The French Atelier",
+      "preheader": "Your Culture Capsules credit toward The Culture Capsules, the Live Course offer, applied through the button.",
+      "body_text": "Your 20% off your first Culture Capsule is ready %FIRSTNAME%, thank you for spending 10 conferences with your speaker. We hope it moved something. The course was the door. Behind it is The Culture Capsules , the complete live conference series where you stop watching someone else’s routine and build your own . As a Culture Capsules attendee you have a 20% off your first Culture Capsule toward the Blueprint. Your code is CAPSULE20 ; the button below applies it for you . No pressure today. The Blueprint is not for everyone, and the course owes you nothing more. But if the session left you wanting the full system rather than notes about someone else’s, take a look soon. Questions? Just reply, a real person answers. See The Blueprint Your code is applied automatically when you use this button. Your Credit Credit $249 toward The Culture Capsules Your code CAPSULE20 Applies to The Culture Capsules, 18 conferences How applied through the button See The Blueprint À bientôt, The French Atelier team Course credit toward The Culture Capsules, not a cash refund.",
+      "body_word_count": 181,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-u1",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-u1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-u2.html",
+      "id": "jm-u2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-u2.html",
+      "subject": "What the course couldn’t fit into 10 conferences &middot; The French Atelier",
+      "preheader": "Inside the Culture Capsules, and what changes when you take it.",
+      "body_text": "Inside the Blueprint %FIRSTNAME%, 10 conferences with your speaker showed you what is possible. Eighteen conferences are where it becomes yours. The Culture Capsules turns the course into practice: 18 conferences building your nutrition, sleep and training protocol, with the protocol library and video vault to lean on. You also get a continuous glucose monitor , the student community and access to 1:1 coaching. Your $249 Culture Capsules credit applies with code CAPSULE20 ; the button below carries it for you. Give the curriculum a proper look soon. Explore The Full Course Full curriculum and pricing on one page, credit applied. The Culture Capsules Length 18 conferences You build your personal protocol Your credit $249, the Live Course offer Explore The Full Course À bientôt, The French Atelier team Questions about fit or schedule? Reply and an advisor will answer personally.",
+      "body_word_count": 141,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-u2",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-u2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-u3.html",
+      "id": "jm-u3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-u3.html",
+      "subject": "The Blueprint, in numbers &middot; The French Atelier",
+      "preheader": "What it costs, what your 20% off your first Culture Capsule changes, and the 14-day refund.",
+      "body_text": "The honest numbers %FIRSTNAME%, when we say the Blueprint is a serious course, we mean numbers you can check. your speaker’s French level is a verified 0.665 , about eight months per calendar year, and the course is 18 conferences built on the same protocol. The honest numbers: The Culture Capsules is $179 × 5 monthly payments ; your $249 Culture Capsules credit applies with code CAPSULE20 , and there is a 14-day refund from registration. That credit exists because you showed up. Take a look soon, and reply if you want a human read on whether the course fits. Use My $249 Credit The credit is applied automatically through this button. The Numbers Blueprint $179 × 5 monthly payments Conferences 18 Your credit $249, the Live Course offer Refund 14 days from registration Use My $249 Credit À bientôt, The French Atelier team Course credit toward The Culture Capsules, not a cash refund.",
+      "body_word_count": 154,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-u3",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-u3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-u4.html",
+      "id": "jm-u4",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-u4.html",
+      "subject": "Your 20% off your first Culture Capsule, and a person to talk to &middot; The French Atelier",
+      "preheader": "A next step to explore soon, and a real person to talk it through with.",
+      "body_text": "Your next step, soon %FIRSTNAME%, your $249 Culture Capsules credit toward The Culture Capsules is ready whenever you are. Code CAPSULE20 , applied through the button below. There is no pressure from us. But if the course left you wanting to keep going, soon is a good time to decide, while the session is still fresh. If deciding alone is the hard part, talk to us . Reply here and an advisor will walk through your goals and whether the course fits. No pressure. Either way, thank you for the 10 conferences you gave your speaker. It was a pleasure having you. Enroll With My Credit Or reply to this email and an advisor will help you choose. Your Next Step Your credit $249 Your code CAPSULE20 Blueprint $179 × 5, 18 conferences, 14-day refund Or simply reply to talk to an advisor Enroll With My Credit À bientôt, The French Atelier team Course credit toward The Culture Capsules, not a cash refund.",
+      "body_word_count": 163,
+      "cta_urls": [
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-u4",
+        "https://www.frenchatelierlive.com/pricing.html?utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_onboarding&amp;utm_content=jm-u4",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-x1.html",
+      "id": "jm-x1",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-x1.html",
+      "subject": "We missed you, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "You were not in the conference. Here is where things stand, and how to reach us.",
+      "body_text": "We missed you %FIRSTNAME%, life happens. Our attendance record shows you were not in the conference for your Culture Capsule with your speaker. Here is what matters: your Capsule seat was paid and your learning platform is still yours. Sign in to see your first conference information and the materials included in your package. If you believe you did attend, reply to this email and the team will check the record. If the date simply could not work, reply and tell us; the team will look at the options with you . We would love to actually see you in the conference. Open My Learning Platform Session information and materials inside. Your Booking Package Culture Capsules Course Access Session %FACOURSESTARTDATE% Status missed, per attendance record Next sign in, or reply for help Open My Learning Platform À bientôt, The French Atelier team Reply to this email and a real person will help.",
+      "body_word_count": 152,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x1",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x1",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-x2.html",
+      "id": "jm-x2",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-x2.html",
+      "subject": "Your course information, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "Where to find your first conference information and materials, and how to reach us.",
+      "body_text": "Your course information %FIRSTNAME%, a short follow-up after your missed Culture Capsules session with your Capsule speaker . Your learning platform shows the current information for your booking, and the materials included in your package. If the team arranges anything further for your booking, the details will reach you by email and appear in your learning platform. Until then, this email does not change your booking. Your package is Culture Capsules Course Access : 10 conferences with your speaker, including the Q A after every conference, plus your 20% off your first Culture Capsule toward The Culture Capsules with the Live Course offer. Open My Learning Platform Sign in for your booking information and materials. Your Booking Package Culture Capsules Course Access Session %FACOURSESTARTDATE% Where your learning platform Open My Learning Platform À bientôt, The French Atelier team Reply to this email with any question about your booking.",
+      "body_word_count": 148,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x2",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x2",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    },
+    {
+      "repository": "french-atelier-lifecycle-emails",
+      "path": "launch-email-for-chris/vip-course/jm-x3.html",
+      "id": "jm-x3",
+      "url": "https://github.com/gitteromri-ux/french-atelier-lifecycle-emails/blob/main/launch-email-for-chris/vip-course/jm-x3.html",
+      "subject": "Still here if you need us, %FIRSTNAME% &middot; The French Atelier",
+      "preheader": "A final follow-up on your missed session, and how to reach us.",
+      "body_text": "Still here %FIRSTNAME%, this is our final follow-up about the session you missed on %FACOURSESTARTDATE% . Your learning platform stays open to you: sign in for your booking information and the materials included in your package. Your 20% off your first Culture Capsule toward The Culture Capsules is still yours, the Live Course offer. And if you would like to talk about your options, reply to this email. We would still love to have you in the conference. Whatever you decide, thank you for booking with The French Atelier. Open My Learning Platform Sign in, or reply for help. Your Booking Package Culture Capsules Course Access Missed session %FACOURSESTARTDATE% Where your learning platform Help reply to this email Open My Learning Platform À bientôt, The French Atelier team Reply to this email and a real person will help.",
+      "body_word_count": 138,
+      "cta_urls": [
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x3",
+        "https://student.eteachergroup.com/?locale=en&amp;utm_source=activecampaign&amp;utm_medium=email&amp;utm_campaign=fa_no_show&amp;utm_content=jm-x3",
+        "%UNSUBSCRIBELINK%",
+        "%UPDATELINK%",
+        "https://www.frenchatelierlive.com/privacy.html"
+      ]
+    }
+  ]
+}

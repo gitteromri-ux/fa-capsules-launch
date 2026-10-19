@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Secure Checkout — The French Atelier by Acadomia</title>
+<meta name="description" content="Complete your French Atelier enrollment securely. Card, Apple Pay, Google Pay and PayPal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/fa.css?v=1790665240">
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+<link rel="stylesheet" href="css/mobile-fix.css?v=1790665240"><link rel="stylesheet" href="css/homepage-mobile-polish.css?v=1790665240">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="css/house-style.css?v=1790665240">
+<link rel="stylesheet" href="css/enroll-modal.css?v=1790665240">
+<link rel="stylesheet" href="css/fa-checkout.css?v=20261008y">
+<link rel="stylesheet" href="css/fa-whatsapp.css?v=20261008y">
+<link rel="stylesheet" href="css/fa-pay-et.css?v=20261008y">
+<link rel="stylesheet" href="css/fa-pop.css?v=20261008y">
+<link rel="stylesheet" href="css/fa-type.css?v=20261008y">
+</head>
+<body id="fa" class="light-hero">
+
+<!-- ============================================================
+     FRENCH ATELIER — BESPOKE SVG ICON SPRITE  (Agent 5)
+     Paste ONCE near the top of <body> on any page.
+     Use anywhere with:  <svg class="fa-icon" style="font-size:24px"><use href="#i-NAME"/></svg>
+     Icons use currentColor stroke. Stroke width set via .fa-icon in fa.css.
+     Available ids: i-arrow, i-arrow-right, i-chevron-down, i-close, i-menu,
+     i-check, i-calendar, i-clock, i-chat, i-play, i-globe, i-certificate,
+     i-sparkle, i-user, i-mail, i-phone, i-pin, i-facebook, i-instagram, i-youtube
+     ============================================================ -->
+<svg class="fa-icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 9h16M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 6 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-6-3.5-9S9.5 5.5 12 3z"/></symbol>
+    <symbol id="i-certificate" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 21l4-2 4 2-1-7.5"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h2.5V5H14a3.5 3.5 0 0 0-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V8.5A.5.5 0 0 1 14 8z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.7" cy="7.3" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M11 9.5l4 2.5-4 2.5z" fill="currentColor" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-logo" href="index.html">
+      <img class="nav-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" decoding="async" fetchpriority="high" decoding="async">
+    </a>
+    <nav class="nav-menu" aria-label="Primary">
+      <div class="nav-item">
+        <a class="nav-link" href="courses.html">Courses <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown nav-dropdown-wide">
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">French Atelier &middot; Structured &middot; A0&rarr;A2.2</span>
+            <a href="courses/fa-foundation.html">FA Foundation <em>A0&rarr;A1.1</em></a>
+            <a href="courses/fa-beginner.html">FA Beginner <em>A1.1&rarr;A1.2</em></a>
+            <a href="courses/fa-elementary.html">FA Elementary <em>A1.2&rarr;A2.1</em></a>
+            <a href="courses/fa-intermediate.html">FA Intermediate <em>A2.1&rarr;A2.2</em></a>
+            <a href="capsules.html" class="nav-dd-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+          </div>
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">Let&rsquo;s Speak French &middot; Spoken &middot; Conversation</span>
+            <a href="courses/lsf-foundation.html">LSF Foundation <em>Spoken</em></a>
+            <a href="courses/lsf-beginner.html">LSF Beginner <em>Spoken</em></a>
+            <a href="courses/lsf-elementary.html">LSF Elementary <em>Spoken</em></a>
+
+            <span class="nav-dd-divide"></span>
+            <a href="courses.html">All Courses</a>
+            <a href="map.html">Interactive Map of France</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></div>
+      
+      <div class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="method.html">Our Method</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="juliane.html">Julien AI Tutor</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="culture.html">French Culture</a></div>
+      <div class="nav-item">
+        <a class="nav-link" href="about.html">About Us <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown">
+          <a href="about.html">About French Atelier</a>
+          <a href="acadomia.html">The Acadomia Group</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      
+      <a class="btn btn-gold nav-cta" href="pricing.html">Enroll Now</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-drawer" aria-hidden="true">
+  <button class="nav-drawer-close" aria-label="Close menu">&times;</button>
+  <span class="drawer-group-label">Courses</span>
+  <div class="drawer-sub">
+    <a href="courses.html">All Courses</a>
+    <a href="courses/fa-foundation.html">FA Foundation</a>
+    <a href="courses/fa-beginner.html">FA Beginner</a>
+    <a href="courses/fa-elementary.html">FA Elementary</a>
+    <a href="courses/fa-intermediate.html">FA Intermediate</a>
+    <a href="courses/lsf-foundation.html">LSF Foundation</a>
+    <a href="courses/lsf-beginner.html">LSF Beginner</a>
+    <a href="courses/lsf-elementary.html">LSF Elementary</a>
+    <a href="map.html">Interactive Map of France</a>
+      <a href="capsules.html" class="drawer-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+  </div>
+  <span class="drawer-group-label">About Us</span>
+  <div class="drawer-sub">
+    <a href="about.html">About French Atelier</a>
+    <a href="acadomia.html">The Acadomia Group</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="method.html">Our Method</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="juliane.html">Julien AI Tutor</a>
+  <a href="culture.html">French Culture</a>
+  <a href="pricing.html" class="btn btn-gold" style="margin-top:1.6rem">Enroll Now</a>
+</div>
+
+<!-- ===== HERO (video-bg) ===== -->
+<!-- ===== SECURE CHECKOUT (step 3 of the self-service enrollment) ===== -->
+<section class="fa-pay-page fa-pay-et" id="fa-pay">
+  <div class="fa-pay-atmos" aria-hidden="true"></div>
+  <div class="wrap">
+    <ol class="fa-ck-progress fa-pay-progress" aria-label="Checkout steps"><li class="fa-ck-step is-done"><i><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Register</span></li><li class="fa-ck-step is-done"><i><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Your course</span></li><li class="fa-ck-step is-on" aria-current="step"><i>3</i><span>Secure payment</span></li></ol>
+    <div class="fa-pay-plan" id="payPlan"><span class="k">Your plan</span><strong id="payPlanV">&mdash;</strong><span class="s" id="payPlanS"></span></div>
+    <div class="fa-pay-grid">
+      <div class="fa-pay-main">
+        <div class="fa-pay-card fa-pay-course" id="payCourse">
+          <div class="fa-pay-lines" id="payLines"></div>
+          <div class="fa-pay-tband" id="payBand"></div>
+        </div>
+        <p class="fa-pay-foot" id="payFoot">* Today&rsquo;s payment confirms your seat. The remaining monthly payments are collected automatically on the same payment method.</p>
+        <div class="fa-pay-card fa-pay-paycard" id="payCard">
+          <div class="fa-pay-methods" id="payTabs" role="tablist" aria-label="Payment method">
+            <button class="fa-pay-tab active" type="button" role="tab" aria-selected="true" data-tab="card"><img src="assets/pay/visa.svg" alt="Visa"><img src="assets/pay/mastercard.svg" alt="Mastercard"><img src="assets/pay/amex.svg" alt="American Express"><span class="fa-pay-wallet"><img src="assets/pay/applepay.svg" alt="Apple Pay"></span><span class="fa-pay-wallet"><img src="assets/pay/gpay.svg" alt="Google Pay"></span></button>
+            <button class="fa-pay-tab" type="button" role="tab" aria-selected="false" data-tab="paypal"><img class="pp" src="assets/pay/paypal.svg" alt="PayPal"></button>
+          </div>
+          <div class="fa-pay-body">
+            <div class="fa-pay-lbl" id="payLead">Card, Apple Pay, Google Pay or PayPal</div>
+            <div class="fa-pay-today" id="payToday"></div>
+            <div class="fa-pay-form">
+              <div id="cardBox"><div id="awx-dropin"></div></div>
+              <div id="paypalBox" style="display:none"><div id="paypal-buttons"></div><p class="fa-pay-status" id="paypal-status"></p></div>
+              <div id="fallbackBox" style="display:none"></div>
+              <p class="fa-pay-status" id="payStatus" aria-live="polite"><span class="fa-ck-spin" aria-hidden="true"></span> Preparing your secure payment form&hellip;</p>
+            </div>
+            <div class="fa-pay-secure"><span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>256-bit TLS encryption</span><span>PCI DSS via Airwallex</span><span>eTeacher Group &middot; since 2000</span></div>
+          </div>
+        </div>
+      </div>
+      <aside class="fa-pay-side">
+        <div class="fa-pay-summary" id="paySummary">
+          <button type="button" class="fa-ck-sumbar fa-pay-sumbar" id="paySumToggle" aria-expanded="false" aria-controls="paySumFull">
+            <span class="fa-ck-sumbar-img"><img id="sumThumb" src="assets/gen/hero-paris.webp" alt=""></span>
+            <span class="fa-ck-sumbar-txt"><b id="sumBarName">Your enrollment</b><span id="sumBarHint">Show payment summary</span></span>
+            <span class="fa-ck-sumbar-price"><b id="sumBarPrice">&mdash;</b><span>today</span></span>
+            <span class="fa-ck-sumbar-chev"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div class="fa-pay-sumfull" id="paySumFull">
+            <div class="body">
+              <div class="fa-ck-brandline">The French Atelier by Acadomia</div>
+              <h2 id="sumTitle">&mdash;</h2><div class="fa-ck-aside-sub" id="sumSub"></div>
+              <div id="sumRows" class="fa-pay-fees"></div>
+              <div class="buyer" id="sumBuyer"></div>
+              <div class="fa-pay-policy">
+                <p>Your seat and class time are confirmed by email as soon as your payment is accepted.</p>
+                <p>Cancellation and refund eligibility is determined by the plan selected at enrollment, as communicated during the enrollment process and set out in our <a href="terms.html#sec-3" target="_blank" rel="noopener">Terms &amp; Conditions</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fa-pay-help">
+          <div class="fa-pay-help-tp"><img class="tp-logo" src="assets/logo/trustpilot-logo.svg" alt="Trustpilot"><img class="tp-stars" src="assets/logo/trustpilot-stars.svg" alt="5 out of 5 stars"><span>Excellent</span></div>
+          <p>Questions before you pay? Our admissions team answers in English and French.</p>
+          <a class="fa-pay-help-tel" href="tel:+18882305110">Call +1-888-230-5110</a>
+          <p class="fa-pay-help-fine">Payments are processed by eTeacher Group for The French Atelier by Acadomia.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" style="height:54px;width:auto;margin-bottom:.9rem;display:block" loading="lazy" decoding="async">
+        <p>Culture speaks French. What about you? An exclusive, culturally immersive, certified, live French language program — presented by one of France's leading private education groups.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <a href="courses/fa-foundation.html">FA Foundation</a>
+        <a href="courses/fa-beginner.html">FA Beginner</a>
+        <a href="courses/fa-elementary.html">FA Elementary</a>
+        <a href="courses/fa-intermediate.html">FA Intermediate</a>
+        <a href="courses.html">Let's Speak French</a>
+        <a href="map.html">Map of France</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="method.html">Our Method</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="juliane.html">Julien · AI Tutor</a>
+        <a href="teachers.html">Our Teachers</a>
+        <a href="culture.html">French Culture</a>
+        <a href="capsules.html">Culture Capsules</a>
+        <a href="blog.html">Cultural Journal</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="acadomia.html">Acadomia Group</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>7 rue de la Baume, 75008 Paris, France &nbsp;·&nbsp; +1-888-230-5110 &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="69080d1f001a061b290c3d0c080a010c1b2e1b061c19470a0604">[email&#160;protected]</a></p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61577106456673" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.8.3-1.5 1.5-1.5H18V.2C17.5.1 16.3 0 15 0c-2.7 0-4.5 1.6-4.5 4.6V6H8v3h2.5v9H14V9z"/></svg></a>
+        <a href="https://www.instagram.com/livefrenchatelier" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.youtube.com/@FrenchbyAtelier" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C16.8 4 12 4 12 4s-4.8 0-7.9.2c-.4.1-1.4.1-2.2 1C1.2 5.9 1 7.5 1 7.5S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.8.9 1.9.9 2.4 1 1.7.1 7.7.2 7.7.2s4.8 0 7.9-.2c.4-.1 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.4c0-1.9-.2-3.8-.2-3.8zM9.7 15V9l5.2 3-5.2 3z"/></svg></a>
+      </div>
+    </div>
+    <p style="color:var(--on-dark-faint);font-size:.78rem;text-align:center;margin-top:1.6rem">Copyright ACADOMIA © 2026. All Rights Reserved.</p>
+  </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/fa.js?v=1790665240" defer></script>
+<script src="js/eteacher-leads.js?v=1790665240" defer></script>
+<script src="js/fa-geo.js?v=20261008y"></script>
+<script src="js/fa-checkout-config.js?v=20261008y"></script>
+<script src="js/fa-checkout.js?v=20261008y"></script>
+<script src="js/fa-whatsapp.js?v=20261008y" defer></script>
+<script src="https://checkout.airwallex.com/assets/elements.bundle.min.js"></script>
+<script>
+/* Step 3 — payment. Same sequence as the proven Longevity checkout:
+   staged lead -> createOrder (AddNewECommerceLeadAndOrder) -> fetchDetails
+   (GetECommerceFirstPaymentDetails) -> validate amount == offer -> Airwallex
+   Drop-In (card / Apple Pay / Google Pay) or PayPal -> reportPayment (SetECommercePayment). */
+(function(){
+  'use strict';
+  var FA = window.FA_CHECKOUT, CFG = FA && FA.config;
+  var $ = function(id){ return document.getElementById(id); };
+  var status = function(msg, cls){ var el=$('payStatus'); el.innerHTML = (msg && !cls ? '<span class="fa-ck-spin" aria-hidden="true"></span> ' : '') + (msg ? String(msg).replace(/[<>&]/g, function(c){ return {'<':'&lt;','>':'&gt;','&':'&amp;'}[c]; }) : ''); el.className = 'fa-pay-status' + (cls ? ' ' + cls : ''); };
+  if (!FA) { status('Checkout could not load. Please refresh the page.', 'err'); return; }
+  if (CFG.env === 'staging') { var rb=document.createElement('div'); rb.className='fa-env-ribbon'; document.querySelector('.fa-pay-page').classList.add('has-ribbon'); rb.textContent='Staging · test payments only · no real charge'; document.body.appendChild(rb); }
+
+  var q = new URLSearchParams(location.search);
+  var staged = FA.loadLead();
+  var sel = { product: q.get('product') || (staged && staged.sel.product), level: q.get('level') || (staged && staged.sel.level), classTime: q.get('time') || (staged && staged.sel.classTime) || '', capsules: (q.get('capsules') || (staged && (staged.sel.capsules||[]).join(',')) || '').split(',').filter(Boolean) };
+  var p = FA.product(sel.product);
+  var backHref = sel.product && /capsule|membership/.test(sel.product) ? 'capsules.html' : 'pricing.html';
+
+  /* Order summary */
+  function renderSummary(){
+    if (!p) return;
+    var tp = FA.titleParts(sel), img = FA.productImage(sel), n = p.numberOfPayments, lv = CFG.levels[sel.level] || {};
+    $('sumTitle').textContent = tp.name; $('sumSub').textContent = tp.sub; $('sumBarName').textContent = tp.name; $('sumThumb').src = img;
+    $('sumBarPrice').textContent = FA.fmt2(p.firstPayment);
+    if (p.kind === 'course') { $('payPlanV').innerHTML = 'Pay monthly \u00b7 <span class="amt">' + FA.fmt2(p.firstPayment) + '</span> today'; $('payPlanS').textContent = 'then 4 \u00d7 ' + FA.fmt2(p.monthly) + ' \u00b7 ' + FA.fmt2(p.total) + ' total \u00b7 41% off ' + FA.fmt(p.listTotal); }
+    else { $('payPlanV').innerHTML = 'Pay monthly \u00b7 <span class="amt">' + FA.fmt2(p.monthly) + '</span> \u00d7 ' + n + ' months'; $('payPlanS').textContent = FA.fmt2(p.total) + ' total' + (p.promo ? ' \u00b7 code ' + p.promo.code + ' applied (' + p.promo.pct + '% off)' : ''); }
+    (function(){ var old = document.querySelector('#payPlan .fa-pay-save'); if (old) old.remove(); var d = document.createElement('span'); d.innerHTML = FA.saveChip(p, 'fa-pay-save'); if (d.firstChild) $('payPlan').appendChild(d.firstChild); })();
+    var L;
+    if (p.kind === 'course') L = [['Course', (lv.name || 'French Atelier course') + (lv.cefr ? ' \u00b7 ' + lv.cefr : '') + (lv.route ? ' \u00b7 ' + lv.route : '')], ['Course duration', '20 weeks'], ['Schedule', '20 live lessons, one class a week'], ['Class time', sel.classTime || 'As selected in step 2'], ['Lesson duration', '85 minutes'], ['Location', 'Online \u00b7 live from France \u00b7 group of 10\u201312']];
+    else if (p.kind === 'capsules') { var caps = sel.capsules || []; L = [['Course', p.title + (caps.length ? ' \u00b7 ' + caps.map(function(c){ return CFG.capsules[c].name; }).join(' + ') : '')], ['Duration', '10 weeks per capsule'], ['Schedule', '10 live conferences per capsule, one a week'], ['Start', caps.map(function(c){ return CFG.capsules[c].name + ': ' + CFG.capsules[c].start; }).join(' \u00b7 ') || 'Chosen in step 2'], ['Conference', '1 hour, then 15\u201320 minutes of questions'], ['Location', 'Online \u00b7 live on Zoom \u00b7 no French required']]; }
+    else L = [['Membership', 'Atelier Membership \u00b7 12 months'], ['Language course', lv.name ? lv.name + ' \u00b7 ' + lv.cefr : 'One of our 4 levels'], ['Culture Capsules', 'All 3 packs \u00b7 30 conferences'], ['Benefits', 'The Atelier Benefits hub'], ['Tutor', 'Julien, your 24/7 AI French tutor'], ['Location', 'Online \u00b7 live from France']];
+    $('payLines').innerHTML = L.map(function(r){ return '<div class="ln"><b>' + FA.h(r[0]) + ':</b> <span>' + FA.h(r[1]) + '</span></div>'; }).join('');
+    $('payBand').innerHTML = FA.tuitionBand(p);
+    function row(k, note, v){ return '<div class="fee"><div class="fee-row"><span class="k">' + k + '</span><span class="v">' + v + '</span></div><p class="fee-note">' + note + '</p></div>'; }
+    function tot(k, v){ return '<div class="fee fee-total"><div class="fee-row"><span class="k">' + k + '</span><span class="v">' + v + '</span></div></div>'; }
+    var rows;
+    if (p.kind === 'course') rows = row('First month tuition', 'Charged today to confirm your seat.', '<s>' + FA.fmt2(p.listMonthly) + '</s>' + FA.fmt2(p.firstPayment)) + row('Monthly tuition fee', 'Collected monthly on the same payment method.', '<s>4 \u00d7 ' + FA.fmt2(p.listMonthly) + '</s>4 \u00d7 ' + FA.fmt2(p.monthly)) + tot('Total \u00b7 41% off', '<s>' + FA.fmt(p.listTotal) + '</s>' + FA.fmt2(p.total));
+    else rows = row('First monthly payment', 'Charged today to confirm your seat.', (p.promo ? '<s>' + FA.fmt2(p.baseMonthly) + '</s>' : '') + FA.fmt2(p.firstPayment)) + row('Monthly fee', 'Collected monthly on the same payment method.', (p.promo ? '<s>' + (n - 1) + ' \u00d7 ' + FA.fmt2(p.baseMonthly) + '</s>' : '') + (n - 1) + ' \u00d7 ' + FA.fmt2(p.monthly)) + tot('Total' + (p.promo ? ' \u00b7 ' + p.promo.pct + '% off' : ''), (p.promo ? '<s>' + FA.fmt(p.baseTotal) + '</s>' : '') + FA.fmt2(p.total));
+    $('sumRows').innerHTML = rows + FA.saveChip(p, 'fa-pay-save');
+    $('payToday').innerHTML = '<span class="k">Due today</span><strong>' + FA.fmt2(p.firstPayment) + '</strong>';
+    if (staged) { var l = staged.lead; $('sumBuyer').innerHTML = '<span class="k">Enrolling</span>' + FA.h(l.firstName + ' ' + l.lastName) + '<br>' + FA.h(l.email) + '<br>' + FA.h(l.e164) + ' \u00b7 ' + FA.h((window.FA_GEO.BY_ISO[l.countryIso]||{}).name || l.countryIso) + (l.stateCode ? ', ' + FA.h(l.stateCode) : '') + '<br><a href="#" id="editDetails">Edit details</a>';
+      $('editDetails').addEventListener('click', function(e){ e.preventDefault(); FA.open(sel.product, { level: sel.level, capsules: sel.capsules }); }); }
+  }
+  $('paySumToggle').addEventListener('click', function(){ var s = $('paySummary'), o = !s.classList.contains('is-open'); s.classList.toggle('is-open', o); this.setAttribute('aria-expanded', o ? 'true' : 'false'); $('sumBarHint').textContent = o ? 'Hide payment summary' : 'Show payment summary'; });
+  renderSummary();
+
+  if (!p) {
+    status('');
+    $('payTabs').style.display = 'none'; $('cardBox').style.display = 'none';
+    $('fallbackBox').style.display = ''; $('fallbackBox').className = 'fa-pay-fallback';
+    $('fallbackBox').innerHTML = '<strong>No enrollment in progress.</strong> Start from the offer you would like to join and your secure payment form will load here.<br><br><a class="btn btn-gold" href="' + backHref + '">&larr; Back to the offers</a>';
+    return;
+  }
+  if (!staged || staged.sel.product !== sel.product) {
+    /* Storage blocked or direct link: collect the details right here (steps 1–2 in the modal), then continue in-page. */
+    status('');
+    $('payTabs').style.display = 'none'; $('cardBox').style.display = 'none';
+    $('fallbackBox').style.display = ''; $('fallbackBox').className = 'fa-pay-fallback';
+    $('fallbackBox').innerHTML = '<strong>Almost there.</strong> Enter your details to load your secure payment form.<br><br><button type="button" class="btn btn-gold" id="ckOpenDetails">Enter my details</button>';
+    $('ckOpenDetails').addEventListener('click', function(){ FA.open(sel.product, { level: sel.level, capsules: sel.capsules }); });
+    window.FA_CK_START = function(st){ staged = st; sel = st.sel; renderSummary(); $('fallbackBox').style.display = 'none'; $('payTabs').style.display = ''; $('cardBox').style.display = ''; run(); };
+    FA.open(sel.product, { level: sel.level, capsules: sel.capsules });
+  }
+
+  var ids = null, amount = p.firstPayment, paymentId = null, dropIn = null, paid = false, paypalRendered = false, orderReady = null, resolveOrder = null;
+  orderReady = new Promise(function(res){ resolveOrder = res; });
+
+  function showDone(method){
+    paid = true;
+    try { if (dropIn && dropIn.destroy) dropIn.destroy(); } catch(e){}
+    $('payTabs').style.display = 'none'; $('cardBox').style.display = 'none'; $('paypalBox').style.display = 'none';
+    $('payLead').style.display = 'none'; $('payToday').style.display = 'none'; document.querySelector('.fa-pay-secure').style.display = 'none'; (function(){ var pr = document.querySelector('.fa-pay-progress'); var d = document.createElement('div'); d.innerHTML = FA.progressHtml(4); var n = d.firstChild; n.classList.add('fa-pay-progress', 'is-complete'); pr.parentNode.replaceChild(n, pr); })(); var ph = document.querySelector('.fa-pay-h'); if (ph) ph.style.display = 'none'; var pf = $('payFoot'); if (pf) pf.style.display = 'none'; var hp = document.querySelector('.fa-pay-help p'); if (hp) hp.textContent = 'Questions about your enrollment? Our admissions team answers in English and French.'; var sl = document.querySelector('#payCard .fa-ck-stepline'); if (sl) sl.style.display = 'none'; document.querySelector('.fa-pay-form').classList.add('is-done');
+    status('');
+    $('fallbackBox').style.display = ''; $('fallbackBox').className = 'fa-pay-done';
+    $('fallbackBox').innerHTML = '<div class="seal">' + FA.icon.check + '</div><h2>Bienvenue, ' + FA.h(staged.lead.firstName) + '.</h2><p class="lead">Your enrollment in <strong>' + FA.h(FA.productTitle(sel)) + '</strong> is confirmed.</p><dl class="fa-pay-receipt"><div><dt>Paid today</dt><dd>' + FA.fmt2(amount) + ' USD' + (method ? ' · ' + FA.h(method) : '') + '</dd></div><div><dt>Order</dt><dd>#' + FA.h(ids.orderid) + '</dd></div><div><dt>Receipt to</dt><dd>' + FA.h(staged.lead.email) + '</dd></div></dl><p>An admissions advisor will contact you to confirm your class schedule.</p><a class="fa-ck-submit fa-pay-home" href="index.html"><span>Back to The French Atelier</span>' + FA.icon.arrow + '</a>';
+    FA.clearIds();
+    FA.track('Purchase', { value: amount, currency: 'USD', content_name: FA.productTitle(sel), content_ids: [sel.product], content_type: 'product', order_id: String(ids.orderid), num_items: 1 }, { eventId: 'fa_purchase_' + ids.orderid });
+    try { sessionStorage.removeItem('fa_ck_lead_v1'); } catch(e){}
+  }
+
+  function reserveFallback(reason, friendly){
+    $('payTabs').style.display = 'none'; $('cardBox').style.display = 'none'; $('paypalBox').style.display = 'none';
+    status('');
+    $('fallbackBox').style.display = ''; $('fallbackBox').className = 'fa-pay-fallback';
+    $('fallbackBox').innerHTML = '<strong>Reserving your seat…</strong>';
+    FA.reserveViaLeads(staged, reason).then(function(r){
+      if (r && r.ok) {
+        $('fallbackBox').innerHTML = '<strong>Your seat is reserved, ' + FA.h(staged.lead.firstName) + '.</strong> ' + friendly + ' Nothing has been charged. A French Atelier advisor will confirm your enrollment in <strong>' + FA.h(FA.productTitle(sel)) + '</strong> at <strong>' + FA.fmt2(p.firstPayment) + ' today</strong> (' + p.numberOfPayments + ' payments, ' + FA.fmt2(p.total) + ' total) and send your secure payment link.<br><br><a class="btn btn-gold" href="index.html">Back to The French Atelier</a>';
+        FA.track('Lead', { content_name: FA.productTitle(sel), content_ids: [sel.product], content_type: 'product', value: p.firstPayment, currency: 'USD' }, { suffix: 'reserve_' + sel.product });
+      } else {
+        $('fallbackBox').innerHTML = '<strong>We could not reserve your seat automatically.</strong> Nothing has been charged. Please email <a href="mailto:' + CFG.advisorEmail + '">' + CFG.advisorEmail + '</a> or <a href="contact.html">contact an advisor</a> and we will complete your enrollment by hand.';
+      }
+    });
+  }
+
+  function mountAirwallex(details, v){
+    var awx = window.Airwallex || window.AirwallexElements;
+    if (!awx || !awx.init) throw new Error('AIRWALLEX_SDK_MISSING');
+    awx.init({ env: CFG.env === 'staging' ? 'demo' : 'prod', origin: location.origin, locale: 'en', fonts: [{ src: 'https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2', family: 'Inter', weight: '400' }, { src: 'https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2', family: 'Inter', weight: '600' }] });
+    var methods = ['card','googlepay','applepay'];
+    dropIn = awx.createElement('dropIn', {
+      intent_id: v.intentId, client_secret: v.clientSecret, currency: 'USD', mode: 'payment',
+      country_code: staged.lead.countryIso || 'US',
+      methods: methods, payment_methods: methods, paymentMethods: methods, payment_method_types: methods,
+      applePayRequestOptions: { countryCode: 'CY', buttonType: 'buy', buttonColor: 'black', totalPriceLabel: CFG.brand },
+      googlePayRequestOptions: { countryCode: 'US', merchantInfo: { merchantName: CFG.brand }, buttonType: 'pay', buttonColor: 'black', buttonSizeMode: 'fill', allowedCardNetworks: ['VISA','MASTERCARD','AMEX','DISCOVER'], emailRequired: false, billingAddressRequired: false },
+      showPayButton: true, appearance: (window.FA_CKT ? { mode: 'light', variables: { colorBrand: window.FA_CKT === 'ivory' ? '#2FA4FF' : '#A98D52', colorText: '#1A1E33', colorBackground: '#FFFFFF' }, rules: { '.Input': { backgroundColor: '#FFFFFF', border: '1px solid rgba(26,30,51,.16)', borderRadius: '12px', color: '#1A1E33', fontFamily: 'Inter, sans-serif', fontSize: '16px' }, '.Input:hover': { border: '1px solid rgba(26,30,51,.3)' }, '.Input:active': { border: '1px solid ' + (window.FA_CKT === 'ivory' ? '#2FA4FF' : '#C8A96B'), boxShadow: '0 0 0 4px ' + (window.FA_CKT === 'ivory' ? 'rgba(47,164,255,.18)' : 'rgba(200,169,107,.22)') }, '.Button': { backgroundColor: '#D8BC85', color: '#00001F', height: '56px', borderRadius: '13px', fontFamily: 'Inter, sans-serif', fontSize: '16px', fontWeight: '600' }, '.Button:hover': { backgroundColor: '#E8D3A6' } } } : { mode: 'dark', variables: { colorBrand: '#6FC4FF', colorText: '#F6FAFF', colorBackground: '#0B1634' }, rules: { '.Input': { backgroundColor: 'rgba(8,16,40,.85)', border: '1px solid rgba(111,196,255,.28)', borderRadius: '12px', color: '#F6FAFF', fontFamily: 'Inter, sans-serif', fontSize: '16px' }, '.Input:hover': { border: '1px solid rgba(111,196,255,.5)' }, '.Input:active': { border: '1px solid #6FC4FF', boxShadow: '0 0 0 4px rgba(47,164,255,.18)' }, '.Button': { backgroundColor: '#D8BC85', color: '#00001F', height: '56px', borderRadius: '13px', fontFamily: 'Inter, sans-serif', fontSize: '16px', fontWeight: '600' }, '.Button:hover': { backgroundColor: '#E8D3A6' } } })
+    });
+    if (!dropIn) throw new Error('DROPIN_NULL');
+    dropIn.mount($('awx-dropin'));
+    /* The house mobile stylesheet forces iframe{height:auto!important}; re-apply the SDK's inline height as !important so the form is never clipped. */
+    (function(){ var box = $('awx-dropin'); var fix = function(){ box.querySelectorAll('iframe').forEach(function(f){ var hh = f.style.height; if (hh && f.style.getPropertyPriority('height') !== 'important') f.style.setProperty('height', hh, 'important'); }); }; new MutationObserver(fix).observe(box, { attributes: true, subtree: true, childList: true, attributeFilter: ['style'] }); fix(); })();
+    dropIn.on('ready', function(){ status(CFG.env === 'staging' ? 'Sandbox · test card 4035 5010 0000 0008 · any future date · any CVC' : 'Secure card entry ready · you will be charged ' + FA.fmt2(amount) + ' USD', 'ready'); });
+    dropIn.on('success', function(evt){
+      if (paid) return;
+      status('✓ Payment succeeded. Confirming your enrollment…', 'ok');
+      var intent = evt && evt.detail && evt.detail.intent;
+      FA.reportPayment({ StudentId: String(ids.stid), OrderId: String(ids.orderid), PaymentId: String(paymentId), PaymentMethod: 'CreditCard', AmountCharged: String(amount), ChargeType: 'RegistrationFee', IsApproved: true, TransactionId: (intent && intent.id) || v.intentId })
+        .then(function(r){ if (!r || !r.ok) status('Your payment succeeded, but enrollment confirmation is pending. Do not pay again. Contact ' + CFG.advisorEmail + ' with order #' + ids.orderid + '.', 'warn'); setTimeout(function(){ showDone('card'); }, 700); });
+    });
+    dropIn.on('error', function(evt){ var m = evt && evt.detail && ((evt.detail.error && evt.detail.error.message) || evt.detail.message); status('✗ Payment failed: ' + (m || 'error') + ' — you were not charged.', 'err'); });
+  }
+
+  function renderPayPal(){
+    if (paypalRendered) return; paypalRendered = true;
+    var st = $('paypal-status');
+    if (!window.paypal || !window.paypal.Buttons) { paypalRendered = false; st.textContent = 'Loading PayPal…'; setTimeout(renderPayPal, 600); return; }
+    st.textContent = '';
+    var started = false;
+    window.paypal.Buttons({
+      style: { layout: 'vertical', height: 55, shape: 'rect', color: 'white', label: 'paypal' },
+      createOrder: function(data, actions){
+        if (started) return Promise.reject(new Error('PAYMENT_ALREADY_SUBMITTED'));
+        if (CFG.env === 'staging') { st.textContent = 'Staging: PayPal capture is disabled in the test environment.'; return Promise.reject(new Error('STAGING_PAYPAL_DISABLED')); }
+        return orderReady.then(function(){ return actions.order.create({ purchase_units: [{ amount: { value: Number(amount).toFixed(2), currency_code: 'USD' }, description: CFG.brand + ' — ' + FA.productTitle(sel) + ' — order ' + ids.orderid }] }); });
+      },
+      onApprove: function(data, actions){
+        if (started) return Promise.resolve(); started = true;
+        st.textContent = 'Confirming your PayPal payment…';
+        return actions.order.capture().then(function(details){
+          var cap = (details.purchase_units && details.purchase_units[0] && details.purchase_units[0].payments && details.purchase_units[0].payments.captures && details.purchase_units[0].payments.captures[0]) || {};
+          var ok = details.status === 'COMPLETED' && cap.status === 'COMPLETED' && (cap.amount||{}).currency_code === 'USD' && Math.abs(Number((cap.amount||{}).value) - amount) < 0.005;
+          if (!ok) { st.textContent = 'We could not verify the PayPal payment result for order #' + ids.orderid + '. Do not pay again. Contact ' + CFG.advisorEmail + '.'; return; }
+          try { if (dropIn && dropIn.destroy) dropIn.destroy(); } catch(e){}
+          return FA.reportPayment({ StudentId: String(ids.stid), OrderId: String(ids.orderid), PaymentId: String(paymentId), PaymentMethod: 'PayPal', AmountCharged: String(amount), ChargeType: 'RegistrationFee', IsApproved: true, TransactionId: String(cap.id || details.id || ''), PayPalPayerId: String((details.payer && details.payer.payer_id) || ''), PayPalOrderId: String(details.id || ''), PayPalPaymentId: String(cap.id || '') })
+            .then(function(r){ if (!r || !r.ok) st.textContent = 'Your PayPal payment succeeded, but enrollment confirmation is pending. Do not pay again. Contact ' + CFG.advisorEmail + ' with order #' + ids.orderid + '.'; setTimeout(function(){ showDone('PayPal'); }, 700); });
+        }).catch(function(){ st.textContent = 'We could not confirm the PayPal payment status. Do not pay again. Contact ' + CFG.advisorEmail + '.'; });
+      },
+      onError: function(){ if (!started) st.textContent = 'PayPal could not start. Please try again or pay by card.'; }
+    }).render('#paypal-buttons');
+  }
+  document.querySelectorAll('.fa-pay-tab').forEach(function(t){ t.addEventListener('click', function(){
+    document.querySelectorAll('.fa-pay-tab').forEach(function(x){ x.classList.toggle('active', x === t); x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+    var pp = t.getAttribute('data-tab') === 'paypal';
+    $('cardBox').style.display = pp ? 'none' : ''; $('paypalBox').style.display = pp ? '' : 'none'; $('payStatus').style.display = pp ? 'none' : '';
+    if (pp) renderPayPal();
+  }); });
+  (function loadPayPal(){ if (!CFG.paypalClientId) return; var s = document.createElement('script'); s.async = true; s.src = 'https://www.paypal.com/sdk/js?client-id=' + CFG.paypalClientId + '&currency=USD&disable-funding=credit,card'; document.head.appendChild(s); })();
+
+  /* ---- run ---- */
+  function run(){
+  if (!FA.crmCourseFor(sel.product)) {
+    reserveFallback('no CRM course id for ' + sel.product, 'Online card payment for this offer opens as soon as the course is published in our enrollment system.');
+    return;
+  }
+  status('Reserving your seat…');
+  FA.createOrder(staged).then(function(_ids){
+    ids = _ids; status('Loading your secure payment form…');
+    return FA.fetchDetails(ids);
+  }).then(function(details){
+    if (!details) throw new Error('DETAILS_FAILED');
+    var v = FA.validateDetails(details, p);
+    if (!v.ok) { var e = new Error(v.reason); e.v = v; throw e; }
+    amount = v.amount; paymentId = v.paymentId; resolveOrder(true);
+    mountAirwallex(details, v);
+  }).catch(function(e){
+    var m = e && e.message || '';
+    if (m === 'ENV_NOT_CONFIGURED') return reserveFallback('production CRM credentials not configured', 'Our online card payment is being switched on.');
+    if (m === 'PAYMENT_PLAN_MISMATCH' && CFG.env === 'staging' && e.v && e.v.intentId) {
+      /* Staging only: the staging catalog prices the test order; mount the sandbox form anyway so the full card / Apple Pay / Google Pay flow can be exercised with test money. */
+      amount = e.v.amount; paymentId = e.v.paymentId; resolveOrder(true);
+      try { mountAirwallex(null, e.v); } catch (err) { return status('The secure card form could not load (' + FA.h(err.message) + ').', 'err'); }
+      (function(){ var nb = $('paySandboxNote') || (function(){ var d = document.createElement('p'); d.id = 'paySandboxNote'; d.className = 'fa-pay-sbnote'; $('payLead').parentNode.insertBefore(d, $('payToday')); return d; })(); nb.innerHTML = '<span class="fa-pay-sandbox">Sandbox</span> The staging test order charges the staging catalog amount (' + FA.fmt2(e.v.amount) + '). Live checkout charges ' + FA.fmt2(p.firstPayment) + ' once the French Atelier courses are published in the enrollment system.'; })();
+      return;
+    }
+    if (m === 'PAYMENT_PLAN_MISMATCH' || m === 'CURRENCY_NOT_USD') { FA.clearIds(); return reserveFallback('CRM price plan differs from offer (' + m + (e.v ? ': CRM ' + e.v.amount + ' x ' + e.v.n : '') + ')', 'Our enrollment system still shows the standard price plan for this course, so we did not charge your card.'); }
+    if (m === 'LEAD_CREATE_FAILED' || m === 'DETAILS_FAILED') return reserveFallback(m, 'Our enrollment system did not respond in time.');
+    if (m === 'AIRWALLEX_SDK_MISSING' || m === 'DROPIN_NULL') return status('The secure card form could not load. Please refresh, or pay with PayPal.', 'err');
+    status('Something went wrong (' + FA.h(m || 'error') + '). Nothing has been charged. Please refresh or contact ' + CFG.advisorEmail + '.', 'err');
+  });
+  }
+  if (staged && staged.sel.product === sel.product) run();
+})();
+</script>
+</body>
+</html>

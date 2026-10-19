@@ -1,0 +1,26 @@
+%IF !empty($FIRSTNAME)%Bonjour %FIRSTNAME%,%ELSE%Bonjour,%/IF%
+
+This is our last checkout reminder for all three capsules. If the programme is right for you, return to the page, review your selection and complete enrollment.
+
+If you have a payment question, reply before trying again. We would rather help you check than have you pay twice.
+
+All three capsules
+30 live conferences
+$567 total = 3 monthly payments of $189
+With CAPSULE20: $453.60 total = 3 monthly payments of $151.20. Prices in USD.
+
+Live from France, in English. No prior French needed. Each capsule has 10 weekly, 60-minute Zoom conferences, with Q&A after each session.
+
+Complete My Capsule Enrollment
+https://fa-capsules-v3.pplx.app/capsules.html?utm_source=activecampaign&utm_medium=email&utm_campaign=fa_capsules_a3_three-capsules&utm_content=cc-3-a3-3
+
+À bientôt,
+The French Atelier team
+
+The French Atelier by Acadomia
+7 rue de la Baume, 75008 Paris, France
+
+Sent to %EMAIL%. You began exploring Culture Capsules with The French Atelier.
+
+Unsubscribe: %UNSUBSCRIBELINK%
+Update preferences: %UPDATELINK%

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>About French Atelier — Master the Art of French | The French Atelier by Acadomia</title>
+<meta name="description" content="French Atelier by Acadomia is an exclusive, culturally immersive, certified, live French language program — presented by one of France's leading private education groups.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/fa.css?v=1790665240">
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+<style>
+.about-hero{min-height:72vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.pledge-four{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--gold-line-soft)}
+.pledge-four .pf-item{padding:2.8rem 1.6rem;text-align:center;border-right:1px solid var(--gold-line-soft);position:relative}
+.pledge-four .pf-item:last-child{border-right:none}
+.pf-num{font-family:var(--serif);font-size:2.8rem;color:var(--gold-deep);line-height:1;display:block}
+.pf-label{font-size:.73rem;letter-spacing:.18em;text-transform:uppercase;margin-top:.6rem;color:var(--on-light-soft);display:block}
+.pillar-grid-about{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.pillar-about{position:relative;aspect-ratio:4/5;overflow:hidden;display:flex;align-items:flex-end;color:var(--on-dark);border:1px solid var(--gold-line-soft)}
+.pillar-about img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.pillar-about::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,14,43,.12) 0%,rgba(8,14,43,.30) 30%,rgba(8,14,43,.78) 58%,rgba(8,14,43,.94) 100%)}
+.pillar-about:hover img{transform:scale(1.06)}
+.pa-body{position:relative;z-index:2;padding:2rem}
+.pa-body h3{font-size:1.65rem;color:var(--on-dark)}
+.pa-body p{font-size:.9rem;color:var(--on-dark-soft);margin:.4rem 0 0}
+.pa-body ul{margin:.8rem 0 0;padding-left:1.1rem}
+.pa-body ul li{font-size:.88rem;color:var(--on-dark-soft);margin-bottom:.3rem}
+.academy-banner{background:var(--navy-deep);padding:2.2rem 2rem;text-align:center;border:1px solid var(--gold-line);position:relative}
+.academy-banner::before,.academy-banner::after{content:"";font-size:.55rem;color:var(--gold-deep);letter-spacing:.3em;display:block;margin-bottom:.6rem}
+.academy-banner-text{font-family:var(--serif);font-size:clamp(1.2rem,2.5vw,1.9rem);color:var(--gold-soft);letter-spacing:.07em;font-weight:600;font-style:italic}
+/* ===== Leadership — editorial (apple.com/leadership feel) ===== */
+.lead-head{max-width:62ch}
+.lead-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem;margin-top:3.2rem}
+.lead-card{display:flex;flex-direction:column}
+.lead-portrait{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--gold-line-soft);background:var(--navy-soft)}
+.lead-portrait img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.lead-card:hover .lead-portrait img{transform:scale(1.05)}
+.lead-name{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--on-dark);margin-top:1.3rem;line-height:1.15}
+.lead-role{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-soft);margin-top:.5rem;font-weight:600}
+.lead-bio{font-size:.95rem;line-height:1.65;color:var(--on-dark-soft);margin-top:.9rem;max-width:38ch}
+/* ===== Locations ===== */
+.loc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3rem}
+.loc-card{position:relative;aspect-ratio:3/4;overflow:hidden;border:1px solid var(--gold-line-soft);display:flex;align-items:flex-end;color:var(--on-dark)}
+.loc-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.loc-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,14,43,.08) 0%,rgba(8,14,43,.30) 45%,rgba(8,14,43,.86) 100%)}
+.loc-card:hover img{transform:scale(1.06)}
+.loc-body{position:relative;z-index:2;padding:1.8rem}
+.loc-region{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft);font-weight:600}
+.loc-city{font-family:var(--serif);font-size:1.7rem;font-weight:600;margin-top:.35rem;line-height:1.05}
+.loc-note{font-size:.86rem;color:var(--on-dark-soft);margin-top:.5rem;max-width:30ch}
+/* ===== Awards strip ===== */
+.award-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem;max-width:960px;margin-left:auto;margin-right:auto}
+.award-card{border:1px solid var(--gold-line-soft);padding:2.2rem 1.6rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:.7rem;transition:border-color .3s,transform .3s}
+.award-card:hover{border-color:var(--gold-line);transform:translateY(-3px)}
+.award-icon{width:40px;height:40px;color:var(--gold-deep)}
+.award-year{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--gold-deep)}
+.award-title{font-family:var(--serif);font-size:1.2rem;font-weight:600;line-height:1.2;color:var(--on-light)}
+.award-org{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-light-soft)}
+@media(max-width:980px){.pledge-four{grid-template-columns:repeat(2,1fr)}.pledge-four .pf-item:nth-child(2){border-right:none}.pillar-grid-about{grid-template-columns:repeat(2,1fr)}.lead-grid{grid-template-columns:1fr 1fr}.loc-grid{grid-template-columns:1fr 1fr}.award-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.pledge-four{grid-template-columns:1fr}.pledge-four .pf-item{border-right:none;border-bottom:1px solid var(--gold-line-soft)}.pillar-grid-about{grid-template-columns:1fr}.lead-grid{grid-template-columns:1fr}.loc-grid{grid-template-columns:1fr}.award-grid{grid-template-columns:1fr}}
+</style>
+<link rel="stylesheet" href="css/mobile-fix.css?v=1790665240"><link rel="stylesheet" href="css/homepage-mobile-polish.css?v=1790665240">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="css/house-style.css?v=1790665240">
+<link rel="stylesheet" href="css/enroll-modal.css?v=1790665240">
+</head>
+<body id="fa">
+
+<!-- ============================================================
+     FRENCH ATELIER — BESPOKE SVG ICON SPRITE  (Agent 5)
+     Paste ONCE near the top of <body> on any page.
+     Use anywhere with:  <svg class="fa-icon" style="font-size:24px"><use href="#i-NAME"/></svg>
+     Icons use currentColor stroke. Stroke width set via .fa-icon in fa.css.
+     Available ids: i-arrow, i-arrow-right, i-chevron-down, i-close, i-menu,
+     i-check, i-calendar, i-clock, i-chat, i-play, i-globe, i-certificate,
+     i-sparkle, i-user, i-mail, i-phone, i-pin, i-facebook, i-instagram, i-youtube
+     ============================================================ -->
+<svg class="fa-icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 9h16M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 6 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-6-3.5-9S9.5 5.5 12 3z"/></symbol>
+    <symbol id="i-certificate" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 21l4-2 4 2-1-7.5"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h2.5V5H14a3.5 3.5 0 0 0-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V8.5A.5.5 0 0 1 14 8z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.7" cy="7.3" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M11 9.5l4 2.5-4 2.5z" fill="currentColor" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-logo" href="index.html">
+      <img class="nav-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" decoding="async" fetchpriority="high" decoding="async">
+    </a>
+    <nav class="nav-menu" aria-label="Primary">
+      <div class="nav-item">
+        <a class="nav-link" href="courses.html">Courses <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown nav-dropdown-wide">
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">French Atelier &middot; Structured &middot; A0&rarr;A2.2</span>
+            <a href="courses/fa-foundation.html">FA Foundation <em>A0&rarr;A1.1</em></a>
+            <a href="courses/fa-beginner.html">FA Beginner <em>A1.1&rarr;A1.2</em></a>
+            <a href="courses/fa-elementary.html">FA Elementary <em>A1.2&rarr;A2.1</em></a>
+            <a href="courses/fa-intermediate.html">FA Intermediate <em>A2.1&rarr;A2.2</em></a>
+            <a href="capsules.html" class="nav-dd-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+          </div>
+          <div class="nav-dd-col">
+            <span class="nav-dd-head">Let&rsquo;s Speak French &middot; Spoken &middot; Conversation</span>
+            <a href="courses/lsf-foundation.html">LSF Foundation <em>Spoken</em></a>
+            <a href="courses/lsf-beginner.html">LSF Beginner <em>Spoken</em></a>
+            <a href="courses/lsf-elementary.html">LSF Elementary <em>Spoken</em></a>
+
+            <span class="nav-dd-divide"></span>
+            <a href="courses.html">All Courses</a>
+            <a href="map.html">Interactive Map of France</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="method.html">Our Method</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="juliane.html">Julien AI Tutor</a></div>
+      
+      <div class="nav-item"><a class="nav-link" href="culture.html">French Culture</a></div>
+      <div class="nav-item">
+        <a class="nav-link active" href="about.html">About Us <svg class="nav-caret" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg></a>
+        <div class="nav-dropdown">
+          <a href="about.html">About French Atelier</a>
+          <a href="acadomia.html">The Acadomia Group</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      
+      <a class="btn btn-gold nav-cta" href="pricing.html">Enroll Now</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-drawer" aria-hidden="true">
+  <button class="nav-drawer-close" aria-label="Close menu">&times;</button>
+  <span class="drawer-group-label">Courses</span>
+  <div class="drawer-sub">
+    <a href="courses.html">All Courses</a>
+    <a href="courses/fa-foundation.html">FA Foundation</a>
+    <a href="courses/fa-beginner.html">FA Beginner</a>
+    <a href="courses/fa-elementary.html">FA Elementary</a>
+    <a href="courses/fa-intermediate.html">FA Intermediate</a>
+    <a href="courses/lsf-foundation.html">LSF Foundation</a>
+    <a href="courses/lsf-beginner.html">LSF Beginner</a>
+    <a href="courses/lsf-elementary.html">LSF Elementary</a>
+    <a href="map.html">Interactive Map of France</a>
+      <a href="capsules.html" class="drawer-comingsoon">Culture Capsules <span class="cs-tag">Now Enrolling</span></a>
+  </div>
+  <span class="drawer-group-label">About Us</span>
+  <div class="drawer-sub">
+    <a href="about.html">About French Atelier</a>
+    <a href="acadomia.html">The Acadomia Group</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="method.html">Our Method</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="juliane.html">Julien AI Tutor</a>
+  <a href="culture.html">French Culture</a>
+  <a href="pricing.html" class="btn btn-gold" style="margin-top:1.6rem">Enroll Now</a>
+</div>
+
+<!-- ===== HERO (video-bg) ===== -->
+<section class="page-hero page-hero--premium about-hero">
+  <div class="video-bg">
+    <video poster="assets/video/paris-eiffel-poster.jpg" loop muted autoplay playsinline preload="metadata">
+      <source src="assets/video/paris-eiffel.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap hero-content">
+    <p class="eyebrow eyebrow-line reveal" style="color:var(--gold-soft)">About The French Atelier</p>
+    <h1 class="display-xl reveal reveal-d1">Master the <span class="gold-ital">Art</span><br>of French</h1>
+    <p class="hero-sub reveal reveal-d2" style="max-width:52ch">An exclusive, culturally immersive, certified, live French-language program — delivered by ACADOMIA, one of France's leading private education groups.</p>
+  </div>
+</section>
+
+<!-- ===== ACADEMY BANNER ===== -->
+<section class="section-pad-sm bg-navy-deep on-dark">
+  <div class="wrap reveal">
+    <div class="academy-banner">
+      <p class="academy-banner-text">PRESENTED BY ONE OF FRANCE'S LEADING PRIVATE EDUCATION GROUPS (ACADOMIA)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MANIFESTO ===== -->
+<section class="section-pad bg-ivory">
+  <div class="wrap-narrow" style="text-align:center">
+    <p class="eyebrow eyebrow-line reveal" style="justify-content:center">Our Mission</p>
+    <h2 class="display-md reveal reveal-d1" style="margin:1.4rem 0">Why The French Atelier <span class="gold-ital">exists.</span></h2>
+    <div class="diamond-rule reveal reveal-d2" style="margin:1.6rem auto"><span class="d"></span></div>
+    <p class="lede reveal reveal-d2">Most adult French programs teach textbook grammar, not living language. The French Atelier was built by ACADOMIA, France's leading private learning network, to give serious adult learners what no one else offers: live native teachers, real French culture, and a method that produces actual fluency — not classroom French.</p>
+  </div>
+</section>
+
+<!-- ===== TAGLINE PULLQUOTE ===== -->
+<section class="section-pad-sm bg-navy on-dark">
+  <div class="wrap-narrow" style="text-align:center">
+    <blockquote class="pullquote reveal">"Culture speaks French. <span class="gold-ital">What about you?</span>"</blockquote>
+    <p class="muted reveal reveal-d1" style="margin-top:1rem;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase">The French Atelier · Mission Statement</p>
+  </div>
+</section>
+
+<!-- ===== THE FOUR PLEDGES ===== -->
+<section class="section-pad bg-paper">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:3rem">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center">Our Promise</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin-top:1rem">Four <span class="gold-ital">pledges</span> we keep — every class</h2>
+    </div>
+    <div class="pledge-four reveal reveal-d1">
+      <div class="pf-item">
+        <span class="pf-num">100%</span>
+        <span class="pf-label">Certified</span>
+        <p style="font-size:.9rem;margin-top:.8rem;color:var(--on-light-soft)">Every teacher holds a French university degree in language pedagogy.</p>
+      </div>
+      <div class="pf-item">
+        <span class="pf-num">100%</span>
+        <span class="pf-label">Live</span>
+        <p style="font-size:.9rem;margin-top:.8rem;color:var(--on-light-soft)">No pre-recorded videos. Every class is a real, two-way conversation.</p>
+      </div>
+      <div class="pf-item">
+        <span class="pf-num">100%</span>
+        <span class="pf-label">Cultural</span>
+        <p style="font-size:.9rem;margin-top:.8rem;color:var(--on-light-soft)">Each lesson begins in a real place: a café, museum, market, or street.</p>
+      </div>
+      <div class="pf-item">
+        <span class="pf-num">100%</span>
+        <span class="pf-label">French Native</span>
+        <p style="font-size:.9rem;margin-top:.8rem;color:var(--on-light-soft)">All teachers are born in France, raised in France, living in France.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SPLIT — PROGRAM DETAIL ===== -->
+<section class="section-pad bg-cream">
+  <div class="wrap split split-wide">
+    <div class="reveal">
+      <p class="eyebrow eyebrow-line">The Program</p>
+      <h2 class="display-sm" style="margin:1.2rem 0">A <span class="gold-ital">certified</span> live course,<br>unlike anything else</h2>
+      <p class="lede">The French Atelier runs in small live Zoom groups of 10 to 12 learners per class. A certified native teacher leads, supported by a custom-built curriculum, a structured 6-level path through the Common European Framework (A1 to C2), and the freedom that comes from learning by speaking — not from filling worksheets.</p>
+      <div class="gold-rule"></div>
+      <p class="muted">Complete our series of lessons and earn a CEFR-aligned A1 or A2 certificate, issued by Acadomia — France's most trusted name in personalized education. All classes are recorded and available on-demand inside your learning platform, forever.</p>
+      <a href="how-it-works.html" class="btn btn-outline" style="margin-top:1.4rem">How It Works</a>
+    </div>
+    <div class="reveal reveal-d1">
+      <img src="assets/gen/culture-travel.webp" alt="Learning French through the cultural life of France" style="width:100%;border:1px solid var(--gold-line-soft)" loading="lazy" decoding="async">
+      <p class="img-caption">From the markets of Lyon to the cliffs of Normandy — French Atelier brings France to you, live.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO BAND — Live from France ===== -->
+<section class="video-band">
+  <div class="video-bg">
+    <video poster="assets/video/paris-sunset-street-poster.jpg" loop muted autoplay playsinline preload="metadata">
+      <source src="assets/video/paris-sunset-street.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap"><div class="vb-inner reveal">
+    <p class="eyebrow eyebrow-line">Live from France</p>
+    <h2 class="display-md">Every class begins in a<br><span class="gold-ital">real place</span> in France</h2>
+    <p class="lede">Our teachers don't broadcast from studios — they teach from their own cities, surrounded by the cultures, accents, and flavors of where they actually live. The Golden Hour in Paris. Sunday markets in Lille. The language as it is truly spoken.</p>
+    <a href="how-it-works.html" class="btn btn-outline" style="margin-top:1.2rem">How It Works</a>
+  </div></div>
+</section>
+
+<!-- ===== SIX CULTURAL PILLARS ===== -->
+<section class="section-pad bg-paper">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:3.2rem">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center">The Six Cultural Pillars</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin-top:1rem">Six worlds through which we teach <span class="gold-ital">the French language.</span></h2>
+      <p class="lede reveal reveal-d2 lede-c" style="max-width:58ch;margin:1.2rem auto 0">The French Atelier curriculum is built around six great pillars of French cultural life. Together, they constitute an education not just in language — but in a way of being in the world.</p>
+    </div>
+    <div class="pillar-grid-about">
+      <div class="pillar-about reveal">
+        <img src="assets/video/pillar-art-poster.jpg" alt="Art and architecture of France" loading="lazy" decoding="async">
+        <div class="pa-body">
+          <h3>Art &amp; Architecture</h3>
+          <p>From the Louvre's vaulted halls to the ateliers of Montmartre.</p>
+          <ul>
+            <li>The vocabulary of French museums</li>
+            <li>Impressionism and its cultural language</li>
+            <li>Haussmann's Paris and urban beauty</li>
+            <li>Cathedral French — Chartres, Reims, Notre-Dame</li>
+            <li>Contemporary French design and savoir-faire</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pillar-about reveal reveal-d1">
+        <img src="assets/video/wine-tasting-poster.jpg" alt="Gastronomy and wine culture" loading="lazy" decoding="async">
+        <div class="pa-body">
+          <h3>Gastronomy &amp; Wine</h3>
+          <p>The language of the market, the cellar, the table.</p>
+          <ul>
+            <li>The rituals of the French meal</li>
+            <li>Regional produce and their expressions</li>
+            <li>Wine vocabulary from terroir to tasting</li>
+            <li>The boulangerie, the fromagerie, the marché</li>
+            <li>Restaurant French in practice</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pillar-about reveal reveal-d2">
+        <img src="assets/video/pillar-travel-poster.jpg" alt="Travel and French landmarks" loading="lazy" decoding="async">
+        <div class="pa-body">
+          <h3>Travel &amp; Landmarks</h3>
+          <p>Speak your way across France, region by region.</p>
+          <ul>
+            <li>Navigating French cities with confidence</li>
+            <li>Regional accents and local dialects</li>
+            <li>The vocabulary of French transport</li>
+            <li>Iconic landmarks and their cultural context</li>
+            <li>Travel French: hotels, stations, countryside</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pillar-about reveal">
+        <img src="assets/video/pillar-fashion-poster.jpg" alt="French fashion and cinema" loading="lazy" decoding="async">
+        <div class="pa-body">
+          <h3>Fashion &amp; Film</h3>
+          <p>The codes of elegance, on screen and on the street.</p>
+          <ul>
+            <li>The language of the French fashion house</li>
+            <li>Nouvelle Vague and cinematic French</li>
+            <li>Icons of French style and their lexicon</li>
+            <li>The Cannes Film Festival in French</li>
+            <li>Everyday Parisian elegance and its idiom</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pillar-about reveal reveal-d1">
+        <img src="assets/video/pillar-music-poster.jpg" alt="French music and poetry" loading="lazy" decoding="async">
+        <div class="pa-body">
+          <h3>Music &amp; Poetry</h3>
+          <p>From the chanson to the verse that shaped a nation.</p>
+          <ul>
+            <li>Édith Piaf, Brel, Barbara — the chanson tradition</li>
+            <li>French poetry and its natural rhythms</li>
+            <li>Contemporary French music and rap</li>
+            <li>Lyrics as language instruction</li>
+            <li>Opera, classical music, and French expression</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pillar-about reveal reveal-d2">
+        <img src="assets/video/pillar-tradition-poster.jpg" alt="French tradition and history" loading="lazy" decoding="async">
+        <div class="pa-body">
+          <h3>Tradition &amp; History</h3>
+          <p>The rituals and stories behind every French word.</p>
+          <ul>
+            <li>Bastille Day and the language of the Republic</li>
+            <li>French holidays, ceremonies, and their vocabulary</li>
+            <li>The French Revolution and its living legacy</li>
+            <li>Family life and generational transmission</li>
+            <li>The sacred and the secular in French culture</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GASTRONOMY VIDEO FRAMES ===== -->
+<section class="section-pad bg-ivory">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:2.8rem">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center">Culture in Motion</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin-top:1rem">French life, <span class="gold-ital">as it's lived</span></h2>
+      <p class="lede reveal reveal-d2 lede-c" style="max-width:58ch;margin:1.2rem auto 0">Not as a museum. Not as a stereotype. As it happens — every day — in homes, kitchens, salons, and streets across France.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.6rem">
+      <figure class="video-frame reveal">
+        <video poster="assets/video/pastry-poster.jpg" loop muted autoplay playsinline preload="metadata">
+          <source src="assets/video/pastry.mp4" type="video/mp4">
+        </video>
+        <figcaption>Gastronomy &amp; Wine — the language of the French table, learned in context</figcaption>
+      </figure>
+      <figure class="video-frame reveal reveal-d1">
+        <video poster="assets/video/vineyard-poster.jpg" loop muted autoplay playsinline preload="metadata">
+          <source src="assets/video/vineyard.mp4" type="video/mp4">
+        </video>
+        <figcaption>Tradition &amp; Terroir — the rituals and stories behind every French word</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACADOMIA TRUST STRIP ===== -->
+<section class="section-pad bg-navy on-dark">
+  <div class="wrap split split-wide">
+    <div class="reveal">
+      <p class="eyebrow eyebrow-line">Our Foundation</p>
+      <h2 class="display-md" style="margin:1.4rem 0">Backed by <span class="gold-ital">35 years</span> of French educational excellence</h2>
+      <p class="lede">The French Atelier is powered by ACADOMIA — one of France's leading private education groups. Founded in 1989 and headquartered in the heart of Paris, ACADOMIA's pedagogical authority is the bedrock of every French Atelier course.</p>
+      <div class="gold-rule"></div>
+      <a href="acadomia.html" class="btn btn-outline" style="margin-top:1.4rem">The Acadomia Group</a>
+    </div>
+    <div class="reveal reveal-d1" style="display:flex;flex-direction:column;gap:1.6rem">
+      <div class="stat" style="padding:2rem;border:1px solid var(--gold-line);text-align:center">
+        <div class="numeral" style="font-size:3.4rem">1989</div>
+        <p class="muted" style="margin-top:.4rem;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase">Year Founded</p>
+      </div>
+      <div class="stat" style="padding:2rem;border:1px solid var(--gold-line);text-align:center">
+        <div class="numeral" style="font-size:3.4rem">150,000+</div>
+        <p class="muted" style="margin-top:.4rem;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase">Students</p>
+      </div>
+      <div class="stat" style="padding:2rem;border:1px solid var(--gold-line);text-align:center">
+        <div class="numeral" style="font-size:3.4rem">2.5M</div>
+        <p class="muted" style="margin-top:.4rem;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase">Hours Taught Every Year</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEADERSHIP ===== -->
+<section class="section-pad bg-ivory">
+  <div class="wrap">
+    <div class="lead-head">
+      <p class="eyebrow eyebrow-line reveal">Leadership &amp; Partnership</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin:1rem 0 1.1rem">The minds behind<br>the <span class="gold-ital">Atelier</span></h2>
+      <p class="lede reveal reveal-d2">The French Atelier is built on a partnership with ACADOMIA — one of France's leading private education groups. Our academic direction unites Acadomia's pedagogical authority with native teachers who live and work across France.</p>
+    </div>
+    <div class="lead-grid">
+      <div class="lead-card reveal">
+        <div class="lead-portrait"><img src="assets/teachers/philippe-coleon.jpg" alt="Philippe Col&eacute;on, CEO of Acadomia" loading="lazy" decoding="async"></div>
+        <h3 class="lead-name on-dark" style="color:var(--on-light)">Philippe Col&eacute;on</h3>
+        <p class="lead-role" style="color:var(--gold-deep)">CEO, Acadomia</p>
+        <p class="lead-bio" style="color:var(--on-light-soft)">Leads the Acadomia group, whose pedagogical authority is the foundation behind every French Atelier course.</p>
+      </div>
+      <div class="lead-card reveal reveal-d1">
+        <div class="lead-portrait"><img src="assets/teachers/philippe.jpg" alt="Academic Director, The French Atelier" loading="lazy" decoding="async"></div>
+        <h3 class="lead-name on-dark" style="color:var(--on-light)">Philippe Laurent</h3>
+        <p class="lead-role" style="color:var(--gold-deep)">Academic Director</p>
+        <p class="lead-bio" style="color:var(--on-light-soft)">Oversees the CEFR-aligned curriculum and the standards every certified teacher upholds in each live class.</p>
+      </div>
+      <div class="lead-card reveal reveal-d2">
+        <div class="lead-portrait"><img src="assets/teachers/charline.jpg" alt="Head of Teachers, The French Atelier" loading="lazy" decoding="async"></div>
+        <h3 class="lead-name" style="color:var(--on-light)">Charline Georges</h3>
+        <p class="lead-role" style="color:var(--gold-deep)">Head of Teachers</p>
+        <p class="lead-bio" style="color:var(--on-light-soft)">Shapes the six cultural pillars into living lessons, ensuring language is always taught in real cultural context.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem" class="reveal">
+      <a href="acadomia.html" class="btn btn-outline">Discover The Acadomia Group</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATIONS ===== -->
+<section class="section-pad bg-navy on-dark">
+  <div class="wrap">
+    <div style="max-width:62ch">
+      <p class="eyebrow eyebrow-line reveal">Across France</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin:1rem 0 1.1rem">Taught from the<br>regions we <span class="gold-ital">love</span></h2>
+      <p class="lede reveal reveal-d2">Our teachers don't broadcast from studios. They teach from the cities where they live — from the Loire to the Mediterranean — bringing the real accents and rhythms of each region into every class.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card reveal">
+        <img src="assets/gen/region-loire.webp" alt="The Loire Valley region of France" loading="lazy" decoding="async">
+        <div class="loc-body">
+          <p class="loc-region">Centre-Val de Loire</p>
+          <h3 class="loc-city">The Loire</h3>
+          <p class="loc-note">Châteaux country — the cradle of classical French.</p>
+        </div>
+      </div>
+      <div class="loc-card reveal reveal-d1">
+        <img src="assets/gen/region-marseille.webp" alt="Marseille and the Mediterranean coast" loading="lazy" decoding="async">
+        <div class="loc-body">
+          <p class="loc-region">Provence-Alpes-Côte d'Azur</p>
+          <h3 class="loc-city">Marseille</h3>
+          <p class="loc-note">The sun-warmed cadence of the Mediterranean south.</p>
+        </div>
+      </div>
+      <div class="loc-card reveal reveal-d2">
+        <img src="assets/gen/region-normandy.webp" alt="The coast of Normandy" loading="lazy" decoding="async">
+        <div class="loc-body">
+          <p class="loc-region">Normandie</p>
+          <h3 class="loc-city">Normandy</h3>
+          <p class="loc-note">Cliffs, cider, and the measured speech of the north.</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem" class="reveal">
+      <a href="map.html" class="btn btn-outline">Explore the Interactive Map of France</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AWARDS &amp; RECOGNITION ===== -->
+<section class="section-pad bg-paper">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:.4rem">
+      <p class="eyebrow eyebrow-line reveal" style="justify-content:center">Awards &amp; Recognition</p>
+      <h2 class="display-sm reveal reveal-d1" style="margin-top:1rem">A standard of <span class="gold-ital">excellence</span></h2>
+      <p class="lede reveal reveal-d2 lede-c" style="max-width:56ch;margin:1.2rem auto 0">Backed by 35 years of French educational authority, our work is recognised by the institutions and learners who know it best.</p>
+    </div>
+    <div class="award-grid">
+      <div class="award-card reveal">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 21l4-2 4 2-1-7.5"/></svg>
+        <p class="award-year">Since 1989</p>
+        <h3 class="award-title">A Leading Private Education Group</h3>
+        <p class="award-org">ACADOMIA · France</p>
+      </div>
+      <div class="award-card reveal reveal-d1">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 6 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-6-3.5-9S9.5 5.5 12 3z"/></svg>
+        <p class="award-year">CEFR</p>
+        <h3 class="award-title">A1/A2 Aligned Certification</h3>
+        <p class="award-org">Common European Framework</p>
+      </div>
+      <div class="award-card reveal reveal-d2">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 17.3l-6.2 3.7 1.6-7L2 9.2l7.1-.6L12 2l2.9 6.6 7.1.6-5.4 4.8 1.6 7z"/></svg>
+        <p class="award-year">100% Native</p>
+        <h3 class="award-title">Certified French Teachers</h3>
+        <p class="award-org">Living &amp; Teaching in France</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="cta-band section-pad framed on-dark">
+  <div class="frame-border"></div>
+  <div class="wrap-narrow" style="position:relative;z-index:3;text-align:center">
+    <p class="eyebrow eyebrow-line reveal" style="justify-content:center">Begin Your Journey</p>
+    <h2 class="display-md reveal reveal-d1" style="margin:1.2rem 0">Culture speaks French.<br><span class="gold-ital">What about you?</span></h2>
+    <p class="lede reveal reveal-d2 lede-c" style="margin:1.4rem auto 2rem;max-width:58ch">Join a live class — taught entirely from France this week. Speak French the way it has always been spoken — with culture in its heart.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="pricing.html" class="btn btn-gold btn-lg reveal reveal-d3">Enroll Now</a>
+      <a href="how-it-works.html" class="btn btn-outline btn-lg reveal reveal-d3">How It Works</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FRENCH ATELIER — INLINE ADVISOR SECTION  (Agent 5)
+     Drop into any page where you want the lead form embedded
+     (not as a modal). Same validation/success behavior as the modal.
+     Wrap is .advisor-section; left column is editorial copy, right is the card.
+     ============================================================ -->
+<section class="section-pad bg-ivory advisor-section" id="talk-to-advisor">
+  <div class="wrap">
+    <div class="advisor-split">
+      <div class="reveal">
+        <span class="eyebrow eyebrow-line">Speak with us</span>
+        <h2 class="display-md" style="margin:1rem 0 1.1rem">Plan your French<br><span class="gold-ital">Atelier</span> journey</h2>
+        <p class="lede">Leave your details and one of our academic advisors will guide you through open class dates, levels and scheduling — no obligation.</p>
+        <ul style="margin-top:1.6rem;display:flex;flex-direction:column;gap:.9rem">
+          <li style="display:flex;align-items:center;gap:.8rem;color:var(--on-light-soft)"><svg class="fa-icon" style="font-size:20px;color:var(--gold-deep)"><use href="#i-globe"/></svg> Native French teachers, live from France</li>
+          <li style="display:flex;align-items:center;gap:.8rem;color:var(--on-light-soft)"><svg class="fa-icon" style="font-size:20px;color:var(--gold-deep)"><use href="#i-certificate"/></svg> Certified &middot; CEFR-aligned</li>
+          <li style="display:flex;align-items:center;gap:.8rem;color:var(--on-light-soft)"><svg class="fa-icon" style="font-size:20px;color:var(--gold-deep)"><use href="#i-clock"/></svg> Flexible mornings &amp; late evenings</li>
+        </ul>
+      </div>
+
+      <div class="advisor-card reveal reveal-d1">
+        <div class="advisor-head">
+          <h3>Talk to an Advisor</h3>
+          <p>We&rsquo;ll reach out to plan your start.</p>
+        </div>
+        <form class="advisor-form" novalidate>
+          <div class="field">
+            <label for="about-inl-name">Name</label>
+            <input id="about-inl-name" name="name" type="text" autocomplete="name" placeholder="Your full name">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="about-inl-email">Email</label>
+            <input id="about-inl-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="about-inl-phone">Phone</label>
+            <input id="about-inl-phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 123 4567">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="about-inl-country">Country</label>
+            <input id="about-inl-country" name="country" type="text" autocomplete="country-name" placeholder="United States">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="about-inl-level">French level</label>
+            <select id="about-inl-level" name="level">
+              <option value="" disabled selected>Select your level</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="about-inl-time">Preferred time</label>
+            <input id="about-inl-time" name="time" type="text" placeholder="e.g. Weekday evenings (CET)">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="form-submit">
+            <button class="btn btn-3d btn-3d-primary" type="submit">
+              Request a Call
+              <svg class="fa-icon" style="font-size:17px"><use href="#i-arrow-right"/></svg>
+            </button>
+          </div>
+        </form>
+        <div class="advisor-success" role="status">
+          <div class="success-mark"><svg class="fa-icon" style="font-size:28px"><use href="#i-check"/></svg></div>
+          <h3>Merci&nbsp;!</h3>
+          <p>Your request is on its way to our advisor. We&rsquo;ll be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-logo-img" src="assets/logo/logo-white.png" alt="The French Atelier by Acadomia" width="527" height="165" style="height:54px;width:auto;margin-bottom:.9rem;display:block" loading="lazy" decoding="async">
+        <p>Culture speaks French. What about you? An exclusive, culturally immersive, certified, live French language program — presented by one of France's leading private education groups.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <a href="courses/fa-foundation.html">FA Foundation</a>
+        <a href="courses/fa-beginner.html">FA Beginner</a>
+        <a href="courses/fa-elementary.html">FA Elementary</a>
+        <a href="courses/fa-intermediate.html">FA Intermediate</a>
+        <a href="courses.html">Let's Speak French</a>
+        <a href="map.html">Map of France</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="method.html">Our Method</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="juliane.html">Julien · AI Tutor</a>
+        <a href="teachers.html">Our Teachers</a>
+        <a href="culture.html">French Culture</a>
+        <a href="capsules.html">Culture Capsules</a>
+        <a href="blog.html">Cultural Journal</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="acadomia.html">Acadomia Group</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>7 rue de la Baume, 75008 Paris, France &nbsp;·&nbsp; +1-888-230-5110 &nbsp;·&nbsp; advisor@eTeacherGroup.com</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61577106456673" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.8.3-1.5 1.5-1.5H18V.2C17.5.1 16.3 0 15 0c-2.7 0-4.5 1.6-4.5 4.6V6H8v3h2.5v9H14V9z"/></svg></a>
+        <a href="https://www.instagram.com/livefrenchatelier" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.youtube.com/@FrenchbyAtelier" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C16.8 4 12 4 12 4s-4.8 0-7.9.2c-.4.1-1.4.1-2.2 1C1.2 5.9 1 7.5 1 7.5S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.8.9 1.9.9 2.4 1 1.7.1 7.7.2 7.7.2s4.8 0 7.9-.2c.4-.1 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.4c0-1.9-.2-3.8-.2-3.8zM9.7 15V9l5.2 3-5.2 3z"/></svg></a>
+      </div>
+    </div>
+    <p style="color:var(--on-dark-faint);font-size:.78rem;text-align:center;margin-top:1.6rem">Copyright ACADOMIA © 2026. All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- ============================================================
+     FRENCH ATELIER — ADVISOR MODAL  (Agent 5)
+     Paste ONCE per page, just before </body>. Opened by ANY element
+     with the data-advisor attribute (e.g. the nav CTA). JS handles
+     open/close, ESC, backdrop click, validation + success.
+     Submission: mailto fallback. ▶ Wire a real endpoint in js/fa.js
+     (search for "TO WIRE A REAL ENDPOINT").
+     ============================================================ -->
+<div class="advisor-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="advisorModalTitle">
+  <div class="advisor-card">
+    <button class="advisor-modal-close" aria-label="Close" type="button">
+      <svg class="fa-icon" style="font-size:16px"><use href="#i-close"/></svg>
+    </button>
+
+    <div class="advisor-head">
+      <span class="eyebrow eyebrow-line">Speak with us</span>
+      <h3 id="advisorModalTitle">Talk to an Advisor</h3>
+      <p>Tell us a little about you and a French Atelier academic advisor will be in touch to plan your start.</p>
+    </div>
+
+    <form class="advisor-form" novalidate>
+      <div class="field">
+        <label for="adv-name">Name</label>
+        <input id="adv-name" name="name" type="text" autocomplete="name" placeholder="Your full name">
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="adv-email">Email</label>
+        <input id="adv-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+          <div class="field">
+            <label for="adv-phone">Phone</label>
+            <input id="adv-phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 123 4567">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="adv-country">Country</label>
+            <input id="adv-country" name="country" type="text" autocomplete="country-name" placeholder="United States">
+            <span class="err-msg" aria-live="polite"></span>
+          </div>
+      <div class="field">
+        <label for="adv-level">French level</label>
+        <select id="adv-level" name="level">
+          <option value="" disabled selected>Select your level</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="adv-time">Preferred time</label>
+        <input id="adv-time" name="time" type="text" placeholder="e.g. Weekday evenings (CET)">
+        <span class="err-msg" aria-live="polite"></span>
+      </div>
+      <div class="form-submit">
+        <button class="btn btn-3d btn-3d-primary" type="submit">
+          Request a Call
+          <svg class="fa-icon" style="font-size:17px"><use href="#i-arrow-right"/></svg>
+        </button>
+      </div>
+      <p class="advisor-fineprint">Native French teachers, live from France &middot; Certified &middot; CEFR-aligned</p>
+    </form>
+
+    <div class="advisor-success" role="status">
+      <div class="success-mark"><svg class="fa-icon" style="font-size:28px"><use href="#i-check"/></svg></div>
+      <h3>Merci&nbsp;!</h3>
+      <p>Your request is on its way to our advisor. We&rsquo;ll be in touch shortly to plan your French journey.</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/fa.js?v=1790665240" defer></script>
+<script src="js/enroll-modal.js?v=1790665240"></script>
+<script src="js/eteacher-leads.js?v=1790665240" defer></script>
+</body>
+</html>

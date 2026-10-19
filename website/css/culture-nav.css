@@ -1,0 +1,50 @@
+/* Culture page chapter sticky nav */
+.culture-toc {
+  position: sticky;
+  top: 64px;
+  z-index: 50;
+  background: rgba(11,12,49,0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(190,163,123,0.3);
+  padding: 12px 0;
+  margin: 0 0 40px;
+}
+.culture-toc-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.culture-toc a {
+  color: rgba(255,255,255,0.78);
+  text-decoration: none;
+  font-family: var(--serif, "Cormorant Garamond", Georgia, serif);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+.culture-toc a:hover,
+.culture-toc a.active {
+  color: #BEA37B;
+}
+.culture-toc a + a::before {
+  content: "·";
+  color: rgba(190,163,123,0.5);
+  margin-right: 24px;
+}
+html { scroll-behavior: smooth; }
+section[id^="chapter-"] { scroll-margin-top: 120px; }
+
+@media (max-width: 720px) {
+  .culture-toc { top: 56px; padding: 8px 0; margin-bottom: 24px; }
+  .culture-toc-inner { gap: 14px; padding: 0 12px; }
+  .culture-toc a { font-size: 12px; }
+  .culture-toc a + a::before { margin-right: 14px; }
+}

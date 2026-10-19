@@ -1,0 +1,681 @@
+{
+  "_doc": "MAPSTR ENGINE DATA — 3 FA courses only. Each pin has exact unit→location anchoring from the official syllabus. FA Intermediate and all LSF courses are intentionally excluded per brief.",
+  "tagline": "French is learned where it is lived — in the street, at the counter, in the queue, on the quay.",
+  "courses": [
+    {
+      "id": "fa-foundation",
+      "name": "FA Foundation",
+      "level": "A0 → A1.1",
+      "shortLevel": "A0",
+      "region": "Paris",
+      "href": "courses/fa-foundation.html",
+      "color": "#C8A96B",
+      "routeColor": "#C8A96B",
+      "description": "Entirely in Paris. Learn to greet, order, ask directions, and pay — French lived at its source.",
+      "pins": [
+        {
+          "id": "eiffel",
+          "city": "Paris — Tour Eiffel",
+          "lat": 48.8584,
+          "lng": 2.2945,
+          "location": "Eiffel Tower & Champ-de-Mars, 7e arrondissement",
+          "units": [
+            {
+              "num": 1,
+              "fr": "Se présenter",
+              "en": "Greet, exchange names, discover the cultural codes of first meetings in French. Use s'appeler and propose tu."
+            }
+          ]
+        },
+        {
+          "id": "alma-cafe",
+          "city": "Paris — Alma Bridge",
+          "lat": 48.8630,
+          "lng": 2.3010,
+          "location": "Classic café near the Alma bridge, 8e arrondissement",
+          "units": [
+            {
+              "num": 3,
+              "fr": "Demander son chemin",
+              "en": "Use excusez-moi and c'est où ? to ask for directions. Understand left, right, straight on."
+            },
+            {
+              "num": 4,
+              "fr": "Réparer + commander une boisson simple",
+              "en": "Signal a communication breakdown, ask for repetition or slower speech, and place a simple café order."
+            }
+          ]
+        },
+        {
+          "id": "bakery-16",
+          "city": "Paris — Passy",
+          "lat": 48.8580,
+          "lng": 2.2780,
+          "location": "Boulangerie in the 16th arrondissement",
+          "units": [
+            {
+              "num": 2,
+              "fr": "Épeler & vérifier une information",
+              "en": "Ask how to spell a word, spell it back, and confirm or correct. Practice the French alphabet and phonetics."
+            }
+          ]
+        },
+        {
+          "id": "bouillon-chartier",
+          "city": "Paris — Bouillon Chartier",
+          "lat": 48.8742,
+          "lng": 2.3460,
+          "location": "Bouillon Chartier, 9e arrondissement (Grands Boulevards)",
+          "units": [
+            {
+              "num": 5,
+              "fr": "Commander — Je voudrais… + c'est combien ?",
+              "en": "Order food and drinks using je voudrais, ask for the price, handle numbers 0–39. French restaurant culture."
+            },
+            {
+              "num": 6,
+              "fr": "Commander — Autre chose ?",
+              "en": "Respond to Autre chose ? and C'est tout ?, add items to an order, practice numbers 40–69."
+            },
+            {
+              "num": 10,
+              "fr": "Commander — Payer par carte",
+              "en": "Express hunger and thirst with j'ai faim / soif, place an order, and pay by card. Full café interaction."
+            }
+          ]
+        },
+        {
+          "id": "palais-royal",
+          "city": "Paris — Palais-Royal",
+          "lat": 48.8638,
+          "lng": 2.3371,
+          "location": "Palais-Royal gardens & Tuileries, 1er arrondissement",
+          "units": [
+            {
+              "num": 7,
+              "fr": "Proposer une sortie simple",
+              "en": "Use être and the pronoun y to suggest an outing, accept or decline, and make a simple decision."
+            },
+            {
+              "num": 8,
+              "fr": "Accepter / refuser + exprimer une préférence",
+              "en": "Use je préfère to choose between two options, accept or refuse politely, reach a clear decision."
+            }
+          ]
+        },
+        {
+          "id": "pont-des-arts",
+          "city": "Paris — Pont des Arts",
+          "lat": 48.8584,
+          "lng": 2.3375,
+          "location": "Pont des Arts (Love Lock Bridge), 6e arrondissement",
+          "units": [
+            {
+              "num": 9,
+              "fr": "Échanger un numéro de téléphone",
+              "en": "Ask for and give a phone number, verify with c'est..., c'est ça ?, practice numbers 70–99."
+            }
+          ]
+        },
+        {
+          "id": "pantheon",
+          "city": "Paris — Panthéon",
+          "lat": 48.8462,
+          "lng": 2.3510,
+          "location": "Panthéon, 5e arrondissement (Latin Quarter)",
+          "units": [
+            {
+              "num": 11,
+              "fr": "Acheter un billet / demander un prix",
+              "en": "Buy a ticket, ask for the price, and pay. Cultural role of museums and cultural venues in France."
+            }
+          ]
+        },
+        {
+          "id": "jardin-luxembourg",
+          "city": "Paris — Jardin du Luxembourg",
+          "lat": 48.8462,
+          "lng": 2.3372,
+          "location": "Jardin du Luxembourg & Shakespeare & Co, 6e arrondissement",
+          "units": [
+            {
+              "num": 12,
+              "fr": "Donner / échanger email & adresse",
+              "en": "Exchange email addresses and street addresses using possessive adjectives mon, ma. Spell and confirm details."
+            },
+            {
+              "num": 13,
+              "fr": "Parler de son origine / où on habite",
+              "en": "Use venir de and habiter à to talk about where you are from and where you live. Introduce a third person."
+            }
+          ]
+        },
+        {
+          "id": "coulée-verte",
+          "city": "Paris — Coulée Verte",
+          "lat": 48.8488,
+          "lng": 2.3846,
+          "location": "Coulée Verte René-Dumont (elevated park), 12e arrondissement",
+          "units": [
+            {
+              "num": 14,
+              "fr": "Gérer un imprévu",
+              "en": "Handle an unexpected situation (a closed venue), propose an alternative plan, and make a decision."
+            },
+            {
+              "num": 15,
+              "fr": "Fixer un rendez-vous (date / heure)",
+              "en": "Propose a time and date, negotiate with ça va ?, confirm and close. Tell the time and days of the week."
+            }
+          ]
+        },
+        {
+          "id": "bastille",
+          "city": "Paris — Bastille",
+          "lat": 48.8533,
+          "lng": 2.3692,
+          "location": "Place de la Bastille, 11e/12e arrondissement",
+          "units": [
+            {
+              "num": 16,
+              "fr": "Commander — Réactivation",
+              "en": "Revisit ordering sequences at a faster pace: respond to Autre chose ? in three different ways."
+            },
+            {
+              "num": 17,
+              "fr": "Commander — Je prends… + l'addition",
+              "en": "Use je prends, react to an unavailable item, and ask for the bill. Fluent end-to-end restaurant interaction."
+            }
+          ]
+        },
+        {
+          "id": "montmartre",
+          "city": "Paris — Montmartre",
+          "lat": 48.8867,
+          "lng": 2.3431,
+          "location": "Montmartre & Place du Tertre, 18e arrondissement",
+          "units": [
+            {
+              "num": 18,
+              "fr": "Exprimer une préférence + justifier",
+              "en": "Choose between two options, say je préfère…, and justify with parce que c'est + adjectif."
+            }
+          ]
+        },
+        {
+          "id": "canal-saint-martin",
+          "city": "Paris — Canal Saint-Martin",
+          "lat": 48.8695,
+          "lng": 2.3652,
+          "location": "Canal Saint-Martin, 10e arrondissement",
+          "units": [
+            {
+              "num": 19,
+              "fr": "Arrivée — Se présenter + orientation + réparation",
+              "en": "Chain two micro-tasks — introducing yourself and asking for directions — with repair if needed. Review of Units 1–3."
+            },
+            {
+              "num": 20,
+              "fr": "Commander + payer + réparer + conclure",
+              "en": "Complete a full ordering and payment scenario at speed. Closing review of FA Foundation. A true production milestone."
+            }
+          ]
+        }
+      ],
+      "routeOrder": ["eiffel","bakery-16","alma-cafe","palais-royal","bouillon-chartier","pont-des-arts","jardin-luxembourg","pantheon","coulée-verte","bastille","canal-saint-martin","montmartre"]
+    },
+    {
+      "id": "fa-beginner",
+      "name": "FA Beginner",
+      "level": "A1.1 → A1.2",
+      "shortLevel": "A1.1",
+      "region": "Normandy → Paris & Versailles",
+      "href": "courses/fa-beginner.html",
+      "color": "#E8A87C",
+      "routeColor": "#E8A87C",
+      "description": "From the Normandy coast to Versailles and Paris. Family, weather, daily life, the market.",
+      "pins": [
+        {
+          "id": "cabourg",
+          "city": "Cabourg",
+          "lat": 49.2836,
+          "lng": -0.1206,
+          "location": "Promenade Marcel Proust, Cabourg (Belle Époque seaside resort)",
+          "units": [
+            {
+              "num": 1,
+              "fr": "Se repérer : demander / indiquer une direction simple",
+              "en": "Ask for and give simple directions: pardon, où est... s'il vous plaît ? You tournez à gauche / à droite."
+            },
+            {
+              "num": 2,
+              "fr": "Se présenter : profession, nationalité & tour de parole",
+              "en": "Introduce yourself beyond basics: profession with je suis + métier, nationality, and ask tu fais quoi ?"
+            }
+          ]
+        },
+        {
+          "id": "honfleur",
+          "city": "Honfleur",
+          "lat": 49.4184,
+          "lng": 0.2333,
+          "location": "Vieux-Bassin (Old Harbour), Honfleur — where Champlain set sail for Québec",
+          "units": [
+            {
+              "num": 3,
+              "fr": "Dire où on est : se situer en temps réel",
+              "en": "Locate yourself using je suis là, devant…, juste en face de…, c'est à côté de…"
+            },
+            {
+              "num": 4,
+              "fr": "Dire d'où on vient / où on habite + relancer",
+              "en": "Use je viens de… and j'habite à… to talk about origin and home, ask back with et toi ?"
+            }
+          ]
+        },
+        {
+          "id": "deauville",
+          "city": "Deauville",
+          "lat": 49.3537,
+          "lng": 0.0707,
+          "location": "Les Planches boardwalk, Deauville (American Film Festival town)",
+          "units": [
+            {
+              "num": 5,
+              "fr": "Parler de sa famille + âge (avoir)",
+              "en": "Talk about family using avoir: say your age j'ai … ans, mention siblings, parents, and children."
+            },
+            {
+              "num": 6,
+              "fr": "Saluer + prendre des nouvelles + clôturer (tu / vous)",
+              "en": "Use bonjour / bonsoir, ask ça va ?, respond naturally. Master the tu / vous distinction in context."
+            }
+          ]
+        },
+        {
+          "id": "rouen",
+          "city": "Rouen",
+          "lat": 49.4432,
+          "lng": 1.0993,
+          "location": "Vieux-Marché & half-timbered streets, Rouen (Joan of Arc's city)",
+          "units": [
+            {
+              "num": 7,
+              "fr": "Demander poliment / s'excuser + réparer",
+              "en": "Use polite formulas and repair strategies: vous pouvez répéter ? / parler plus lentement ?"
+            },
+            {
+              "num": 8,
+              "fr": "Localiser : dire où est… (c'est / il y a)",
+              "en": "Use c'est and il y a to describe location: give a street, number, and distances près d'ici / loin."
+            }
+          ]
+        },
+        {
+          "id": "etretat",
+          "city": "Étretat",
+          "lat": 49.7070,
+          "lng": 0.2046,
+          "location": "Falaise d'Aval (chalk cliffs immortalised by Monet & Maupassant), Étretat",
+          "units": [
+            {
+              "num": 9,
+              "fr": "Décrire ce qu'on voit + donner un avis simple",
+              "en": "Describe three elements using c'est un/une…, il y a…, je vois… and express a simple opinion."
+            },
+            {
+              "num": 13,
+              "fr": "Parler de la météo + réagir",
+              "en": "Ask and answer about the weather: il fait beau / froid / chaud, il pleut, predict with demain, il va faire…"
+            }
+          ]
+        },
+        {
+          "id": "versailles",
+          "city": "Versailles",
+          "lat": 48.8049,
+          "lng": 2.1204,
+          "location": "Palace of Versailles & Hall of Mirrors, Versailles",
+          "units": [
+            {
+              "num": 10,
+              "fr": "Fixer une date / heure + parler de projets (futur proche)",
+              "en": "Give the date and day, talk about plans using demain, je vais… and cette semaine, je vais…"
+            },
+            {
+              "num": 14,
+              "fr": "Choisir / proposer une activité selon la météo",
+              "en": "Based on the weather, suggest two activities: on va au parc / au cinéma / au château."
+            }
+          ]
+        },
+        {
+          "id": "contrescarpe",
+          "city": "Paris — Place de la Contrescarpe",
+          "lat": 48.8508,
+          "lng": 2.3506,
+          "location": "Place de la Contrescarpe, 5e arrondissement (Hemingway's Paris)",
+          "units": [
+            {
+              "num": 11,
+              "fr": "Proposer une activité (14 juillet) + se mettre d'accord",
+              "en": "Suggest Bastille Day activities: on va voir le feu d'artifice / on va au bal, negotiate a time and confirm."
+            }
+          ]
+        },
+        {
+          "id": "jardin-plantes",
+          "city": "Paris — Jardin des Plantes",
+          "lat": 48.8435,
+          "lng": 2.3595,
+          "location": "Jardin des Plantes & Seine quays, 5e arrondissement",
+          "units": [
+            {
+              "num": 12,
+              "fr": "Décrire ses routines + négation utile",
+              "en": "Talk about daily routine with reflexive verbs je me lève à… and negate habits je ne travaille pas le week-end."
+            },
+            {
+              "num": 15,
+              "fr": "Parler d'activités (verbes en -ER) + organiser une sortie",
+              "en": "Use common -er verbs to describe leisure activities, plan a museum or expo outing, arrange a meeting point."
+            }
+          ]
+        },
+        {
+          "id": "place-vosges",
+          "city": "Paris — Place des Vosges",
+          "lat": 48.8554,
+          "lng": 2.3644,
+          "location": "Place des Vosges & Musée Carnavalet, Marais, 4e arrondissement",
+          "units": [
+            {
+              "num": 16,
+              "fr": "Poser des questions avec « est-ce que » + mini-interview",
+              "en": "Form questions with est-ce que and conduct a short 5-question interview. Express degrees of opinion."
+            },
+            {
+              "num": 17,
+              "fr": "Poser des questions (mots interrogatifs) + relancer",
+              "en": "Use question words qui, où, quand, pourquoi, comment to ask and answer in a flowing conversation."
+            }
+          ]
+        },
+        {
+          "id": "train-bleu",
+          "city": "Paris — Gare de Lyon",
+          "lat": 48.8449,
+          "lng": 2.3739,
+          "location": "Le Train Bleu restaurant, Gare de Lyon, 12e arrondissement",
+          "units": [
+            {
+              "num": 18,
+              "fr": "Parler de ce qu'on mange / boit + préférences",
+              "en": "Discuss food and drink habits: je mange…, je bois…, offer or decline with tu en veux ? / oui, volontiers !"
+            }
+          ]
+        },
+        {
+          "id": "marche-aligre",
+          "city": "Paris — Marché d'Aligre",
+          "lat": 48.8492,
+          "lng": 2.3779,
+          "location": "Marché d'Aligre, 12e arrondissement (Paris's liveliest outdoor market)",
+          "units": [
+            {
+              "num": 19,
+              "fr": "Acheter au marché : quantités + articles partitifs",
+              "en": "Buy produce at a French market using quantities un kilo de…, deux cents grammes de… and partitive articles."
+            },
+            {
+              "num": 20,
+              "fr": "Parler de son expérience + dire au revoir (clôture FA1)",
+              "en": "Give a free 2–3 minute spoken account of your stay using at least 5 speech acts. A true production milestone."
+            }
+          ]
+        }
+      ],
+      "routeOrder": ["cabourg","honfleur","deauville","rouen","etretat","versailles","contrescarpe","jardin-plantes","place-vosges","train-bleu","marche-aligre"]
+    },
+    {
+      "id": "fa-elementary",
+      "name": "FA Elementary",
+      "level": "A1.2 → A2.1",
+      "shortLevel": "A1.2",
+      "region": "Loire → Bordeaux → Basque",
+      "href": "courses/fa-elementary.html",
+      "color": "#D4A574",
+      "routeColor": "#D4A574",
+      "description": "Loire châteaux to Atlantic vineyards to Basque mountains. Chain, compare, narrate, describe.",
+      "pins": [
+        {
+          "id": "orleans",
+          "city": "Orléans",
+          "lat": 47.9029,
+          "lng": 1.9092,
+          "location": "Place du Martroi, Orléans (City of Joan of Arc, gateway to the Loire)",
+          "units": [
+            {
+              "num": 1,
+              "fr": "Se présenter : saluer + dire qui on est",
+              "en": "Reactivate greetings at a higher level: moi, c'est… / je suis…, maintain tu / vous register, exchange identity info."
+            },
+            {
+              "num": 2,
+              "fr": "Demander et donner une direction simple",
+              "en": "Ask with excusez-moi, pour aller à…, c'est par où ? and give itinerary: tout droit, puis à gauche."
+            }
+          ]
+        },
+        {
+          "id": "villandry",
+          "city": "Villandry",
+          "lat": 47.3415,
+          "lng": 0.5144,
+          "location": "Jardins de Villandry (Renaissance gardens, UNESCO World Heritage)",
+          "units": [
+            {
+              "num": 3,
+              "fr": "Exprimer une préférence + justifier simplement",
+              "en": "Choose between two options, say je préfère… parce que c'est plus…, and agree on a destination."
+            }
+          ]
+        },
+        {
+          "id": "chenonceau",
+          "city": "Château de Chenonceau",
+          "lat": 47.3238,
+          "lng": 1.0701,
+          "location": "Château de Chenonceau (the château of the ladies, spanning the Cher river)",
+          "units": [
+            {
+              "num": 4,
+              "fr": "Demander et indiquer une direction (reprise + pression)",
+              "en": "Ask for two different locations and give two complete directions. Practice at a faster pace."
+            },
+            {
+              "num": 5,
+              "fr": "Proposer une mini-sortie + se mettre d'accord",
+              "en": "Plan a short outing: suggest a meeting point on se retrouve à…, sequence two activities, confirm ça marche !"
+            }
+          ]
+        },
+        {
+          "id": "tours",
+          "city": "Tours",
+          "lat": 47.3941,
+          "lng": 0.6848,
+          "location": "Place Plumereau terraces & Loire guinguette, Tours",
+          "units": [
+            {
+              "num": 6,
+              "fr": "Commander au bar / restaurant (poliment)",
+              "en": "Order two items using je voudrais…, s'il vous plaît, respond to a follow-up, ask for l'addition."
+            },
+            {
+              "num": 7,
+              "fr": "Partager + exprimer une quantité (pronom en)",
+              "en": "Offer and respond to sharing using the pronoun en. Practise expressing quantity in a natural food-sharing context."
+            }
+          ]
+        },
+        {
+          "id": "poitiers",
+          "city": "Poitiers",
+          "lat": 46.5802,
+          "lng": 0.3404,
+          "location": "Parc de Blossac, Poitiers (elegant park, gateway to the south)",
+          "units": [
+            {
+              "num": 9,
+              "fr": "Comparer + justifier (parce que / mais)",
+              "en": "Compare two options using je préfère… parce que…, introduce nuance with mais l'autre option est plus…"
+            },
+            {
+              "num": 10,
+              "fr": "Exprimer ses goûts + justifier",
+              "en": "Share a cultural preference using j'aime bien… parce que…, invite the other person et toi, tu préfères quoi ?"
+            }
+          ]
+        },
+        {
+          "id": "bordeaux-wine",
+          "city": "Bordeaux — Wine District",
+          "lat": 44.8405,
+          "lng": -0.5805,
+          "location": "Bordeaux wine merchants & vineyards, Chartrons district",
+          "units": [
+            {
+              "num": 8,
+              "fr": "Recommander + exprimer une préférence",
+              "en": "Recommend a wine using je te conseille celui-là, ask tu préfères rouge ou blanc ? French wine culture."
+            }
+          ]
+        },
+        {
+          "id": "cite-du-vin",
+          "city": "Bordeaux — Cité du Vin",
+          "lat": 44.8620,
+          "lng": -0.5545,
+          "location": "La Cité du Vin (the world's premier wine museum), Bordeaux",
+          "units": [
+            {
+              "num": 11,
+              "fr": "Proposer une sortie + se mettre d'accord",
+              "en": "Suggest a weekend outing: t'as envie de sortir ? on pourrait aller au musée ?, negotiate, fix time and place."
+            }
+          ]
+        },
+        {
+          "id": "bordeaux-musee",
+          "city": "Bordeaux — Musée des Beaux-Arts",
+          "lat": 44.8387,
+          "lng": -0.5764,
+          "location": "Musée des Beaux-Arts de Bordeaux, Cours d'Albret",
+          "units": [
+            {
+              "num": 14,
+              "fr": "Décrire une œuvre + exprimer une préférence",
+              "en": "Describe a work of art c'est un tableau / une sculpture using two adjectives, express a preference."
+            },
+            {
+              "num": 15,
+              "fr": "Présenter une œuvre (mini-exposé) + justifier",
+              "en": "Give a structured 30–45 second presentation: je vais vous parler de…, c'est une œuvre de…, ça a été créé en…"
+            }
+          ]
+        },
+        {
+          "id": "dune-pilat",
+          "city": "Dune du Pilat",
+          "lat": 44.5893,
+          "lng": -1.2109,
+          "location": "Dune du Pilat (Europe's tallest sand dune, 110m, Atlantic coast)",
+          "units": [
+            {
+              "num": 12,
+              "fr": "Raconter un souvenir court (passé composé)",
+              "en": "Narrate a short memory using the passé composé: on a visité…, c'était top, j'ai adoré."
+            },
+            {
+              "num": 13,
+              "fr": "Exprimer une opinion + justifier (accord / désaccord simple)",
+              "en": "Use je trouve que c'est… and pour moi… to share an opinion, agree or disagree simply."
+            }
+          ]
+        },
+        {
+          "id": "gujan-mestras",
+          "city": "Gujan-Mestras",
+          "lat": 44.6384,
+          "lng": -1.0672,
+          "location": "Oyster ports of Gujan-Mestras, Bassin d'Arcachon",
+          "units": [
+            {
+              "num": 16,
+              "fr": "Organiser un parcours + se mettre d'accord",
+              "en": "Negotiate a visit itinerary: on commence par…, et ensuite…, asking for agreement t'es d'accord ?"
+            }
+          ]
+        },
+        {
+          "id": "bayonne",
+          "city": "Bayonne",
+          "lat": 43.4929,
+          "lng": -1.4748,
+          "location": "Cathédrale Sainte-Marie & chocolate-makers of the old town, Bayonne",
+          "units": [
+            {
+              "num": 17,
+              "fr": "Raconter / imaginer (micro-récit)",
+              "en": "Narrate and imagine a scene using d'abord…, et ensuite…, à la fin… Produce a 4-sentence micro-narrative."
+            }
+          ]
+        },
+        {
+          "id": "biarritz",
+          "city": "Biarritz",
+          "lat": 43.4832,
+          "lng": -1.5586,
+          "location": "Rocher de la Vierge, Biarritz (iconic Basque surf coast viewpoint)",
+          "units": [
+            {
+              "num": 18,
+              "fr": "Organiser une visite (heure / lieu / étapes) + valider",
+              "en": "Plan a full visit: agree on meeting point on se retrouve à… heures devant…, sequence three stages."
+            }
+          ]
+        },
+        {
+          "id": "la-rhune",
+          "city": "La Rhune",
+          "lat": 43.3088,
+          "lng": -1.6353,
+          "location": "La Rhune (sacred Basque mountain, 905m, rack railway to the summit)",
+          "units": [
+            {
+              "num": 19,
+              "fr": "Micro-récit + réagir / relancer (pré-bilan)",
+              "en": "Narrate a recent outing in 4 sentences, express a nuanced reaction j'ai adoré / j'ai pas trop aimé."
+            }
+          ]
+        },
+        {
+          "id": "saint-jean-luz",
+          "city": "Saint-Jean-de-Luz",
+          "lat": 43.3895,
+          "lng": -1.6612,
+          "location": "Harbour of Saint-Jean-de-Luz (where Louis XIV was married, final bay before Spain)",
+          "units": [
+            {
+              "num": 20,
+              "fr": "Consolider : défendre un choix + négocier + conclure",
+              "en": "Defend a choice: moi, je choisis… parce que…, propose an alternative on pourrait aussi…, close allez, c'est décidé !"
+            }
+          ]
+        }
+      ],
+      "routeOrder": ["orleans","villandry","chenonceau","tours","poitiers","bordeaux-wine","cite-du-vin","bordeaux-musee","dune-pilat","gujan-mestras","bayonne","biarritz","la-rhune","saint-jean-luz"]
+    }
+  ]
+}
