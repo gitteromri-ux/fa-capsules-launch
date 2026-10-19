@@ -1,22 +1,20 @@
-# French Atelier · Culture Capsules — Launch Operating System
+# Culture Capsules launch library
 
-Internal launch framework site for the **September 15, 2026** launch of French Atelier Culture Capsules.
+Public hub: https://gitteromri-ux.github.io/fa-capsules-launch/
 
-**Live URL:** https://gitteromri-ux.github.io/fa-capsules-launch/
+## Contents
 
-## What's inside
-- **Overview** — what Culture Capsules are, the buyer, the wedge
-- **11 Decisions to Lock** — pricing, format, themes, GTM, sales insertion (each with recommendation, owner, deadline)
-- **Themes** — 3 launch capsules (Coco Chanel · Louis XIV · Impressionism) + 3 on the shelf for Q4/Q1
-- **Pricing** — $549 anchor, three payment paths (1×, 2×, 3×), bundle math
-- **Format** — 6 modules · 6 weeks · 4 live sessions · ~12h on-demand · designed PDF workbook
-- **Teachers** — recruitment timeline (3 leads + 2 backups by Aug 1)
-- **GTM** — paid + owned + earned, sales call insertion at min 28+
-- **Investments** — $58k cash budget split by bucket and side
-- **Targets** — Day 30 / 60 / 90 enrollments + revenue
-- **Roadmap** — 12-week reverse timeline with bottlenecks called out
+- Full website mockup, responsive desktop/phone preview and all website files.
+- 24 banner PNGs: eight concepts in 1080×1080, 1080×1350 and 1080×1920, plus editable HTML sources.
+- 64 responsive HTML and plain-text emails: four audience invitations and 20 lifecycle messages for each of three packages.
+- Three complete 1080p UGC films: supplied opening and source story, supplied outro, then animated phone and Zoom mockups.
+- Original video-kit assets and six original French beauty films from the organic CEO deck.
+- Individual downloads, five category bundles and a complete repository ZIP.
 
-## Update workflow
-Edit `index.html` + `styles.css`, commit, push. GitHub Pages auto-deploys.
+## Preservation and scope
 
-v1.0 · Jun 24, 2026
+The supplied video-kit paths remain intact. Original UGC source files are retained unchanged.
+The public Culture Capsules site, checkout and tracking were not modified by this launch-library build.
+The website mockup's per-session labels use total package price divided by session count: $29.70, $26.70 and $18.90. Package totals remain $297/$534/$567.
+Email assets are not installed ActiveCampaign automations. Trigger, timing and suppression metadata are included for implementation.
+The final-film ZIP is a GitHub release asset because it exceeds GitHub's per-file repository limit.
