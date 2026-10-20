@@ -1,0 +1,239 @@
+{
+ "brand": "French Atelier by Acadomia",
+ "campaign": "Culture Capsules launch",
+ "landing_page": "https://fa-capsules-v3.pplx.app/capsules.html",
+ "codec": "H.264 MP4, AAC 48 kHz, 30 fps",
+ "files": [
+  {
+   "name": "Philippe",
+   "placement": "Feed and in-stream, 16:9",
+   "aspect": "16:9",
+   "width": 1920,
+   "height": 1080,
+   "duration_seconds": 71.9,
+   "has_audio": true,
+   "size_mb": 32.2,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/presenters/FA_Capsules_Philippe.mp4"
+  },
+  {
+   "name": "Philippe",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 71.9,
+   "has_audio": true,
+   "size_mb": 23.5,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Philippe_9x16.mp4"
+  },
+  {
+   "name": "Philippe",
+   "placement": "Feed square, 1:1",
+   "aspect": "1:1",
+   "width": 1080,
+   "height": 1080,
+   "duration_seconds": 71.9,
+   "has_audio": true,
+   "size_mb": 17.8,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Philippe_1x1.mp4"
+  },
+  {
+   "name": "Charline",
+   "placement": "Feed and in-stream, 16:9",
+   "aspect": "16:9",
+   "width": 1920,
+   "height": 1080,
+   "duration_seconds": 69.4,
+   "has_audio": true,
+   "size_mb": 36.7,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/presenters/FA_Capsules_Charline.mp4"
+  },
+  {
+   "name": "Charline",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 69.4,
+   "has_audio": true,
+   "size_mb": 25.8,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Charline_9x16.mp4"
+  },
+  {
+   "name": "Charline",
+   "placement": "Feed square, 1:1",
+   "aspect": "1:1",
+   "width": 1080,
+   "height": 1080,
+   "duration_seconds": 69.4,
+   "has_audio": true,
+   "size_mb": 19.7,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Charline_1x1.mp4"
+  },
+  {
+   "name": "UGC Fashion and Art",
+   "placement": "Feed and in-stream, 16:9",
+   "aspect": "16:9",
+   "width": 1920,
+   "height": 1080,
+   "duration_seconds": 75.6,
+   "has_audio": true,
+   "size_mb": 80.4,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/ugc/ugc_fashion_and_art.mp4"
+  },
+  {
+   "name": "UGC Fashion and Art",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 75.6,
+   "has_audio": true,
+   "size_mb": 47.1,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_fashion_and_art_9x16.mp4"
+  },
+  {
+   "name": "UGC Fashion and Art",
+   "placement": "Feed square, 1:1",
+   "aspect": "1:1",
+   "width": 1080,
+   "height": 1080,
+   "duration_seconds": 75.6,
+   "has_audio": true,
+   "size_mb": 37.0,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_fashion_and_art_1x1.mp4"
+  },
+  {
+   "name": "UGC Gastronomy and Wine",
+   "placement": "Feed and in-stream, 16:9",
+   "aspect": "16:9",
+   "width": 1920,
+   "height": 1080,
+   "duration_seconds": 75.6,
+   "has_audio": true,
+   "size_mb": 59.9,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/ugc/ugc_gastronomy_and_wine.mp4"
+  },
+  {
+   "name": "UGC Gastronomy and Wine",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 75.6,
+   "has_audio": true,
+   "size_mb": 36.1,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_gastronomy_and_wine_9x16.mp4"
+  },
+  {
+   "name": "UGC Gastronomy and Wine",
+   "placement": "Feed square, 1:1",
+   "aspect": "1:1",
+   "width": 1080,
+   "height": 1080,
+   "duration_seconds": 75.6,
+   "has_audio": true,
+   "size_mb": 26.6,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_gastronomy_and_wine_1x1.mp4"
+  },
+  {
+   "name": "UGC Cinema and Music",
+   "placement": "Feed and in-stream, 16:9",
+   "aspect": "16:9",
+   "width": 1920,
+   "height": 1080,
+   "duration_seconds": 75.6,
+   "has_audio": true,
+   "size_mb": 79.7,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/ugc/ugc_cinema_and_music.mp4"
+  },
+  {
+   "name": "UGC Cinema and Music",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 75.6,
+   "has_audio": true,
+   "size_mb": 42.8,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_cinema_and_music_9x16.mp4"
+  },
+  {
+   "name": "UGC Cinema and Music",
+   "placement": "Feed square, 1:1",
+   "aspect": "1:1",
+   "width": 1080,
+   "height": 1080,
+   "duration_seconds": 75.6,
+   "has_audio": true,
+   "size_mb": 34.8,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_cinema_and_music_1x1.mp4"
+  },
+  {
+   "name": "Beauty 01",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 35.9,
+   "has_audio": true,
+   "size_mb": 24.3,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_01.mp4"
+  },
+  {
+   "name": "Beauty 02",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 20.3,
+   "has_audio": true,
+   "size_mb": 11.1,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_02.mp4"
+  },
+  {
+   "name": "Beauty 03",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 26.9,
+   "has_audio": true,
+   "size_mb": 23.3,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_03.mp4"
+  },
+  {
+   "name": "Beauty 04",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 21.5,
+   "has_audio": true,
+   "size_mb": 9.3,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_04.mp4"
+  },
+  {
+   "name": "Beauty 05",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 22.9,
+   "has_audio": true,
+   "size_mb": 13.5,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_05.mp4"
+  },
+  {
+   "name": "Beauty 06",
+   "placement": "Reels and Stories, 9:16",
+   "aspect": "9:16",
+   "width": 1080,
+   "height": 1920,
+   "duration_seconds": 28.5,
+   "has_audio": true,
+   "size_mb": 26.9,
+   "url": "https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_06.mp4"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+name,placement,aspect,width,height,duration_seconds,has_audio,size_mb,url
+Philippe,"Feed and in-stream, 16:9",16:9,1920,1080,71.9,True,32.2,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/presenters/FA_Capsules_Philippe.mp4
+Philippe,"Reels and Stories, 9:16",9:16,1080,1920,71.9,True,23.5,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Philippe_9x16.mp4
+Philippe,"Feed square, 1:1",1:1,1080,1080,71.9,True,17.8,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Philippe_1x1.mp4
+Charline,"Feed and in-stream, 16:9",16:9,1920,1080,69.4,True,36.7,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/presenters/FA_Capsules_Charline.mp4
+Charline,"Reels and Stories, 9:16",9:16,1080,1920,69.4,True,25.8,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Charline_9x16.mp4
+Charline,"Feed square, 1:1",1:1,1080,1080,69.4,True,19.7,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Charline_1x1.mp4
+UGC Fashion and Art,"Feed and in-stream, 16:9",16:9,1920,1080,75.6,True,80.4,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/ugc/ugc_fashion_and_art.mp4
+UGC Fashion and Art,"Reels and Stories, 9:16",9:16,1080,1920,75.6,True,47.1,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_fashion_and_art_9x16.mp4
+UGC Fashion and Art,"Feed square, 1:1",1:1,1080,1080,75.6,True,37.0,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_fashion_and_art_1x1.mp4
+UGC Gastronomy and Wine,"Feed and in-stream, 16:9",16:9,1920,1080,75.6,True,59.9,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/ugc/ugc_gastronomy_and_wine.mp4
+UGC Gastronomy and Wine,"Reels and Stories, 9:16",9:16,1080,1920,75.6,True,36.1,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_gastronomy_and_wine_9x16.mp4
+UGC Gastronomy and Wine,"Feed square, 1:1",1:1,1080,1080,75.6,True,26.6,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_gastronomy_and_wine_1x1.mp4
+UGC Cinema and Music,"Feed and in-stream, 16:9",16:9,1920,1080,75.6,True,79.7,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/ugc/ugc_cinema_and_music.mp4
+UGC Cinema and Music,"Reels and Stories, 9:16",9:16,1080,1920,75.6,True,42.8,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_cinema_and_music_9x16.mp4
+UGC Cinema and Music,"Feed square, 1:1",1:1,1080,1080,75.6,True,34.8,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/ugc_cinema_and_music_1x1.mp4
+Beauty 01,"Reels and Stories, 9:16",9:16,1080,1920,35.9,True,24.3,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_01.mp4
+Beauty 02,"Reels and Stories, 9:16",9:16,1080,1920,20.3,True,11.1,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_02.mp4
+Beauty 03,"Reels and Stories, 9:16",9:16,1080,1920,26.9,True,23.3,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_03.mp4
+Beauty 04,"Reels and Stories, 9:16",9:16,1080,1920,21.5,True,9.3,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_04.mp4
+Beauty 05,"Reels and Stories, 9:16",9:16,1080,1920,22.9,True,13.5,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_05.mp4
+Beauty 06,"Reels and Stories, 9:16",9:16,1080,1920,28.5,True,26.9,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/beauty/FA_Capsules_Beauty_06.mp4
