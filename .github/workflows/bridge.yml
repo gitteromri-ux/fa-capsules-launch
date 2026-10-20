@@ -34,6 +34,12 @@ jobs:
           mkdir -p bridge/out
           (pip install faster-whisper imageio-ffmpeg && python3 bridge/transcribe.py) > bridge/out/transcribe.log 2>&1 || echo "transcribe failed" >> bridge/out/transcribe.log
           tail -n 40 bridge/out/transcribe.log
+      - name: YouTube
+        if: ${{ contains(github.event.head_commit.message, 'yt-fetch') }}
+        run: |
+          pip install -q yt-dlp
+          python3 bridge/yt.py || true
+          ls -la bridge/out/yt || true
       - name: Run
         run: node bridge/run.js
       - name: Commit results
