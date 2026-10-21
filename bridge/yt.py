@@ -7,8 +7,8 @@ def run(cmd, timeout=600):
         log.write(" ".join(cmd) + "\n" + r.stdout[-1500:] + r.stderr[-1500:] + "\n"); log.flush(); return r.returncode
     except Exception as ex:
         log.write(f"EXC {ex}\n"); return 1
-want = {"z-l7f4qOmEo": "philippe", "WbodfrXFjyg": "caitlin", "TqBegklrz-E": "stan"}
-clients = ["tv_embedded", "android_vr", "ios", "mweb", "web_embedded", "tv"]
+want = {"WbodfrXFjyg": "caitlin", "TqBegklrz-E": "stan"}
+clients = ["web_safari", "default", "android_sdkless", "tv_simply", "mweb"]
 for vid, name in want.items():
     out = f"bridge/out/yt/{name}.mp4"
     for c in clients:
