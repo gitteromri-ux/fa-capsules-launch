@@ -1,4 +1,10 @@
 name,placement,aspect,width,height,duration_seconds,has_audio,size_mb,url
+FA_Capsules_Caitlin.mp4,Feed and in-stream,16:9,1920,1080,76.4,yes,45.7,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/presenters/FA_Capsules_Caitlin.mp4
+FA_Capsules_Caitlin_9x16.mp4,Reels and Stories,9:16,1080,1920,76.4,yes,32.1,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Caitlin_9x16.mp4
+FA_Capsules_Caitlin_1x1.mp4,Feed square,1:1,1080,1080,76.4,yes,24.6,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Caitlin_1x1.mp4
+FA_Capsules_Stan.mp4,Feed and in-stream,16:9,1920,1080,74.1,yes,39.2,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/presenters/FA_Capsules_Stan.mp4
+FA_Capsules_Stan_9x16.mp4,Reels and Stories,9:16,1080,1920,74.1,yes,26.6,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Stan_9x16.mp4
+FA_Capsules_Stan_1x1.mp4,Feed square,1:1,1080,1080,74.1,yes,20.4,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Stan_1x1.mp4
 Philippe,"Feed and in-stream, 16:9",16:9,1920,1080,71.9,True,32.2,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/presenters/FA_Capsules_Philippe.mp4
 Philippe,"Reels and Stories, 9:16",9:16,1080,1920,71.9,True,23.5,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Philippe_9x16.mp4
 Philippe,"Feed square, 1:1",1:1,1080,1080,71.9,True,17.8,https://gitteromri-ux.github.io/fa-capsules-launch/video-kit/formats/FA_Capsules_Philippe_1x1.mp4
