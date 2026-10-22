@@ -2,16 +2,16 @@
  "sites": [],
  "downloads": [
   {
-   "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/The-Longevity-Masterclass-v2-dark.pdf",
-   "out": "live_v21_dark.pdf"
+   "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/The-Longevity-Masterclass-v2-dark.pdf?v=22",
+   "out": "live_v22_dark.pdf"
   },
   {
-   "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/frames/dark_05.jpg",
-   "out": "live_v21_f05.jpg"
+   "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/index.html?v=22",
+   "out": "live_v22_index.html"
   },
   {
-   "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/index.html",
-   "out": "live_v21_index.html"
+   "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/frames/dark_05.jpg?v=22",
+   "out": "live_v22_f05.jpg"
   }
  ]
 }
