@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Longevity Masterclass, v2</title>
+<meta name="description" content="Julie Gibson Clark, The Longevity Masterclass. Longevity Life Academy. Deck version 2.">
+<style>
+@font-face { font-family: 'Playfair'; src: url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'); font-weight: 400 700; font-style: italic; font-display: block; }
+@font-face { font-family: 'Inter'; src: url('fonts/Inter.ttf') format('truetype'); font-weight: 100 900; font-display: block; }
+
+:root {
+  --bg0: #040a16; --bg1: #0b1a33;
+  --ink: #ffffff; --ink2: rgba(255,255,255,.78); --ink3: rgba(255,255,255,.52);
+  --blue: #5EB6FF; --sky: #8AD2FF; --electric: #006EFF; --rose: #F6B8C6;
+  --line: rgba(255,255,255,.16); --line2: rgba(255,255,255,.34);
+  --glow1: rgba(0,110,255,.55); --glow2: rgba(94,182,255,.35);
+  --img-bg: #000;
+  --shadow: 0 40px 120px rgba(0,0,0,.6);
+}
+:root[data-theme="light"] {
+  --bg0: #ffffff; --bg1: #eef4fc;
+  --ink: #0a1526; --ink2: rgba(10,21,38,.74); --ink3: rgba(10,21,38,.5);
+  --blue: #006EFF; --sky: #2f8fee; --rose: #d9607f;
+  --line: rgba(10,21,38,.14); --line2: rgba(10,21,38,.32);
+  --glow1: rgba(0,110,255,.18); --glow2: rgba(94,182,255,.22);
+  --shadow: 0 40px 120px rgba(10,21,38,.18);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg0); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow: hidden; }
+#stage { position: fixed; inset: 0; display: grid; place-items: center; background: var(--bg0); }
+#deck { position: relative; width: 1920px; height: 1080px; transform-origin: center center; }
+.slide { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; opacity: 0; visibility: hidden; transition: opacity .5s ease; background: linear-gradient(160deg, var(--bg1) 0%, var(--bg0) 100%); }
+.slide.on { opacity: 1; visibility: visible; }
+:root[data-theme="light"] .slide { background: linear-gradient(160deg, #ffffff 0%, var(--bg1) 100%); }
+.glow { position: absolute; border-radius: 50%; filter: blur(100px); pointer-events: none; }
+.g1 { width: 1100px; height: 1100px; background: radial-gradient(closest-side, var(--glow1), transparent 70%); }
+.g2 { width: 800px; height: 800px; background: radial-gradient(closest-side, var(--glow2), transparent 70%); }
+
+/* type: large, airy, no bold */
+.h { font-family: 'Playfair', Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -0.012em; line-height: 1; margin: 0; }
+.h1 { font-size: 160px; line-height: .96; }
+.h2 { font-size: 124px; line-height: .98; }
+.h3 { font-size: 92px; }
+.h4 { font-size: 72px; }
+.h5 { font-size: 56px; }
+.blue { color: var(--blue); }
+.rose { color: var(--rose); }
+.p { font-weight: 300; font-size: 44px; line-height: 1.32; color: var(--ink2); margin: 0; }
+.p.big { font-size: 52px; } .p.s { font-size: 36px; } .dim { color: var(--ink3); } .w { color:#fff; } .slide.black, :root[data-theme="light"] .slide.black { background:#000; } .black .foot .n, .onimg .foot .n { color: rgba(255,255,255,.55); }
+.p.ink { color: var(--ink); }
+.small { font-weight: 400; font-size: 26px; line-height: 1.4; color: var(--ink3); margin: 0; }
+.lab { font-weight: 400; font-size: 28px; letter-spacing: .01em; color: var(--ink2); }
+.num { font-family: 'Playfair'; font-style: italic; font-weight: 400; line-height: .9; letter-spacing: -0.02em; }
+
+/* chrome */
+.foot { position: absolute; left: 100px; right: 100px; bottom: 50px; display: flex; align-items: center; justify-content: space-between; pointer-events: none; }
+.foot img { height: 58px; width: auto; }
+.foot .n { font-size: 22px; letter-spacing: .06em; color: var(--ink3); }
+.wrap { position: absolute; left: 120px; right: 120px; top: 100px; bottom: 160px; display: flex; flex-direction: column; justify-content: space-between; }
+.rule { height: 1px; background: var(--line); }
+
+/* imagery: full-bleed or a black field, text never over it */
+.pic { position: absolute; overflow: hidden; background: var(--img-bg); }
+.pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pic.contain img { object-fit: contain; }
+.pic.r { border-radius: 36px; box-shadow: var(--shadow); }
+:root[data-theme="light"] .pic.light-frame { box-shadow: 0 30px 90px rgba(10,21,38,.25); }
+
+/* list models */
+.list { display: flex; flex-direction: column; }
+.list .row { display: grid; grid-template-columns: var(--k, 420px) 1fr; gap: 40px; align-items: baseline; padding: 26px 0; border-top: 1px solid var(--line); }
+.list .row:first-child { border-top: 0; padding-top: 0; }
+.list .k { font-family: 'Playfair'; font-style: italic; font-size: 60px; line-height: 1; color: var(--ink); }
+.list .v { font-size: 36px; font-weight: 300; color: var(--ink2); line-height: 1.3; }
+
+.dot { display: inline-block; width: 18px; height: 18px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 18px var(--glow1); vertical-align: middle; margin-right: 22px; }
+.bul { font-size: 36px; font-weight: 300; color: var(--ink2); line-height: 1.35; margin: 0 0 22px 0; display: flex; align-items: flex-start; gap: 0; }
+.bul .dot { margin-top: 16px; flex: none; }
+
+svg text { font-family: 'Inter', sans-serif; }
+svg .pf { font-family: 'Playfair', serif; font-style: italic; }
+svg .lb { stroke: #5EB6FF; } svg .lr { stroke: #F6B8C6; } svg .fb { fill: #5EB6FF; } svg .fr { fill: #F6B8C6; } svg .fi { fill: var(--ink); } svg .fi2 { fill: var(--ink2); } svg .fi3 { fill: var(--ink3); } svg .li { stroke: var(--ink); } svg .li2 { stroke: var(--line2); }
+:root[data-theme="light"] svg .lb { stroke: #006EFF; } :root[data-theme="light"] svg .lr { stroke: #d9607f; } :root[data-theme="light"] svg .fb { fill: #006EFF; } :root[data-theme="light"] svg .fr { fill: #d9607f; }
+.wk { border-radius: 24px; padding: 30px 28px; height: 250px; display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; color: #fff; font-family: 'Playfair'; font-style: italic; font-size: 46px; line-height: 1; }
+.wk .sub { font-family: 'Inter'; font-weight: 300; font-size: 28px; opacity: .92; }
+.rl { position: absolute; color: #fff; }
+.rl .t { font-family: 'Playfair'; font-style: italic; font-size: 64px; line-height: 1; }
+.rl .d { font-weight: 300; font-size: 32px; line-height: 1.2; color: rgba(255,255,255,.8); margin-top: 8px; }
+
+/* UI */
+#ui { position: fixed; top: 22px; right: 26px; display: flex; gap: 10px; z-index: 50; transition: opacity .4s; }
+#ui.hide { opacity: 0; pointer-events: none; }
+#ui button, #ui a { appearance: none; border: 1px solid var(--line2); background: var(--bg0); color: var(--ink); font: 500 15px/1 'Inter', sans-serif; padding: 11px 16px; border-radius: 10px; cursor: pointer; text-decoration: none; }
+#ui a.pdf { border-color: var(--electric); background: var(--electric); color: #fff; box-shadow: 0 0 24px rgba(0,110,255,.45); }
+#hint { position: fixed; left: 26px; bottom: 22px; z-index: 50; font: 400 14px/1.4 'Inter', sans-serif; color: var(--ink3); transition: opacity .4s; }
+#hint.hide { opacity: 0; }
+#bar { position: fixed; left: 0; bottom: 0; height: 4px; background: var(--electric); box-shadow: 0 0 16px var(--electric); z-index: 60; transition: width .4s ease; }
+
+.cakelist .row{padding:11px 0;grid-template-columns:250px 1fr !important}.cakelist .k{font-size:40px}.cakelist .v{font-size:23px}
+#s5 .list5 .row{padding:18px 0}
+svg .ln-blue{stroke:#5EB6FF}svg .ln-rose{stroke:#F6B8C6}svg .fl-blue{fill:#5EB6FF}svg .fl-rose{fill:#F6B8C6}
+:root[data-theme="light"] svg .ln-blue{stroke:#006EFF}:root[data-theme="light"] svg .ln-rose{stroke:#d9607f}:root[data-theme="light"] svg .fl-blue{fill:#006EFF}:root[data-theme="light"] svg .fl-rose{fill:#d9607f}
+/* light version swaps */
+:root[data-theme="light"] .cakepic { background:#fff; }
+:root[data-theme="light"] .cakepic img { content: url('img/cake_light.jpg'); }
+:root[data-theme="light"] #s5 .dimtop { background: linear-gradient(180deg, rgba(255,255,255,.86) 0%, rgba(255,255,255,.86) 74%, rgba(255,255,255,0) 77%, rgba(255,255,255,0) 84%, rgba(255,255,255,.86) 87%) !important; }
+:root[data-theme="light"] #s7 { background:#000 !important; }
+
+/* phone: a scrolling review view of the slides */
+#mobile { display: none; }
+@media (max-width: 900px), (max-height: 500px) {
+  html, body { overflow: auto; height: auto; }
+  #stage, #hint, #bar, #ui { display: none !important; }
+  #mobile { display: block; background: var(--bg0); min-height: 100vh; }
+  #mbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; background: var(--bg0); border-bottom: 1px solid var(--line); }
+  #mbar .t { font: 400 15px/1.2 'Inter', sans-serif; letter-spacing: .08em; color: var(--ink3); }
+  #mbar button, #mbar a { appearance: none; border: 1px solid var(--line2); background: transparent; color: var(--ink); font: 500 15px/1 'Inter', sans-serif; padding: 12px 14px; border-radius: 10px; text-decoration: none; }
+  #mbar a.pdf { border-color: var(--electric); background: var(--electric); color: #fff; }
+  #mobile .fr { padding: 14px 16px 0; }
+  #mobile .fr img { width: 100%; height: auto; display: block; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  #mobile .fr .n { font: 400 13px/1.4 'Inter', sans-serif; color: var(--ink3); margin: 8px 2px 10px; letter-spacing: .06em; }
+}
+.lab7 .h5{font-size:50px}
+:root[data-theme="light"] .dimtop4 { background: linear-gradient(180deg, rgba(255,255,255,.86) 0%, rgba(255,255,255,.86) 24%, rgba(255,255,255,0) 30%) !important; }
+.wrap > svg, .wrap svg { flex: none; }
+</style>
+</head>
+<body>
+<div id="ui"><button id="theme">Light version</button><button id="fs">Full screen</button><a id="pdfA" class="pdf" href="The-Longevity-Masterclass-v2-dark.pdf" download>Download PDF</a></div>
+<div id="hint">arrow keys or tap to move, F full screen, T theme</div>
+<div id="bar"></div>
+<div id="mobile"><div id="mbar"><div class="t">THE LONGEVITY MASTERCLASS</div><button id="mtheme">Light version</button><a id="mpdf" class="pdf" href="The-Longevity-Masterclass-v2-dark.pdf" download>PDF</a></div><div id="mlist"></div></div>
+<div id="stage"><div id="deck">
+
+<!-- 0 · opening title card -->
+<section class="slide" id="s0">
+  <div class="glow g1" style="left:1000px;top:-300px"></div>
+  <div class="glow g2" style="left:-200px;top:500px"></div>
+  <div class="wrap" style="justify-content:center;align-items:center;text-align:center;gap:34px">
+    <div class="p s dim" style="letter-spacing:.3em;font-size:28px">LONGEVITY LIFE ACADEMY</div>
+    <h1 class="h h1">The Longevity<br>Masterclass</h1>
+    <div class="rule" style="width:180px;margin:10px 0"></div>
+    <p class="p big ink">with Julie Gibson Clark</p>
+    <p class="p s dim">Second slowest ager in the world, 2023. Structural engineer. Twenty-five years as the scientist and the experiment.</p>
+  </div>
+</section>
+
+<!-- 1 · I didn't do this to win -->
+<section class="slide black onimg" id="s1">
+  <div class="pic" style="left:0;top:0;width:1920px;height:1080px"><img src="img/brain_decline.jpg" alt="A brain, front alive and lit, back dimming into grey"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(0,0,0,.84) 0%, rgba(0,0,0,.58) 38%, rgba(0,0,0,0) 62%)"></div>
+  <div class="wrap" style="right:auto;width:900px;top:110px;bottom:170px">
+    <h1 class="h h2 w">I didn't do this<br>to win.</h1>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px">
+      <div>
+        <div class="h h5" style="color:#8a8f99;margin-bottom:26px">Running from</div>
+        <p class="p s" style="color:rgba(255,255,255,.74)">Dementia.<br>Alzheimer's.<br>Parkinson's.<br>The silent decade of decline.</p>
+      </div>
+      <div>
+        <div class="h h5" style="color:#5EB6FF;margin-bottom:26px">Running to</div>
+        <p class="p s w">Here for my son, all the days of his life.<br>Here for grandkids.<br>Another possibility for how we age.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · the speed towards death -->
+<section class="slide" id="s2">
+  <div class="pic" style="left:1000px;top:0;width:920px;height:1080px"><img src="img/gauge_b.jpg" alt="The pace of aging gauge" style="object-position:62% 50%"></div>
+  <div class="glow g2" style="left:-200px;top:200px"></div>
+  <div class="wrap" style="right:auto;width:860px">
+    <h1 class="h h3">Ten years pass.<br>By this test, I age<br>about six.</h1>
+    <div>
+      <div class="num blue" style="font-size:300px;text-shadow:0 0 60px var(--glow1)">0.665</div>
+      <p class="p ink" style="margin-top:20px">Julie's pace of aging. Most people: 1.0.</p>
+    </div>
+    <div class="h h4 blue">The speed towards death.</div>
+  </div>
+</section>
+
+<!-- 3 · longevity is like a cake -->
+<section class="slide" id="s3">
+  <div class="pic cakepic" style="left:0;top:0;width:1180px;height:1080px"><img src="img/cake_black.jpg" alt="The six-layer longevity cake"></div>
+  <div class="wrap" style="left:1240px;right:110px">
+    <h1 class="h h3" style="font-size:84px">Longevity is<br>like a cake.</h1>
+    <div class="list" style="--k:250px">
+      <div class="row" style="padding:11px 0"><div class="k dim" style="font-size:40px">Icing</div><div class="v" style="font-size:24px">Sauna, peptides, stem cells, light therapies, the gadgets on your feed.</div></div>
+      <div class="row" style="padding:11px 0"><div class="k" style="font-size:40px">Stress</div><div class="v" style="font-size:24px">The layer people skip.</div></div>
+      <div class="row" style="padding:11px 0"><div class="k" style="font-size:40px">Movement</div><div class="v" style="font-size:24px">Four types, four parts of you.</div></div>
+      <div class="row" style="padding:11px 0"><div class="k" style="font-size:40px">Food</div><div class="v" style="font-size:24px">Four pillars, no religion.</div></div>
+      <div class="row" style="padding:11px 0"><div class="k" style="font-size:40px">Sleep</div><div class="v" style="font-size:24px">The repair shift. The bottom of the cake.</div></div>
+      <div class="row" style="padding:11px 0"><div class="k rose" style="font-size:40px">Menopause</div><div class="v" style="font-size:24px">One thin layer at the base, for half the room.</div></div>
+    </div>
+    <p class="p" style="font-size:28px">Nobody has ever eaten a bowl of icing and called it a good cake.</p>
+  </div>
+</section>
+
+<!-- 4 · not wrong, not first: the cost and evidence map -->
+<section class="slide" id="s4">
+  <div class="glow g1" style="left:-300px;top:400px"></div>
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end">
+      <h1 class="h h2" style="white-space:nowrap">Not wrong. Not first.</h1>
+      <p class="p" style="width:560px;text-align:right;font-size:38px">The expensive end is not where the evidence is.</p>
+    </div>
+    <svg viewBox="0 0 1680 560" width="1680" height="560" aria-label="Cost left to right, strength of human evidence bottom to top">
+      <defs><filter id="gl4" filterUnits="userSpaceOnUse" x="0" y="0" width="1680" height="560"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+      <line x1="120" y1="20" x2="120" y2="500" class="li2" stroke-width="2"/>
+      <line x1="120" y1="500" x2="1560" y2="500" class="li2" stroke-width="2"/>
+      <text x="1560" y="548" font-size="34" class="fi3" text-anchor="end">expensive</text>
+      <text x="130" y="548" font-size="34" class="fi3">cheap</text>
+      <text x="130" y="30" font-size="34" class="fi3">strong human evidence</text>
+      <text x="1560" y="470" font-size="34" class="fi3" text-anchor="end">thin evidence</text>
+      <!-- markers -->
+      <circle cx="300" cy="90" r="30" class="fb" filter="url(#gl4)"/><text x="350" y="104" font-size="52" class="pf fi">sauna</text>
+      <circle cx="380" cy="250" r="18" class="fb"/><text x="420" y="264" font-size="44" class="pf fi2">prebiotics</text>
+      <circle cx="470" cy="330" r="18" class="fb"/><text x="510" y="344" font-size="44" class="pf fi2">most supplements</text>
+      <circle cx="940" cy="230" r="18" class="fi2"/><text x="980" y="244" font-size="44" class="pf fi2">rapamycin, with a doctor</text>
+      <circle cx="1150" cy="420" r="18" class="fi3"/><text x="1190" y="434" font-size="44" class="pf fi3">NAD drips</text>
+      <circle cx="1300" cy="360" r="18" class="fi3"/><text x="1340" y="374" font-size="44" class="pf fi3">peptides</text>
+      <circle cx="1430" cy="440" r="18" class="fi3"/><text x="1470" y="454" font-size="44" class="pf fi3">stem cells</text>
+      <text x="1680" y="200" font-size="44" class="pf fr" text-anchor="end">$2,000,000 a year</text>
+      <text x="1680" y="240" font-size="34" class="fr" text-anchor="end">off the chart</text>
+      <circle cx="160" cy="470" r="34" class="fb" filter="url(#gl4)"/><text x="215" y="484" font-size="52" class="pf fb">$12 a day, Julie</text>
+    </svg>
+    <p class="p ink">Sleep, food, movement and stress do most of the work. Icing on nothing is a bowl of frosting.</p>
+  </div>
+</section>
+
+<!-- 5 · menopause therapy is a layer -->
+<section class="slide" id="s5">
+  <div class="pic cakepic" style="left:0;top:0;width:1000px;height:1080px"><img src="img/cake_black.jpg" alt="The cake, the thin layer lit" style="object-position:50% 50%"></div>
+  <div class="dimtop" style="position:absolute;left:0;top:0;width:1000px;height:1080px;background:linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.9) 74%, rgba(0,0,0,0) 77%, rgba(0,0,0,0) 84%, rgba(0,0,0,.9) 87%)"></div>
+  <div class="h h5" style="position:absolute;left:100px;top:110px;color:var(--blue)">the thin layer, at the base</div>
+  <div class="wrap" style="left:1060px;right:100px">
+    <h1 class="h h4">Menopause therapy is a layer, not icing.</h1>
+    <div>
+      <div class="h h5 dim" style="margin-bottom:24px">The window</div>
+      <svg viewBox="0 0 760 140" width="760" height="140" aria-label="From menopause to ten years after">
+        <defs><filter id="gl5" filterUnits="userSpaceOnUse" x="0" y="0" width="760" height="140"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+        <line x1="0" y1="70" x2="760" y2="70" class="li2" stroke-width="2"/>
+        <rect x="0" y="52" width="520" height="36" rx="18" class="fb" filter="url(#gl5)"/>
+        <text x="0" y="130" font-size="34" class="fi">menopause</text>
+        <text x="520" y="130" font-size="34" class="fi" text-anchor="middle">ten years after</text>
+        <text x="760" y="130" font-size="34" class="fi3" text-anchor="end">sixty</text>
+      </svg>
+      <p class="p" style="margin-top:24px">Under sixty, or within ten years: the benefits outweigh the risks. The Menopause Society, 2022. The FDA dropped the black box, 2025.</p>
+    </div>
+    <p class="p ink">Find a certified practitioner. The letters are <span class="blue">MSCP</span>.</p>
+  </div>
+</section>
+
+<!-- 6 · sleep is the repair shift: the night arc -->
+<section class="slide" id="s6">
+  <div class="glow g1" style="left:400px;top:100px"></div>
+  <div class="wrap">
+    <h1 class="h h2">Sleep is the repair shift.</h1>
+    <svg viewBox="0 0 1680 520" width="1680" height="520" aria-label="The night arc from 9 PM to 5 AM, moon to sun, with the repair shift in the deepest part">
+      <defs><filter id="gl6" filterUnits="userSpaceOnUse" x="0" y="0" width="1680" height="520"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+      <path d="M140 440 A 700 700 0 0 1 1540 440" fill="none" class="lb" stroke-width="10" stroke-linecap="round" filter="url(#gl6)"/>
+      <path d="M560 160 A 700 700 0 0 1 1120 160" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".9"/>
+      <text x="840" y="70" font-size="48" class="pf fi" text-anchor="middle">the repair shift</text>
+      <circle cx="140" cy="440" r="22" class="fi"/><circle cx="1540" cy="440" r="26" fill="#F6C98B"/>
+      <text x="0" y="510" font-size="56" class="pf fb">Lights out 9:00 PM</text>
+      <text x="1680" y="510" font-size="56" class="pf fb" text-anchor="end">Up 5:00 AM</text>
+      <text x="840" y="330" font-size="52" class="pf fi" text-anchor="middle">Eight hours, cool and dark.</text>
+      <text x="840" y="400" font-size="40" class="fi2" text-anchor="middle">Last meal three hours before bed. Screens off one hour before.</text>
+    </svg>
+    <p class="p ink">Same window, every single night. Regularity beat duration: 48% lower risk of dying.</p>
+  </div>
+</section>
+
+<!-- 7 · I'll sleep when I die -->
+<section class="slide black" id="s7">
+  <div class="wrap" style="justify-content:center;gap:50px">
+    <h1 class="h w" style="font-size:150px;line-height:.98">"I'll sleep when I die,"</h1>
+    <h1 class="h" style="font-size:96px;color:rgba(255,255,255,.62)">said the person aging at twice the normal speed.</h1>
+  </div>
+</section>
+
+<!-- 8 · take the religion out of your diet: the plate -->
+<section class="slide black onimg" id="s8">
+  <div class="pic" style="left:0;top:0;width:1920px;height:1080px"><img src="img/plate.jpg" alt="One plate, four quadrants" style="object-position:36% 50%"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,.9) 64%, rgba(0,0,0,.97) 100%)"></div>
+  <div class="wrap" style="left:1120px;right:100px">
+    <h1 class="h h3 w" style="font-size:84px">Take the religion out of your diet.</h1>
+    <div class="h h5" style="color:rgba(255,255,255,.4);display:flex;flex-wrap:wrap;gap:12px 30px;font-size:44px"><span style="text-decoration:line-through;text-decoration-color:#5EB6FF;text-decoration-thickness:4px">vegan</span><span style="text-decoration:line-through;text-decoration-color:#5EB6FF;text-decoration-thickness:4px">keto</span><span style="text-decoration:line-through;text-decoration-color:#5EB6FF;text-decoration-thickness:4px">Mediterranean</span><span style="text-decoration:line-through;text-decoration-color:#5EB6FF;text-decoration-thickness:4px">carnivore</span></div>
+    <div class="h h5 w" style="line-height:1.2;font-size:52px">Fiber variety. Protein.<br>Deep color. Real food.</div>
+    <div style="border-top:1px solid rgba(255,255,255,.25);padding-top:26px">
+      <p class="p s" style="color:rgba(255,255,255,.85);line-height:1.5">A pound of vegetables a day, half of it greens.<br>Wild blueberries or pomegranate, every day.<br>One gram of protein per pound of lean mass.<br>Eat between 8 AM and 6 PM.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · the one thing every doctor agrees on -->
+<section class="slide" id="s9">
+  <div class="pic" style="left:1180px;top:0;width:740px;height:1080px"><img src="img/brulee.jpg" alt="The cracked crust of a creme brulee"></div>
+  <div class="wrap" style="right:auto;width:1000px">
+    <h1 class="h h3">The one thing every<br>doctor agrees on.</h1>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px">
+      <div><div class="h h4" style="color:var(--rose)">Spike.</div><p class="p s" style="margin-top:18px">What a sugary meal does on a glucose monitor.</p></div>
+      <div><div class="h h4" style="color:var(--rose)">Signal.</div><p class="p s" style="margin-top:18px">A flood of insulin, locked on high all day.</p></div>
+      <div><div class="h h4" style="color:var(--rose)">Scar.</div><p class="p s" style="margin-top:18px">Sugar sticks to your proteins. The crust of a crème brûlée.</p></div>
+    </div>
+    <div style="display:flex;gap:60px;align-items:flex-end">
+      <div class="num blue" style="font-size:240px;text-shadow:0 0 60px var(--glow1)">25 g</div>
+      <p class="p ink" style="padding-bottom:26px">of added sugar a day.<br>That is the ceiling.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · same age -->
+<section class="slide black" id="s10">
+  <div class="pic" style="left:0;top:0;width:1920px;height:1080px"><img src="img/bodies.jpg" alt="Two people the same age" style="transform:scale(.64);transform-origin:50% 0%"></div>
+  <div style="position:absolute;left:120px;top:90px"><h1 class="h h3 w">Same age.</h1></div>
+  <svg viewBox="0 0 1920 1080" width="1920" height="1080" style="position:absolute;inset:0" aria-label="Under each figure: years lived and years lived well">
+    <defs><filter id="gl10" filterUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1080"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <!-- left figure -->
+    <rect x="300" y="760" width="480" height="26" rx="13" fill="rgba(255,255,255,.25)"/>
+    <rect x="300" y="810" width="400" height="26" rx="13" fill="#F6B8C6"/>
+    <text x="300" y="740" font-size="34" fill="rgba(255,255,255,.6)">years lived</text>
+    <text x="720" y="832" font-size="34" fill="#F6B8C6">12.4 years of decline</text>
+    <!-- right figure -->
+    <rect x="1140" y="760" width="480" height="26" rx="13" fill="rgba(255,255,255,.25)"/>
+    <rect x="1140" y="810" width="480" height="26" rx="13" fill="#5EB6FF" filter="url(#gl10)"/>
+    <text x="1140" y="740" font-size="34" fill="rgba(255,255,255,.6)">years lived</text>
+    <text x="1140" y="880" font-size="34" fill="#5EB6FF">years lived well</text>
+  </svg>
+  <div class="rl" style="left:120px;top:890px;width:1680px"><div class="d" style="font-size:36px;color:#fff">12.4 years in the United States, the widest gap in the world. The best defense is movement.</div></div>
+</section>
+
+<!-- 11 · four types of movement, four parts of you: the body map -->
+<section class="slide black" id="s11">
+  <div class="pic" style="left:0;top:0;width:900px;height:1080px"><img src="img/bodies.jpg" alt="The body map" style="object-position:82% 50%;transform:scale(1.05)"></div>
+  <svg viewBox="0 0 900 1080" width="900" height="1080" style="position:absolute;left:0;top:0" aria-label="Four points on the body">
+    <g class="fb"><circle cx="560" cy="150" r="12"/><circle cx="540" cy="330" r="12"/><circle cx="530" cy="560" r="12"/><circle cx="520" cy="980" r="12"/></g>
+    <g class="lb" stroke-width="3"><line x1="560" y1="150" x2="880" y2="150"/><line x1="540" y1="330" x2="880" y2="330"/><line x1="530" y1="560" x2="880" y2="560"/><line x1="520" y1="980" x2="880" y2="980"/></g>
+  </svg>
+  <div class="wrap" style="left:960px;right:100px">
+    <h1 class="h h4 w" style="font-size:66px">Four types of movement,<br>four parts of you.</h1>
+    <div class="list" style="--k:300px">
+      <div class="row" style="padding:16px 0;border-color:rgba(255,255,255,.2)"><div class="k w" style="font-size:52px">Weights</div><div class="v" style="font-size:34px;color:rgba(255,255,255,.8)">muscle, bone, brain. The predictor: grip strength.</div></div>
+      <div class="row" style="padding:16px 0;border-color:rgba(255,255,255,.2)"><div class="k w" style="font-size:52px">VO2 max</div><div class="v" style="font-size:34px;color:rgba(255,255,255,.8)">heart and lungs. The predictor: fitness.</div></div>
+      <div class="row" style="padding:16px 0;border-color:rgba(255,255,255,.2)"><div class="k w" style="font-size:52px">Zone 2</div><div class="v" style="font-size:34px;color:rgba(255,255,255,.8)">metabolic health, heart. The predictor: 7,000 steps a day.</div></div>
+      <div class="row" style="padding:16px 0;border-color:rgba(255,255,255,.2)"><div class="k w" style="font-size:52px">Balance</div><div class="v" style="font-size:34px;color:rgba(255,255,255,.8)">brain, and safety for the other three. The predictor: one leg, thirty seconds.</div></div>
+    </div>
+    <p class="p s" style="color:#fff">A portfolio, not one stock.</p>
+  </div>
+</section>
+
+<!-- 13 · my weekly longevity protocol: seven glass blocks -->
+<section class="slide" id="s13">
+  <div class="glow g1" style="left:-300px;top:200px"></div>
+  <div class="wrap">
+    <h1 class="h h2">My weekly longevity protocol<br>looks like this.</h1>
+    <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:26px">
+      <div class="gb" style="--c:#1F6FFF"><div class="h h5 dim">Mon</div><div class="h h5" style="margin-top:auto">Weights</div><div class="p s">then sauna</div></div>
+      <div class="gb" style="--c:#35C7B1"><div class="h h5 dim">Tue</div><div class="h h5" style="margin-top:auto">Zone 2</div><div class="p s">a walk</div></div>
+      <div class="gb" style="--c:#1F6FFF"><div class="h h5 dim">Wed</div><div class="h h5" style="margin-top:auto">Weights</div><div class="p s">then sauna</div></div>
+      <div class="gb" style="--c:#FF6A6A"><div class="h h5 dim">Thu</div><div class="h h5" style="margin-top:auto">VO2 max</div><div class="p s">short bursts</div></div>
+      <div class="gb" style="--c:#1F6FFF"><div class="h h5 dim">Fri</div><div class="h h5" style="margin-top:auto">Weights</div><div class="p s">then sauna</div></div>
+      <div class="gb" style="--c:#35C7B1"><div class="h h5 dim">Sat</div><div class="h h5" style="margin-top:auto">Zone 2</div><div class="p s">a long hike</div></div>
+      <div class="gb" style="--c:#C08CFF"><div class="h h5 dim">Sun</div><div class="h h5" style="margin-top:auto">Balance</div><div class="p s">mobility</div></div>
+    </div>
+    <div>
+      <div style="height:6px;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--blue));box-shadow:0 0 30px var(--glow1)"></div>
+      <p class="p ink" style="margin-top:22px">Under all seven: 7,000 steps a day, a walk after dinner, one reset.</p>
+    </div>
+  </div>
+  <style>.gb .h5{font-size:48px}.gb{position:relative;height:330px;padding:26px 24px;border-radius:26px;display:flex;flex-direction:column;background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.02));box-shadow:inset 0 0 0 1px rgba(255,255,255,.12), inset 0 -80px 120px -60px var(--c), 0 20px 50px rgba(0,0,0,.35)}:root[data-theme="light"] .gb{background:linear-gradient(180deg, rgba(10,21,38,.04), rgba(10,21,38,.01));box-shadow:inset 0 0 0 1px rgba(10,21,38,.1), inset 0 -80px 120px -60px var(--c)}</style>
+</section>
+
+<!-- 14 · the layer people skip: the cake, stress lit, and the breath -->
+<section class="slide" id="s14">
+  <div class="pic cakepic" style="left:0;top:0;width:900px;height:1080px"><img src="img/cake_black.jpg" alt="The cake with the stress layer lit"></div>
+  <div class="dimtop" style="position:absolute;left:0;top:0;width:900px;height:1080px;background:linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.9) 27%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 37%, rgba(0,0,0,.9) 40%)"></div>
+  <div class="h h5" style="position:absolute;left:100px;top:110px;color:var(--blue)">the top layer: stress</div>
+  <div class="wrap" style="left:960px;right:100px">
+    <h1 class="h h3" style="font-size:84px">The layer people skip.</h1>
+    <svg viewBox="0 0 760 300" width="760" height="300" aria-label="The physiological sigh: two short arcs in, one long arc out">
+      <defs><filter id="gl14" filterUnits="userSpaceOnUse" x="0" y="0" width="760" height="300"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+      <path d="M10 240 Q 90 60 170 240" fill="none" class="lb" stroke-width="10" stroke-linecap="round" filter="url(#gl14)"/>
+      <path d="M190 240 Q 240 120 290 240" fill="none" class="lb" stroke-width="10" stroke-linecap="round" filter="url(#gl14)"/>
+      <path d="M310 240 Q 530 -120 750 240" fill="none" class="lr" stroke-width="10" stroke-linecap="round" filter="url(#gl14)"/>
+      <text x="90" y="290" font-size="34" class="fb" text-anchor="middle">in</text>
+      <text x="240" y="290" font-size="34" class="fb" text-anchor="middle">in</text>
+      <text x="530" y="290" font-size="34" class="fr" text-anchor="middle">out, long and slow</text>
+    </svg>
+    <div>
+      <div class="h h4" style="font-size:62px">The physiological sigh.</div>
+      <p class="p" style="margin-top:18px">Two short breaths in through the nose, one long breath out through the mouth. Three times.</p>
+    </div>
+    <p class="p ink">Thirty seconds. Zero dollars. Out of fight or flight.</p>
+  </div>
+</section>
+
+<!-- 15 · the day ring, colored by layer -->
+<section class="slide black" id="s15">
+  <svg viewBox="0 0 1280 1080" width="1280" height="1080" style="position:absolute;left:600px;top:0;overflow:visible" aria-label="Julie's day as a clock, 9 PM at the top, colored by layer">
+    <defs><filter id="gl15" filterUnits="userSpaceOnUse" x="-200" y="-200" width="1680" height="1480"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <g filter="url(#gl15)"><circle cx="640" cy="520" r="300" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="50"/><path d="M640.0 220.0 A 300 300 0 0 1 899.8 670.0" fill="none" stroke="#1F3F8F" stroke-width="50" /><path d="M899.8 670.0 A 300 300 0 0 1 790.0 779.8" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="50" /><path d="M790.0 779.8 A 300 300 0 0 1 717.6 809.8" fill="none" stroke="#1F6FFF" stroke-width="50" /><path d="M717.6 809.8 A 300 300 0 0 1 427.9 307.9" fill="none" stroke="#35C7B1" stroke-width="50" opacity=".85"/><path d="M380.2 670.0 A 300 300 0 0 1 357.2 620.1" fill="none" stroke="#C08CFF" stroke-width="50" /><path d="M427.9 307.9 A 300 300 0 0 1 562.4 230.2" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="50" /><path d="M562.4 230.2 A 300 300 0 0 1 640.0 220.0" fill="none" stroke="#1F3F8F" stroke-width="50" opacity=".6"/></g>
+    <text x="640" y="100" font-size="46" class="pf" fill="#5EB6FF" text-anchor="middle">9 PM</text><text x="640" y="138" font-size="27" fill="rgba(255,255,255,.75)" text-anchor="middle">lights out</text><text x="988" y="725" font-size="46" class="pf" fill="#fff" text-anchor="start">5 AM</text><text x="988" y="763" font-size="27" fill="rgba(255,255,255,.75)" text-anchor="start">wake, water, light</text><text x="845" y="878" font-size="46" class="pf" fill="#fff" text-anchor="start">7 AM</text><text x="845" y="916" font-size="27" fill="rgba(255,255,255,.75)" text-anchor="start">training, then sauna</text><text x="721" y="935" font-size="46" class="pf" fill="#fff" text-anchor="middle">8 AM</text><text x="721" y="973" font-size="27" fill="rgba(255,255,255,.75)" text-anchor="middle">window opens, coffee until 9</text><text x="354" y="816" font-size="46" class="pf" fill="#fff" text-anchor="end">Midday</text><text x="354" y="854" font-size="27" fill="rgba(255,255,255,.75)" text-anchor="end">main meal, a walk</text><text x="266" y="660" font-size="46" class="pf" fill="#fff" text-anchor="end">1 PM</text><text x="266" y="698" font-size="27" fill="rgba(255,255,255,.75)" text-anchor="end">reset</text><text x="354" y="244" font-size="46" class="pf" fill="#5EB6FF" text-anchor="end">6 PM</text><text x="354" y="282" font-size="27" fill="rgba(255,255,255,.75)" text-anchor="end">kitchen closes</text><text x="529" y="133" font-size="46" class="pf" fill="#fff" text-anchor="end">8 PM</text><text x="529" y="171" font-size="27" fill="rgba(255,255,255,.75)" text-anchor="end">screens off</text>
+    <text x="640" y="505" font-size="40" fill="rgba(255,255,255,.75)" text-anchor="middle">the eating window</text>
+    <text x="640" y="565" font-size="56" class="pf" fill="#35C7B1" text-anchor="middle">8 AM to 6 PM</text>
+  </svg>
+  <div class="wrap" style="right:auto;width:540px;top:110px;bottom:170px">
+    <h1 class="h h3 w" style="font-size:72px">Julie Gibson Clark's Longevity Protocol.</h1>
+    <div class="h h4" style="color:#5EB6FF;font-size:54px">The day is built backward from bedtime.</div>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><span style="width:24px;height:24px;border-radius:50%;background:#1F3F8F;display:inline-block"></span><span class="p s w">sleep</span><span style="width:24px;height:24px;border-radius:50%;background:#35C7B1;display:inline-block;margin-left:22px"></span><span class="p s w">food</span><span style="width:24px;height:24px;border-radius:50%;background:#1F6FFF;display:inline-block;margin-left:22px"></span><span class="p s w">movement</span><span style="width:24px;height:24px;border-radius:50%;background:#C08CFF;display:inline-block;margin-left:22px"></span><span class="p s w">stress</span></div>
+      <p class="p s" style="color:rgba(255,255,255,.8)">Borrow the order, not the clock. Screenshot this one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 16 · test, then buy -->
+<section class="slide" id="s16">
+  <div class="pic" style="left:0;top:0;width:820px;height:1080px"><img src="img/tools.jpg" alt="A notebook, a watch, a scale" style="object-position:50% 50%;transform:scale(1.15)"></div>
+  <div class="h h5" style="position:absolute;left:80px;top:100px;color:#fff;width:640px;line-height:1.15">You don't need a lab.<br>You need a notebook.</div>
+  <div class="wrap" style="left:900px;right:100px">
+    <h1 class="h h2">Test. Then buy.</h1>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
+      <div class="gc"><div class="h h5" style="font-size:44px">Vitamin D</div></div>
+      <div class="gc"><div class="h h5" style="font-size:44px">Homocysteine</div></div>
+      <div class="gc"><div class="h h5" style="font-size:44px">Inflammation</div></div>
+      <div class="gc"><div class="h h5" style="font-size:44px">Micronutrients</div></div>
+    </div>
+    <p class="p">Ask your doctor which of these makes sense for you. Then buy what the hole in the cake needs.</p>
+    <div>
+      <div class="h h5 dim" style="font-size:40px">What one person chose</div>
+      <p class="p s" style="margin-top:12px">D3 with K2. Magnesium. B-complex. Omega-3s. NOVOS.</p>
+    </div>
+  </div>
+  <style>.gc{height:150px;border-radius:24px;display:flex;align-items:flex-end;padding:22px;background:linear-gradient(180deg, rgba(94,182,255,.18), rgba(94,182,255,.03));box-shadow:inset 0 0 0 1px rgba(94,182,255,.35), 0 20px 60px rgba(0,0,0,.3)}</style>
+</section>
+
+<!-- 17 · why, intention, resources: the ring of three -->
+<section class="slide" id="s17">
+  <div class="glow g1" style="left:-200px;top:0"></div>
+  <svg viewBox="0 0 900 900" width="900" height="900" style="position:absolute;left:100px;top:90px;overflow:visible" aria-label="A ring of three: why, intention, resources; the center lights when all three are on">
+    <defs><filter id="gl17" filterUnits="userSpaceOnUse" x="0" y="0" width="900" height="900"><feGaussianBlur stdDeviation="20" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <circle cx="450" cy="470" r="300" fill="none" class="li2" stroke-width="2"/>
+    <g class="lb" stroke-width="4" opacity=".7"><line x1="450" y1="170" x2="190" y2="620"/><line x1="450" y1="170" x2="710" y2="620"/><line x1="190" y1="620" x2="710" y2="620"/></g>
+    <g filter="url(#gl17)"><circle cx="450" cy="170" r="34" class="fb"/><circle cx="190" cy="620" r="34" fill="#8AD2FF"/><circle cx="710" cy="620" r="34" class="fr"/><circle cx="450" cy="470" r="60" fill="#fff" opacity=".95"/></g>
+    <text x="450" y="110" font-size="56" class="pf fi" text-anchor="middle">What's my why?</text>
+    <text x="20" y="760" font-size="56" class="pf fi">What's my intention?</text>
+    <text x="880" y="840" font-size="56" class="pf fi" text-anchor="end">What are my resources?</text>
+    <text x="450" y="600" font-size="60" class="pf fb" text-anchor="middle">Does this fit?</text>
+  </svg>
+  <div class="wrap" style="left:1080px;right:100px">
+    <h1 class="h h3">Why. Intention.<br>Resources.</h1>
+    <p class="p">Three questions, before anything new goes into your life. When all three are on, the center lights.</p>
+    <div>
+      <div class="h h4 blue" style="font-size:60px">The same cake, built week by week, with a teacher.</div>
+      <p class="p s" style="margin-top:18px">Your why. Your intention. Your resources. One thing, forty-eight hours.</p>
+    </div>
+  </div>
+</section>
+
+</div></div>
+<script>
+(function(){
+  const slides=[...document.querySelectorAll('.slide')]; const N=slides.length;
+  const q=new URLSearchParams(location.search); const root=document.documentElement;
+  function setTheme(t){ root.setAttribute('data-theme',t); document.getElementById('theme').textContent = t==='dark' ? 'Light version' : 'Dark version';
+    document.querySelectorAll('.foot img').forEach(i=>{ const s=i.closest('.slide'); const dk=s.classList.contains('black')||s.classList.contains('onimg'); i.src = (t==='dark'||dk) ? 'img/logo-light.png' : 'img/logo-dark.png'; });
+    document.getElementById('pdfA').href = 'The-Longevity-Masterclass-v2-'+t+'.pdf';
+    try{localStorage.setItem('mc2-theme',t);}catch(e){} }
+  slides.forEach((s,i)=>{ const f=document.createElement('div'); f.className='foot'; f.innerHTML='<img src="img/logo-light.png" alt="Longevity Life Academy"><div class="n">THE LONGEVITY MASTERCLASS &nbsp; '+String(i).padStart(2,'0')+' / '+(N-1)+'</div>'; s.appendChild(f); });
+  let th=q.get('theme'); if(!th){ try{th=localStorage.getItem('mc2-theme');}catch(e){} } setTheme(th==='light'?'light':'dark');
+  let cur=Math.min(N,Math.max(1,parseInt(location.hash.slice(1))||parseInt(q.get('s'))||1));
+  function show(n){ cur=n; slides.forEach((s,i)=>s.classList.toggle('on',i===n-1)); history.replaceState(null,'','#'+n); document.getElementById('bar').style.width=(n/N*100)+'%'; }
+  function fit(){ const s=Math.min(innerWidth/1920, innerHeight/1080); document.getElementById('deck').style.transform='scale('+s+')'; }
+  addEventListener('resize',fit); fit(); show(cur);
+  addEventListener('keydown',e=>{ if(['ArrowRight','ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault(); show(Math.min(N,cur+1));} else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault(); show(Math.max(1,cur-1));} else if(e.key==='Home'){show(1);} else if(e.key==='End'){show(N);} else if(e.key==='f'||e.key==='F'){toggleFs();} else if(e.key==='t'||e.key==='T'){setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark');} });
+  document.getElementById('stage').addEventListener('click',e=>{ if(e.target.closest('#ui')) return; const x=e.clientX/innerWidth; show(x<0.25?Math.max(1,cur-1):Math.min(N,cur+1)); });
+  let tx=0; addEventListener('touchstart',e=>{tx=e.touches[0].clientX;},{passive:true}); addEventListener('touchend',e=>{ const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>50) show(dx<0?Math.min(N,cur+1):Math.max(1,cur-1)); });
+  function toggleFs(){ if(!document.fullscreenElement){ document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen(); } else { document.exitFullscreen(); } }
+  document.getElementById('fs').onclick=toggleFs; document.getElementById('theme').onclick=()=>setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark');
+  let t; function wake(){ document.getElementById('ui').classList.remove('hide'); document.getElementById('hint').classList.remove('hide'); clearTimeout(t); t=setTimeout(()=>{document.getElementById('ui').classList.add('hide'); document.getElementById('hint').classList.add('hide');},3500); }
+  addEventListener('mousemove',wake); wake();
+
+  // phone list
+  (function(){ const L=document.getElementById('mlist'); if(!L) return;
+    function build(t){ L.innerHTML=''; for(let i=1;i<=N;i++){ const d=document.createElement('div'); d.className='fr'; d.innerHTML='<img src="frames/'+t+'_'+String(i).padStart(2,'0')+'.jpg" alt="slide '+(i-1)+'" loading="lazy"><div class="n">'+String(i-1).padStart(2,'0')+' / '+(N-1)+'</div>'; L.appendChild(d);} }
+    const mt=document.getElementById('mtheme'); const mp=document.getElementById('mpdf');
+    function sync(){ const t=root.getAttribute('data-theme'); build(t); mt.textContent = t==='dark' ? 'Light version' : 'Dark version'; mp.href='The-Longevity-Masterclass-v2-'+t+'.pdf'; }
+    mt.onclick=()=>{ setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'); sync(); };
+    sync();
+  })();
+  window.__deck={show,setTheme,N};
+})();
+</script>
+</body>
+</html>
