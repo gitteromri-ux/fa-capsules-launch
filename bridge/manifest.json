@@ -1,25 +1,36 @@
 {
- "sites": [],
+ "sites": [
+  {
+   "shots": [
+    {
+     "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/?theme=dark#3",
+     "width": 1920,
+     "height": 1080,
+     "dpr": 1,
+     "out": "live_deck2_3.png"
+    },
+    {
+     "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/?theme=light#16",
+     "width": 1920,
+     "height": 1080,
+     "dpr": 1,
+     "out": "live_deck2_16l.png"
+    },
+    {
+     "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/#16",
+     "width": 430,
+     "height": 932,
+     "dpr": 2,
+     "mobile": true,
+     "out": "live_deck2_phone.png"
+    }
+   ]
+  }
+ ],
  "downloads": [
   {
-   "url": "https://cms-toolkit-artifacts.artlist.io/content/-t-e-x-t_-t-o_-i-m-a-g-e-v1/media__8/image-4ac51b45-14ac-4eea-afb6-babeefed3541.png?Expires=2108062975&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=vsdPPwtkHDidcke06gYMdqIRYYWWV6-ROTUJwIWe6VhQ7TGwUCOegpVdNe0-i~dgqRoy98JwctCweom3K8qruJp~leCvfjWO7AIi9lMcG4jllBbZ8Lxt5DOxSMK-0xK-Bw1dF4el6wX4wd5OquAL-sQ2baboqvUDueR~ubLonoDkzkmXX8ufANOK94X-po81htPRrVs2R--7cuOpflSyVdZXcErp8mbIC7-qvhHsPc1AeIGhP6va1GEHtp3IPcOv7D0gYfg8CxKEig-~Q9baXV5~78fqFT8GlP5VfOSI1sNozJhVBRJkSVty7AUQabv~WksoLsm4JE1zznnPWV0qyw__",
-   "out": "v2_mv2_weights.png"
-  },
-  {
-   "url": "https://cms-toolkit-artifacts.artlist.io/content/-t-e-x-t_-t-o_-i-m-a-g-e-v1/media__1/image-b874eae2-ef70-44fc-bc7a-aa5e1acb273a.png?Expires=2108062978&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=waxLdQhb7gFcNievbHQHYhcPiz47I~V0OgKngBjKXpb2NVH43zgd4oxmOt0Hzc5G-Y0HrYbRFSyhpYhFJnJ~L5OiwCkw51kuXkCVQnTSXYlWF1MHdXWlGsNkXppakmlPl92sUZ~ZTxfXi-FzEKr7lRAIs~SVJ~gR8HjFPI7f~svkT5GEpD2Id1umhCmAtURLqk6VlYUEWP1Zu5cP~dBSQHi9NdxTkmHf-80Z5-0RAHn~Xsy7cY~DUUgpJEqZnC00yTq7ZupTcqpSIbK2K7ZuPDwhB0VUV64D55vT5MH9yq-mcUD~OLwWvQIG2~3UzW5nAveWkFjCR8SICKhRZ99FPg__",
-   "out": "v2_mv2_vo2.png"
-  },
-  {
-   "url": "https://cms-toolkit-artifacts.artlist.io/content/-t-e-x-t_-t-o_-i-m-a-g-e-v1/media__7/image-73c2dde3-4081-4f9f-af5d-7db5f63b33ff.png?Expires=2108062978&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=IEtG7m6jKjzgb7Y2W3AJ1Dfd0Wh~wkXTc8dBaI65pwlQTNoCTCy86Np9EtSYuSeZOmPxUbxrpFjWIkp0gxBt7-DUgltyu65M1VfP5lSaaPhc6Wl4waj8E8dVgTS0F0BG3UELLAn1o5tLylGx0O1wCwzrDJA6xQyoDilCsqr0bAXjf6uUlCb5c~BQxmq-jH1RbTsGVmoRQtikc1-Hu-XjEm6prfLLJOTh0BXInMfXPpjw67PAFeA2JVUFMOkil9jZhzizsxSUrt42Zg4SRcJR8p5ML606aN2M5bMI7aHdQ-XDgJScqJ5qFBlhaucXqHl-IVtgkeW3y4pKuSwoR7pmJg__",
-   "out": "v2_mv2_zone2.png"
-  },
-  {
-   "url": "https://cms-toolkit-artifacts.artlist.io/content/-t-e-x-t_-t-o_-i-m-a-g-e-v1/media__10/image-05d78905-1bbf-4ea2-ac7a-b490b84c3fc6.png?Expires=2108062975&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=h1pQ9jHHjPjO-1DzepPy7geqg64gl9rkMNWHDOyy-Wx6Mj1fre2nPhXQkk9GajErydDW2izqKXHnuUiUq~JsOxXoM4fzvqXQCJjQOch7wljx8I5-1UrqjiZdANXwvqfDArqDY2rnv9PhMewYi0XNGJTyFWsQyoKO6qm9ARP5Ek9c~tQJ3rsYwKLsz8QD0I8hfcEIVkk6V3-JlGpjLjSE9cpiBDBult8MO0bzVq0pRISUidcsja1UTJSY9Ob9P7titwhfknxkkeJ09SUX4FtQutWV009xd5KImk8YOW7dqxIMadbvTspLUlW~UajE5A93r7bX2VrB9~7b3XKMqDAvCw__",
-   "out": "v2_mv2_mobility.png"
-  },
-  {
-   "url": "https://cms-toolkit-artifacts.artlist.io/content/-t-e-x-t_-t-o_-i-m-a-g-e-v1/media__4/image-7251b7fb-5df0-4e0f-8471-7b9134e45115.png?Expires=2108062627&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=1vOKNiPwPVhX~VBkHxgYrbeiJ0IdrSRHbsprfz6498StuSkI4NysXsWX0TX32yEJAi5wxuxN5lMnjvXdf9obfNQsaVuTHVYNbr0~Vj8a7zG7HZlmQN~xCGk3srldZHqDZEmR04KEUTTw67X9s42S~pZyBKNMKF85FkivQ9HYGopc3wFwVMWfh7n5fELz4LIXTFfwdN1I-atIKubR5RqUuBSslmo4OwxcdNGkTwKkjuzlbnpUByGy5dMeCVdDqdVEtk7xTFnN5j2STLhWuh4V2rZgXipFMhX-0ywF9bCRr5N9Gsk6R1SN7~IlQtWGQHVghUKTXBLIc6R~enUWUGkhfQ__",
-   "out": "v2_bodies.png"
+   "url": "https://gitteromri-ux.github.io/lla-masterclass-syllabus/deck2/The-Longevity-Masterclass-v2-dark.pdf",
+   "out": "live_v2_dark.pdf"
   }
  ]
 }
